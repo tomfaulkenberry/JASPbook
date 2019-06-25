@@ -1,122 +1,217 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Preface}{ix}{chapter*.1}% 
+\select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{I\hspace {1em}Background}{1}{part.1}% 
+\contentsline {chapter}{Preface}{ix}{chapter*.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Why do we learn statistics?~}{3}{chapter.1}% 
+\contentsline {part}{I\hspace {1em}Background}{1}{part.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}On the psychology of statistics~}{3}{section.1.1}% 
+\contentsline {chapter}{\numberline {1}Why do we learn statistics?~}{3}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.1}The curse of belief bias}{4}{subsection.1.1.1}% 
+\contentsline {section}{\numberline {1.1}On the psychology of statistics~}{3}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}The cautionary tale of Simpson's paradox}{6}{section.1.2}% 
+\contentsline {subsection}{\numberline {1.1.1}The curse of belief bias}{4}{subsection.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Statistics in psychology}{9}{section.1.3}% 
+\contentsline {section}{\numberline {1.2}The cautionary tale of Simpson's paradox}{6}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Statistics in everyday life}{11}{section.1.4}% 
+\contentsline {section}{\numberline {1.3}Statistics in psychology}{9}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}There's more to research methods than statistics}{11}{section.1.5}% 
+\contentsline {section}{\numberline {1.4}Statistics in everyday life}{11}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}A brief introduction to research design}{13}{chapter.2}% 
+\contentsline {section}{\numberline {1.5}There's more to research methods than statistics}{11}{section.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Introduction to psychological measurement~}{13}{section.2.1}% 
+\contentsline {chapter}{\numberline {2}A brief introduction to research design}{13}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Some thoughts about psychological measurement}{13}{subsection.2.1.1}% 
+\contentsline {section}{\numberline {2.1}Introduction to psychological measurement~}{13}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Operationalisation: defining your measurement}{15}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.1}Some thoughts about psychological measurement}{13}{subsection.2.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Scales of measurement}{16}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.1.2}Operationalisation: defining your measurement}{15}{subsection.2.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Nominal scale}{17}{subsection.2.2.1}% 
+\contentsline {section}{\numberline {2.2}Scales of measurement}{16}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Ordinal scale}{17}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Nominal scale}{17}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Interval scale}{19}{subsection.2.2.3}% 
+\contentsline {subsection}{\numberline {2.2.2}Ordinal scale}{17}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.4}Ratio scale}{19}{subsection.2.2.4}% 
+\contentsline {subsection}{\numberline {2.2.3}Interval scale}{19}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.5}Continuous versus discrete variables~}{19}{subsection.2.2.5}% 
+\contentsline {subsection}{\numberline {2.2.4}Ratio scale}{19}{subsection.2.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.6}Some complexities}{20}{subsection.2.2.6}% 
+\contentsline {subsection}{\numberline {2.2.5}Continuous versus discrete variables~}{19}{subsection.2.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Assessing the reliability of a measurement~}{22}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.2.6}Some complexities}{20}{subsection.2.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}The ``role'' of variables: predictors and outcomes }{23}{section.2.4}% 
+\contentsline {section}{\numberline {2.3}Assessing the reliability of a measurement~}{22}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Experimental and non-experimental research~}{24}{section.2.5}% 
+\contentsline {section}{\numberline {2.4}The ``role'' of variables: predictors and outcomes }{23}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Experimental research}{24}{subsection.2.5.1}% 
+\contentsline {section}{\numberline {2.5}Experimental and non-experimental research~}{24}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Non-experimental research}{25}{subsection.2.5.2}% 
+\contentsline {subsection}{\numberline {2.5.1}Experimental research}{24}{subsection.2.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Assessing the validity of a study~}{26}{section.2.6}% 
+\contentsline {subsection}{\numberline {2.5.2}Non-experimental research}{25}{subsection.2.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.1}Internal validity}{26}{subsection.2.6.1}% 
+\contentsline {section}{\numberline {2.6}Assessing the validity of a study~}{26}{section.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.2}External validity}{27}{subsection.2.6.2}% 
+\contentsline {subsection}{\numberline {2.6.1}Internal validity}{26}{subsection.2.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.3}Construct validity}{28}{subsection.2.6.3}% 
+\contentsline {subsection}{\numberline {2.6.2}External validity}{27}{subsection.2.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.4}Face validity}{28}{subsection.2.6.4}% 
+\contentsline {subsection}{\numberline {2.6.3}Construct validity}{28}{subsection.2.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.5}Ecological validity}{29}{subsection.2.6.5}% 
+\contentsline {subsection}{\numberline {2.6.4}Face validity}{28}{subsection.2.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Confounds, artefacts and other threats to validity}{29}{section.2.7}% 
+\contentsline {subsection}{\numberline {2.6.5}Ecological validity}{29}{subsection.2.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.1}History effects}{30}{subsection.2.7.1}% 
+\contentsline {section}{\numberline {2.7}Confounds, artefacts and other threats to validity}{29}{section.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.2}Maturation effects}{31}{subsection.2.7.2}% 
+\contentsline {subsection}{\numberline {2.7.1}History effects}{30}{subsection.2.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.3}Repeated testing effects}{31}{subsection.2.7.3}% 
+\contentsline {subsection}{\numberline {2.7.2}Maturation effects}{31}{subsection.2.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.4}Selection bias}{32}{subsection.2.7.4}% 
+\contentsline {subsection}{\numberline {2.7.3}Repeated testing effects}{31}{subsection.2.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.5}Differential attrition}{32}{subsection.2.7.5}% 
+\contentsline {subsection}{\numberline {2.7.4}Selection bias}{32}{subsection.2.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.6}Non-response bias}{33}{subsection.2.7.6}% 
+\contentsline {subsection}{\numberline {2.7.5}Differential attrition}{32}{subsection.2.7.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.7}Regression to the mean}{33}{subsection.2.7.7}% 
+\contentsline {subsection}{\numberline {2.7.6}Non-response bias}{33}{subsection.2.7.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.8}Experimenter bias}{34}{subsection.2.7.8}% 
+\contentsline {subsection}{\numberline {2.7.7}Regression to the mean}{33}{subsection.2.7.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.9}Demand effects and reactivity}{35}{subsection.2.7.9}% 
+\contentsline {subsection}{\numberline {2.7.8}Experimenter bias}{34}{subsection.2.7.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.10}Placebo effects}{36}{subsection.2.7.10}% 
+\contentsline {subsection}{\numberline {2.7.9}Demand effects and reactivity}{35}{subsection.2.7.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.11}Situation, measurement and sub-population effects}{36}{subsection.2.7.11}% 
+\contentsline {subsection}{\numberline {2.7.10}Placebo effects}{36}{subsection.2.7.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.12}Fraud, deception and self-deception}{36}{subsection.2.7.12}% 
+\contentsline {subsection}{\numberline {2.7.11}Situation, measurement and sub-population effects}{36}{subsection.2.7.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Summary}{39}{section.2.8}% 
+\contentsline {subsection}{\numberline {2.7.12}Fraud, deception and self-deception}{36}{subsection.2.7.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{II\hspace {1em}An introduction to JASP}{41}{part.2}% 
+\contentsline {section}{\numberline {2.8}Summary}{39}{section.2.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Getting started with JASP}{43}{chapter.3}% 
+\contentsline {part}{II\hspace {1em}An introduction to JASP}{41}{part.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Installing JASP }{44}{section.3.1}% 
+\contentsline {chapter}{\numberline {3}Getting started with JASP}{43}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Starting up JASP}{44}{subsection.3.1.1}% 
+\contentsline {section}{\numberline {3.1}Installing JASP }{44}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Analyses}{45}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.1.1}Starting up JASP}{44}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Loading data in JASP}{46}{section.3.3}% 
+\contentsline {section}{\numberline {3.2}Analyses}{45}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Importing data from CSV files}{46}{subsection.3.3.1}% 
+\contentsline {section}{\numberline {3.3}Loading data in JASP}{46}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}The spreadsheet}{46}{section.3.4}% 
+\contentsline {subsection}{\numberline {3.3.1}Importing data from CSV files}{46}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Variables}{48}{subsection.3.4.1}% 
+\contentsline {section}{\numberline {3.4}The spreadsheet}{46}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}Computed variables}{49}{subsection.3.4.2}% 
+\contentsline {subsection}{\numberline {3.4.1}Variables}{48}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}Copy and Paste}{49}{subsection.3.4.3}% 
+\contentsline {subsection}{\numberline {3.4.2}Computed variables}{49}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Changing data from one measurement scale to another}{49}{section.3.5}% 
+\contentsline {subsection}{\numberline {3.4.3}Copy and Paste}{49}{subsection.3.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Quitting JASP }{50}{section.3.6}% 
+\contentsline {section}{\numberline {3.5}Changing data from one measurement scale to another}{49}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Summary}{50}{section.3.7}% 
+\contentsline {section}{\numberline {3.6}Quitting JASP }{50}{section.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}References}{51}{chapter.4}% 
+\contentsline {section}{\numberline {3.7}Summary}{50}{section.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{III\hspace {1em}Working with data}{51}{part.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Descriptive statistics}{53}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Measures of central tendency~}{55}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}The mean}{55}{subsection.4.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}Calculating the mean in jamovi}{56}{subsection.4.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.3}The median}{57}{subsection.4.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.4}Mean or median? What's the difference?}{58}{subsection.4.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.5}A real life example~}{58}{subsection.4.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.6}Mode}{60}{subsection.4.1.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Measures of variability}{63}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Range}{63}{subsection.4.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Interquartile range}{63}{subsection.4.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.3}Mean absolute deviation~}{64}{subsection.4.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.4}Variance}{65}{subsection.4.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.5}Standard deviation}{68}{subsection.4.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.6}Which measure to use?}{69}{subsection.4.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Skew and kurtosis }{71}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Descriptive statistics separately for each group~}{73}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Standard scores~}{75}{section.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Summary}{77}{section.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6.1}Epilogue: Good descriptive statistics are descriptive!}{78}{subsection.4.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Drawing graphs}{79}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Histograms}{80}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Boxplots~}{82}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}Violin plots~}{84}{subsection.5.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}Drawing multiple boxplots~}{84}{subsection.5.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.3}Using box plots to detect outliers~}{85}{subsection.5.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Bar graphs}{88}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Saving image files using jamovi~}{88}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}Summary}{90}{section.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Pragmatic matters~}{91}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Tabulating and cross-tabulating data}{92}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.1}Creating tables for single variables}{92}{subsection.6.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.2}Adding percentages to a contingency table}{93}{subsection.6.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Logical expressions in jamovi}{95}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.1}Assessing mathematical truths}{95}{subsection.6.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.2}Logical operations}{96}{subsection.6.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.3}Applying logical operation to text~}{98}{subsection.6.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Transforming and recoding a variable~}{99}{section.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.1}Creating a transformed variable}{99}{subsection.6.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.2}Collapsing a variable into a smaller number of discrete levels or categories}{102}{subsection.6.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.3}Creating a transformation that can be applied to multiple variables}{104}{subsection.6.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}A few more mathematical functions and operations~}{108}{section.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4.1}Logarithms and exponentials}{108}{subsection.6.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.5}Extracting a subset of the data~}{109}{section.6.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.6}Summary}{111}{section.6.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{IV\hspace {1em}Statistical theory}{113}{part.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}References}{121}{chapter.7}
