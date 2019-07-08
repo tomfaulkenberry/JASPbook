@@ -2162,6 +2162,11 @@
     <bcf:citekey order="15">Campbell1963</bcf:citekey>
     <bcf:citekey order="16">Ellman2002</bcf:citekey>
     <bcf:citekey order="17">Wilkinson2006</bcf:citekey>
+    <bcf:citekey order="18">Fisher1922b</bcf:citekey>
+    <bcf:citekey order="19">Meehl1967</bcf:citekey>
+    <bcf:citekey order="20">Evans2000</bcf:citekey>
+    <bcf:citekey order="21">Stigler1986</bcf:citekey>
+    <bcf:citekey order="22">Keynes1923</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nyt/global/" type="entry" sortscheme="nyt" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

@@ -214,4 +214,72 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{IV\hspace {1em}Statistical theory}{113}{part.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}References}{121}{chapter.7}
+\contentsline {chapter}{\numberline {7}Introduction to probability}{121}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}How are probability and statistics different?~}{122}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}What does probability mean?}{123}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.1}The frequentist view}{124}{subsection.7.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.2}The Bayesian view}{125}{subsection.7.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.3}What's the difference? And who is right?}{127}{subsection.7.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Basic probability theory~}{128}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.1}Introducing probability distributions}{128}{subsection.7.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}The binomial distribution}{130}{section.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.1}Introducing the binomial}{131}{subsection.7.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.5}The normal distribution}{132}{section.7.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.5.1}Probability density~ }{137}{subsection.7.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.6}Other useful distributions~}{140}{section.7.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.7}Summary}{142}{section.7.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Estimating unknown quantities from a sample}{145}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Samples, populations and sampling~}{145}{section.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1.1}Defining a population~}{146}{subsection.8.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1.2}Simple random samples}{147}{subsection.8.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1.3}Most samples are not simple random samples}{149}{subsection.8.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1.4}How much does it matter if you don't have a simple random sample?}{150}{subsection.8.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1.5}Population parameters and sample statistics}{151}{subsection.8.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}The law of large numbers~}{152}{section.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.3}Sampling distributions and the central limit theorem~}{155}{section.8.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3.1}Sampling distribution of the mean~}{155}{subsection.8.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3.2}Sampling distributions exist for any sample statistic!}{156}{subsection.8.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3.3}The central limit theorem~}{158}{subsection.8.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.4}Estimating population parameters~}{161}{section.8.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4.1}Estimating the population mean}{162}{subsection.8.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4.2}Estimating the population standard deviation}{162}{subsection.8.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.5}Estimating a confidence interval}{168}{section.8.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.5.1}A slight mistake in the formula}{169}{subsection.8.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.5.2}Interpreting a confidence interval}{170}{subsection.8.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.5.3}Calculating confidence intervals in jamovi}{172}{subsection.8.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.6}Summary}{172}{section.8.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}References}{175}{chapter.9}

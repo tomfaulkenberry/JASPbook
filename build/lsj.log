@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2019.5.18)  25 JUN 2019 05:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2019.5.18)  27 JUN 2019 06:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1738,7 +1738,7 @@ LaTeX Info: Redefining \nameref on input line 7.
 \openout6 = `lsj.out'.
 
 
-<../img/bookcoverA4.pdf, id=434, 596.2275pt x 845.55902pt>
+<../img/bookcoverA4.pdf, id=570, 596.2275pt x 845.55902pt>
 File: ../img/bookcoverA4.pdf Graphic file (type pdf)
 
 <use ../img/bookcoverA4.pdf>
@@ -1749,7 +1749,7 @@ File: ../img/bookcoverA4.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../img/bookcoverA4.pdf used on input line 10.
 (pdftex.def)             Requested size: 596.22604pt x 845.55696pt.
 
-<../img/bookcoverA4.pdf, id=437, page=1, 596.2275pt x 845.55902pt>
+<../img/bookcoverA4.pdf, id=573, page=1, 596.2275pt x 845.55902pt>
 File: ../img/bookcoverA4.pdf Graphic file (type pdf)
 
 <use ../img/bookcoverA4.pdf, page 1>
@@ -1860,7 +1860,7 @@ missions3-eps-converted-to.pdf ../img/whystats/berkeleyadmissions3.eps>
 (epstopdf)             \includegraphics on input line 141.
 Package epstopdf Info: Output file is already uptodate.
 
-<../img/whystats/berkeleyadmissions3-eps-converted-to.pdf, id=609, 561.09625pt 
+<../img/whystats/berkeleyadmissions3-eps-converted-to.pdf, id=761, 561.09625pt 
 x 578.16pt>
 File: ../img/whystats/berkeleyadmissions3-eps-converted-to.pdf Graphic file (ty
 pe pdf)
@@ -1885,21 +1885,21 @@ LaTeX Warning: Reference `sec:rel' on page 22 undefined on input line 234.
 Chapter 3.
 [43
 
-] <../img/introj/startingjasp.pdf, id=859, 794.97pt x 614.295pt>
+] <../img/introj/startingjasp.pdf, id=1011, 794.97pt x 614.295pt>
 File: ../img/introj/startingjasp.pdf Graphic file (type pdf)
 
 <use ../img/introj/startingjasp.pdf>
 Package pdftex.def Info: ../img/introj/startingjasp.pdf used on input line 40.
 (pdftex.def)             Requested size: 398.33858pt x 307.81224pt.
  [44] [45 <../img/introj/startingjasp.pdf, page is rotated 90 degrees>]
-<../img/introj/booksalescsv.pdf, id=889, 794.97pt x 614.295pt>
+<../img/introj/booksalescsv.pdf, id=1040, 794.97pt x 614.295pt>
 File: ../img/introj/booksalescsv.pdf Graphic file (type pdf)
 
 <use ../img/introj/booksalescsv.pdf>
 Package pdftex.def Info: ../img/introj/booksalescsv.pdf used on input line 72.
 (pdftex.def)             Requested size: 398.33858pt x 307.81224pt.
 
-<../img/introj/openscreen.pdf, id=891, 794.97pt x 614.295pt>
+<../img/introj/openscreen.pdf, id=1042, 794.97pt x 614.295pt>
 File: ../img/introj/openscreen.pdf Graphic file (type pdf)
 
 <use ../img/introj/openscreen.pdf>
@@ -1910,7 +1910,7 @@ Package pdftex.def Info: ../img/introj/openscreen.pdf used on input line 83.
 
 ] [52] (../tex/chapter04_descriptives.tex
 Chapter 4.
-<../img/descriptives/aflsmall_margins.png, id=959, 689.57625pt x 439.6425pt>
+<../img/descriptives/aflsmall_margins.png, id=1111, 689.57625pt x 439.6425pt>
 File: ../img/descriptives/aflsmall_margins.png Graphic file (type png)
 
 <use ../img/descriptives/aflsmall_margins.png>
@@ -1932,8 +1932,8 @@ gins-eps-converted-to.pdf ../img/descriptives/aflMargins.eps>
 (epstopdf)             \includegraphics on input line 25.
 Package epstopdf Info: Output file is already uptodate.
 
-<../img/descriptives/aflMargins-eps-converted-to.pdf, id=973, 561.09625pt x 433
-.62pt>
+<../img/descriptives/aflMargins-eps-converted-to.pdf, id=1125, 561.09625pt x 43
+3.62pt>
 File: ../img/descriptives/aflMargins-eps-converted-to.pdf Graphic file (type pd
 f)
  <use ../img/descriptives/aflMargins-eps-converted-to.pdf>
@@ -1947,9 +1947,10 @@ LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <8> not available
 LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <6> not available
 (Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 64.
  [55]
-<../img/descriptives/descriptives_default.png, id=998, 998.73125pt x 574.145pt>
+<../img/descriptives/descriptives_default.png, id=1150, 998.73125pt x 574.145pt
+>
 File: ../img/descriptives/descriptives_default.png Graphic file (type png)
-<use ../img/descriptives/descriptives_default.png>
+ <use ../img/descriptives/descriptives_default.png>
 Package pdftex.def Info: ../img/descriptives/descriptives_default.png used on i
 nput line 83.
 (pdftex.def)             Requested size: 341.43306pt x 196.27553pt.
@@ -1975,7 +1976,7 @@ eps-converted-to.pdf ../img/descriptives2/mean.eps>
 (epstopdf)             \includegraphics on input line 116.
 Package epstopdf Info: Output file is already uptodate.
 
-<../img/descriptives2/mean-eps-converted-to.pdf, id=1021, 387.4475pt x 335.2525
+<../img/descriptives2/mean-eps-converted-to.pdf, id=1172, 387.4475pt x 335.2525
 pt>
 File: ../img/descriptives2/mean-eps-converted-to.pdf Graphic file (type pdf)
  <use ../img/descriptives2/mean-eps-converted-to.pdf>
@@ -1994,7 +1995,7 @@ ian-eps-converted-to.pdf ./../img/descriptives2/median.eps>
 (epstopdf)             \includegraphics on input line 117.
 Package epstopdf Info: Output file is already uptodate.
 
-<./../img/descriptives2/median-eps-converted-to.pdf, id=1023, 399.4925pt x 322.
+<./../img/descriptives2/median-eps-converted-to.pdf, id=1174, 399.4925pt x 322.
 20375pt>
 File: ./../img/descriptives2/median-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -2009,7 +2010,7 @@ LaTeX Font Warning: Font shape `OT1/cmbr/bx/n' in size <5> not available
 
 [58] [59 <../img/descriptives2/mean-eps-converted-to.pdf> <./../img/descriptive
 s2/median-eps-converted-to.pdf>]
-<../img/descriptives/aflsmall_finalists.png, id=1048, 667.49374pt x 412.54124pt
+<../img/descriptives/aflsmall_finalists.png, id=1200, 667.49374pt x 412.54124pt
 >
 File: ../img/descriptives/aflsmall_finalists.png Graphic file (type png)
  <use ../img/descriptives/aflsmall_finalists.png>
@@ -2017,7 +2018,7 @@ Package pdftex.def Info: ../img/descriptives/aflsmall_finalists.png used on inp
 ut line 167.
 (pdftex.def)             Requested size: 312.9803pt x 193.44118pt.
 
-<../img/descriptives/aflsmall_finalists_mode.png, id=1051, 1100.11pt x 864.2287
+<../img/descriptives/aflsmall_finalists_mode.png, id=1203, 1100.11pt x 864.2287
 4pt>
 File: ../img/descriptives/aflsmall_finalists_mode.png Graphic file (type png)
  <use ../img/descriptives/aflsmall_finalists_mode.png>
@@ -2026,7 +2027,7 @@ n input line 179.
 (pdftex.def)             Requested size: 341.43306pt x 268.22462pt.
  [60] [61 <../img/descriptives/aflsmall_finalists.png> <../img/descriptives/afl
 small_finalists_mode.png>]
-<../img/descriptives/aflsmall_margins_mode.png, id=1070, 962.59625pt x 770.88pt
+<../img/descriptives/aflsmall_margins_mode.png, id=1222, 962.59625pt x 770.88pt
 >
 File: ../img/descriptives/aflsmall_margins_mode.png Graphic file (type png)
  <use ../img/descriptives/aflsmall_margins_mode.png>
@@ -2034,7 +2035,7 @@ Package pdftex.def Info: ../img/descriptives/aflsmall_margins_mode.png used on
 input line 193.
 (pdftex.def)             Requested size: 341.43306pt x 273.42319pt.
  [62 <../img/descriptives/aflsmall_margins_mode.png>]
-<../img/descriptives/aflsmall_margins_iqr.png, id=1079, 206.7725pt x 311.1625pt
+<../img/descriptives/aflsmall_margins_iqr.png, id=1231, 206.7725pt x 311.1625pt
 >
 File: ../img/descriptives/aflsmall_margins_iqr.png Graphic file (type png)
  <use ../img/descriptives/aflsmall_margins_iqr.png>
@@ -2051,7 +2052,7 @@ LaTeX Font Warning: Font shape `T1/cmbr/m/sc' undefined
 [65]
 Package mdframed Info: mdframed works in twoside mode on input line 271.
 
-<../img/descriptives/aflsmall_margins_variance1.png, id=1099, 1366.10374pt x 10
+<../img/descriptives/aflsmall_margins_variance1.png, id=1251, 1366.10374pt x 10
 72.005pt>
 File: ../img/descriptives/aflsmall_margins_variance1.png Graphic file (type png
 )
@@ -2062,27 +2063,10 @@ d on input line 300.
  [66]
 Package mdframed Info: mdframed works in twoside mode on input line 310.
 
-
-LaTeX Warning: Reference `ch:estimation' on page 67 undefined on input line 317
-.
-
-
-LaTeX Warning: Reference `ch:estimation' on page 67 undefined on input line 317
-.
-
 [67 <../img/descriptives/aflsmall_margins_variance1.png>]
 Package mdframed Info: mdframed works in twoside mode on input line 326.
  [68]
 Package mdframed Info: mdframed works in twoside mode on input line 337.
-
-
-LaTeX Warning: Reference `ch:estimation' on page 69 undefined on input line 338
-.
-
-
-LaTeX Warning: Reference `ch:probability' on page 69 undefined on input line 34
-5.
-
 Package epstopdf Info: Source file: <../img/descriptives/aflSD.eps>
 (epstopdf)                    date: 2019-05-18 09:08:48
 (epstopdf)                    size: 7561 bytes
@@ -2095,7 +2079,7 @@ eps-converted-to.pdf ../img/descriptives/aflSD.eps>
 (epstopdf)             \includegraphics on input line 349.
 Package epstopdf Info: Output file is already uptodate.
 
-<../img/descriptives/aflSD-eps-converted-to.pdf, id=1125, 561.09625pt x 433.62p
+<../img/descriptives/aflSD-eps-converted-to.pdf, id=1281, 561.09625pt x 433.62p
 t>
 File: ../img/descriptives/aflSD-eps-converted-to.pdf Graphic file (type pdf)
  <use ../img/descriptives/aflSD-eps-converted-to.pdf>
@@ -2115,7 +2099,7 @@ ss-eps-converted-to.pdf ../img/descriptives/skewness.eps>
 (epstopdf)             \includegraphics on input line 377.
 Package epstopdf Info: Output file is already uptodate.
 
-<../img/descriptives/skewness-eps-converted-to.pdf, id=1147, 561.09625pt x 216.
+<../img/descriptives/skewness-eps-converted-to.pdf, id=1302, 561.09625pt x 216.
 81pt>
 File: ../img/descriptives/skewness-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2137,7 +2121,7 @@ is-eps-converted-to.pdf ../img/descriptives/kurtosis.eps>
 (epstopdf)             \includegraphics on input line 401.
 Package epstopdf Info: Output file is already uptodate.
 
-<../img/descriptives/kurtosis-eps-converted-to.pdf, id=1164, 561.09625pt x 216.
+<../img/descriptives/kurtosis-eps-converted-to.pdf, id=1320, 561.09625pt x 216.
 81pt>
 File: ../img/descriptives/kurtosis-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2151,7 +2135,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 420.
 
 LaTeX Warning: Reference `ch:anova' on page 73 undefined on input line 433.
 
-<../img/descriptives/clinicaltrial.png, id=1180, 675.52374pt x 570.13pt>
+<../img/descriptives/clinicaltrial.png, id=1336, 675.52374pt x 570.13pt>
 File: ../img/descriptives/clinicaltrial.png Graphic file (type png)
 
 <use ../img/descriptives/clinicaltrial.png>
@@ -2159,7 +2143,7 @@ Package pdftex.def Info: ../img/descriptives/clinicaltrial.png used on input li
 ne 438.
 (pdftex.def)             Requested size: 398.33858pt x 336.1998pt.
 
-<../img/descriptives/clinicaltrial_grouping.png, id=1183, 1022.82124pt x 777.90
+<../img/descriptives/clinicaltrial_grouping.png, id=1339, 1022.82124pt x 777.90
 625pt>
 File: ../img/descriptives/clinicaltrial_grouping.png Graphic file (type png)
  <use ../img/descriptives/clinicaltrial_grouping.png>
@@ -2183,7 +2167,7 @@ s-converted-to.pdf ../img/graphics/snowMap.eps>
 (epstopdf)             \includegraphics on input line 22.
 Package epstopdf Info: Output file is already uptodate.
 
-<../img/graphics/snowMap-eps-converted-to.pdf, id=1232, 561.09625pt x 433.62pt>
+<../img/graphics/snowMap-eps-converted-to.pdf, id=1388, 561.09625pt x 433.62pt>
 File: ../img/graphics/snowMap-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/graphics/snowMap-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/graphics/snowMap-eps-converted-to.pdf used on i
@@ -2192,7 +2176,7 @@ nput line 22.
  [79
 
 ] [80 <../img/graphics/snowMap-eps-converted-to.pdf>]
-<../img/graphics/jamovi_histogram.png, id=1259, 1164.35pt x 914.41624pt>
+<../img/graphics/jamovi_histogram.png, id=1415, 1164.35pt x 914.41624pt>
 File: ../img/graphics/jamovi_histogram.png Graphic file (type png)
 
 <use ../img/graphics/jamovi_histogram.png>
@@ -2200,7 +2184,7 @@ Package pdftex.def Info: ../img/graphics/jamovi_histogram.png used on input lin
 e 36.
 (pdftex.def)             Requested size: 398.33858pt x 312.8229pt.
 
-<../img/graphics/histogram2.pdf, id=1262, 357.335pt x 351.3125pt>
+<../img/graphics/histogram2.pdf, id=1418, 357.335pt x 351.3125pt>
 File: ../img/graphics/histogram2.pdf Graphic file (type pdf)
 
 <use ../img/graphics/histogram2.pdf>
@@ -2208,49 +2192,49 @@ Package pdftex.def Info: ../img/graphics/histogram2.pdf used on input line 47.
 (pdftex.def)             Requested size: 284.52756pt x 279.74774pt.
  [81 <../img/graphics/jamovi_histogram.png>] [82 <../img/graphics/histogram2.pd
 f>]
-<../img/graphics/boxplot1.png, id=1286, 1141.26375pt x 864.22874pt>
+<../img/graphics/boxplot1.png, id=1441, 1141.26375pt x 864.22874pt>
 File: ../img/graphics/boxplot1.png Graphic file (type png)
 
 <use ../img/graphics/boxplot1.png>
 Package pdftex.def Info: ../img/graphics/boxplot1.png used on input line 63.
 (pdftex.def)             Requested size: 398.33858pt x 301.64061pt.
 
-<../img/graphics/boxplot2.pdf, id=1289, 351.3125pt x 351.3125pt>
+<../img/graphics/boxplot2.pdf, id=1444, 351.3125pt x 351.3125pt>
 File: ../img/graphics/boxplot2.pdf Graphic file (type pdf)
 
 <use ../img/graphics/boxplot2.pdf>
 Package pdftex.def Info: ../img/graphics/boxplot2.pdf used on input line 76.
 (pdftex.def)             Requested size: 227.62204pt x 227.62672pt.
  [83 <../img/graphics/boxplot1.png>]
-<../img/graphics/splitfile1.png, id=1300, 600.2425pt x 303.1325pt>
+<../img/graphics/splitfile1.png, id=1456, 600.2425pt x 303.1325pt>
 File: ../img/graphics/splitfile1.png Graphic file (type png)
 
 <use ../img/graphics/splitfile1.png>
 Package pdftex.def Info: ../img/graphics/splitfile1.png used on input line 91.
 (pdftex.def)             Requested size: 284.52756pt x 143.6934pt.
  [84 <../img/graphics/boxplot2.pdf>]
-<../img/graphics/boxplot3.pdf, id=1317, 1846.9pt x 351.3125pt>
+<../img/graphics/boxplot3.pdf, id=1473, 1846.9pt x 351.3125pt>
 File: ../img/graphics/boxplot3.pdf Graphic file (type pdf)
 
 <use ../img/graphics/boxplot3.pdf>
 Package pdftex.def Info: ../img/graphics/boxplot3.pdf used on input line 102.
 (pdftex.def)             Requested size: 398.31575pt x 142.2647pt.
 
-<../img/graphics/boxplot4.pdf, id=1319, 351.3125pt x 351.3125pt>
+<../img/graphics/boxplot4.pdf, id=1475, 351.3125pt x 351.3125pt>
 File: ../img/graphics/boxplot4.pdf Graphic file (type pdf)
 
 <use ../img/graphics/boxplot4.pdf>
 Package pdftex.def Info: ../img/graphics/boxplot4.pdf used on input line 113.
 (pdftex.def)             Requested size: 199.17271pt x 227.62672pt.
  [85 <../img/graphics/splitfile1.png> <../img/graphics/boxplot3.pdf>]
-<../img/graphics/filter1.png, id=1341, 942.52126pt x 426.59375pt>
+<../img/graphics/filter1.png, id=1497, 942.52126pt x 426.59375pt>
 File: ../img/graphics/filter1.png Graphic file (type png)
 
 <use ../img/graphics/filter1.png>
 Package pdftex.def Info: ../img/graphics/filter1.png used on input line 124.
 (pdftex.def)             Requested size: 398.33858pt x 180.29425pt.
 
-<../img/graphics/filter2.png, id=1344, 1358.07375pt x 931.48pt>
+<../img/graphics/filter2.png, id=1500, 1358.07375pt x 931.48pt>
 File: ../img/graphics/filter2.png Graphic file (type png)
 
 <use ../img/graphics/filter2.png>
@@ -2262,7 +2246,7 @@ graphics/filter2.png>]
 LaTeX Warning: Reference `sec:regressiondiagnostics' on page 88 undefined on in
 put line 144.
 
-<../img/graphics/bar1.png, id=1373, 1080.035pt x 1074.0125pt>
+<../img/graphics/bar1.png, id=1529, 1080.035pt x 1074.0125pt>
 File: ../img/graphics/bar1.png Graphic file (type png)
 
 <use ../img/graphics/bar1.png>
@@ -2273,14 +2257,14 @@ Package pdftex.def Info: ../img/graphics/bar1.png used on input line 159.
 Chapter 6.
 [91
 
-] <../img/mechanics/freqtable.png, id=1413, 475.7775pt x 170.6375pt>
+] <../img/mechanics/freqtable.png, id=1568, 475.7775pt x 170.6375pt>
 File: ../img/mechanics/freqtable.png Graphic file (type png)
 
 <use ../img/mechanics/freqtable.png>
 Package pdftex.def Info: ../img/mechanics/freqtable.png used on input line 53.
 (pdftex.def)             Requested size: 284.52756pt x 102.05pt.
  [92 <../img/mechanics/freqtable.png>]
-<../img/mechanics/contingencytable.png, id=1423, 1220.56pt x 676.5275pt>
+<../img/mechanics/contingencytable.png, id=1578, 1220.56pt x 676.5275pt>
 File: ../img/mechanics/contingencytable.png Graphic file (type png)
 
 <use ../img/mechanics/contingencytable.png>
@@ -2291,7 +2275,7 @@ ne 67.
 
 LaTeX Warning: Reference `ch:chisquare' on page 93 undefined on input line 74.
 
-<../img/mechanics/contingencyrow.png, id=1427, 575.14874pt x 293.095pt>
+<../img/mechanics/contingencyrow.png, id=1582, 575.14874pt x 293.095pt>
 File: ../img/mechanics/contingencyrow.png Graphic file (type png)
 
 <use ../img/mechanics/contingencyrow.png>
@@ -2299,7 +2283,7 @@ Package pdftex.def Info: ../img/mechanics/contingencyrow.png used on input line
  83.
 (pdftex.def)             Requested size: 398.33858pt x 203.0005pt.
 
-<../img/mechanics/contingencycol.png, id=1429, 602.25pt x 295.1025pt>
+<../img/mechanics/contingencycol.png, id=1584, 602.25pt x 295.1025pt>
 File: ../img/mechanics/contingencycol.png Graphic file (type png)
 
 <use ../img/mechanics/contingencycol.png>
@@ -2308,7 +2292,7 @@ Package pdftex.def Info: ../img/mechanics/contingencycol.png used on input line
 (pdftex.def)             Requested size: 398.33858pt x 195.19151pt.
  [93 <../img/mechanics/contingencytable.png>] [94 <../img/mechanics/contingency
 row.png> <../img/mechanics/contingencycol.png>] [95] [96] [97] [98] [99]
-<../img/mechanics/likertraw.png, id=1485, 793.96625pt x 773.89125pt>
+<../img/mechanics/likertraw.png, id=1641, 793.96625pt x 773.89125pt>
 File: ../img/mechanics/likertraw.png Graphic file (type png)
 
 <use ../img/mechanics/likertraw.png>
@@ -2316,7 +2300,7 @@ Package pdftex.def Info: ../img/mechanics/likertraw.png used on input line 253.
 
 (pdftex.def)             Requested size: 398.33858pt x 388.27904pt.
  [100 <../img/mechanics/likertraw.png>]
-<../img/mechanics/opinionstrength.png, id=1496, 1067.99pt x 787.94376pt>
+<../img/mechanics/opinionstrength.png, id=1652, 1067.99pt x 787.94376pt>
 File: ../img/mechanics/opinionstrength.png Graphic file (type png)
 
 <use ../img/mechanics/opinionstrength.png>
@@ -2324,14 +2308,14 @@ Package pdftex.def Info: ../img/mechanics/opinionstrength.png used on input lin
 e 266.
 (pdftex.def)             Requested size: 398.33858pt x 293.89114pt.
  [101 <../img/mechanics/opinionstrength.png>] <../img/mechanics/agecats.png, id
-=1508, 843.15pt x 960.58875pt>
+=1664, 843.15pt x 960.58875pt>
 File: ../img/mechanics/agecats.png Graphic file (type png)
 
 <use ../img/mechanics/agecats.png>
 Package pdftex.def Info: ../img/mechanics/agecats.png used on input line 308.
 (pdftex.def)             Requested size: 398.33858pt x 453.82195pt.
  [102] [103 <../img/mechanics/agecats.png>]
-<../img/mechanics/transform1.png, id=1524, 791.95876pt x 762.85pt>
+<../img/mechanics/transform1.png, id=1680, 791.95876pt x 762.85pt>
 File: ../img/mechanics/transform1.png Graphic file (type png)
 
 <use ../img/mechanics/transform1.png>
@@ -2339,7 +2323,7 @@ Package pdftex.def Info: ../img/mechanics/transform1.png used on input line 322
 .
 (pdftex.def)             Requested size: 398.33858pt x 383.70554pt.
 
-<../img/mechanics/transform2.png, id=1527, 800.9925pt x 695.59875pt>
+<../img/mechanics/transform2.png, id=1683, 800.9925pt x 695.59875pt>
 File: ../img/mechanics/transform2.png Graphic file (type png)
 
 <use ../img/mechanics/transform2.png>
@@ -2347,7 +2331,7 @@ Package pdftex.def Info: ../img/mechanics/transform2.png used on input line 333
 .
 (pdftex.def)             Requested size: 398.33858pt x 345.93047pt.
  [104] [105 <../img/mechanics/transform1.png>] <../img/mechanics/transform3.png
-, id=1547, 827.09pt x 883.3pt>
+, id=1702, 827.09pt x 883.3pt>
 File: ../img/mechanics/transform3.png Graphic file (type png)
 
 <use ../img/mechanics/transform3.png>
@@ -2360,7 +2344,7 @@ Package pdftex.def Info: ../img/mechanics/transform3.png used on input line 346
 LaTeX Warning: Reference `subsec:boxcox' on page 108 undefined on input line 35
 7.
 
-[108] [109] <../img/mechanics/subset1.png, id=1576, 1090.0725pt x 889.3225pt>
+[108] [109] <../img/mechanics/subset1.png, id=1732, 1090.0725pt x 889.3225pt>
 File: ../img/mechanics/subset1.png Graphic file (type png)
 
 <use ../img/mechanics/subset1.png>
@@ -2371,22 +2355,774 @@ Package pdftex.def Info: ../img/mechanics/subset1.png used on input line 416.
 
 ] [113] [114] (../tex/prelude4.tex
 
-LaTeX Warning: Reference `ch:probability' on page 115 undefined on input line 7
-.
-
-
-LaTeX Warning: Reference `ch:estimation' on page 115 undefined on input line 7.
-
-
-
 LaTeX Warning: Reference `ch:hypothesistesting' on page 115 undefined on input 
 line 7.
 
-[115] [116] [117]) [118] [119] [120
+[115] [116] [117]) (../tex/chapter07_probability.tex [118] [119] [120
 
 ]
 Chapter 7.
-<../img/backcover.pdf, id=1655, 597.65839pt x 845.30275pt>
+[121] [122] [123] [124]
+Package epstopdf Info: Source file: <../img/probability/frequentistProb.eps>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 59077 bytes
+(epstopdf)             Output file: <../img/probability/frequentistProb-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 29920 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/probability/frequen
+tistProb-eps-converted-to.pdf ../img/probability/frequentistProb.eps>
+(epstopdf)             \includegraphics on input line 105.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/probability/frequentistProb-eps-converted-to.pdf, id=1811, 561.09625pt 
+x 578.16pt>
+File: ../img/probability/frequentistProb-eps-converted-to.pdf Graphic file (typ
+e pdf)
+ <use ../img/probability/frequentistProb-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/probability/frequentistProb-eps-converted-to.pd
+f used on input line 105.
+(pdftex.def)             Requested size: 398.33858pt x 410.45236pt.
+
+[125] [126 <../img/probability/frequentistProb-eps-converted-to.pdf>] [127]
+
+LaTeX Warning: Reference `ch:bayes' on page 128 undefined on input line 132.
+
+[128]
+Package epstopdf Info: Source file: <../img/probability/pantsDistribution.eps>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 8719 bytes
+(epstopdf)             Output file: <../img/probability/pantsDistribution-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 10830 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/probability/pantsDi
+stribution-eps-converted-to.pdf ../img/probability/pantsDistribution.eps>
+(epstopdf)             \includegraphics on input line 160.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/probability/pantsDistribution-eps-converted-to.pdf, id=1851, 561.09625p
+t x 433.62pt>
+File: ../img/probability/pantsDistribution-eps-converted-to.pdf Graphic file (t
+ype pdf)
+ <use ../img/probability/pantsDistribution-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/probability/pantsDistribution-eps-converted-to.
+pdf used on input line 160.
+(pdftex.def)             Requested size: 341.43306pt x 263.85939pt.
+
+[129] [130 <../img/probability/pantsDistribution-eps-converted-to.pdf>]
+Package mdframed Info: mdframed works in twoside mode on input line 374.
+
+[131]
+Package epstopdf Info: Source file: <../img/probability/binomSkulls20.eps>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 4841 bytes
+(epstopdf)             Output file: <../img/probability/binomSkulls20-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 9465 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/probability/binomSk
+ulls20-eps-converted-to.pdf ../img/probability/binomSkulls20.eps>
+(epstopdf)             \includegraphics on input line 400.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/probability/binomSkulls20-eps-converted-to.pdf, id=1882, 561.09625pt x 
+433.62pt>
+File: ../img/probability/binomSkulls20-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use ../img/probability/binomSkulls20-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/probability/binomSkulls20-eps-converted-to.pdf 
+used on input line 400.
+(pdftex.def)             Requested size: 341.43306pt x 263.85939pt.
+Package epstopdf Info: Source file: <../img/probability/binomHeads20.eps>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 4805 bytes
+(epstopdf)             Output file: <../img/probability/binomHeads20-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 9467 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/probability/binomHe
+ads20-eps-converted-to.pdf ../img/probability/binomHeads20.eps>
+(epstopdf)             \includegraphics on input line 419.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/probability/binomHeads20-eps-converted-to.pdf, id=1888, 561.09625pt x 4
+33.62pt>
+File: ../img/probability/binomHeads20-eps-converted-to.pdf Graphic file (type p
+df)
+ <use ../img/probability/binomHeads20-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/probability/binomHeads20-eps-converted-to.pdf u
+sed on input line 419.
+(pdftex.def)             Requested size: 341.43306pt x 263.85939pt.
+Package epstopdf Info: Source file: <../img/probability/binomHeads100.eps>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 7181 bytes
+(epstopdf)             Output file: <../img/probability/binomHeads100-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 10216 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/probability/binomHe
+ads100-eps-converted-to.pdf ../img/probability/binomHeads100.eps>
+(epstopdf)             \includegraphics on input line 420.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/probability/binomHeads100-eps-converted-to.pdf, id=1890, 561.09625pt x 
+433.62pt>
+File: ../img/probability/binomHeads100-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use ../img/probability/binomHeads100-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/probability/binomHeads100-eps-converted-to.pdf 
+used on input line 420.
+(pdftex.def)             Requested size: 341.43306pt x 263.85939pt.
+Package epstopdf Info: Source file: <../img/probability/standardNormal.eps>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 11911 bytes
+(epstopdf)             Output file: <../img/probability/standardNormal-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 13160 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/probability/standar
+dNormal-eps-converted-to.pdf ../img/probability/standardNormal.eps>
+(epstopdf)             \includegraphics on input line 433.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/probability/standardNormal-eps-converted-to.pdf, id=1892, 561.09625pt x
+ 433.62pt>
+File: ../img/probability/standardNormal-eps-converted-to.pdf Graphic file (type
+ pdf)
+ <use ../img/probability/standardNormal-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/probability/standardNormal-eps-converted-to.pdf
+ used on input line 433.
+(pdftex.def)             Requested size: 341.43306pt x 263.85939pt.
+
+[132]
+Package epstopdf Info: Source file: <../img/probability/meanShiftNormal.eps>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 29970 bytes
+(epstopdf)             Output file: <../img/probability/meanShiftNormal-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 18299 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/probability/meanShi
+ftNormal-eps-converted-to.pdf ../img/probability/meanShiftNormal.eps>
+(epstopdf)             \includegraphics on input line 451.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/probability/meanShiftNormal-eps-converted-to.pdf, id=1903, 561.09625pt 
+x 433.62pt>
+File: ../img/probability/meanShiftNormal-eps-converted-to.pdf Graphic file (typ
+e pdf)
+ <use ../img/probability/meanShiftNormal-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/probability/meanShiftNormal-eps-converted-to.pd
+f used on input line 451.
+(pdftex.def)             Requested size: 341.43306pt x 263.85939pt.
+Package epstopdf Info: Source file: <../img/probability/scaleShiftNormal.eps>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 28932 bytes
+(epstopdf)             Output file: <../img/probability/scaleShiftNormal-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 19845 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/probability/scaleSh
+iftNormal-eps-converted-to.pdf ../img/probability/scaleShiftNormal.eps>
+(epstopdf)             \includegraphics on input line 460.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/probability/scaleShiftNormal-eps-converted-to.pdf, id=1905, 561.09625pt
+ x 433.62pt>
+File: ../img/probability/scaleShiftNormal-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+ <use ../img/probability/scaleShiftNormal-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/probability/scaleShiftNormal-eps-converted-to.p
+df used on input line 460.
+(pdftex.def)             Requested size: 341.43306pt x 263.85939pt.
+
+[133 <../img/probability/binomSkulls20-eps-converted-to.pdf>] [134 <../img/prob
+ability/binomHeads20-eps-converted-to.pdf> <../img/probability/binomHeads100-ep
+s-converted-to.pdf>] [135 <../img/probability/standardNormal-eps-converted-to.p
+df>]
+Package epstopdf Info: Source file: <../img/probability/normArea1SD.eps>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 17432 bytes
+(epstopdf)             Output file: <../img/probability/normArea1SD-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 13861 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/probability/normAre
+a1SD-eps-converted-to.pdf ../img/probability/normArea1SD.eps>
+(epstopdf)             \includegraphics on input line 475.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/probability/normArea1SD-eps-converted-to.pdf, id=1963, 433.62pt x 289.0
+8pt>
+File: ../img/probability/normArea1SD-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use ../img/probability/normArea1SD-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/probability/normArea1SD-eps-converted-to.pdf us
+ed on input line 475.
+(pdftex.def)             Requested size: 199.16928pt x 132.7799pt.
+Package epstopdf Info: Source file: <../img/probability/normArea2SD.eps>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 20097 bytes
+(epstopdf)             Output file: <../img/probability/normArea2SD-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 13946 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/probability/normAre
+a2SD-eps-converted-to.pdf ../img/probability/normArea2SD.eps>
+(epstopdf)             \includegraphics on input line 476.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/probability/normArea2SD-eps-converted-to.pdf, id=1965, 433.62pt x 289.0
+8pt>
+File: ../img/probability/normArea2SD-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use ../img/probability/normArea2SD-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/probability/normArea2SD-eps-converted-to.pdf us
+ed on input line 476.
+(pdftex.def)             Requested size: 199.16928pt x 132.7799pt.
+Package epstopdf Info: Source file: <../img/probability/normAreaOther1.eps>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 18256 bytes
+(epstopdf)             Output file: <../img/probability/normAreaOther1-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 13747 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/probability/normAre
+aOther1-eps-converted-to.pdf ../img/probability/normAreaOther1.eps>
+(epstopdf)             \includegraphics on input line 488.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/probability/normAreaOther1-eps-converted-to.pdf, id=1967, 433.62pt x 28
+9.08pt>
+File: ../img/probability/normAreaOther1-eps-converted-to.pdf Graphic file (type
+ pdf)
+ <use ../img/probability/normAreaOther1-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/probability/normAreaOther1-eps-converted-to.pdf
+ used on input line 488.
+(pdftex.def)             Requested size: 199.16928pt x 132.7799pt.
+Package epstopdf Info: Source file: <../img/probability/normAreaOther2.eps>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 16017 bytes
+(epstopdf)             Output file: <../img/probability/normAreaOther2-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 13501 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/probability/normAre
+aOther2-eps-converted-to.pdf ../img/probability/normAreaOther2.eps>
+(epstopdf)             \includegraphics on input line 489.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/probability/normAreaOther2-eps-converted-to.pdf, id=1969, 433.62pt x 28
+9.08pt>
+File: ../img/probability/normAreaOther2-eps-converted-to.pdf Graphic file (type
+ pdf)
+ <use ../img/probability/normAreaOther2-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/probability/normAreaOther2-eps-converted-to.pdf
+ used on input line 489.
+(pdftex.def)             Requested size: 199.16928pt x 132.7799pt.
+ [136 <../img/probability/meanShiftNormal-eps-converted-to.pdf>] [137 <../img/p
+robability/scaleShiftNormal-eps-converted-to.pdf>] [138 <../img/probability/nor
+mArea1SD-eps-converted-to.pdf> <../img/probability/normArea2SD-eps-converted-to
+.pdf> <../img/probability/normAreaOther1-eps-converted-to.pdf> <../img/probabil
+ity/normAreaOther2-eps-converted-to.pdf>] [139]
+Package epstopdf Info: Source file: <../img/probability/tDist.eps>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 28905 bytes
+(epstopdf)             Output file: <../img/probability/tDist-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 19678 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/probability/tDist-e
+ps-converted-to.pdf ../img/probability/tDist.eps>
+(epstopdf)             \includegraphics on input line 519.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/probability/tDist-eps-converted-to.pdf, id=2047, 561.09625pt x 433.62pt
+>
+File: ../img/probability/tDist-eps-converted-to.pdf Graphic file (type pdf)
+ <use ../img/probability/tDist-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/probability/tDist-eps-converted-to.pdf used on 
+input line 519.
+(pdftex.def)             Requested size: 312.97888pt x 199.16988pt.
+Package epstopdf Info: Source file: <../img/probability/chiSqDist.eps>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 17368 bytes
+(epstopdf)             Output file: <../img/probability/chiSqDist-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 15600 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/probability/chiSqDi
+st-eps-converted-to.pdf ../img/probability/chiSqDist.eps>
+(epstopdf)             \includegraphics on input line 528.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/probability/chiSqDist-eps-converted-to.pdf, id=2049, 561.09625pt x 433.
+62pt>
+File: ../img/probability/chiSqDist-eps-converted-to.pdf Graphic file (type pdf)
+
+ <use ../img/probability/chiSqDist-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/probability/chiSqDist-eps-converted-to.pdf used
+ on input line 528.
+(pdftex.def)             Requested size: 284.52756pt x 219.87952pt.
+Package epstopdf Info: Source file: <../img/probability/FDist.eps>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 17201 bytes
+(epstopdf)             Output file: <../img/probability/FDist-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2019-05-18 09:08:49
+(epstopdf)                    size: 15404 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/probability/FDist-e
+ps-converted-to.pdf ../img/probability/FDist.eps>
+(epstopdf)             \includegraphics on input line 537.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/probability/FDist-eps-converted-to.pdf, id=2051, 561.09625pt x 433.62pt
+>
+File: ../img/probability/FDist-eps-converted-to.pdf Graphic file (type pdf)
+ <use ../img/probability/FDist-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/probability/FDist-eps-converted-to.pdf used on 
+input line 537.
+(pdftex.def)             Requested size: 284.52756pt x 219.87952pt.
+ [140 <../img/probability/tDist-eps-converted-to.pdf>] [141 <../img/probability
+/chiSqDist-eps-converted-to.pdf> <../img/probability/FDist-eps-converted-to.pdf
+>]
+
+LaTeX Warning: Reference `ch:ttest' on page 142 undefined on input line 546.
+
+
+LaTeX Warning: Reference `ch:chisquare' on page 142 undefined on input line 548
+.
+
+
+LaTeX Warning: Reference `ch:anova' on page 142 undefined on input line 550.
+
+[142]
+
+LaTeX Warning: Reference `ch:ttest' on page 143 undefined on input line 569.
+
+) (../tex/chapter08_estimation.tex [143] [144
+
+]
+Chapter 8.
+[145]
+Package epstopdf Info: Source file: <../img/estimation/srs1.eps>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 2492490 bytes
+(epstopdf)             Output file: <../img/estimation/srs1-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 56707 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/srs1-eps
+-converted-to.pdf ../img/estimation/srs1.eps>
+(epstopdf)             \includegraphics on input line 44.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/srs1-eps-converted-to.pdf, id=2126, 845.1575pt x 487.8225pt>
+File: ../img/estimation/srs1-eps-converted-to.pdf Graphic file (type pdf)
+<use ../img/estimation/srs1-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/srs1-eps-converted-to.pdf used on in
+put line 44.
+(pdftex.def)             Requested size: 250.38434pt x 144.51675pt.
+ [146] [147 <../img/estimation/srs1-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <../img/estimation/brs.eps>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 2439328 bytes
+(epstopdf)             Output file: <../img/estimation/brs-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 52130 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/brs-eps-
+converted-to.pdf ../img/estimation/brs.eps>
+(epstopdf)             \includegraphics on input line 59.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/brs-eps-converted-to.pdf, id=2146, 827.09pt x 487.8225pt>
+File: ../img/estimation/brs-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../img/estimation/brs-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/brs-eps-converted-to.pdf used on inp
+ut line 59.
+(pdftex.def)             Requested size: 250.38434pt x 147.67282pt.
+Package epstopdf Info: Source file: <../img/estimation/srs2.eps>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 2492490 bytes
+(epstopdf)             Output file: <../img/estimation/srs2-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 54993 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/srs2-eps
+-converted-to.pdf ../img/estimation/srs2.eps>
+(epstopdf)             \includegraphics on input line 69.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/srs2-eps-converted-to.pdf, id=2148, 845.1575pt x 487.8225pt>
+File: ../img/estimation/srs2-eps-converted-to.pdf Graphic file (type pdf)
+<use ../img/estimation/srs2-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/srs2-eps-converted-to.pdf used on in
+put line 69.
+(pdftex.def)             Requested size: 250.38434pt x 144.51675pt.
+ [148 <../img/estimation/brs-eps-converted-to.pdf> <../img/estimation/srs2-eps-
+converted-to.pdf>] [149]
+[150]
+Package epstopdf Info: Source file: <../img/estimation/IQpopulation.eps>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 5210 bytes
+(epstopdf)             Output file: <../img/estimation/IQpopulation-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 9992 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/IQpopula
+tion-eps-converted-to.pdf ../img/estimation/IQpopulation.eps>
+(epstopdf)             \includegraphics on input line 108.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/IQpopulation-eps-converted-to.pdf, id=2180, 325.215pt x 325.
+215pt>
+File: ../img/estimation/IQpopulation-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use ../img/estimation/IQpopulation-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/IQpopulation-eps-converted-to.pdf us
+ed on input line 108.
+(pdftex.def)             Requested size: 128.0374pt x 128.03918pt.
+Package epstopdf Info: Source file: <../img/estimation/IQsample100.eps>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 4907 bytes
+(epstopdf)             Output file: <../img/estimation/IQsample100-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 9345 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/IQsample
+100-eps-converted-to.pdf ../img/estimation/IQsample100.eps>
+(epstopdf)             \includegraphics on input line 109.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/IQsample100-eps-converted-to.pdf, id=2182, 325.215pt x 325.2
+15pt>
+File: ../img/estimation/IQsample100-eps-converted-to.pdf Graphic file (type pdf
+)
+ <use ../img/estimation/IQsample100-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/IQsample100-eps-converted-to.pdf use
+d on input line 109.
+(pdftex.def)             Requested size: 128.0374pt x 128.03918pt.
+Package epstopdf Info: Source file: <../img/estimation/IQsample10000.eps>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 5004 bytes
+(epstopdf)             Output file: <../img/estimation/IQsample10000-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 9309 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/IQsample
+10000-eps-converted-to.pdf ../img/estimation/IQsample10000.eps>
+(epstopdf)             \includegraphics on input line 110.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/IQsample10000-eps-converted-to.pdf, id=2184, 325.215pt x 325
+.215pt>
+File: ../img/estimation/IQsample10000-eps-converted-to.pdf Graphic file (type p
+df)
+ <use ../img/estimation/IQsample10000-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/IQsample10000-eps-converted-to.pdf u
+sed on input line 110.
+(pdftex.def)             Requested size: 128.0374pt x 128.03918pt.
+ [151]
+[152 <../img/estimation/IQpopulation-eps-converted-to.pdf> <../img/estimation/I
+Qsample100-eps-converted-to.pdf> <../img/estimation/IQsample10000-eps-converted
+-to.pdf>] <../img/estimation/IQsim.png, id=2225, 877.2775pt x 992.70876pt>
+File: ../img/estimation/IQsim.png Graphic file (type png)
+
+<use ../img/estimation/IQsim.png>
+Package pdftex.def Info: ../img/estimation/IQsim.png used on input line 134.
+(pdftex.def)             Requested size: 398.33858pt x 450.7592pt.
+ [153] [154 <../img/estimation/IQsim.png>]
+[155] <../img/estimation/samplingDist4.png, id=2258, 881.2925pt x 749.80125pt>
+File: ../img/estimation/samplingDist4.png Graphic file (type png)
+
+<use ../img/estimation/samplingDist4.png>
+Package pdftex.def Info: ../img/estimation/samplingDist4.png used on input line
+ 207.
+(pdftex.def)             Requested size: 199.16928pt x 169.45311pt.
+
+<../img/estimation/samplingDistMax.png, id=2260, 867.24pt x 623.32875pt>
+File: ../img/estimation/samplingDistMax.png Graphic file (type png)
+
+<use ../img/estimation/samplingDistMax.png>
+Package pdftex.def Info: ../img/estimation/samplingDistMax.png used on input li
+ne 217.
+(pdftex.def)             Requested size: 227.62204pt x 163.60246pt.
+ [156]
+Package epstopdf Info: Source file: <../img/estimation/samplingDist1.eps>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 5786 bytes
+(epstopdf)             Output file: <../img/estimation/samplingDist1-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 9822 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/sampling
+Dist1-eps-converted-to.pdf ../img/estimation/samplingDist1.eps>
+(epstopdf)             \includegraphics on input line 238.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/samplingDist1-eps-converted-to.pdf, id=2268, 325.215pt x 325
+.215pt>
+File: ../img/estimation/samplingDist1-eps-converted-to.pdf Graphic file (type p
+df)
+ <use ../img/estimation/samplingDist1-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/samplingDist1-eps-converted-to.pdf u
+sed on input line 238.
+(pdftex.def)             Requested size: 128.0374pt x 128.03918pt.
+Package epstopdf Info: Source file: <../img/estimation/samplingDist2.eps>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 5813 bytes
+(epstopdf)             Output file: <../img/estimation/samplingDist2-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 9821 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/sampling
+Dist2-eps-converted-to.pdf ../img/estimation/samplingDist2.eps>
+(epstopdf)             \includegraphics on input line 239.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/samplingDist2-eps-converted-to.pdf, id=2270, 325.215pt x 325
+.215pt>
+File: ../img/estimation/samplingDist2-eps-converted-to.pdf Graphic file (type p
+df)
+ <use ../img/estimation/samplingDist2-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/samplingDist2-eps-converted-to.pdf u
+sed on input line 239.
+(pdftex.def)             Requested size: 128.0374pt x 128.03918pt.
+Package epstopdf Info: Source file: <../img/estimation/samplingDist3.eps>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 5812 bytes
+(epstopdf)             Output file: <../img/estimation/samplingDist3-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 9785 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/sampling
+Dist3-eps-converted-to.pdf ../img/estimation/samplingDist3.eps>
+(epstopdf)             \includegraphics on input line 240.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/samplingDist3-eps-converted-to.pdf, id=2272, 325.215pt x 325
+.215pt>
+File: ../img/estimation/samplingDist3-eps-converted-to.pdf Graphic file (type p
+df)
+ <use ../img/estimation/samplingDist3-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/samplingDist3-eps-converted-to.pdf u
+sed on input line 240.
+(pdftex.def)             Requested size: 128.0374pt x 128.03918pt.
+ [157 <../img/estimation/samplingDist4.png> <../img/estimation/samplingDistMax.
+png>]
+[158 <../img/estimation/samplingDist1-eps-converted-to.pdf> <../img/estimation/
+samplingDist2-eps-converted-to.pdf> <../img/estimation/samplingDist3-eps-conver
+ted-to.pdf>]
+Package epstopdf Info: Source file: <../img/estimation/cltDemo1.eps>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 6971 bytes
+(epstopdf)             Output file: <../img/estimation/cltDemo1-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 10289 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/cltDemo1
+-eps-converted-to.pdf ../img/estimation/cltDemo1.eps>
+(epstopdf)             \includegraphics on input line 256.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/cltDemo1-eps-converted-to.pdf, id=2318, 433.62pt x 433.62pt>
+File: ../img/estimation/cltDemo1-eps-converted-to.pdf Graphic file (type pdf)
+<use ../img/estimation/cltDemo1-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/cltDemo1-eps-converted-to.pdf used o
+n input line 256.
+(pdftex.def)             Requested size: 199.16928pt x 199.16988pt.
+Package epstopdf Info: Source file: <../img/estimation/cltDemo2.eps>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 6971 bytes
+(epstopdf)             Output file: <../img/estimation/cltDemo2-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 10283 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/cltDemo2
+-eps-converted-to.pdf ../img/estimation/cltDemo2.eps>
+(epstopdf)             \includegraphics on input line 257.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/cltDemo2-eps-converted-to.pdf, id=2320, 433.62pt x 433.62pt>
+File: ../img/estimation/cltDemo2-eps-converted-to.pdf Graphic file (type pdf)
+<use ../img/estimation/cltDemo2-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/cltDemo2-eps-converted-to.pdf used o
+n input line 257.
+(pdftex.def)             Requested size: 199.16928pt x 199.16988pt.
+Package epstopdf Info: Source file: <../img/estimation/cltDemo4.eps>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 6915 bytes
+(epstopdf)             Output file: <../img/estimation/cltDemo4-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 10173 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/cltDemo4
+-eps-converted-to.pdf ../img/estimation/cltDemo4.eps>
+(epstopdf)             \includegraphics on input line 259.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/cltDemo4-eps-converted-to.pdf, id=2322, 433.62pt x 433.62pt>
+File: ../img/estimation/cltDemo4-eps-converted-to.pdf Graphic file (type pdf)
+<use ../img/estimation/cltDemo4-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/cltDemo4-eps-converted-to.pdf used o
+n input line 259.
+(pdftex.def)             Requested size: 199.16928pt x 199.16988pt.
+Package epstopdf Info: Source file: <../img/estimation/cltDemo8.eps>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 6837 bytes
+(epstopdf)             Output file: <../img/estimation/cltDemo8-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 9955 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/cltDemo8
+-eps-converted-to.pdf ../img/estimation/cltDemo8.eps>
+(epstopdf)             \includegraphics on input line 260.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/cltDemo8-eps-converted-to.pdf, id=2324, 433.62pt x 433.62pt>
+File: ../img/estimation/cltDemo8-eps-converted-to.pdf Graphic file (type pdf)
+<use ../img/estimation/cltDemo8-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/cltDemo8-eps-converted-to.pdf used o
+n input line 260.
+(pdftex.def)             Requested size: 199.16928pt x 199.16988pt.
+ [159] [160 <../img/estimation/cltDemo1-eps-converted-to.pdf> <../img/estimatio
+n/cltDemo2-eps-converted-to.pdf> <../img/estimation/cltDemo4-eps-converted-to.p
+df> <../img/estimation/cltDemo8-eps-converted-to.pdf>] [161]
+
+LaTeX Font Warning: Font shape `OT1/cmbr/bx/n' in size <7> not available
+(Font)              Font shape `OT1/cmbr/m/n' tried instead on input line 299.
+
+[162]
+Package epstopdf Info: Source file: <../img/estimation/samplingDistSampleSD.eps
+>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 5234 bytes
+(epstopdf)             Output file: <../img/estimation/samplingDistSampleSD-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 9767 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/sampling
+DistSampleSD-eps-converted-to.pdf ../img/estimation/samplingDistSampleSD.eps>
+(epstopdf)             \includegraphics on input line 327.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/samplingDistSampleSD-eps-converted-to.pdf, id=2381, 487.8225
+pt x 487.8225pt>
+File: ../img/estimation/samplingDistSampleSD-eps-converted-to.pdf Graphic file 
+(type pdf)
+
+<use ../img/estimation/samplingDistSampleSD-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/samplingDistSampleSD-eps-converted-t
+o.pdf used on input line 327.
+(pdftex.def)             Requested size: 341.43306pt x 341.4362pt.
+ [163]
+[164 <../img/estimation/samplingDistSampleSD-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <../img/estimation/biasMean.eps>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 5023 bytes
+(epstopdf)             Output file: <../img/estimation/biasMean-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 10199 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/biasMean
+-eps-converted-to.pdf ../img/estimation/biasMean.eps>
+(epstopdf)             \includegraphics on input line 341.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/biasMean-eps-converted-to.pdf, id=2405, 433.62pt x 433.62pt>
+File: ../img/estimation/biasMean-eps-converted-to.pdf Graphic file (type pdf)
+<use ../img/estimation/biasMean-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/biasMean-eps-converted-to.pdf used o
+n input line 341.
+(pdftex.def)             Requested size: 199.16928pt x 199.16988pt.
+Package epstopdf Info: Source file: <../img/estimation/biasSD.eps>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 5019 bytes
+(epstopdf)             Output file: <../img/estimation/biasSD-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 10445 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/biasSD-e
+ps-converted-to.pdf ../img/estimation/biasSD.eps>
+(epstopdf)             \includegraphics on input line 342.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/biasSD-eps-converted-to.pdf, id=2407, 433.62pt x 433.62pt>
+File: ../img/estimation/biasSD-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../img/estimation/biasSD-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/biasSD-eps-converted-to.pdf used on 
+input line 342.
+(pdftex.def)             Requested size: 199.16928pt x 199.16988pt.
+Package mdframed Info: mdframed works in twoside mode on input line 352.
+ [165] [166 <../img/estimation/biasMean-eps-converted-to.pdf> <../img/estimatio
+n/biasSD-eps-converted-to.pdf>] [167] [168]
+Package mdframed Info: mdframed works in twoside mode on input line 411.
+ [169]
+Package epstopdf Info: Source file: <../img/estimation/confIntReplicated.eps>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 11003 bytes
+(epstopdf)             Output file: <../img/estimation/confIntReplicated-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 14113 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/confIntR
+eplicated-eps-converted-to.pdf ../img/estimation/confIntReplicated.eps>
+(epstopdf)             \includegraphics on input line 443.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/confIntReplicated-eps-converted-to.pdf, id=2460, 867.24pt x 
+361.35pt>
+File: ../img/estimation/confIntReplicated-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+ <use ../img/estimation/confIntReplicated-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/confIntReplicated-eps-converted-to.p
+df used on input line 443.
+(pdftex.def)             Requested size: 398.33858pt x 165.9749pt.
+Package epstopdf Info: Source file: <../img/estimation/confIntReplicated2.eps>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 10699 bytes
+(epstopdf)             Output file: <../img/estimation/confIntReplicated2-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2019-05-18 09:08:48
+(epstopdf)                    size: 14065 bytes
+(epstopdf)             Command: <repstopdf --outfile=../img/estimation/confIntR
+eplicated2-eps-converted-to.pdf ../img/estimation/confIntReplicated2.eps>
+(epstopdf)             \includegraphics on input line 444.
+Package epstopdf Info: Output file is already uptodate.
+
+<../img/estimation/confIntReplicated2-eps-converted-to.pdf, id=2462, 867.24pt x
+ 361.35pt>
+File: ../img/estimation/confIntReplicated2-eps-converted-to.pdf Graphic file (t
+ype pdf)
+ <use ../img/estimation/confIntReplicated2-eps-converted-to.pdf>
+Package pdftex.def Info: ../img/estimation/confIntReplicated2-eps-converted-to.
+pdf used on input line 444.
+(pdftex.def)             Requested size: 398.33858pt x 165.9749pt.
+
+
+LaTeX Warning: Reference `ch:bayes' on page 170 undefined on input line 454.
+
+[170] [171 <../img/estimation/confIntReplicated-eps-converted-to.pdf> <../img/e
+stimation/confIntReplicated2-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `ch:anova' on page 172 undefined on input line 473.
+
+[172]) [173] [174
+
+]
+Chapter 9.
+[175]
+Overfull \hbox (7.44402pt too wide) in paragraph at lines 71--71
+[][]\T1/cmbr/m/sc/10.95 Stigler, S. M. (1986). \T1/cmbr/m/sl/10.95 The His-tory
+ of Statis-tics\T1/cmbr/m/sc/10.95 . Cam-bridge, MA: Har-vard Uni-ver-sity Pres
+s (page [][]153[][]). 
+ []
+
+<../img/backcover.pdf, id=2539, 597.65839pt x 845.30275pt>
 File: ../img/backcover.pdf Graphic file (type pdf)
 
 <use ../img/backcover.pdf>
@@ -2397,7 +3133,7 @@ File: ../img/backcover.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../img/backcover.pdf used on input line 76.
 (pdftex.def)             Requested size: 597.65692pt x 845.30067pt.
 
-<../img/backcover.pdf, id=1658, page=1, 597.65839pt x 845.30275pt>
+<../img/backcover.pdf, id=2542, page=1, 597.65839pt x 845.30275pt>
 File: ../img/backcover.pdf Graphic file (type pdf)
 
 <use ../img/backcover.pdf, page 1>
@@ -2407,12 +3143,12 @@ File: ../img/backcover.pdf Graphic file (type pdf)
  <use ../img/backcover.pdf, page 1>
 Package pdftex.def Info: ../img/backcover.pdf, page1 used on input line 76.
 (pdftex.def)             Requested size: 597.68427pt x 845.33936pt.
- [121]pdfTeX warning (ext4): destination with the same identifier (name{page.12
-1}) has been already used, duplicate ignored
+ [176]pdfTeX warning (ext4): destination with the same identifier (name{page.17
+6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.76 ...autoscale=false,pages=-]{../img/backcover}
-                                                   [121]
+                                                   [176]
 File: ../img/backcover.pdf Graphic file (type pdf)
 
 <use ../img/backcover.pdf, page 1>
@@ -2427,14 +3163,14 @@ File: ../img/backcover.pdf Graphic file (type pdf)
 <use ../img/backcover.pdf, page 1>
 Package pdftex.def Info: ../img/backcover.pdf, page1 used on input line 76.
 (pdftex.def)             Requested size: 597.68427pt x 845.33936pt.
- [122 <../img/backcover.pdf>]
+ [177 <../img/backcover.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
  (./lsj.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
 Package rerunfilecheck Info: File `lsj.out' has not changed.
-(rerunfilecheck)             Checksum: CF26F5B659F44E2F75AF82D3252E6C39;8441.
+(rerunfilecheck)             Checksum: A1F042B82942AE7E799B8CF191776F6C;11435.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2442,16 +3178,20 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 'lsj.run.xml'.
 \openout1 = `lsj.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25403 strings out of 493013
- 444768 string characters out of 6133343
- 904091 words of memory out of 5000000
- 28140 multiletter control sequences out of 15000+600000
- 49175 words of font info for 137 fonts, out of 8000000 for 9000
+ 25849 strings out of 493013
+ 456711 string characters out of 6133343
+ 917418 words of memory out of 5000000
+ 28404 multiletter control sequences out of 15000+600000
+ 52973 words of font info for 150 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,18n,55p,10447b,1910s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -2481,10 +3221,10 @@ nts/type1/public/cm-super/sfbmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/cm-super/sfbmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/public/cm-super/sfbmr9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
 ublic/cm-super/sfbtl10.pfb>
-Output written on lsj.pdf (135 pages, 3696840 bytes).
+Output written on lsj.pdf (190 pages, 4428043 bytes).
 PDF statistics:
- 1856 PDF objects out of 2073 (max. 8388607)
- 1522 compressed objects within 16 object streams
- 340 named destinations out of 1000 (max. 500000)
- 1330 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2766 PDF objects out of 2984 (max. 8388607)
+ 2230 compressed objects within 23 object streams
+ 473 named destinations out of 1000 (max. 500000)
+ 1998 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -104,4 +104,38 @@
 \BOOKMARK [1][]{section.6.5}{6.5 Extracting a subset of the data }{chapter.6}% 104
 \BOOKMARK [1][]{section.6.6}{6.6 Summary}{chapter.6}% 105
 \BOOKMARK [-1][]{part.4}{IV Statistical theory}{}% 106
-\BOOKMARK [0][]{chapter.7}{7 References}{part.4}% 107
+\BOOKMARK [0][]{chapter.7}{7 Introduction to probability}{part.4}% 107
+\BOOKMARK [1][]{section.7.1}{7.1 How are probability and statistics different? }{chapter.7}% 108
+\BOOKMARK [1][]{section.7.2}{7.2 What does probability mean?}{chapter.7}% 109
+\BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 The frequentist view}{section.7.2}% 110
+\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 The Bayesian view}{section.7.2}% 111
+\BOOKMARK [2][-]{subsection.7.2.3}{7.2.3 What's the difference? And who is right?}{section.7.2}% 112
+\BOOKMARK [1][]{section.7.3}{7.3 Basic probability theory }{chapter.7}% 113
+\BOOKMARK [2][-]{subsection.7.3.1}{7.3.1 Introducing probability distributions}{section.7.3}% 114
+\BOOKMARK [1][]{section.7.4}{7.4 The binomial distribution}{chapter.7}% 115
+\BOOKMARK [2][-]{subsection.7.4.1}{7.4.1 Introducing the binomial}{section.7.4}% 116
+\BOOKMARK [1][]{section.7.5}{7.5 The normal distribution}{chapter.7}% 117
+\BOOKMARK [2][-]{subsection.7.5.1}{7.5.1 Probability density \040}{section.7.5}% 118
+\BOOKMARK [1][]{section.7.6}{7.6 Other useful distributions }{chapter.7}% 119
+\BOOKMARK [1][]{section.7.7}{7.7 Summary}{chapter.7}% 120
+\BOOKMARK [0][]{chapter.8}{8 Estimating unknown quantities from a sample}{part.4}% 121
+\BOOKMARK [1][]{section.8.1}{8.1 Samples, populations and sampling }{chapter.8}% 122
+\BOOKMARK [2][-]{subsection.8.1.1}{8.1.1 Defining a population }{section.8.1}% 123
+\BOOKMARK [2][-]{subsection.8.1.2}{8.1.2 Simple random samples}{section.8.1}% 124
+\BOOKMARK [2][-]{subsection.8.1.3}{8.1.3 Most samples are not simple random samples}{section.8.1}% 125
+\BOOKMARK [2][-]{subsection.8.1.4}{8.1.4 How much does it matter if you don't have a simple random sample?}{section.8.1}% 126
+\BOOKMARK [2][-]{subsection.8.1.5}{8.1.5 Population parameters and sample statistics}{section.8.1}% 127
+\BOOKMARK [1][]{section.8.2}{8.2 The law of large numbers }{chapter.8}% 128
+\BOOKMARK [1][]{section.8.3}{8.3 Sampling distributions and the central limit theorem }{chapter.8}% 129
+\BOOKMARK [2][-]{subsection.8.3.1}{8.3.1 Sampling distribution of the mean }{section.8.3}% 130
+\BOOKMARK [2][-]{subsection.8.3.2}{8.3.2 Sampling distributions exist for any sample statistic!}{section.8.3}% 131
+\BOOKMARK [2][-]{subsection.8.3.3}{8.3.3 The central limit theorem }{section.8.3}% 132
+\BOOKMARK [1][]{section.8.4}{8.4 Estimating population parameters }{chapter.8}% 133
+\BOOKMARK [2][-]{subsection.8.4.1}{8.4.1 Estimating the population mean}{section.8.4}% 134
+\BOOKMARK [2][-]{subsection.8.4.2}{8.4.2 Estimating the population standard deviation}{section.8.4}% 135
+\BOOKMARK [1][]{section.8.5}{8.5 Estimating a confidence interval}{chapter.8}% 136
+\BOOKMARK [2][-]{subsection.8.5.1}{8.5.1 A slight mistake in the formula}{section.8.5}% 137
+\BOOKMARK [2][-]{subsection.8.5.2}{8.5.2 Interpreting a confidence interval}{section.8.5}% 138
+\BOOKMARK [2][-]{subsection.8.5.3}{8.5.3 Calculating confidence intervals in jamovi}{section.8.5}% 139
+\BOOKMARK [1][]{section.8.6}{8.6 Summary}{chapter.8}% 140
+\BOOKMARK [0][]{chapter.9}{9 References}{part.4}% 141

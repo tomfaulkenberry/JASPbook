@@ -137,7 +137,7 @@
       \range{pages}{22}
     \endentry
     \entry{Evans1983}{article}{}
-      \name{author}{3}{}{%
+      \name{author}{3}{uniquelist=2}{%
         {{hash=f6c499df11bc0beb7a2f44305c7f45e8}{%
            family={Evans},
            familyi={E\bibinitperiod},
@@ -154,9 +154,9 @@
            given={P.},
            giveni={P\bibinitperiod}}}%
       }
-      \strng{namehash}{3113ea7834d131f6cb2a5ded09e177ac}
+      \strng{namehash}{443dcb5549429c5e96ead35b45d02ae5}
       \strng{fullhash}{ca82c392bd116cbbc94a32cb5706f7b6}
-      \strng{authornamehash}{3113ea7834d131f6cb2a5ded09e177ac}
+      \strng{authornamehash}{443dcb5549429c5e96ead35b45d02ae5}
       \strng{authorfullhash}{ca82c392bd116cbbc94a32cb5706f7b6}
       \field{sortinit}{E}
       \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
@@ -169,6 +169,66 @@
       \field{year}{1983}
       \field{pages}{295\bibrangedash 306}
       \range{pages}{12}
+    \endentry
+    \entry{Evans2000}{book}{}
+      \name{author}{3}{uniquelist=2}{%
+        {{hash=ad4f31642c298167e46c04654d2b4500}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8c2a23eca66ba815d884fb43d33e2195}{%
+           family={Hastings},
+           familyi={H\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=600e75268ee4487601b3e7c555abfe0a}{%
+           family={Peacock},
+           familyi={P\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{ab548e7f92c7d6c2a53204b3305daf40}
+      \strng{fullhash}{40811860c5d1b12ecaea03f18a9c3526}
+      \strng{authornamehash}{ab548e7f92c7d6c2a53204b3305daf40}
+      \strng{authorfullhash}{40811860c5d1b12ecaea03f18a9c3526}
+      \field{sortinit}{E}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Statistical Distributions (3rd ed)}
+      \field{year}{2011}
+    \endentry
+    \entry{Fisher1922b}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0ad07b6e0c3f0b372cfe0b72e9c60c69}{%
+           family={Fisher},
+           familyi={F\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0ad07b6e0c3f0b372cfe0b72e9c60c69}
+      \strng{fullhash}{0ad07b6e0c3f0b372cfe0b72e9c60c69}
+      \strng{authornamehash}{0ad07b6e0c3f0b372cfe0b72e9c60c69}
+      \strng{authorfullhash}{0ad07b6e0c3f0b372cfe0b72e9c60c69}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Philosophical Transactions of the Royal Society A}
+      \field{title}{On the mathematical foundation of theoretical statistics}
+      \field{volume}{222}
+      \field{year}{1922}
+      \field{pages}{309\bibrangedash 368}
+      \range{pages}{60}
     \endentry
     \entry{Gelman2014}{article}{}
       \name{author}{2}{}{%
@@ -317,6 +377,33 @@
       \field{pages}{237\bibrangedash 251}
       \range{pages}{15}
     \endentry
+    \entry{Keynes1923}{book}{}
+      \name{author}{1}{}{%
+        {{hash=aa540260b7ac58aa9b89b66bc63a94d1}{%
+           family={Keynes},
+           familyi={K\bibinitperiod},
+           given={John\bibnamedelima Maynard},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{2}{%
+        {Macmillan}%
+        {Company}%
+      }
+      \strng{namehash}{aa540260b7ac58aa9b89b66bc63a94d1}
+      \strng{fullhash}{aa540260b7ac58aa9b89b66bc63a94d1}
+      \strng{authornamehash}{aa540260b7ac58aa9b89b66bc63a94d1}
+      \strng{authorfullhash}{aa540260b7ac58aa9b89b66bc63a94d1}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Tract on Monetary Reform}
+      \field{year}{1923}
+    \endentry
     \entry{Kuhberger2014}{article}{}
       \name{author}{3}{}{%
         {{hash=348651e71097fd2dcb63a344a2591ec3}{%
@@ -350,6 +437,30 @@
       \field{year}{2014}
       \field{pages}{1\bibrangedash 8}
       \range{pages}{8}
+    \endentry
+    \entry{Meehl1967}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f85bc0de14ea0114f8999d3d3c1107d1}{%
+           family={Meehl},
+           familyi={M\bibinitperiod},
+           given={P.\bibnamedelimi H.},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{f85bc0de14ea0114f8999d3d3c1107d1}
+      \strng{fullhash}{f85bc0de14ea0114f8999d3d3c1107d1}
+      \strng{authornamehash}{f85bc0de14ea0114f8999d3d3c1107d1}
+      \strng{authorfullhash}{f85bc0de14ea0114f8999d3d3c1107d1}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Philosophy of Science}
+      \field{title}{Theory testing in psychology and physics: A methodological paradox}
+      \field{volume}{34}
+      \field{year}{1967}
+      \field{pages}{103\bibrangedash 115}
+      \range{pages}{13}
     \endentry
     \entry{Pfungst1911}{book}{}
       \name{author}{1}{}{%
@@ -435,6 +546,32 @@
       \field{year}{1946}
       \field{pages}{677\bibrangedash 680}
       \range{pages}{4}
+    \endentry
+    \entry{Stigler1986}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6eec5968c65eba66a33bda19d5d9c500}{%
+           family={Stigler},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \list{publisher}{1}{%
+        {Harvard University Press}%
+      }
+      \strng{namehash}{6eec5968c65eba66a33bda19d5d9c500}
+      \strng{fullhash}{6eec5968c65eba66a33bda19d5d9c500}
+      \strng{authornamehash}{6eec5968c65eba66a33bda19d5d9c500}
+      \strng{authorfullhash}{6eec5968c65eba66a33bda19d5d9c500}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The History of Statistics}
+      \field{year}{1986}
     \endentry
     \entry{Wilkinson2006}{book}{}
       \name{author}{5}{}{%
