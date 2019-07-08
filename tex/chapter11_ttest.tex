@@ -600,8 +600,6 @@ What about the paired samples $t$-test? Suppose we wanted to test the hypothesis
 
 Yet again, the output changes in a predictable way. The hypothesis has changed, the $p$-value has changed, and the confidence interval is now one-sided. 
 
-% START HERE!!
-
 \section{Effect size~\label{sec:cohensd}}
 
 The most commonly used measure of effect size for a $t$-test is \keyterm{Cohen's $d$} \parencite{Cohen1988}. It's a very simple measure in principle, with quite a few wrinkles when you start digging into the details. Cohen himself defined it primarily in the context of an independent samples $t$-test, specifically the Student test. In that context, a natural way of defining the effect size is to divide the difference between the means by an estimate of the standard deviation. In other words, we're looking to calculate {\it something} along the lines of this:
@@ -633,7 +631,7 @@ The simplest situation to consider is the one corresponding to a one-sample $t$-
 $$
 d = \frac{\bar{X} - \mu_0}{\hat{\sigma}}
 $$
-When we look back at the results in Figure \ref{fig:ttest_one}, the effect size value is Cohen's d = 0.50. Overall, then, the psychology students in Dr Zeppo's class are achieving grades (mean = 72.3\%) that are about .5 standard deviations higher than the level that you'd expect (67.5\%) if they were performing at the same level as other students. Judged against Cohen's rough guide, this is a moderate effect size.
+When we look back at the results in Figure \ref{fig:ttest_one}, the effect size value is Cohen's d = 0.504. Overall, then, the psychology students in Dr Zeppo's class are achieving grades (mean = 72.3\%) that are about 0.5 standard deviations higher than the level that you'd expect (67.5\%) if they were performing at the same level as other students. Judged against Cohen's rough guide, this is a moderate effect size.
 
 
 \SUBSECTION{Cohen's \texorpdfstring{$d$}{d} from a Student's \texorpdfstring{$t$}{t} test}
@@ -646,21 +644,21 @@ where, as usual, $\mu_1$ and $\mu_2$ are the population means corresponding to g
 $$
 d = \frac{\bar{X}_1 - \bar{X}_2}{\hat{\sigma}_p}
 $$
-where $\hat\sigma_p$ is the exact same pooled standard deviation measure that appears in the $t$-test. This is the most commonly used version of Cohen's $d$ when applied to the outcome of a Student $t$-test, and is the one provided in jamovi. It is sometimes referred to as Hedges' $g$ statistic \parencite{Hedges1981}. 
+where $\hat\sigma_p$ is the exact same pooled standard deviation measure that appears in the $t$-test. This is the most commonly used version of Cohen's $d$ when applied to the outcome of a Student $t$-test, and is the one provided in JASP. It is sometimes referred to as Hedges' $g$ statistic \parencite{Hedges1981}. 
 
 However, there are other possibilities which I'll briefly describe. Firstly, you may have reason to want to use only one of the two groups as the basis for calculating the standard deviation. This approach (often called Glass' $\Delta$, pronounced {\it delta}) only makes most sense when you have good reason to treat one of the two groups as a purer reflection of ``natural variation'' than the other. This can happen if, for instance, one of the two groups is a control group. Secondly, recall that in the usual calculation of the pooled standard deviation we divide by $N-2$ to correct for the bias in the sample variance. In one version of Cohen's $d$ this correction is omitted, and instead we divide by $N$. This version makes sense primarily when you're trying to calculate the effect size in the sample rather than estimating an effect size in the population. Finally, there is a version based on \textcite{Hedges1985}, who point out there is a small bias in the usual (pooled) estimation for Cohen's $d$. Thus they introduce a small correction by multiplying the usual value of $d$ by $(N-3)/(N-2.25)$. 
 
-In any case, ignoring all those variations that you could make use of if you wanted, let's have a look at the default version in jamovi. In Figure \ref{fig:ttest_ind} Cohen's d = 0.74, indicating that the grade scores for students in Anastasia's class are, on average, 0.74 standard deviations higher than the grade scores for students in Bernadette's class. For a Welch test, the estimated effect size is the same (Figure \ref{fig:ttest_welch}).
+In any case, ignoring all those variations that you could make use of if you wanted, let's have a look at the default version in JASP. In Figure \ref{fig:ttest_ind} Cohen's d = 0.740, indicating that the grade scores for students in Anastasia's class are, on average, 0.74 standard deviations higher than the grade scores for students in Bernadette's class. For a Welch test, the estimated effect size is the same (Figure \ref{fig:ttest_welch}).
 
 \SUBSECTION{Cohen's \texorpdfstring{$d$}{d} from a paired-samples test}
 
-Finally, what should we do for a paired samples $t$-test? In this case, the answer depends on what it is you're trying to do. jamovi assumes that you want to measure your effect sizes relative to the distribution of difference scores, and the measure of $d$ that you calculate is: 
+Finally, what should we do for a paired samples $t$-test? In this case, the answer depends on what it is you're trying to do. JASP assumes that you want to measure your effect sizes relative to the distribution of difference scores, and the measure of $d$ that you calculate is: 
 $$
 d = \frac{\bar{D}}{\hat{\sigma}_D}
 $$
-where $\hat{\sigma}_D$ is the estimate of the standard deviation of the differences. In Figure \ref{fig:ttest_paired3} Cohen's d = 1.45, indicating that the time 2 grade scores are, on average, 1.45 standard deviations higher than the time 1 grade scores.
+where $\hat{\sigma}_D$ is the estimate of the standard deviation of the differences. In Figure \ref{fig:ttest_paired2} Cohen's d = 1.45, indicating that the time 2 grade scores are, on average, 1.45 standard deviations higher than the time 1 grade scores.
 
-This is the version of Cohen's $d$ that gets reported by the jamovi `Paired Samples T-Test' analysis. The only wrinkle is figuring out whether this is the measure you want or not. To the extent that you care about the practical consequences of your research, you often want to measure the effect size relative to the {\it original} variables, not the {\it difference} scores (e.g., the 1\% improvement in Dr Chico's class over time is pretty small when measured against the amount of between-student variation in grades), in which case you use the same versions of Cohen's $d$ that you would use for a Student or Welch test. It's not so straightforward to do this in jamovi; essentially you have to change the structure of the data in the spreadsheet view so I won't go into that here\FOOTNOTE{If you are interested, you can look at how this was done in the \rtext{chico2.omv} file}, but the Cohen's d for this perspective is quite different: it is 0.22 which is quite small when assessed on the scale of the original variables.
+This is the version of Cohen's $d$ that gets reported by the JASP `Paired Samples T-Test' analysis. The only wrinkle is figuring out whether this is the measure you want or not. To the extent that you care about the practical consequences of your research, you often want to measure the effect size relative to the {\it original} variables, not the {\it difference} scores (e.g., the 1 point improvement in Dr Chico's class over time is pretty small when measured against the amount of between-student variation in grades), in which case you use the same versions of Cohen's $d$ that you would use for a Student or Welch test. It's not so straightforward to do this in JASP; essentially you have to change the structure of the data in the spreadsheet view so I won't go into that here.
 
 
 \section{Checking the normality of a sample\label{sec:shapiro}}
@@ -702,7 +700,7 @@ One way to check whether a sample violates the normality assumption is to draw a
 
 \SUBSECTION{Shapiro-Wilk tests}
 
-QQ plots provide a nice way to informally check the normality of your data, but sometimes you'll want to do something a bit more formal and the \keyterm{Shapiro-Wilk test} \parencite{Shapiro1965} is probably what you're looking for.\FOOTNOTE{Either that, or the Kolmogorov-Smirnov test, which is probably more traditional than the Shapiro-Wilk. Although most things I’ve read seem to suggest Shapiro-Wilk is the better test of normality, the Kolomogorov- Smirnov is a general purpose test of distributional equivalence that can be adapted to handle other kinds of distribution tests. In jamovi the Shapiro-Wilk test is preferred.} As you'd expect, the null hypothesis being tested is that a set of $N$ observations is normally distributed. 
+QQ plots provide a nice way to informally check the normality of your data, but sometimes you'll want to do something a bit more formal and the \keyterm{Shapiro-Wilk test} \parencite{Shapiro1965} is probably what you're looking for.\FOOTNOTE{Either that, or the Kolmogorov-Smirnov test, which is probably more traditional than the Shapiro-Wilk. Although most things I’ve read seem to suggest Shapiro-Wilk is the better test of normality, the Kolomogorov- Smirnov is a general purpose test of distributional equivalence that can be adapted to handle other kinds of distribution tests. In JASP the Shapiro-Wilk test is preferred.} As you'd expect, the null hypothesis being tested is that a set of $N$ observations is normally distributed. 
 
 \vspace{0.5cm}
 \begin{mdframed}[style=MyFrame,nobreak=true]
@@ -724,7 +722,7 @@ Because it's a little hard to explain the maths behind the $W$ statistic, a bett
 \end{center}
 \end{figure}
 
-To get the Shapiro-Wilk statistic in jamovi $t$-tests, check the option for `Normality' listed under `Assumptions'. In the randomly sampled data (N = 100) we used for the QQ plot, the value for the Shapiro-Wilk normality test statistic was W = 0.99 with a $p$-value of 0.69. So, not surprisingly, we have no evidence that these data depart from normality. When reporting the results for a Shapiro-Wilk test, you should (as usual) make sure to include the test statistic $W$ and the $p$ value, though given that the sampling distribution depends so heavily on $N$ it would probably be a politeness to include $N$ as well.
+To get the Shapiro-Wilk statistic in JASP $t$-tests, check the option for `Normality' listed under `Assumption checks'. In the randomly sampled data (N = 100) we used for the QQ plot, the value for the Shapiro-Wilk normality test statistic was W = 0.99 with a $p$-value of 0.69. So, not surprisingly, we have no evidence that these data depart from normality. When reporting the results for a Shapiro-Wilk test, you should (as usual) make sure to include the test statistic $W$ and the $p$ value, though given that the sampling distribution depends so heavily on $N$ it would probably be a politeness to include $N$ as well.
 
 \SUBSECTION{Example}
 
@@ -734,7 +732,7 @@ In the meantime, it's probably worth showing you an example of what happens to t
 \epsfig{file = ../img/ttest2/qq_2b.eps,clip=true, width = 9cm}
 \end{center}
 
-And when we run the Shapiro-Wilk test on the AFL margins data, we get a value for the Shapiro-Wilk normality test statistic of W = 0.94, and $p$-value = 9.481e-07. Clearly a significant effect!
+And when we run the Shapiro-Wilk test on the AFL margins data, we get a value for the Shapiro-Wilk normality test statistic of W = 0.94, and $p$-value = 9.481e-07. This is clearly a significant departure from normality!
 
 
 \section{Testing non-normal data with Wilcoxon tests\label{sec:wilcox}}
@@ -764,9 +762,9 @@ group A &11.9 & .   &   \checkmark & .   &  \checkmark &  . \\
  
 
 \noindent
-We then count up the number of checkmarks. This is our test statistic, $W$.\FOOTNOTE{Actually, there are two different versions of the test statistic that differ from each other by a constant value. The version that I've described is the one that jamovi calculates.} The actual sampling distribution for $W$ is somewhat complicated, and I'll skip the details. For our purposes, it's sufficient to note that the interpretation of $W$ is qualitatively the same as the interpretation of $t$ or $z$. That is, if we want a two-sided test then we reject the null hypothesis when $W$ is very large or very small, but if we have a directional (i.e., one-sided) hypothesis then we only use one or the other. 
+We then count up the number of checkmarks. This is our test statistic, $W$.\FOOTNOTE{Actually, there are two different versions of the test statistic that differ from each other by a constant value. The version that I've described is the one that JASP calculates.} The actual sampling distribution for $W$ is somewhat complicated, and I'll skip the details. For our purposes, it's sufficient to note that the interpretation of $W$ is qualitatively the same as the interpretation of $t$ or $z$. That is, if we want a two-sided test then we reject the null hypothesis when $W$ is very large or very small, but if we have a directional (i.e., one-sided) hypothesis then we only use one or the other. 
 
-In jamovi, if we run an `Independent Samples T-Test' with \rtext{scores} as the dependent variable. and \rtext{group} as the grouping variable, and then under the options for `tests' check the option for `Mann-Whitney U', we will get results showing that U = 3 (i.e., the same number of checkmarks as shown above), and a p-value = 0.05556. 
+In JASP, if we run an `Independent Samples T-Test' with \rtext{scores} as the dependent variable. and \rtext{group} as the grouping variable, and then under the options for `tests' check the option for `Mann-Whitney', we will get results showing that U = 3 (i.e., the same number of checkmarks as shown above), and a p-value = 0.05556. 
 
 \SUBSECTION{One sample Wilcoxon test}
 
@@ -781,13 +779,13 @@ positive differences&2&  . &  .  & .  & . & . &  . & \checkmark & . & . & . \\
 &5&  . &  .  & .  & . & . &  . & \checkmark & . & . & \checkmark \\
 \end{tabular}
 \end{center}
-Counting up the tick marks this time we get a test statistic of $W = 7$. As before, if our test is two sided, then we reject the null hypothesis when $W$ is very large or very small. As far as running it in jamovi goes, it's pretty much what you'd expect. For the one-sample version, you specify the `Wilcoxon rank' option under `Tests' in the `One Sample T-Test' analysis window. This gives you Wilcoxon W = 7, $p$-value = 0.03711. As this shows, we have a significant effect. Evidently, taking a statistics class does have an effect on your happiness. Switching to a paired samples version of the test won't give us a different answer, of course; see Figure \ref{fig:ttest_nonparametric}.
+Counting up the tick marks this time we get a test statistic of $W = 7$. As before, if our test is two sided, then we reject the null hypothesis when $W$ is very large or very small. As far as running it in JASP goes, it's pretty much what you'd expect. For the one-sample version, you specify the `Wilcoxon signed-rank' option under `Tests' in the `One Sample T-Test' analysis window. This gives you Wilcoxon W = 7, $p$-value = 0.037. As this shows, we have a significant effect. Evidently, taking a statistics class does have an effect on your happiness. Switching to a paired samples version of the test won't give us a different answer, of course; see Figure \ref{fig:ttest_nonparametric}.
 
 \vspace{0.5cm}
 \begin{figure}[ht]
 \begin{center}
 \epsfig{file = ../img/ttest/ttest_nonparametric.png, clip=true,width = 14cm}
-\caption{jamovi screen showing results for one sample and paired sample Wilcoxon non-parametric tests}
+\caption{JASP screen showing results for one sample and paired sample Wilcoxon non-parametric tests}
 \HR
 \label{fig:ttest_nonparametric}
 \end{center}
@@ -803,7 +801,7 @@ Counting up the tick marks this time we get a test statistic of $W = 7$. As befo
 \item A paired samples $t$-test is used when you have two scores from each person, and you want to test the null hypothesis that the two scores have the same mean. It is equivalent to taking the difference between the two scores for each person, and then running a one sample $t$-test on the difference scores. (Section~\ref{sec:pairedsamplesttest})
 \item One sided tests are perfectly legitimate as long as they are pre-planned. (Section~\ref{sec:onesidedttest})
 \item Effect size calculations for the difference between means can be calculated via the Cohen's $d$ statistic. (Section~\ref{sec:cohensd}).
-\item You can check the normality of a sample using QQ plots (not currently available in jamovi) and the Shapiro-Wilk test. (Section~\ref{sec:shapiro})
+\item You can check the normality of a sample using QQ plots (not currently available in JASP) and the Shapiro-Wilk test. (Section~\ref{sec:shapiro})
 \item If your data are non-normal, you can use Mann-Whitney or Wilcoxon tests instead of $t$-tests. (Section~\ref{sec:wilcox})
 \end{itemize}
 

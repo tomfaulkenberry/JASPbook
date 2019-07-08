@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2019.5.18)  8 JUL 2019 16:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2019.5.18)  8 JUL 2019 17:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3378,12 +3378,12 @@ Package pdftex.def Info: ../img/ttest2/tdist_3-eps-converted-to.pdf used on inp
 ut line 183.
 (pdftex.def)             Requested size: 369.88582pt x 168.91646pt.
 
-<../img/ttest/ttest_one.png, id=3164, 1118.1775pt x 741.77126pt>
+<../img/ttest/ttest_one.png, id=3164, 1327.96124pt x 742.775pt>
 File: ../img/ttest/ttest_one.png Graphic file (type png)
 
 <use ../img/ttest/ttest_one.png>
 Package pdftex.def Info: ../img/ttest/ttest_one.png used on input line 197.
-(pdftex.def)             Requested size: 398.33858pt x 264.24178pt.
+(pdftex.def)             Requested size: 398.33858pt x 222.80022pt.
  [209 <../img/ttest/oneSampleTTestHyp-eps-converted-to.pdf>] [210 <../img/ttest
 2/tdist_3-eps-converted-to.pdf>] [211 <../img/ttest/ttest_one.png>] [212]
 Package epstopdf Info: Source file: <../img/ttest/HarpoAnastasia.eps>
@@ -3460,6 +3460,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 301.
 
 LaTeX Warning: Reference `ch:anova' on page 216 undefined on input line 325.
 
+Package mdframed Info: Not enough space on this page on input line 330.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 330.
@@ -3472,10 +3473,10 @@ File: ../img/ttest/ttest_ind.png Graphic file (type png)
 Package pdftex.def Info: ../img/ttest/ttest_ind.png used on input line 356.
 (pdftex.def)             Requested size: 398.33858pt x 239.768pt.
  [218 <../img/ttest/ttest_ind.png>] [219]
+
+LaTeX Warning: Reference `sec:levene' on page 220 undefined on input line 401.
+
 [220]
-
-LaTeX Warning: Reference `sec:levene' on page 221 undefined on input line 401.
-
 Package epstopdf Info: Source file: <../img/ttest/welchTestHyp.eps>
 (epstopdf)                    date: 2019-05-18 09:08:49
 (epstopdf)                    size: 7229 bytes
@@ -3495,17 +3496,17 @@ File: ../img/ttest/welchTestHyp-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../img/ttest/welchTestHyp-eps-converted-to.pdf used on
  input line 411.
 (pdftex.def)             Requested size: 341.43306pt x 175.90625pt.
+ [221 <../img/ttest/welchTestHyp-eps-converted-to.pdf>]
 Package mdframed Info: mdframed works in twoside mode on input line 425.
- [221]
 Package mdframed Info: mdframed works in twoside mode on input line 436.
- [222 <../img/ttest/welchTestHyp-eps-converted-to.pdf>]
-<../img/ttest/ttest_welch.png, id=3346, 889.3225pt x 213.79875pt>
+
+<../img/ttest/ttest_welch.png, id=3339, 889.3225pt x 213.79875pt>
 File: ../img/ttest/ttest_welch.png Graphic file (type png)
 
 <use ../img/ttest/ttest_welch.png>
 Package pdftex.def Info: ../img/ttest/ttest_welch.png used on input line 450.
 (pdftex.def)             Requested size: 398.33858pt x 95.7616pt.
- [223 <../img/ttest/ttest_welch.png>]
+ [222] [223 <../img/ttest/ttest_welch.png>]
 <../img/ttest/ttest_paired1.png, id=3357, 1034.86626pt x 679.53876pt>
 File: ../img/ttest/ttest_paired1.png Graphic file (type png)
 
@@ -3571,16 +3572,16 @@ File: ../img/ttest/pairedHist-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../img/ttest/pairedHist-eps-converted-to.pdf used on i
 nput line 495.
 (pdftex.def)             Requested size: 128.0374pt x 128.03368pt.
- [224]
-<../img/ttest/improvement.png, id=3376, 1252.68pt x 791.95876pt>
+
+<../img/ttest/improvement.png, id=3369, 1252.68pt x 791.95876pt>
 File: ../img/ttest/improvement.png Graphic file (type png)
 
 <use ../img/ttest/improvement.png>
 Package pdftex.def Info: ../img/ttest/improvement.png used on input line 509.
 (pdftex.def)             Requested size: 398.33858pt x 251.83685pt.
- [225 <../img/ttest/ttest_paired1.png>]
-[226 <../img/ttest/pairedMeans-eps-converted-to.pdf> <../img/ttest/pairedScatte
-rplot-eps-converted-to.pdf> <../img/ttest/pairedHist-eps-converted-to.pdf>]
+ [224] [225 <../img/ttest/ttest_paired1.png>] [226 <../img/ttest/pairedMeans-ep
+s-converted-to.pdf> <../img/ttest/pairedScatterplot-eps-converted-to.pdf> <../i
+mg/ttest/pairedHist-eps-converted-to.pdf>]
 <../img/ttest/ttest_paired2.png, id=3416, 687.56876pt x 233.87375pt>
 File: ../img/ttest/ttest_paired2.png Graphic file (type png)
 
@@ -3589,7 +3590,7 @@ Package pdftex.def Info: ../img/ttest/ttest_paired2.png used on input line 550.
 
 (pdftex.def)             Requested size: 398.33858pt x 135.4934pt.
  [227 <../img/ttest/improvement.png>]
-<../img/ttest/ttest_onesided1.png, id=3428, 620.3175pt x 254.9525pt>
+<../img/ttest/ttest_onesided1.png, id=3429, 620.3175pt x 254.9525pt>
 File: ../img/ttest/ttest_onesided1.png Graphic file (type png)
 
 <use ../img/ttest/ttest_onesided1.png>
@@ -3604,22 +3605,15 @@ File: ../img/ttest/ttest_onesided2.png Graphic file (type png)
 Package pdftex.def Info: ../img/ttest/ttest_onesided2.png used on input line 58
 1.
 (pdftex.def)             Requested size: 398.33858pt x 107.02547pt.
-
-<../img/ttest/ttest_onesided3.png, id=3445, 881.2925pt x 221.82875pt>
+ [229 <../img/ttest/ttest_onesided1.png> <../img/ttest/ttest_onesided2.png>]
+<../img/ttest/ttest_onesided3.png, id=3454, 881.2925pt x 221.82875pt>
 File: ../img/ttest/ttest_onesided3.png Graphic file (type png)
 
 <use ../img/ttest/ttest_onesided3.png>
 Package pdftex.def Info: ../img/ttest/ttest_onesided3.png used on input line 59
 4.
 (pdftex.def)             Requested size: 398.33858pt x 100.26541pt.
- [229 <../img/ttest/ttest_onesided1.png>] [230 <../img/ttest/ttest_onesided2.pn
-g> <../img/ttest/ttest_onesided3.png>]
-[231]
-
-LaTeX Warning: Reference `fig:ttest_paired3' on page 232 undefined on input lin
-e 660.
-
-[232]
+ [230 <../img/ttest/ttest_onesided3.png>] [231] [232]
 Package epstopdf Info: Source file: <../img/ttest/qqNormalHist.eps>
 (epstopdf)                    date: 2019-05-18 09:08:49
 (epstopdf)                    size: 4652 bytes
@@ -3629,7 +3623,7 @@ Package epstopdf Info: Source file: <../img/ttest/qqNormalHist.eps>
 (epstopdf)                    size: 9647 bytes
 (epstopdf)             Command: <repstopdf --outfile=../img/ttest/qqNormalHist-
 eps-converted-to.pdf ../img/ttest/qqNormalHist.eps>
-(epstopdf)             \includegraphics on input line 674.
+(epstopdf)             \includegraphics on input line 673.
 Package epstopdf Info: Output file is already uptodate.
 
 <../img/ttest/qqNormalHist-eps-converted-to.pdf, id=3493, 361.35pt x 361.35pt>
@@ -3637,7 +3631,7 @@ File: ../img/ttest/qqNormalHist-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../img/ttest/qqNormalHist-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/ttest/qqNormalHist-eps-converted-to.pdf used on
- input line 674.
+ input line 673.
 (pdftex.def)             Requested size: 184.9429pt x 184.9422pt.
 Package epstopdf Info: Source file: <../img/ttest/qqNormalPlot.eps>
 (epstopdf)                    date: 2019-05-18 09:08:49
@@ -3648,7 +3642,7 @@ Package epstopdf Info: Source file: <../img/ttest/qqNormalPlot.eps>
 (epstopdf)                    size: 16216 bytes
 (epstopdf)             Command: <repstopdf --outfile=../img/ttest/qqNormalPlot-
 eps-converted-to.pdf ../img/ttest/qqNormalPlot.eps>
-(epstopdf)             \includegraphics on input line 675.
+(epstopdf)             \includegraphics on input line 674.
 Package epstopdf Info: Output file is already uptodate.
 
 <../img/ttest/qqNormalPlot-eps-converted-to.pdf, id=3495, 361.35pt x 361.35pt>
@@ -3656,7 +3650,7 @@ File: ../img/ttest/qqNormalPlot-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../img/ttest/qqNormalPlot-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/ttest/qqNormalPlot-eps-converted-to.pdf used on
- input line 675.
+ input line 674.
 (pdftex.def)             Requested size: 184.9429pt x 184.9422pt.
 Package epstopdf Info: Source file: <../img/ttest/qqSkewedHist.eps>
 (epstopdf)                    date: 2019-05-18 09:08:49
@@ -3667,7 +3661,7 @@ Package epstopdf Info: Source file: <../img/ttest/qqSkewedHist.eps>
 (epstopdf)                    size: 9651 bytes
 (epstopdf)             Command: <repstopdf --outfile=../img/ttest/qqSkewedHist-
 eps-converted-to.pdf ../img/ttest/qqSkewedHist.eps>
-(epstopdf)             \includegraphics on input line 687.
+(epstopdf)             \includegraphics on input line 686.
 Package epstopdf Info: Output file is already uptodate.
 
 <../img/ttest/qqSkewedHist-eps-converted-to.pdf, id=3497, 361.35pt x 361.35pt>
@@ -3675,7 +3669,7 @@ File: ../img/ttest/qqSkewedHist-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../img/ttest/qqSkewedHist-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/ttest/qqSkewedHist-eps-converted-to.pdf used on
- input line 687.
+ input line 686.
 (pdftex.def)             Requested size: 184.9429pt x 184.9422pt.
 Package epstopdf Info: Source file: <../img/ttest/qqSkewedPlot.eps>
 (epstopdf)                    date: 2019-05-18 09:08:49
@@ -3686,7 +3680,7 @@ Package epstopdf Info: Source file: <../img/ttest/qqSkewedPlot.eps>
 (epstopdf)                    size: 16497 bytes
 (epstopdf)             Command: <repstopdf --outfile=../img/ttest/qqSkewedPlot-
 eps-converted-to.pdf ../img/ttest/qqSkewedPlot.eps>
-(epstopdf)             \includegraphics on input line 688.
+(epstopdf)             \includegraphics on input line 687.
 Package epstopdf Info: Output file is already uptodate.
 
 <../img/ttest/qqSkewedPlot-eps-converted-to.pdf, id=3499, 361.35pt x 361.35pt>
@@ -3694,7 +3688,7 @@ File: ../img/ttest/qqSkewedPlot-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../img/ttest/qqSkewedPlot-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/ttest/qqSkewedPlot-eps-converted-to.pdf used on
- input line 688.
+ input line 687.
 (pdftex.def)             Requested size: 184.9429pt x 184.9422pt.
 Package epstopdf Info: Source file: <../img/ttest/qqHeavyTailedHist.eps>
 (epstopdf)                    date: 2019-05-18 09:08:49
@@ -3705,7 +3699,7 @@ ed-to.pdf>
 (epstopdf)                    size: 9697 bytes
 (epstopdf)             Command: <repstopdf --outfile=../img/ttest/qqHeavyTailed
 Hist-eps-converted-to.pdf ../img/ttest/qqHeavyTailedHist.eps>
-(epstopdf)             \includegraphics on input line 690.
+(epstopdf)             \includegraphics on input line 689.
 Package epstopdf Info: Output file is already uptodate.
 
 <../img/ttest/qqHeavyTailedHist-eps-converted-to.pdf, id=3501, 361.35pt x 361.3
@@ -3714,7 +3708,7 @@ File: ../img/ttest/qqHeavyTailedHist-eps-converted-to.pdf Graphic file (type pd
 f)
  <use ../img/ttest/qqHeavyTailedHist-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/ttest/qqHeavyTailedHist-eps-converted-to.pdf us
-ed on input line 690.
+ed on input line 689.
 (pdftex.def)             Requested size: 184.9429pt x 184.9422pt.
 Package epstopdf Info: Source file: <../img/ttest/qqHeavyTailedPlot.eps>
 (epstopdf)                    date: 2019-05-18 09:08:49
@@ -3725,7 +3719,7 @@ ed-to.pdf>
 (epstopdf)                    size: 16378 bytes
 (epstopdf)             Command: <repstopdf --outfile=../img/ttest/qqHeavyTailed
 Plot-eps-converted-to.pdf ../img/ttest/qqHeavyTailedPlot.eps>
-(epstopdf)             \includegraphics on input line 691.
+(epstopdf)             \includegraphics on input line 690.
 Package epstopdf Info: Output file is already uptodate.
 
 <../img/ttest/qqHeavyTailedPlot-eps-converted-to.pdf, id=3503, 361.35pt x 361.3
@@ -3734,10 +3728,10 @@ File: ../img/ttest/qqHeavyTailedPlot-eps-converted-to.pdf Graphic file (type pd
 f)
  <use ../img/ttest/qqHeavyTailedPlot-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/ttest/qqHeavyTailedPlot-eps-converted-to.pdf us
-ed on input line 691.
+ed on input line 690.
 (pdftex.def)             Requested size: 184.9429pt x 184.9422pt.
  [233]
-Package mdframed Info: mdframed works in twoside mode on input line 707.
+Package mdframed Info: mdframed works in twoside mode on input line 706.
  [234 <../img/ttest/qqNormalHist-eps-converted-to.pdf> <../img/ttest/qqNormalPl
 ot-eps-converted-to.pdf>] [235 <../img/ttest/qqSkewedHist-eps-converted-to.pdf>
  <../img/ttest/qqSkewedPlot-eps-converted-to.pdf> <../img/ttest/qqHeavyTailedHi
@@ -3751,17 +3745,18 @@ d-to.pdf>
 (epstopdf)                    size: 12965 bytes
 (epstopdf)             Command: <repstopdf --outfile=../img/ttest2/shapirowilkd
 ist-eps-converted-to.pdf ../img/ttest2/shapirowilkdist.eps>
-(epstopdf)             \includegraphics on input line 719.
+(epstopdf)             \includegraphics on input line 718.
 Package epstopdf Info: Output file is already uptodate.
 
-<../img/ttest2/shapirowilkdist-eps-converted-to.pdf, id=3584, 526.96875pt x 380
+<../img/ttest2/shapirowilkdist-eps-converted-to.pdf, id=3583, 526.96875pt x 380
 .42125pt>
 File: ../img/ttest2/shapirowilkdist-eps-converted-to.pdf Graphic file (type pdf
 )
  <use ../img/ttest2/shapirowilkdist-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/ttest2/shapirowilkdist-eps-converted-to.pdf use
-d on input line 719.
+d on input line 718.
 (pdftex.def)             Requested size: 341.43306pt x 246.49303pt.
+ [236 <../img/ttest2/shapirowilkdist-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <../img/ttest2/qq_2b.eps>
 (epstopdf)                    date: 2019-05-18 09:08:49
 (epstopdf)                    size: 6726 bytes
@@ -3770,37 +3765,36 @@ Package epstopdf Info: Source file: <../img/ttest2/qq_2b.eps>
 (epstopdf)                    size: 13679 bytes
 (epstopdf)             Command: <repstopdf --outfile=../img/ttest2/qq_2b-eps-co
 nverted-to.pdf ../img/ttest2/qq_2b.eps>
-(epstopdf)             \includegraphics on input line 733.
+(epstopdf)             \includegraphics on input line 732.
 Package epstopdf Info: Output file is already uptodate.
 
-<../img/ttest2/qq_2b-eps-converted-to.pdf, id=3587, 393.47pt x 369.38pt>
+<../img/ttest2/qq_2b-eps-converted-to.pdf, id=3597, 393.47pt x 369.38pt>
 File: ../img/ttest2/qq_2b-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../img/ttest2/qq_2b-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/ttest2/qq_2b-eps-converted-to.pdf used on input
- line 733.
+ line 732.
 (pdftex.def)             Requested size: 256.0748pt x 240.39287pt.
- [236] [237 <../img/ttest2/shapirowilkdist-eps-converted-to.pdf>] [238 <../img/
-ttest2/qq_2b-eps-converted-to.pdf>] [239]
-<../img/ttest/ttest_nonparametric.png, id=3627, 1132.23pt x 611.28375pt>
+ [237 <../img/ttest2/qq_2b-eps-converted-to.pdf>] [238]
+<../img/ttest/ttest_nonparametric.png, id=3622, 1252.68pt x 792.9625pt>
 File: ../img/ttest/ttest_nonparametric.png Graphic file (type png)
 
 <use ../img/ttest/ttest_nonparametric.png>
 Package pdftex.def Info: ../img/ttest/ttest_nonparametric.png used on input lin
-e 788.
-(pdftex.def)             Requested size: 398.33858pt x 215.05315pt.
- [240 <../img/ttest/ttest_nonparametric.png>]) [241] [242
+e 787.
+(pdftex.def)             Requested size: 398.33858pt x 252.15602pt.
+ [239 <../img/ttest/ttest_nonparametric.png>]) [240]
+Chapter 11.
+[241
 
 ]
-Chapter 11.
-[243]
 Overfull \hbox (7.44402pt too wide) in paragraph at lines 69--69
 [][]\T1/cmbr/m/sc/10.95 Stigler, S. M. (1986). \T1/cmbr/m/sl/10.95 The His-tory
  of Statis-tics\T1/cmbr/m/sc/10.95 . Cam-bridge, MA: Har-vard Uni-ver-sity Pres
 s (page [][]125[][]). 
  []
 
-[244] <../img/backcover.pdf, id=3712, 597.65839pt x 845.30275pt>
+[242] <../img/backcover.pdf, id=3703, 597.65839pt x 845.30275pt>
 File: ../img/backcover.pdf Graphic file (type pdf)
 
 <use ../img/backcover.pdf>
@@ -3811,7 +3805,7 @@ File: ../img/backcover.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../img/backcover.pdf used on input line 74.
 (pdftex.def)             Requested size: 597.65692pt x 845.30067pt.
 
-<../img/backcover.pdf, id=3715, page=1, 597.65839pt x 845.30275pt>
+<../img/backcover.pdf, id=3706, page=1, 597.65839pt x 845.30275pt>
 File: ../img/backcover.pdf Graphic file (type pdf)
 
 <use ../img/backcover.pdf, page 1>
@@ -3821,12 +3815,12 @@ File: ../img/backcover.pdf Graphic file (type pdf)
  <use ../img/backcover.pdf, page 1>
 Package pdftex.def Info: ../img/backcover.pdf, page1 used on input line 74.
 (pdftex.def)             Requested size: 597.68427pt x 845.33936pt.
- [245]pdfTeX warning (ext4): destination with the same identifier (name{page.24
-5}) has been already used, duplicate ignored
+ [243]pdfTeX warning (ext4): destination with the same identifier (name{page.24
+3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.74 ...autoscale=false,pages=-]{../img/backcover}
-                                                   [245]
+                                                   [243]
 File: ../img/backcover.pdf Graphic file (type pdf)
 
 <use ../img/backcover.pdf, page 1>
@@ -3841,7 +3835,7 @@ File: ../img/backcover.pdf Graphic file (type pdf)
 <use ../img/backcover.pdf, page 1>
 Package pdftex.def Info: ../img/backcover.pdf, page1 used on input line 74.
 (pdftex.def)             Requested size: 597.68427pt x 845.33936pt.
- [246 <../img/backcover.pdf>]
+ [244 <../img/backcover.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./lsj.aux)
@@ -3864,10 +3858,10 @@ Package logreq Info: Writing requests to 'lsj.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27022 strings out of 493013
- 477146 string characters out of 6133343
+ 27018 strings out of 493013
+ 477099 string characters out of 6133343
  952096 words of memory out of 5000000
- 29300 multiletter control sequences out of 15000+600000
+ 29299 multiletter control sequences out of 15000+600000
  55352 words of font info for 157 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,18n,60p,10447b,1918s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3900,10 +3894,10 @@ s/type1/public/cm-super/sfbmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/cm-super/sfbmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 /public/cm-super/sfbmr9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
 lic/cm-super/sfbtl10.pfb>
-Output written on lsj.pdf (260 pages, 5238480 bytes).
+Output written on lsj.pdf (258 pages, 5293169 bytes).
 PDF statistics:
- 3992 PDF objects out of 4296 (max. 8388607)
- 3244 compressed objects within 33 object streams
- 684 named destinations out of 1000 (max. 500000)
+ 3982 PDF objects out of 4296 (max. 8388607)
+ 3236 compressed objects within 33 object streams
+ 681 named destinations out of 1000 (max. 500000)
  2853 words of extra memory for PDF output out of 10000 (max. 10000000)
 

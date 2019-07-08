@@ -370,7 +370,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {10.3.4}Completing the test}{217}{subsection.10.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.3.5}Doing the test in JASP}{218}{subsection.10.3.5}
+\contentsline {subsection}{\numberline {10.3.5}Doing the test in JASP}{217}{subsection.10.3.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {10.3.6}Positive and negative $t$ values}{219}{subsection.10.3.6}
 \defcounter {refsection}{0}\relax 
@@ -378,15 +378,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {10.4}The independent samples \mathversion {bold}$t$\mathversion {normal}-test (Welch test)~}{221}{section.10.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.4.1}Doing the Welch test in JASP}{223}{subsection.10.4.1}
+\contentsline {subsection}{\numberline {10.4.1}Doing the Welch test in JASP}{222}{subsection.10.4.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {10.4.2}Assumptions of the test}{223}{subsection.10.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.5}The paired-samples \mathversion {bold}$t$\mathversion {normal}-test~}{224}{section.10.5}
+\contentsline {section}{\numberline {10.5}The paired-samples \mathversion {bold}$t$\mathversion {normal}-test~}{223}{section.10.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {10.5.1}The data}{224}{subsection.10.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.5.2}What is the paired samples $t$-test?}{226}{subsection.10.5.2}
+\contentsline {subsection}{\numberline {10.5.2}What is the paired samples $t$-test?}{225}{subsection.10.5.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {10.5.3}Doing the test in JASP}{227}{subsection.10.5.3}
 \defcounter {refsection}{0}\relax 
@@ -406,14 +406,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {10.8.2}Shapiro-Wilk tests}{234}{subsection.10.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.8.3}Example}{236}{subsection.10.8.3}
+\contentsline {subsection}{\numberline {10.8.3}Example}{237}{subsection.10.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.9}Testing non-normal data with Wilcoxon tests}{238}{section.10.9}
+\contentsline {section}{\numberline {10.9}Testing non-normal data with Wilcoxon tests}{237}{section.10.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {10.9.1}Two sample Mann-Whitney U test}{238}{subsection.10.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.9.2}One sample Wilcoxon test}{239}{subsection.10.9.2}
+\contentsline {subsection}{\numberline {10.9.2}One sample Wilcoxon test}{238}{subsection.10.9.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {10.10}Summary}{240}{section.10.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}References}{243}{chapter.11}
+\contentsline {chapter}{\numberline {11}References}{241}{chapter.11}
