@@ -167,4 +167,42 @@
 \BOOKMARK [1][]{section.9.4}{9.4 Effect size }{chapter.9}% 167
 \BOOKMARK [1][]{section.9.5}{9.5 Assumptions of the test\(s\) }{chapter.9}% 168
 \BOOKMARK [1][]{section.9.6}{9.6 Summary}{chapter.9}% 169
-\BOOKMARK [0][]{chapter.10}{10 References}{part.4}% 170
+\BOOKMARK [0][]{chapter.10}{10 Comparing two means }{part.4}% 170
+\BOOKMARK [1][]{section.10.1}{10.1 The one-sample -test}{chapter.10}% 171
+\BOOKMARK [2][-]{subsection.10.1.1}{10.1.1 The inference problem that the test addresses}{section.10.1}% 172
+\BOOKMARK [2][-]{subsection.10.1.2}{10.1.2 Constructing the hypothesis test}{section.10.1}% 173
+\BOOKMARK [2][-]{subsection.10.1.3}{10.1.3 A worked example, by hand}{section.10.1}% 174
+\BOOKMARK [2][-]{subsection.10.1.4}{10.1.4 Assumptions of the z-test }{section.10.1}% 175
+\BOOKMARK [1][]{section.10.2}{10.2 The one-sample -test }{chapter.10}% 176
+\BOOKMARK [2][-]{subsection.10.2.1}{10.2.1 Introducing the t-test}{section.10.2}% 177
+\BOOKMARK [2][-]{subsection.10.2.2}{10.2.2 Doing the test in JASP}{section.10.2}% 178
+\BOOKMARK [2][-]{subsection.10.2.3}{10.2.3 Assumptions of the one sample -test }{section.10.2}% 179
+\BOOKMARK [1][]{section.10.3}{10.3 The independent samples -test \(Student test\) }{chapter.10}% 180
+\BOOKMARK [2][-]{subsection.10.3.1}{10.3.1 The data}{section.10.3}% 181
+\BOOKMARK [2][-]{subsection.10.3.2}{10.3.2 Introducing the test}{section.10.3}% 182
+\BOOKMARK [2][-]{subsection.10.3.3}{10.3.3 A ``pooled estimate'' of the standard deviation}{section.10.3}% 183
+\BOOKMARK [2][-]{subsection.10.3.4}{10.3.4 Completing the test}{section.10.3}% 184
+\BOOKMARK [2][-]{subsection.10.3.5}{10.3.5 Doing the test in JASP}{section.10.3}% 185
+\BOOKMARK [2][-]{subsection.10.3.6}{10.3.6 Positive and negative t values}{section.10.3}% 186
+\BOOKMARK [2][-]{subsection.10.3.7}{10.3.7 Assumptions of the test }{section.10.3}% 187
+\BOOKMARK [1][]{section.10.4}{10.4 The independent samples -test \(Welch test\) }{chapter.10}% 188
+\BOOKMARK [2][-]{subsection.10.4.1}{10.4.1 Doing the Welch test in JASP}{section.10.4}% 189
+\BOOKMARK [2][-]{subsection.10.4.2}{10.4.2 Assumptions of the test}{section.10.4}% 190
+\BOOKMARK [1][]{section.10.5}{10.5 The paired-samples -test }{chapter.10}% 191
+\BOOKMARK [2][-]{subsection.10.5.1}{10.5.1 The data}{section.10.5}% 192
+\BOOKMARK [2][-]{subsection.10.5.2}{10.5.2 What is the paired samples t-test?}{section.10.5}% 193
+\BOOKMARK [2][-]{subsection.10.5.3}{10.5.3 Doing the test in JASP}{section.10.5}% 194
+\BOOKMARK [1][]{section.10.6}{10.6 One sided tests }{chapter.10}% 195
+\BOOKMARK [1][]{section.10.7}{10.7 Effect size }{chapter.10}% 196
+\BOOKMARK [2][-]{subsection.10.7.1}{10.7.1 Cohen's d from one sample}{section.10.7}% 197
+\BOOKMARK [2][-]{subsection.10.7.2}{10.7.2 Cohen's d from a Student's t test}{section.10.7}% 198
+\BOOKMARK [2][-]{subsection.10.7.3}{10.7.3 Cohen's d from a paired-samples test}{section.10.7}% 199
+\BOOKMARK [1][]{section.10.8}{10.8 Checking the normality of a sample}{chapter.10}% 200
+\BOOKMARK [2][-]{subsection.10.8.1}{10.8.1 QQ plots}{section.10.8}% 201
+\BOOKMARK [2][-]{subsection.10.8.2}{10.8.2 Shapiro-Wilk tests}{section.10.8}% 202
+\BOOKMARK [2][-]{subsection.10.8.3}{10.8.3 Example}{section.10.8}% 203
+\BOOKMARK [1][]{section.10.9}{10.9 Testing non-normal data with Wilcoxon tests}{chapter.10}% 204
+\BOOKMARK [2][-]{subsection.10.9.1}{10.9.1 Two sample Mann-Whitney U test}{section.10.9}% 205
+\BOOKMARK [2][-]{subsection.10.9.2}{10.9.2 One sample Wilcoxon test}{section.10.9}% 206
+\BOOKMARK [1][]{section.10.10}{10.10 Summary}{chapter.10}% 207
+\BOOKMARK [0][]{chapter.11}{11 References}{part.4}% 208

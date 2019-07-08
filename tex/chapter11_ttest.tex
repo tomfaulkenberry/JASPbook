@@ -16,11 +16,11 @@ In this section I'll describe one of the most useless tests in all of statistics
 
 \SUBSECTION{The inference problem that the test addresses}
 
-To introduce the idea behind the $z$-test, let's use a simple example. A friend of mine, Dr Zeppo, grades his introductory statistics class on a curve. Let's suppose that the average grade in his class is 67.5, and the standard deviation is 9.5. Of his many hundreds of students, it turns out that 20 of them also take psychology classes. Out of curiosity, I find myself wondering if the psychology students tend to get the same grades as everyone else (i.e., mean 67.5) or do they tend to score higher or lower? He emails me the \filename{zeppo.csv} file, which I use to look at the \rtext{grades} of those students, in the jamovi spreadsheet view, 
+To introduce the idea behind the $z$-test, let's use a simple example. A friend of mine, Dr. Zeppo, grades his introductory statistics class on a curve. Let's suppose that the average grade in his class is 67.5, and the standard deviation is 9.5. Of his many hundreds of students, it turns out that 20 of them also take psychology classes. Out of curiosity, I find myself wondering if the psychology students tend to get the same grades as everyone else (i.e., mean 67.5) or do they tend to score higher or lower? He emails me the \filename{zeppo.csv} file, which I use to look at the grades of those students in JASP (stored in the variable \rtext{x}): 
 \begin{rblock1}
 50 60 60 64 66 66 67 69 70 74 76 76 77 79 79 79 81 82 82 89
 \end{rblock1} 
-and then calculate the mean in `Exploration' - `Descriptives' \FOOTNOTE{In order to do this I had to change the measurement level for \rtext{X} to `Continuous', as during the opening / import of the csv file jamovi made this a nominal level variable, which isn't right for my analysis}. The mean value is 72.3.
+Then I calculate the mean in `Descriptives' - `Descriptive Statistics'. The mean value is 72.3.
 
 Hmm. It {\it might} be that the psychology students are scoring a bit higher than normal. That sample mean of $\bar{X} = 72.3$ is a fair bit higher than the hypothesised population mean of $\mu = 67.5$ but, on the other hand, a sample size of $N = 20$ isn't all that big. Maybe it's pure chance. 
 
@@ -121,21 +121,23 @@ This, in turn, meant that researchers could calculate their $z$-statistic by han
 
 \SUBSECTION{A worked example, by hand}
 
-Now, as I mentioned earlier, the $z$-test is almost never used in practice. It's so rarely used in real life that the basic installation of jamovi doesn't have a built in function for it. However, the test is so incredibly simple that it's really easy to do one manually. Let's go back to the data from Dr Zeppo's class. Having loaded the \rtext{grades} data, the first thing I need to do is calculate the sample mean, which I've already done (72.3). We already have the known population standard deviation ($\sigma = 9.5$), and the value of the population mean that the null hypothesis specifies ($\mu_0 = 67.5$), and we know the sample size (N=20). 
+Now, as I mentioned earlier, the $z$-test is almost never used in practice. It's so rarely used in real life that JASP doesn't have a built in function for it. However, the test is so incredibly simple that it's really easy to do one manually. Let's go back to the data from Dr Zeppo's class. Having loaded the \rtext{grades} data, the first thing I need to do is calculate the sample mean, which I've already done (72.3). We already have the known population standard deviation ($\sigma = 9.5$), and the value of the population mean that the null hypothesis specifies ($\mu_0 = 67.5$), and we know the sample size (N=20). 
 
 Next, let's calculate the (true) standard error of the mean (easily done with a calculator):
-\begin{rblock1}
-	sem.true = sd.true / sqrt(N) 
-		 = 9.5 / sqrt(20) 
-		 = 2.124265
-\end{rblock1}
 
-And finally, we calculate our $z$-score:
-\begin{rblock1}
-	z.score  = (sample.mean - mu.null) / sem.true 
-		 = (72.3 - 67.5) / 2.124265 
-		 = 2.259606
-\end{rblock1}
+\begin{align*}
+  se(\overline{X}) & = \frac{\sigma}{\sqrt{N}}\\
+                   &= \frac{9.5}{\sqrt{20}}\\
+                   &= 2.124265\\.
+\end{align*}
+  
+From this, we calculate our $z$-score:
+
+\begin{align*}
+  z_{\overline{X}} &= \frac{\overline{X}-\mu_0}{sd(\overline{X})}\\
+                   &= \frac{72.3-67.5}{2.124265}\\
+                   &= 2.259606.\\
+\end{align*}
 
 At this point, we would traditionally look up the value 2.26 in our table of critical values. Our original hypothesis was two-sided (we didn't really have any theory about whether psych students would be better or worse at statistics than other students) so our hypothesis test is two-sided (or two-tailed) also. Looking at the little table that I showed earlier, we can see that 2.26 is bigger than the critical value of 1.96 that would be required to be significant at $\alpha = .05$, but smaller than the value of 2.58 that would be required to be significant at a level of $\alpha = .01$. Therefore, we can conclude that we have a significant effect, which we might write up by saying something like this:
 \begin{quote}
@@ -147,10 +149,10 @@ With a mean grade of 73.2 in the sample of psychology students, and assuming a t
 As I've said before, all statistical tests make assumptions. Some tests make reasonable assumptions, while other tests do not. The test I've just described, the one sample $z$-test, makes three basic assumptions. These are:
 \begin{itemize}
 \item {\it Normality}. As usually described, the $z$-test assumes that the true population distribution is normal.\FOOTNOTE{Actually this is too strong. Strictly speaking the $z$ test only requires that the sampling distribution of the mean be normally distributed. If the population is normal then it necessarily follows that the sampling distribution of the mean is also normal. However, as we saw when talking about the central limit theorem, it's quite possible (even commonplace) for the sampling distribution to be normal even if the population distribution itself is non-normal. However, in light of the sheer ridiculousness of the assumption that the true standard deviation is known, there really isn't much point in going into details on this front!} This is often a pretty reasonable assumption, and it's also an assumption that we can check if we feel worried about it (see Section~\ref{sec:shapiro}). 
-\item {\it Independence}. The second assumption of the test is that the observations in your data set are not correlated with each other, or related to each other in some funny way. This isn't as easy to check statistically, it relies a bit on good experimental design. An obvious (and stupid) example of something that violates this assumption is a data set where you “copy” the same observation over and over again in your data file so that you end up with a massive “sample size”, which consists of only one genuine observation. More realistically, you have to ask yourself if it's really plausible to imagine that each observation is a completely random sample from the population that you're interested in. In practice this assumption is never met, but we try our best to design studies that minimise the problems of correlated data. 
-\item {\it Known standard deviation}. The third assumption of the $z$-test is that the true standard deviation of the population is known to the researcher. This is just stupid. In no real world data analysis problem do you know the standard deviation $\sigma$ of some population but are completely ignorant about the mean $\mu$. In other words, this assumption is {\it always} wrong. 
+\item {\it Independence}. The second assumption of the test is that the observations in your data set are not correlated with each other, or related to each other in some funny way. This isn't as easy to check statistically, it relies a bit on good experimental design. An obvious (and silly) example of something that violates this assumption is a data set where you “copy” the same observation over and over again in your data file so that you end up with a massive “sample size”, which consists of only one genuine observation. More realistically, you have to ask yourself if it's really plausible to imagine that each observation is a completely random sample from the population that you're interested in. In practice this assumption is never met, but we try our best to design studies that minimise the problems of correlated data. 
+\item {\it Known standard deviation}. The third assumption of the $z$-test is that the true standard deviation of the population is known to the researcher. This is just silly. In no real world data analysis problem do you know the standard deviation $\sigma$ of some population but are completely ignorant about the mean $\mu$. In other words, this assumption is {\it always} wrong. 
 \end{itemize}
-In view of the stupidity of assuming that $\sigma$ is known, let's see if we can live without it. This takes us out of the dreary domain of the $z$-test, and into the magical kingdom of the $t$-test, with unicorns and fairies and leprechauns!
+In view of the stupidity of assuming that $\sigma$ is known, let's see if we can live without it. This takes us out of the dreary domain of the $z$-test, and into the magical kingdom of the $t$-test!
 
 
 \section{The one-sample \texorpdfstring{\boldm{$t$}}{}-test~\label{sec:onesamplettest}}
@@ -185,21 +187,23 @@ The only thing that has changed in the equation is that instead of using the kno
 \end{center}
 \end{figure}
 
-\SUBSECTION{Doing the test in jamovi}
+\SUBSECTION{Doing the test in JASP}
 
-As you might expect, the mechanics of the $t$-test are almost identical to the mechanics of the $z$-test. So there's not much point in going through the tedious exercise of showing you how to do the calculations using low level commands. It's pretty much identical to the calculations that we did earlier, except that we use the estimated standard deviation and then we test our hypothesis using the $t$ distribution rather than the normal distribution. And so instead of going through the calculations in tedious detail for a second time, I'll jump straight to showing you how $t$-tests are actually done. jamovi comes with a dedicated analysis for $t$-tests that is very flexible (it can run lots of different kinds of $t$-tests). It's pretty straightforward to use; all you need to do is specify `Analyses' - `T-Tests' - `One Sample T-Test', move the variable you are interested in (\rtext{X}) across into the `Variables' box, and type in the mean value for the null hypothesis (`67.5') in the `Hypothesis' - `Test value' box. Easy enough. See Figure \ref{fig:ttest_one}, which, amongst other things that we will get to in a moment, gives you a $t$-test statistic = 2.25, with 19 degrees of freedom and an associated $p$-value of 0.036. 
+As you might expect, the mechanics of the $t$-test are almost identical to the mechanics of the $z$-test. So there's not much point in going through the tedious exercise of showing you how to do the calculations using low level commands. It's pretty much identical to the calculations that we did earlier, except that we use the estimated standard deviation and then we test our hypothesis using the $t$ distribution rather than the normal distribution. And so instead of going through the calculations in tedious detail for a second time, I'll jump straight to showing you how $t$-tests are actually done. JASP comes with a dedicated analysis for $t$-tests that is very flexible (it can run lots of different kinds of $t$-tests). It's pretty straightforward to use; all you need to do is specify `T-Tests' - `One Sample T-Test', move the variable you are interested in (\rtext{x}) across into the `Variables' box, and type in the mean value for the null hypothesis (`67.5') in the `Test value' box. Easy enough. See Figure \ref{fig:ttest_one}, which, amongst other things that we will get to in a moment, gives you a $t$-test statistic = 2.25, with 19 degrees of freedom and an associated $p$-value of 0.036. 
 
 \vspace{0.5cm}
 \begin{figure}[ht]
 \begin{center}
 \epsfig{file = ../img/ttest/ttest_one.png, clip=true,width = 14cm}
-\caption{jamovi does the one-sample t-test.}
+\caption{JASP does the one-sample t-test.}
 \HR
 \label{fig:ttest_one}
 \end{center}
 \end{figure}
 
-Also reported are two other things you might care about: the 95\% confidence interval and a measure of effect size (we'll talk more about effect sizes later). So that seems straightforward enough. Now what do we {\it do} with this output? Well, since we're pretending that we actually care about my toy example, we're overjoyed to discover that the result is statistically significant (i.e. $p$ value below .05). We could report the result by saying something like this:
+It is also easy to calculate a 95\% confidence interval for our sample mean. If you select the `Location parameter' and its associated `Confidence interval' option under `Additional Statistics', you'll see in the JASP output that the `Mean difference' is 4.800 with 95\% CI equal to [0.344, 9.256].  This simply means that we are 95\% confidence that our estimate of the difference between our sample and the hypothesized mean of 67.5 is between 0.344 and 9.256.  If we add these ``endpoints'' to the hypothesized mean, we get a 95\% CI of [67.5+0.344, 67.5+9.256], or said differently, [67.844, 76.800].  If this isn't clear, don't worry.  We'll explain a bit more about this in the next section.
+
+Now, what do we {\it do} with all this output? Well, since we're pretending that we actually care about my toy example, we're overjoyed to discover that the result is statistically significant (i.e. $p$ value below .05). We could report the result by saying something like this:
 \begin{quote}
 With a mean grade of 72.3, the psychology students scored slightly higher than the average grade of 67.5 ($t(19) = 2.25$, $p<.05$); the 95\% confidence interval is 67.8 to 76.8.
 \end{quote}
@@ -225,9 +229,9 @@ Although the one sample $t$-test has its uses, it's not the most typical example
 
 \SUBSECTION{The data}
 
-Suppose we have 33 students taking Dr Harpo's statistics lectures, and Dr Harpo doesn't grade to a curve. Actually, Dr Harpo's grading is a bit of a mystery, so we don't really know anything about what the average grade is for the class as a whole. There are two tutors for the class, Anastasia and Bernadette. There are $N_1 = 15$ students in Anastasia's tutorials, and $N_2 = 18$ in Bernadette's tutorials. The research question I'm interested in is whether Anastasia or Bernadette is a better tutor, or if it doesn't make much of a difference. Dr Harpo emails me the course grades, in the \filename{harpo.csv} file. As usual, I'll load the file into jamovi and have a look at what variables it contains - there are three variables, \rtext{ID}, \rtext{grade} and \rtext{tutor}. The \rtext{grade} variable contains each student's grade, but it is not imported into jamovi with the correct measurement level attribute, so I need to change this so it is regarded as a continuous variable (see section \ref{sec:coercion}). The \rtext{tutor} variable is a factor that indicates who each student's tutor was - either Anastasia or Bernadette. 
+Suppose we have 33 students taking Dr Harpo's statistics lectures, and Dr Harpo doesn't grade to a curve. Actually, Dr Harpo's grading is a bit of a mystery, so we don't really know anything about what the average grade is for the class as a whole. There are two tutors for the class, Anastasia and Bernadette. There are $N_1 = 15$ students in Anastasia's tutorials, and $N_2 = 18$ in Bernadette's tutorials. The research question I'm interested in is whether Anastasia or Bernadette is a better tutor, or if it doesn't make much of a difference. Dr Harpo emails me the course grades, in the \filename{harpo.csv} file. As usual, I'll load the file into JASP and have a look at what variables it contains - there are three variables, \rtext{ID}, \rtext{grade} and \rtext{tutor}. Not surprisingly, the \rtext{grade} variable contains each student's grade. The \rtext{tutor} variable is a factor that indicates who each student's tutor was - either Anastasia or Bernadette. 
 
-We can calculate means and standard deviations, using the `Exploration' - `descriptives' analysis, and here's a nice little summary table:
+We can calculate means and standard deviations, using the `Descriptives' - `Descriptive Statistics' analysis (being sure to split by \rtext{tutor}). Here's a nice little summary table:
 \begin{center}
 \begin{tabular}{c|ccc}
 & mean & std dev & N \\ \hline
@@ -235,7 +239,7 @@ Anastasia's students  & 74.53 & 9.00 & 15 \\
 Bernadette's students & 69.06 & 5.77 & 18
 \end{tabular}
 \end{center}
-To give you a more detailed sense of what's going on here, I've plotted histograms (not in jamovi, but using \R) showing the distribution of grades for both tutors (Figure~\ref{fig:harpohist}), as well as a simpler plot showing the means and corresponding confidence intervals for both groups of students (Figure~\ref{fig:ttestci}). 
+To give you a more detailed sense of what's going on here, I've plotted histograms (not in JASP, but using \R) showing the distribution of grades for both tutors (Figure~\ref{fig:harpohist}), as well as a simpler plot showing the means and corresponding confidence intervals for both groups of students (Figure~\ref{fig:ttestci}). 
 
 \begin{figure}[!!htp]
 \begin{center}
@@ -263,7 +267,7 @@ To give you a more detailed sense of what's going on here, I've plotted histogra
 
 The \keyterm{independent samples $t$-test} comes in two different forms, Student's and Welch's. The original Student $t$-test, which is the one I'll describe in this section, is the simpler of the two but relies on much more restrictive assumptions than the Welch $t$-test. Assuming for the moment that you want to run a two-sided test, the goal is to determine whether two ``independent samples'' of data are drawn from populations with the same mean (the null hypothesis) or different means (the alternative hypothesis). When we say ``independent'' samples, what we really mean here is that there's no special relationship between observations in the two samples. This probably doesn't make a lot of sense right now, but it will be clearer when we come to talk about the paired samples $t$-test later on. For now, let's just point out that if we have an experimental design where participants are randomly allocated to one of two groups, and we want to compare the two groups' mean performance on some outcome measure, then an independent samples $t$-test (rather than a paired samples $t$-test) is what we're after.
 
-Okay, so let's let $\mu_1$ denote the true population mean for group 1 (e.g., Anastasia's students), and $\mu_2$ will be the true population mean for group 2 (e.g., Bernadette's students),\FOOTNOTE{A funny question almost always pops up at this point: what the heck {\it is} the population being referred to in this case? Is it the set of students actually taking Dr Harpo's class (all 33 of them)? The set of people who might take the class (an unknown number of them)? Or something else? Does it matter which of these we pick? It's traditional in an introductory behavioural stats class to mumble a lot at this point, but since I get asked this question every year by my students, I'll give a brief answer. Technically yes, it does matter. If you change your definition of what the ``real world'' population actually is, then the sampling distribution of your observed mean $\bar{X}$ changes too. The $t$-test relies on an assumption that the observations are sampled at random from an infinitely large population and, to the extent that real life isn’t like that, then the $t$-test can be wrong. In practice, however, this isn’t usually a big deal. Even though the assumption is almost always wrong, it doesn't lead to a lot of pathological behaviour from the test, so we tend to just ignore it.} and as usual we'll let $\bar{X}_1$ and $\bar{X}_2$ denote the observed sample means for both of these groups. Our null hypothesis states that the two population means are identical ($\mu_1 = \mu_2$) and the alternative to this is that they are not ($\mu_1 \neq \mu_2$). Written in mathematical-ese, this is:
+Okay, so let's let $\mu_1$ denote the true population mean for group 1 (e.g., Anastasia's students), and $\mu_2$ will be the true population mean for group 2 (e.g., Bernadette's students),\FOOTNOTE{A funny question almost always pops up at this point: what the heck {\it is} the population being referred to in this case? Is it the set of students actually taking Dr Harpo's class (all 33 of them)? The set of people who might take the class (an unknown number of them)? Or something else? Does it matter which of these we pick? It's traditional in an introductory behavioural stats class to mumble a lot at this point, but since I get asked this question every year by my students, I'll give a brief answer. Technically yes, it does matter. If you change your definition of what the ``real world'' population actually is, then the sampling distribution of your observed mean $\bar{X}$ changes too. The $t$-test relies on an assumption that the observations are sampled at random from an infinitely large population and, to the extent that real life isn’t like that, then the $t$-test can be wrong. In practice, however, this isn’t usually a big deal. Even though the assumption is almost always wrong, it doesn't lead to a lot of pathological behaviour from the test, so we tend to just ignore it.} and as usual we'll let $\bar{X}_1$ and $\bar{X}_2$ denote the observed sample means for both of these groups. Our null hypothesis states that the two population means are identical ($\mu_1 = \mu_2$) and the alternative to this is that they are not ($\mu_1 \neq \mu_2$). Written in mathematical notation, this is:
 $$
 \begin{array}{ll}
 H_0: & \mu_1 = \mu_2  \\
@@ -343,14 +347,14 @@ $$
 
 Just as we saw with our one-sample test, the sampling distribution of this $t$-statistic is a $t$-distribution (shocking, isn't it?) as long as the null hypothesis is true and all of the assumptions of the test are met. The degrees of freedom, however, is slightly different. As usual, we can think of the degrees of freedom to be equal to the number of data points minus the number of constraints. In this case, we have $N$ observations ($N_1$ in sample 1, and $N_2$ in sample 2), and 2 constraints (the sample means). So the total degrees of freedom for this test are $N-2$. 
 
-\SUBSECTION{Doing the test in jamovi}
+\SUBSECTION{Doing the test in JASP}
 
-Not surprisingly, you can run an independent samples $t$-test easily in jamovi. The outcome variable for our test is the student \rtext{grade}, and the groups are defined in terms of the \rtext{tutor} for each class. So you probably won't be too surprised that all you have to do in jamovi is go to the relevant analysis (`Analyses' - `T-Tests' - `Independent Samples T-Test') and move the \rtext{grade} variable across to the `Dependent Variables' box, and the \rtext{tutor} variable across into the `Grouping Variable' box, as shown in Figure \ref{fig:ttest_ind}.
+Not surprisingly, you can run an independent samples $t$-test easily in JASP. The outcome variable for our test is the student \rtext{grade}, and the groups are defined in terms of the \rtext{tutor} for each class. So you probably won't be too surprised that all you have to do in JASP is go to the relevant analysis (`T-Tests' - `Independent Samples T-Test') and move the \rtext{grade} variable across to the `Variables' box, and the \rtext{tutor} variable across into the `Grouping Variable' box, as shown in Figure \ref{fig:ttest_ind}.
 
 \begin{figure}[htb]
 \begin{center}
 \epsfig{file = ../img/ttest/ttest_ind.png,clip=true, width = 14cm}
-\caption{Independent t-test in jamovi, with options checked for useful results}
+\caption{Independent $t$-test in JASP, with options checked for useful results}
 \HR
 \label{fig:ttest_ind}
 \end{center}
@@ -358,7 +362,7 @@ Not surprisingly, you can run an independent samples $t$-test easily in jamovi. 
 
 The output has a very familiar form. First, it tells you what test was run, and it tells you the name of the dependent variable that you used. It then reports the test results. Just like last time the test results consist of a $t$-statistic, the degrees of freedom, and the $p$-value. The final section reports two things: it gives you a confidence interval and an effect size. I'll talk about effect sizes later. The confidence interval, however, I should talk about now. 
 
-It's pretty important to be clear on what this confidence interval actually refers to. It is a confidence interval for the {\it difference} between the group means. In our example, Anastasia's students had an average grade of 74.53, and Bernadette's students had an average grade of 69.06, so the difference between the two sample means is 5.48. But of course the difference between population means might be bigger or smaller than this. The confidence interval reported in Figure \ref{fig:ttest_ind} tells you that there's a if we replicated this study again and again, then 95\% of the time the true difference in means would lie between 0.20 and 10.76. Look back at Section~\ref{sec:ci} for a reminder about what confidence intervals mean.  
+It's pretty important to be clear on what this confidence interval actually refers to. It is a confidence interval for the {\it difference} between the group means. In our example, Anastasia's students had an average grade of 74.533, and Bernadette's students had an average grade of 69.056, so the difference between the two sample means is 5.478. But of course the difference between population means might be bigger or smaller than this. The confidence interval reported in Figure \ref{fig:ttest_ind} tells you that there's a if we replicated this study again and again, then 95\% of the time the true difference in means would lie between 0.197 and 10.759. Look back at Section~\ref{sec:ci} for a reminder about what confidence intervals mean.  
 
 In any case, the difference between the two groups is significant (just barely), so we might write up the result using text like this:
 \begin{quote}
@@ -372,11 +376,11 @@ Before moving on to talk about the assumptions of the $t$-test, there's one addi
 $$
 t = \frac{\mbox{(mean 1)} -\mbox{(mean 2)}}{ \mbox{(SE)}}
 $$
-If ``mean 1'' is larger than ``mean 2'' the $t$ statistic will be positive, whereas if ``mean 2'' is larger then the $t$ statistic will be negative. Similarly, the confidence interval that jamovi reports is the confidence interval for the difference ``(mean 1) minus (mean 2)'', which will be the reverse of what you'd get if you were calculating the confidence interval for the difference ``(mean 2) minus (mean 1)''.
+If ``mean 1'' is larger than ``mean 2'' the $t$ statistic will be positive, whereas if ``mean 2'' is larger then the $t$ statistic will be negative. Similarly, the confidence interval that JASP reports is the confidence interval for the difference ``(mean 1) minus (mean 2)'', which will be the reverse of what you'd get if you were calculating the confidence interval for the difference ``(mean 2) minus (mean 1)''.
 
-Okay, that's pretty straightforward when you think about it, but now consider our $t$-test comparing Anastasia's class to Bernadette's class. Which one should we call ``mean 1'' and which one should we call ``mean 2''. It's arbitrary. However, you really do need to designate one of them as ``mean 1'' and the other one as ``mean 2''. Not surprisingly, the way that jamovi handles this is also pretty arbitrary. In earlier versions of the book I used to try to explain it, but after a while I gave up, because it's not really all that important and to be honest I can never remember myself. Whenever I get a significant $t$-test result, and I want to figure out which mean is the larger one, I don't try to figure it out by looking at the $t$-statistic. Why would I bother doing that? It's foolish. It's easier just to look at the actual group means since the jamovi output actually shows them!
+Okay, that's pretty straightforward when you think about it, but now consider our $t$-test comparing Anastasia's class to Bernadette's class. Which one should we call ``mean 1'' and which one should we call ``mean 2''. It's arbitrary. However, you really do need to designate one of them as ``mean 1'' and the other one as ``mean 2''. Not surprisingly, the way that JASP handles this is also pretty arbitrary. In earlier versions of the book I used to try to explain it, but after a while I gave up, because it's not really all that important and to be honest I can never remember myself. Whenever I get a significant $t$-test result, and I want to figure out which mean is the larger one, I don't try to figure it out by looking at the $t$-statistic. Why would I bother doing that? It's foolish. It's easier just to look at the actual group means since the JASP output actually shows them!
 
-Here's the important thing. Because it really doesn't matter what jamovi shows you, I usually try to {\it report} the $t$-statistic in such a way that the numbers match up with the text. Suppose that what I want to write in my report is ``Anastasia's class had higher  grades than Bernadette's class''. The phrasing here implies that Anastasia's group comes first, so it makes sense to report the $t$-statistic as if Anastasia's class corresponded to group 1. If so, I would write 
+Here's the important thing. Because it really doesn't matter what JASP shows you, I usually try to {\it report} the $t$-statistic in such a way that the numbers match up with the text. Suppose that what I want to write in my report is ``Anastasia's class had higher grades than Bernadette's class''. The phrasing here implies that Anastasia's group comes first, so it makes sense to report the $t$-statistic as if Anastasia's class corresponded to group 1. If so, I would write 
 \begin{quote}
 Anastasia's class had \underline{higher} grades than Bernadette's class ($t(31)= 2.1, p=.04$). 
 \end{quote}
@@ -400,7 +404,7 @@ As always, our hypothesis test relies on some assumptions. So what are they? For
 
 \section{The independent samples \texorpdfstring{\boldm{$t$}}{}-test (Welch test)~\label{sec:welchttest}}
 
-The biggest problem with using the Student test in practice is the third assumption listed in the previous section. It assumes that both groups have the same standard deviation. This is rarely true in real life. If two samples don't have the same means, why should we expect them to have the same standard deviation? There's really no reason to expect this assumption to be true. We'll talk a little bit about how you can check this assumption later on because it does crop up in a few different places, not just the $t$-test. But right now I'll talk about a different form of the $t$-test \parencite{Welch1947} that does not rely on this assumption. A graphical illustration of what the \keyterm{Welch $t$ test} assumes about the data is shown in Figure~\ref{fig:ttesthyp2}, to provide a contrast with the Student test version in Figure~\ref{fig:ttesthyp}. I'll admit it's a bit odd to talk about the cure before talking about the diagnosis, but as it happens the Welch test can be specified as one of the `Independent Samples T-Test' options in jamovi, so this is probably the best place to discuss it. 
+The biggest problem with using the Student test in practice is the third assumption listed in the previous section. It assumes that both groups have the same standard deviation. This is rarely true in real life. If two samples don't have the same means, why should we expect them to have the same standard deviation? There's really no reason to expect this assumption to be true. We'll talk a little bit about how you can check this assumption later on because it does crop up in a few different places, not just the $t$-test. But right now I'll talk about a different form of the $t$-test \parencite{Welch1947} that does not rely on this assumption. A graphical illustration of what the \keyterm{Welch $t$ test} assumes about the data is shown in Figure~\ref{fig:ttesthyp2}, to provide a contrast with the Student test version in Figure~\ref{fig:ttesthyp}. I'll admit it's a bit odd to talk about the cure before talking about the diagnosis, but as it happens the Welch test can be specified as one of the `Independent Samples T-Test' options in JASP, so this is probably the best place to discuss it. 
 
 \begin{figure}
 \begin{center}
@@ -437,14 +441,14 @@ $$
 which is all pretty straightforward and obvious, right? Well, perhaps not. It doesn't really matter for our purposes. What matters is that you'll see that the ``df'' value that pops out of a Welch test tends to be a little bit smaller than the one used for the Student test, and it doesn't have to be a whole number. 
 \end{mdframed}
 
-\SUBSECTION{Doing the Welch test in jamovi}
+\SUBSECTION{Doing the Welch test in JASP}
 
 If you tick the check box for the Welch test in the analysis we did above, then this is what it gives you (Figure \ref{fig:ttest_welch}):
 
 \begin{figure}[htb]
 \begin{center}
 \epsfig{file = ../img/ttest/ttest_welch.png,clip=true, width = 14cm}
-\caption{Results showing the Welch test alongside the default Student's t-test in jamovi}
+\caption{Results showing the Welch test alongside the default Student's t-test in JASP}
 \HR
 \label{fig:ttest_welch}
 \end{center}
@@ -463,13 +467,13 @@ The assumptions of the Welch test are very similar to those made by the Student 
 
 \section{The paired-samples \texorpdfstring{\boldm{$t$}}{}-test~\label{sec:pairedsamplesttest}}
 
-Regardless of whether we're talking about the Student test or the Welch test, an independent samples $t$-test is intended to be used in a situation where you have two samples that are, well, independent of one another. This situation arises naturally when participants are assigned randomly to one of two experimental conditions, but it provides a very poor approximation to other sorts of research designs. In particular, a repeated measures design, in which each participant is measured (with respect to the same outcome variable) in both experimental conditions, is not suited for analysis using independent samples $t$-tests. For example, we might be interested in whether listening to music reduces people's working memory capacity. To that end, we could measure each person's working memory capacity in two conditions: with music, and without music. In an experimental design such as this one,\FOOTNOTE{This design is very similar to the one in Section~\ref{sec:mcnemar} that motivated the McNemar test. This should be no surprise. Both are standard repeated measures designs involving two measurements. The only difference is that this time our outcome variable is interval scale (working memory capacity) rather than a binary, nominal scale variable (a yes-or-no question).} each participant appears in {\it both} groups. This requires us to approach the problem in a different way, by using the \keyterm{paired samples $t$-test}. 
+Regardless of whether we're talking about the Student test or the Welch test, an independent samples $t$-test is intended to be used in a situation where you have two samples that are, well, independent of one another. This situation arises naturally when participants are assigned randomly to one of two experimental conditions, but it provides a very poor approximation to other sorts of research designs. In particular, a repeated measures design, in which each participant is measured (with respect to the same outcome variable) in both experimental conditions, is not suited for analysis using independent samples $t$-tests. For example, we might be interested in whether listening to music reduces people's working memory capacity. To that end, we could measure each person's working memory capacity in two conditions: with music, and without music. In an experimental design such as this one, each participant appears in {\it both} groups. This requires us to approach the problem in a different way, by using the \keyterm{paired samples $t$-test}. 
 
 \SUBSECTION{The data}
 
-The data set that we'll use this time comes from Dr Chico's class.\FOOTNOTE{At this point we have Drs Harpo, Chico and Zeppo. No prizes for guessing who Dr Groucho is.} In her class students take two major tests, one early in the semester and one later in the semester. To hear her tell it, she runs a very hard class, one that most students find very challenging. But she argues that by setting hard assessments students are encouraged to work harder. Her theory is that the first test is a bit of a ``wake up call'' for students. When they realise how hard her class really is, they'll work harder for the second test and get a better mark. Is she right? To test this, let's import the \filename{chico.csv} file into jamovi. This time jamovi does a good job during the import of attributing measurement levels correctly. The chico data set contains three variables: an \rtext{id} variable that identifies each student in the class, the \rtextverb#grade\_test1# variable that records the student grade for the first test, and the \rtextverb#grade\_test2# variable that has the grades for the second test. 
+The data set that we'll use this time comes from Dr Chico's class.\FOOTNOTE{At this point we have Drs Harpo, Chico and Zeppo. No prizes for guessing who Dr Groucho is.} In her class students take two major tests, one early in the semester and one later in the semester. To hear her tell it, she runs a very hard class, one that most students find very challenging. But she argues that by setting hard assessments students are encouraged to work harder. Her theory is that the first test is a bit of a ``wake up call'' for students. When they realise how hard her class really is, they'll work harder for the second test and get a better mark. Is she right? To test this, let's import the \filename{chico.csv} file into JASP. The \rtext{chico} data set contains three variables: an \rtext{id} variable that identifies each student in the class, the \rtextverb#grade_test1# variable that records the student grade for the first test, and the \rtextverb#grade_test2# variable that has the grades for the second test. 
 
-If we look at the jamovi spreadsheet it does seem like the class is a hard one (most grades are between 50\% and 60\%), but it does look like there's an improvement from the first test to the second one. 
+If we look at the JASP spreadsheet it does seem like the class is a hard one (most grades are between 50\% and 60\%), but it does look like there's an improvement from the first test to the second one. 
 
 \vspace{0.5cm}
 \begin{figure}[htb]
@@ -497,7 +501,18 @@ If we take a quick look at the descriptive statistics, in Figure~\ref{fig:ttest_
 \end{center}
 \end{figure}
 
-Nevertheless, this impression is wrong. To see why, take a look at the scatterplot of the grades for test 1 against the grades for test 2,  shown in Figure~\ref{fig:pairedt}b. In this plot each dot corresponds to the two grades for a given student. If their grade for test 1 ($x$ co-ordinate) equals their grade for test 2 ($y$ co-ordinate), then the dot falls on the line. Points falling above the line are the students that performed better on the second test. Critically, almost all of the data points fall above the diagonal line: almost all of the students {\it do} seem to have improved their grade, if only by a small amount. This suggests that we should be looking at the {\it improvement} made by each student from one test to the next and treating that as our raw data. To do this, we'll need to create a new variable for the \rtext{improvement} that each student makes, and add it to the \rtext{chico} data set. The easiest way to do this is to compute a new variable, with the expression \rtext{grade\_test2 - grade\_test1}.
+Nevertheless, this impression is wrong. To see why, take a look at the scatterplot of the grades for test 1 against the grades for test 2,  shown in Figure~\ref{fig:pairedt}b. In this plot each dot corresponds to the two grades for a given student. If their grade for test 1 ($x$ co-ordinate) equals their grade for test 2 ($y$ co-ordinate), then the dot falls on the line. Points falling above the line are the students that performed better on the second test. Critically, almost all of the data points fall above the diagonal line: almost all of the students {\it do} seem to have improved their grade, if only by a small amount. This suggests that we should be looking at the {\it improvement} made by each student from one test to the next and treating that as our raw data. To do this, we'll need to create a new variable for the \rtext{improvement} that each student makes, and add it to the \rtext{chico} data set. The easiest way to do this is to compute a new variable.  In JASP, click on the ``+'' at the right-most side of the data columns, name the variable \rtext{improvement}, and select the ``R'' button.  After you click the `Create column' button, you can enter the R code \rtext{grade\_test2 - grade\_test1} (see Figure \ref{fig:improvement}).
+
+\vspace{0.5cm}
+\begin{figure}[htb]
+\begin{center}
+\epsfig{file = ../img/ttest/improvement.png,clip=true, width = 14cm}
+\caption{Using R code to compute an \texttt{improvement} score in JASP.}
+\HR
+\label{fig:improvement}
+\end{center}
+\end{figure}
+
 
 Once we have computed this new \rtext{improvement} variable we can draw a histogram showing the distribution of these improvement scores, shown in Figure~\ref{fig:pairedt}c. When we look at the  histogram, it's very clear that there {\it is} a real improvement here. The vast majority of the students scored higher on test 2 than on test 1, reflected in the fact that almost the entire histogram is above zero. 
 
@@ -526,9 +541,9 @@ t = \frac{\bar{D}}{\hat\sigma_D / \sqrt{N}}
 $$
 where $\hat\sigma_D$ is the standard deviation of the difference scores. Since this is just an ordinary, one-sample $t$-test, with nothing special about it, the degrees of freedom are still $N-1$. And that’s it. The paired samples t-test really isn’t a new test at all. It’s a one-sample t-test, but applied to the difference between two variables. It's actually very simple. The only reason it merits a discussion as long as the one we've just gone through is that you need to be able to recognise {\it when} a paired samples test is appropriate, and to understand {\it why} it's better than an independent samples $t$ test. 
 
-\SUBSECTION{Doing the test in jamovi} 
+\SUBSECTION{Doing the test in JASP} 
 
-How do you do a paired samples $t$-test in jamovi? One possibility is to follow the process I outlined above. That is, create a ``difference'' variable and then run a one sample $t$-test on that. Since we've already created a variable called \rtext{improvement}, let's do that and see what we get, Figure \ref{fig:ttest_paired2}.
+How do you do a paired samples $t$-test in JASP? One possibility is to follow the process I outlined above. That is, create a ``difference'' variable and then run a one sample $t$-test on that. Since we've already created a variable called \rtext{improvement}, let's do that and see what we get, Figure \ref{fig:ttest_paired2}.
 
 \begin{figure}[htb]
 \begin{center}
@@ -539,43 +554,32 @@ How do you do a paired samples $t$-test in jamovi? One possibility is to follow 
 \end{center}
 \end{figure}
 
-The output shown in Figure~\ref{fig:ttest_paired2} is (obviously) formatted exactly the same was as it was the last time we used the `One Sample T-Test' analysis (Section~\ref{sec:onesamplettest}), and it confirms our intuition. There's an average improvement of 1.4\% from test 1 to test 2, and this is significantly different from 0 ($t(19)=6.48, p<.001$). 
+The output shown in Figure~\ref{fig:ttest_paired2} is (obviously) formatted exactly the same was as it was the last time we used the `One Sample T-Test' analysis (Section~\ref{sec:onesamplettest}), and it confirms our intuition. There's an average improvement of 1.4 points from test 1 to test 2, and this is significantly different from 0 ($t(19)=6.48, p<.001$). 
 
-However, suppose you're lazy and you don't want to go to all the effort of creating a new variable. Or perhaps you just want to keep the difference between one-sample and paired-samples tests clear in your head. If so, you can use the jamovi `Paired Samples T-Test' analysis, getting the results shown in Figure \ref{fig:ttest_paired3}.
-
-\begin{figure}[htb]
-\begin{center}
-\epsfig{file = ../img/ttest/ttest_paired3.png,clip=true, width = 14cm}
-\caption{Results showing a paired sample t-test. Compare with Figure \ref{fig:ttest_paired2}}
-\label{fig:ttest_paired3}
-\HR
-\end{center}
-\end{figure}
-
-The numbers are identical to those that come from the one sample test, which of course they have to be given that the paired samples $t$-test is just a one sample test under the hood. 
+However, suppose you're lazy and you don't want to go to all the effort of creating a new variable. Or perhaps you just want to keep the difference between one-sample and paired-samples tests clear in your head. If so, you can use the JASP `Paired Samples T-Test' analysis.  As you will see, the numbers are identical to those that come from the one sample test, which of course they have to be given that the paired samples $t$-test is just a one sample test under the hood. 
 
 
 \section{One sided tests~\label{sec:onesidedttest}}
 
-When introducing the theory of null hypothesis tests, I mentioned that there are some situations when it's appropriate to specify a {\it one-sided} test (see Section~\ref{sec:onesidedtests}). So far all of the $t$-tests have been two-sided tests. For instance, when we specified a one sample $t$-test for the grades in Dr Zeppo's class the null hypothesis was that the true mean was 67.5\%. The alternative hypothesis was that the true mean was greater than {\it or} less than 67.5\%. Suppose we were only interested in finding out if the true mean is greater than 67.5\%, and have no interest whatsoever in testing to find out if the true mean is lower than 67.5\%. If so, our null hypothesis would be that the true mean is 67.5\% or less, and the alternative hypothesis would be that the true mean is greater than 67.5\%. In jamovi, for the `One Sample T-Test' analysis, you can specify this by clicking on the `$>$ Test Value' option, under `Hypothesis'. When you have done this, you will get the results as shown in \ref{fig:ttest_onesided1}.
+When introducing the theory of null hypothesis tests, I mentioned that there are some situations when it's appropriate to specify a {\it one-sided} test (see Section~\ref{sec:onesidedtests}). So far all of the $t$-tests have been two-sided tests. For instance, when we specified a one sample $t$-test for the grades in Dr Zeppo's class the null hypothesis was that the true mean was 67.5\%. The alternative hypothesis was that the true mean was greater than {\it or} less than 67.5\%. Suppose we were only interested in finding out if the true mean is greater than 67.5\%, and have no interest whatsoever in testing to find out if the true mean is lower than 67.5\%. If so, our null hypothesis would be that the true mean is 67.5\% or less, and the alternative hypothesis would be that the true mean is greater than 67.5\%. In JASP, for the `One Sample T-Test' analysis, you can specify this by clicking on the `$>$ Test Value' option, under `Alt. Hypothesis'. When you have done this, you will get the results as shown in \ref{fig:ttest_onesided1}.
 
 \begin{figure}[htb]
 \begin{center}
 \epsfig{file = ../img/ttest/ttest_onesided1.png,clip=true, width = 14cm}
-\caption{jamovi results showing a `One Sample T-Test' where the actual hypothesis is one sided, i.e. that the true mean is greater than 67.5\%}
+\caption{JASP results showing a `One Sample T-Test' where the actual hypothesis is one sided, i.e. that the true mean is greater than 67.5\%}
 \label{fig:ttest_onesided1}
 \HR
 \end{center}
 \end{figure}
 
-Notice that there are a few changes from the output that we saw last time. Most important is the fact that the actual hypothesis has changed, to reflect the different test. The second thing to note is that although the $t$-statistic and degrees of freedom have not changed, the $p$-value has. This is because the one-sided test has a different rejection region from the two-sided test. If you've forgotten why this is and what it means, you may find it helpful to read back over Chapter~\ref{ch:hypothesistesting}, and Section~\ref{sec:onesidedtests} in particular. The third thing to note is that the confidence interval is different too: it now reports a ``one-sided'' confidence interval rather than a two-sided one. In a two-sided confidence interval we're trying to find numbers $a$ and $b$ such that we're confident that, if we were to repeat the study many times, then 95\% of the time the mean would lie {\it between} $a$ and $b$. In a one-sided confidence interval, we're trying to find a single number $a$ such that we're confident that 95\% of the time the true mean would be {\it greater than} $a$ (or less than $a$ if you selected Measure 1 < Measure 2 in the `Hypothesis' section).
+Notice that there are a few changes from the output that we saw last time. Most important is the fact that the actual hypothesis has changed, to reflect the different test. The second thing to note is that although the $t$-statistic and degrees of freedom have not changed, the $p$-value has. This is because the one-sided test has a different rejection region from the two-sided test. If you've forgotten why this is and what it means, you may find it helpful to read back over Chapter~\ref{ch:hypothesistesting}, and Section~\ref{sec:onesidedtests} in particular. The third thing to note is that the confidence interval is different too: it now reports a ``one-sided'' confidence interval rather than a two-sided one. In a two-sided confidence interval we're trying to find numbers $a$ and $b$ such that we're confident that, if we were to repeat the study many times, then 95\% of the time the mean would lie {\it between} $a$ and $b$. In a one-sided confidence interval, we're trying to find a single number $a$ such that we're confident that 95\% of the time the true mean would be {\it greater than} $a$ (or less than $a$ if you selected `$<$ Test Value' in the `Alt. Hypothesis' section).
 
-So that's how to do a one-sided one sample $t$-test. However, all versions of the $t$-test can be one-sided. For an independent samples $t$ test, you could have a one-sided test if you're only interested in testing to see if group A has {\it higher} scores than group B, but have no interest in finding out if group B has higher scores than group A. Let's suppose that, for Dr Harpo's class, you wanted to see if Anastasia's students had higher grades than Bernadette's. For this analysis, in the `Hypothesis' options, specify that `Group 1 $>$ Group2'. You should get the results shown in Figure \ref{fig:ttest_onesided2}.
+So that's how to do a one-sided one sample $t$-test. However, all versions of the $t$-test can be one-sided. For an independent samples $t$ test, you could have a one-sided test if you're only interested in testing to see if group A has {\it higher} scores than group B, but have no interest in finding out if group B has higher scores than group A. Let's suppose that, for Dr Harpo's class, you wanted to see if Anastasia's students had higher grades than Bernadette's. For this analysis, in the `Alt. Hypothesis' options, specify that `Group 1 $>$ Group2'. You should get the results shown in Figure \ref{fig:ttest_onesided2}.
 
 \begin{figure}[htb]
 \begin{center}
 \epsfig{file = ../img/ttest/ttest_onesided2.png,clip=true, width = 14cm}
-\caption{jamovi results showing an `Independent Samples T-Test' where the actual hypothesis is one sided, i.e. that Anastasia's students had higher grades than Bernadette's}
+\caption{JASP results showing an `Independent Samples T-Test' where the actual hypothesis is one sided, i.e. that Anastasia's students had higher grades than Bernadette's}
 \label{fig:ttest_onesided2}
 \HR
 \end{center}
@@ -583,12 +587,12 @@ So that's how to do a one-sided one sample $t$-test. However, all versions of th
 
 Again, the output changes in a predictable way. The definition of the alternative hypothesis has changed, the $p$-value has changed, and it now reports a one-sided confidence interval rather than a two-sided one.
 
-What about the paired samples $t$-test? Suppose we wanted to test the hypothesis that grades go {\it up} from test 1 to test 2 in Dr Zeppo's class, and are not prepared to consider the idea that the grades go down. In jamovi you would do this by specifying, under the `Hypotheses' option, that \rtext{grade\_test2} (`Measure 1' in jamovi, because we copied this first into the paired variables box) $>$ \rtext{grade\_test1} (`Measure 2' in jamovi). You should get the results shown in Figure \ref{fig:ttest_onesided3}.
+What about the paired samples $t$-test? Suppose we wanted to test the hypothesis that grades go {\it up} from test 1 to test 2 in Dr Chico's class, and are not prepared to consider the idea that the grades go down. In JASP you would do this by specifying, under the `Alt. Hypotheses' option, that \rtext{grade\_test2} (`Measure 1' in JASP, because we copied this first into the paired variables box) $>$ \rtext{grade\_test1} (`Measure 2' in JASP). You should get the results shown in Figure \ref{fig:ttest_onesided3}.
 
 \begin{figure}[htb]
 \begin{center}
 \epsfig{file = ../img/ttest/ttest_onesided3.png,clip=true, width = 14cm}
-\caption{jamovi results showing a `Paired Samples T-Test' where the actual hypothesis is one sided, i.e. that \texttt{grade\_test2} (`Measure 1') $>$ \texttt{grade\_test1} (`Measure 2')}
+\caption{JASP results showing a `Paired Samples T-Test' where the actual hypothesis is one sided, i.e. that \texttt{grade\_test2} (`Measure 1') $>$ \texttt{grade\_test1} (`Measure 2')}
 \label{fig:ttest_onesided3}
 \HR
 \end{center}
@@ -596,6 +600,7 @@ What about the paired samples $t$-test? Suppose we wanted to test the hypothesis
 
 Yet again, the output changes in a predictable way. The hypothesis has changed, the $p$-value has changed, and the confidence interval is now one-sided. 
 
+% START HERE!!
 
 \section{Effect size~\label{sec:cohensd}}
 
@@ -605,7 +610,7 @@ d = \frac{\mbox{(mean 1)} - \mbox{(mean 2)}}{\mbox{std dev}}
 $$
 and he suggested a rough guide for interpreting $d$ in Table~\ref{tab:cohensdinterpretation}. You'd think that this would be pretty unambiguous, but it's not. This is largely because Cohen wasn't too specific on what he thought should be used as the measure of the standard deviation (in his defence he was trying to make a broader point in his book, not nitpick about tiny details). As discussed by \textcite{McGrath2006}, there are several different versions in common usage, and each author tends to adopt slightly different notation. For the sake of simplicity (as opposed to accuracy), I'll use $d$ to refer to any statistic that you calculate from the sample, and  use $\delta$ to refer to a theoretical population effect. Obviously, that does mean that there are several different things all called $d$. 
 
-My suspicion is that the only time that you would want Cohen's $d$ is when you're running a $t$-test, and jamovi has an option to calculate the effect size for all the different flavours of $t$-test it provides. 
+My suspicion is that the only time that you would want Cohen's $d$ is when you're running a $t$-test, and JASP has an option to calculate the effect size for all the different flavours of $t$-test it provides. 
 
 \begin{table}[t]
 \caption{A (very) rough guide to interpreting Cohen's $d$. My personal recommendation is to not use these blindly. The $d$ statistic has a natural interpretation in and of itself. It re-describes the difference in means as the number of standard deviations that separates those means. So it's generally a good idea to think about what that means in practical terms. In some contexts a ``small'' effect could be of big practical importance. In other situations a ``large'' effect may not be all that interesting.} 

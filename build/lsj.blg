@@ -1,15 +1,15 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
 [0] Config.pm:357> INFO - Logfile is 'lsj.blg'
-[76] biber-darwin:303> INFO - === Mon Jul  8, 2019, 13:09:37
-[128] Biber.pm:359> INFO - Reading 'lsj.bcf'
-[268] Biber.pm:835> INFO - Found 36 citekeys in bib section 0
-[284] Biber.pm:3670> INFO - Processing section 0
-[304] Biber.pm:3840> INFO - Looking for bibtex format file '../tex/refs.bib' for section 0
-[311] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[327] bibtex.pm:1292> INFO - Found BibTeX data source '../tex/refs.bib'
-[445] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[445] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[445] Biber.pm:3499> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
-[445] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
-[491] bbl.pm:608> INFO - Writing 'lsj.bbl' with encoding 'UTF-8'
-[498] bbl.pm:712> INFO - Output to lsj.bbl
+[71] biber-darwin:303> INFO - === Mon Jul  8, 2019, 15:23:46
+[117] Biber.pm:359> INFO - Reading 'lsj.bcf'
+[235] Biber.pm:835> INFO - Found 42 citekeys in bib section 0
+[261] Biber.pm:3670> INFO - Processing section 0
+[282] Biber.pm:3840> INFO - Looking for bibtex format file '../tex/refs.bib' for section 0
+[291] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[306] bibtex.pm:1292> INFO - Found BibTeX data source '../tex/refs.bib'
+[451] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[451] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[451] Biber.pm:3499> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
+[451] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
+[508] bbl.pm:608> INFO - Writing 'lsj.bbl' with encoding 'UTF-8'
+[516] bbl.pm:712> INFO - Output to lsj.bbl

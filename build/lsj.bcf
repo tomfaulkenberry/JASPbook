@@ -2182,6 +2182,14 @@
     <bcf:citekey order="34">Larntz1978</bcf:citekey>
     <bcf:citekey order="35">Agresti1996</bcf:citekey>
     <bcf:citekey order="36">Agresti2002</bcf:citekey>
+    <bcf:citekey order="37">Student1908</bcf:citekey>
+    <bcf:citekey order="38">Box1987</bcf:citekey>
+    <bcf:citekey order="39">Welch1947</bcf:citekey>
+    <bcf:citekey order="40">Cohen1988</bcf:citekey>
+    <bcf:citekey order="41">McGrath2006</bcf:citekey>
+    <bcf:citekey order="42">Hedges1981</bcf:citekey>
+    <bcf:citekey order="43">Hedges1985</bcf:citekey>
+    <bcf:citekey order="44">Shapiro1965</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nyt/global/" type="entry" sortscheme="nyt" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

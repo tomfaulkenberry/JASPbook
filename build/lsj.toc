@@ -340,4 +340,80 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.6}Summary}{198}{section.9.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}References}{201}{chapter.10}
+\contentsline {chapter}{\numberline {10}Comparing two means }{201}{chapter.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.1}The one-sample \mathversion {bold}$z$\mathversion {normal}-test}{201}{section.10.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1.1}The inference problem that the test addresses}{202}{subsection.10.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1.2}Constructing the hypothesis test}{202}{subsection.10.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1.3}A worked example, by hand}{205}{subsection.10.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1.4}Assumptions of the $z$-test~}{207}{subsection.10.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.2}The one-sample \mathversion {bold}$t$\mathversion {normal}-test~}{208}{section.10.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2.1}Introducing the $t$-test}{208}{subsection.10.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2.2}Doing the test in JASP}{209}{subsection.10.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2.3}Assumptions of the one sample \mathversion {bold}$t$\mathversion {normal}-test~}{211}{subsection.10.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.3}The independent samples \mathversion {bold}$t$\mathversion {normal}-test (Student test)~}{212}{section.10.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.1}The data}{212}{subsection.10.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.2}Introducing the test}{213}{subsection.10.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.3}A ``pooled estimate'' of the standard deviation}{215}{subsection.10.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.4}Completing the test}{217}{subsection.10.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.5}Doing the test in JASP}{218}{subsection.10.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.6}Positive and negative $t$ values}{219}{subsection.10.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.7}Assumptions of the test~}{220}{subsection.10.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.4}The independent samples \mathversion {bold}$t$\mathversion {normal}-test (Welch test)~}{221}{section.10.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.4.1}Doing the Welch test in JASP}{223}{subsection.10.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.4.2}Assumptions of the test}{223}{subsection.10.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.5}The paired-samples \mathversion {bold}$t$\mathversion {normal}-test~}{224}{section.10.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.5.1}The data}{224}{subsection.10.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.5.2}What is the paired samples $t$-test?}{226}{subsection.10.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.5.3}Doing the test in JASP}{227}{subsection.10.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.6}One sided tests~}{228}{section.10.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.7}Effect size~}{230}{section.10.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.7.1}Cohen's $d$ from one sample}{231}{subsection.10.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.7.2}Cohen's $d$ from a Student's $t$ test}{231}{subsection.10.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.7.3}Cohen's $d$ from a paired-samples test}{232}{subsection.10.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.8}Checking the normality of a sample}{233}{section.10.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.8.1}QQ plots}{233}{subsection.10.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.8.2}Shapiro-Wilk tests}{234}{subsection.10.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.8.3}Example}{236}{subsection.10.8.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.9}Testing non-normal data with Wilcoxon tests}{238}{section.10.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.9.1}Two sample Mann-Whitney U test}{238}{subsection.10.9.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.9.2}One sample Wilcoxon test}{239}{subsection.10.9.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.10}Summary}{240}{section.10.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {11}References}{243}{chapter.11}

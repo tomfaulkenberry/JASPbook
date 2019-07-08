@@ -154,6 +154,30 @@
       \field{pages}{791\bibrangedash 799}
       \range{pages}{9}
     \endentry
+    \entry{Box1987}{article}{}
+      \name{author}{1}{}{%
+        {{hash=508735693be411a358ae51279e63f030}{%
+           family={Box},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{508735693be411a358ae51279e63f030}
+      \strng{fullhash}{508735693be411a358ae51279e63f030}
+      \strng{authornamehash}{508735693be411a358ae51279e63f030}
+      \strng{authorfullhash}{508735693be411a358ae51279e63f030}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Statistical Science}
+      \field{title}{Guinness, Gosset, Fisher, and Small Samples}
+      \field{volume}{2}
+      \field{year}{1987}
+      \field{pages}{45\bibrangedash 52}
+      \range{pages}{8}
+    \endentry
     \entry{Campbell1963}{book}{}
       \name{author}{2}{}{%
         {{hash=288a75f1406d87787b4b4e12f049af2e}{%
@@ -499,6 +523,61 @@
       \verb http://mfkp.org/INRMM/article/13469628
       \endverb
     \endentry
+    \entry{Hedges1981}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a13a6e6d97b99fc1fdf002815f53923b}{%
+           family={Hedges},
+           familyi={H\bibinitperiod},
+           given={L.\bibnamedelimi V.},
+           giveni={L\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{a13a6e6d97b99fc1fdf002815f53923b}
+      \strng{fullhash}{a13a6e6d97b99fc1fdf002815f53923b}
+      \strng{authornamehash}{a13a6e6d97b99fc1fdf002815f53923b}
+      \strng{authorfullhash}{a13a6e6d97b99fc1fdf002815f53923b}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Educational Statistics}
+      \field{title}{Distribution theory for Glass's estimator of effect size and related estimators}
+      \field{volume}{6}
+      \field{year}{1981}
+      \field{pages}{107\bibrangedash 128}
+      \range{pages}{22}
+    \endentry
+    \entry{Hedges1985}{book}{}
+      \name{author}{2}{uniquelist=2}{%
+        {{hash=a13a6e6d97b99fc1fdf002815f53923b}{%
+           family={Hedges},
+           familyi={H\bibinitperiod},
+           given={L.\bibnamedelimi V.},
+           giveni={L\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=e94f561337d58043043f9156e2bf112d}{%
+           family={Olkin},
+           familyi={O\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{ed6b96a3f5b4b6d4f40f8f2c8d70160c}
+      \strng{fullhash}{ed6b96a3f5b4b6d4f40f8f2c8d70160c}
+      \strng{authornamehash}{ed6b96a3f5b4b6d4f40f8f2c8d70160c}
+      \strng{authorfullhash}{ed6b96a3f5b4b6d4f40f8f2c8d70160c}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Statistical Methods for Meta-Analysis}
+      \field{year}{1985}
+    \endentry
     \entry{Hogg2005}{book}{}
       \name{author}{3}{}{%
         {{hash=7e359acb6a3e68d0ac7d9e56a094dbc4}{%
@@ -754,29 +833,34 @@
       \field{title}{Fisher, {N}eyman, and the Creation of Classical Statistics}
       \field{year}{2011}
     \endentry
-    \entry{McNemar1947}{article}{}
-      \name{author}{1}{}{%
-        {{hash=a70911c1049ee2ba49a5ab63b11978a8}{%
-           family={McNemar},
+    \entry{McGrath2006}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7e6ffb43342b0f2df3338351fa5dc857}{%
+           family={McGrath},
            familyi={M\bibinitperiod},
-           given={Q.},
-           giveni={Q\bibinitperiod}}}%
+           given={R.\bibnamedelimi E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=08610c6bd447ade39a62d38d1b2005eb}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={G.\bibnamedelimi J.},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
       }
-      \strng{namehash}{a70911c1049ee2ba49a5ab63b11978a8}
-      \strng{fullhash}{a70911c1049ee2ba49a5ab63b11978a8}
-      \strng{authornamehash}{a70911c1049ee2ba49a5ab63b11978a8}
-      \strng{authorfullhash}{a70911c1049ee2ba49a5ab63b11978a8}
+      \strng{namehash}{618f1367650ec1c71741ae21834463fb}
+      \strng{fullhash}{bb57e92ca698f3c0794a85e5429a8002}
+      \strng{authornamehash}{618f1367650ec1c71741ae21834463fb}
+      \strng{authorfullhash}{bb57e92ca698f3c0794a85e5429a8002}
       \field{sortinit}{M}
       \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Psychometrika}
-      \field{title}{Note on the sampling error of the difference between correlated proportions or percentages}
-      \field{volume}{12}
-      \field{year}{1947}
-      \field{pages}{153\bibrangedash 157}
-      \range{pages}{5}
+      \field{journaltitle}{Psychological Methods}
+      \field{title}{When effect sizes disagree: The case of $r$ and $d$}
+      \field{volume}{11}
+      \field{year}{2006}
+      \field{pages}{386\bibrangedash 401}
+      \range{pages}{16}
     \endentry
     \entry{Meehl1967}{article}{}
       \name{author}{1}{}{%
@@ -887,6 +971,35 @@
       \field{title}{Experimenter effects in behavioral research}
       \field{year}{1966}
     \endentry
+    \entry{Shapiro1965}{article}{}
+      \name{author}{2}{}{%
+        {{hash=78c64f341d982441639ec6bbf212cd49}{%
+           family={Shapiro},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi S.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=0ae48159cf7d14dc47a5ec90d5398d55}{%
+           family={Wilk},
+           familyi={W\bibinitperiod},
+           given={M.\bibnamedelimi B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{7d652f229d9363ae61db25a819dd2dc2}
+      \strng{fullhash}{ded2ec664a9418adb2d7462aa5a58357}
+      \strng{authornamehash}{7d652f229d9363ae61db25a819dd2dc2}
+      \strng{authorfullhash}{ded2ec664a9418adb2d7462aa5a58357}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biometrika}
+      \field{title}{An analysis of variance test for normality (complete samples)}
+      \field{volume}{52}
+      \field{year}{1965}
+      \field{pages}{591\bibrangedash 611}
+      \range{pages}{21}
+    \endentry
     \entry{Sokal1994}{book}{}
       \name{author}{2}{}{%
         {{hash=e97dd41d708e9d6b4f0939d6102f5ef3}{%
@@ -968,6 +1081,54 @@
       \field{labeltitlesource}{title}
       \field{title}{The History of Statistics}
       \field{year}{1986}
+    \endentry
+    \entry{Student1908}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3d81f72265f0ca5dfd95f21192f23deb}{%
+           family={Student},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d81f72265f0ca5dfd95f21192f23deb}
+      \strng{fullhash}{3d81f72265f0ca5dfd95f21192f23deb}
+      \strng{authornamehash}{3d81f72265f0ca5dfd95f21192f23deb}
+      \strng{authorfullhash}{3d81f72265f0ca5dfd95f21192f23deb}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biometrika}
+      \field{title}{The probable error of a mean}
+      \field{volume}{6}
+      \field{year}{1908}
+      \field{pages}{1\bibrangedash 2}
+      \range{pages}{2}
+    \endentry
+    \entry{Welch1947}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ebca0ab979aaae0cd4be73ed8504e08d}{%
+           family={Welch},
+           familyi={W\bibinitperiod},
+           given={B.\bibnamedelimi L.},
+           giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{ebca0ab979aaae0cd4be73ed8504e08d}
+      \strng{fullhash}{ebca0ab979aaae0cd4be73ed8504e08d}
+      \strng{authornamehash}{ebca0ab979aaae0cd4be73ed8504e08d}
+      \strng{authorfullhash}{ebca0ab979aaae0cd4be73ed8504e08d}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biometrika}
+      \field{title}{The generalization of ``{S}tudent's'' problem when several different population variances are involved}
+      \field{volume}{34}
+      \field{year}{1947}
+      \field{pages}{28\bibrangedash 35}
+      \range{pages}{8}
     \endentry
     \entry{Wilkinson2006}{book}{}
       \name{author}{5}{}{%
