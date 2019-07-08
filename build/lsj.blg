@@ -1,15 +1,15 @@
-[0] Config.pm:354> INFO - This is Biber 2.7
-[0] Config.pm:357> INFO - Logfile is 'lsj.blg'
-[72] biber-darwin:303> INFO - === Thu Jun 27, 2019, 06:33:57
-[107] Biber.pm:359> INFO - Reading 'lsj.bcf'
-[228] Biber.pm:835> INFO - Found 20 citekeys in bib section 0
-[248] Biber.pm:3670> INFO - Processing section 0
-[265] Biber.pm:3840> INFO - Looking for bibtex format file '../tex/refs.bib' for section 0
-[271] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[288] bibtex.pm:1292> INFO - Found BibTeX data source '../tex/refs.bib'
-[401] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[401] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[402] Biber.pm:3499> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
-[402] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
-[434] bbl.pm:608> INFO - Writing 'lsj.bbl' with encoding 'UTF-8'
-[438] bbl.pm:712> INFO - Output to lsj.bbl
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'lsj.blg'
+[83] biber-darwin:315> INFO - === Mon Jul  8, 2019, 11:17:02
+[105] Biber.pm:371> INFO - Reading 'lsj.bcf'
+[195] Biber.pm:889> INFO - Found 20 citekeys in bib section 0
+[217] Biber.pm:4093> INFO - Processing section 0
+[230] Biber.pm:4254> INFO - Looking for bibtex format file '../tex/refs.bib' for section 0
+[237] bibtex.pm:1523> INFO - LaTeX decoding ...
+[331] bibtex.pm:1340> INFO - Found BibTeX data source '../tex/refs.bib'
+[473] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[473] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[473] Biber.pm:3921> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[473] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[511] bbl.pm:636> INFO - Writing 'lsj.bbl' with encoding 'UTF-8'
+[518] bbl.pm:739> INFO - Output to lsj.bbl

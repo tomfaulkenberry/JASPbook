@@ -61,7 +61,7 @@
 \BOOKMARK [0][]{chapter.4}{4 Descriptive statistics}{part.3}% 61
 \BOOKMARK [1][]{section.4.1}{4.1 Measures of central tendency }{chapter.4}% 62
 \BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 The mean}{section.4.1}% 63
-\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Calculating the mean in jamovi}{section.4.1}% 64
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Calculating the mean in JASP}{section.4.1}% 64
 \BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 The median}{section.4.1}% 65
 \BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 Mean or median? What's the difference?}{section.4.1}% 66
 \BOOKMARK [2][-]{subsection.4.1.5}{4.1.5 A real life example }{section.4.1}% 67
@@ -83,59 +83,41 @@
 \BOOKMARK [1][]{section.5.2}{5.2 Boxplots }{chapter.5}% 83
 \BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Violin plots }{section.5.2}% 84
 \BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Drawing multiple boxplots }{section.5.2}% 85
-\BOOKMARK [2][-]{subsection.5.2.3}{5.2.3 Using box plots to detect outliers }{section.5.2}% 86
-\BOOKMARK [1][]{section.5.3}{5.3 Bar graphs}{chapter.5}% 87
-\BOOKMARK [1][]{section.5.4}{5.4 Saving image files using jamovi }{chapter.5}% 88
-\BOOKMARK [1][]{section.5.5}{5.5 Summary}{chapter.5}% 89
-\BOOKMARK [0][]{chapter.6}{6 Pragmatic matters }{part.3}% 90
-\BOOKMARK [1][]{section.6.1}{6.1 Tabulating and cross-tabulating data}{chapter.6}% 91
-\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 Creating tables for single variables}{section.6.1}% 92
-\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 Adding percentages to a contingency table}{section.6.1}% 93
-\BOOKMARK [1][]{section.6.2}{6.2 Logical expressions in jamovi}{chapter.6}% 94
-\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Assessing mathematical truths}{section.6.2}% 95
-\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Logical operations}{section.6.2}% 96
-\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 Applying logical operation to text }{section.6.2}% 97
-\BOOKMARK [1][]{section.6.3}{6.3 Transforming and recoding a variable }{chapter.6}% 98
-\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Creating a transformed variable}{section.6.3}% 99
-\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 Collapsing a variable into a smaller number of discrete levels or categories}{section.6.3}% 100
-\BOOKMARK [2][-]{subsection.6.3.3}{6.3.3 Creating a transformation that can be applied to multiple variables}{section.6.3}% 101
-\BOOKMARK [1][]{section.6.4}{6.4 A few more mathematical functions and operations }{chapter.6}% 102
-\BOOKMARK [2][-]{subsection.6.4.1}{6.4.1 Logarithms and exponentials}{section.6.4}% 103
-\BOOKMARK [1][]{section.6.5}{6.5 Extracting a subset of the data }{chapter.6}% 104
-\BOOKMARK [1][]{section.6.6}{6.6 Summary}{chapter.6}% 105
-\BOOKMARK [-1][]{part.4}{IV Statistical theory}{}% 106
-\BOOKMARK [0][]{chapter.7}{7 Introduction to probability}{part.4}% 107
-\BOOKMARK [1][]{section.7.1}{7.1 How are probability and statistics different? }{chapter.7}% 108
-\BOOKMARK [1][]{section.7.2}{7.2 What does probability mean?}{chapter.7}% 109
-\BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 The frequentist view}{section.7.2}% 110
-\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 The Bayesian view}{section.7.2}% 111
-\BOOKMARK [2][-]{subsection.7.2.3}{7.2.3 What's the difference? And who is right?}{section.7.2}% 112
-\BOOKMARK [1][]{section.7.3}{7.3 Basic probability theory }{chapter.7}% 113
-\BOOKMARK [2][-]{subsection.7.3.1}{7.3.1 Introducing probability distributions}{section.7.3}% 114
-\BOOKMARK [1][]{section.7.4}{7.4 The binomial distribution}{chapter.7}% 115
-\BOOKMARK [2][-]{subsection.7.4.1}{7.4.1 Introducing the binomial}{section.7.4}% 116
-\BOOKMARK [1][]{section.7.5}{7.5 The normal distribution}{chapter.7}% 117
-\BOOKMARK [2][-]{subsection.7.5.1}{7.5.1 Probability density \040}{section.7.5}% 118
-\BOOKMARK [1][]{section.7.6}{7.6 Other useful distributions }{chapter.7}% 119
-\BOOKMARK [1][]{section.7.7}{7.7 Summary}{chapter.7}% 120
-\BOOKMARK [0][]{chapter.8}{8 Estimating unknown quantities from a sample}{part.4}% 121
-\BOOKMARK [1][]{section.8.1}{8.1 Samples, populations and sampling }{chapter.8}% 122
-\BOOKMARK [2][-]{subsection.8.1.1}{8.1.1 Defining a population }{section.8.1}% 123
-\BOOKMARK [2][-]{subsection.8.1.2}{8.1.2 Simple random samples}{section.8.1}% 124
-\BOOKMARK [2][-]{subsection.8.1.3}{8.1.3 Most samples are not simple random samples}{section.8.1}% 125
-\BOOKMARK [2][-]{subsection.8.1.4}{8.1.4 How much does it matter if you don't have a simple random sample?}{section.8.1}% 126
-\BOOKMARK [2][-]{subsection.8.1.5}{8.1.5 Population parameters and sample statistics}{section.8.1}% 127
-\BOOKMARK [1][]{section.8.2}{8.2 The law of large numbers }{chapter.8}% 128
-\BOOKMARK [1][]{section.8.3}{8.3 Sampling distributions and the central limit theorem }{chapter.8}% 129
-\BOOKMARK [2][-]{subsection.8.3.1}{8.3.1 Sampling distribution of the mean }{section.8.3}% 130
-\BOOKMARK [2][-]{subsection.8.3.2}{8.3.2 Sampling distributions exist for any sample statistic!}{section.8.3}% 131
-\BOOKMARK [2][-]{subsection.8.3.3}{8.3.3 The central limit theorem }{section.8.3}% 132
-\BOOKMARK [1][]{section.8.4}{8.4 Estimating population parameters }{chapter.8}% 133
-\BOOKMARK [2][-]{subsection.8.4.1}{8.4.1 Estimating the population mean}{section.8.4}% 134
-\BOOKMARK [2][-]{subsection.8.4.2}{8.4.2 Estimating the population standard deviation}{section.8.4}% 135
-\BOOKMARK [1][]{section.8.5}{8.5 Estimating a confidence interval}{chapter.8}% 136
-\BOOKMARK [2][-]{subsection.8.5.1}{8.5.1 A slight mistake in the formula}{section.8.5}% 137
-\BOOKMARK [2][-]{subsection.8.5.2}{8.5.2 Interpreting a confidence interval}{section.8.5}% 138
-\BOOKMARK [2][-]{subsection.8.5.3}{8.5.3 Calculating confidence intervals in jamovi}{section.8.5}% 139
-\BOOKMARK [1][]{section.8.6}{8.6 Summary}{chapter.8}% 140
-\BOOKMARK [0][]{chapter.9}{9 References}{part.4}% 141
+\BOOKMARK [1][]{section.5.3}{5.3 Saving image files using JASP }{chapter.5}% 86
+\BOOKMARK [1][]{section.5.4}{5.4 Summary}{chapter.5}% 87
+\BOOKMARK [-1][]{part.4}{IV Statistical theory}{}% 88
+\BOOKMARK [0][]{chapter.6}{6 Introduction to probability}{part.4}% 89
+\BOOKMARK [1][]{section.6.1}{6.1 How are probability and statistics different? }{chapter.6}% 90
+\BOOKMARK [1][]{section.6.2}{6.2 What does probability mean?}{chapter.6}% 91
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 The frequentist view}{section.6.2}% 92
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 The Bayesian view}{section.6.2}% 93
+\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 What's the difference? And who is right?}{section.6.2}% 94
+\BOOKMARK [1][]{section.6.3}{6.3 Basic probability theory }{chapter.6}% 95
+\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Introducing probability distributions}{section.6.3}% 96
+\BOOKMARK [1][]{section.6.4}{6.4 The binomial distribution}{chapter.6}% 97
+\BOOKMARK [2][-]{subsection.6.4.1}{6.4.1 Introducing the binomial}{section.6.4}% 98
+\BOOKMARK [1][]{section.6.5}{6.5 The normal distribution}{chapter.6}% 99
+\BOOKMARK [2][-]{subsection.6.5.1}{6.5.1 Probability density \040}{section.6.5}% 100
+\BOOKMARK [1][]{section.6.6}{6.6 Other useful distributions }{chapter.6}% 101
+\BOOKMARK [1][]{section.6.7}{6.7 Summary}{chapter.6}% 102
+\BOOKMARK [0][]{chapter.7}{7 Estimating unknown quantities from a sample}{part.4}% 103
+\BOOKMARK [1][]{section.7.1}{7.1 Samples, populations and sampling }{chapter.7}% 104
+\BOOKMARK [2][-]{subsection.7.1.1}{7.1.1 Defining a population }{section.7.1}% 105
+\BOOKMARK [2][-]{subsection.7.1.2}{7.1.2 Simple random samples}{section.7.1}% 106
+\BOOKMARK [2][-]{subsection.7.1.3}{7.1.3 Most samples are not simple random samples}{section.7.1}% 107
+\BOOKMARK [2][-]{subsection.7.1.4}{7.1.4 How much does it matter if you don't have a simple random sample?}{section.7.1}% 108
+\BOOKMARK [2][-]{subsection.7.1.5}{7.1.5 Population parameters and sample statistics}{section.7.1}% 109
+\BOOKMARK [1][]{section.7.2}{7.2 The law of large numbers }{chapter.7}% 110
+\BOOKMARK [1][]{section.7.3}{7.3 Sampling distributions and the central limit theorem }{chapter.7}% 111
+\BOOKMARK [2][-]{subsection.7.3.1}{7.3.1 Sampling distribution of the mean }{section.7.3}% 112
+\BOOKMARK [2][-]{subsection.7.3.2}{7.3.2 Sampling distributions exist for any sample statistic!}{section.7.3}% 113
+\BOOKMARK [2][-]{subsection.7.3.3}{7.3.3 The central limit theorem }{section.7.3}% 114
+\BOOKMARK [1][]{section.7.4}{7.4 Estimating population parameters }{chapter.7}% 115
+\BOOKMARK [2][-]{subsection.7.4.1}{7.4.1 Estimating the population mean}{section.7.4}% 116
+\BOOKMARK [2][-]{subsection.7.4.2}{7.4.2 Estimating the population standard deviation}{section.7.4}% 117
+\BOOKMARK [1][]{section.7.5}{7.5 Estimating a confidence interval}{chapter.7}% 118
+\BOOKMARK [2][-]{subsection.7.5.1}{7.5.1 A slight mistake in the formula}{section.7.5}% 119
+\BOOKMARK [2][-]{subsection.7.5.2}{7.5.2 Interpreting a confidence interval}{section.7.5}% 120
+\BOOKMARK [2][-]{subsection.7.5.3}{7.5.3 Calculating confidence intervals in jamovi}{section.7.5}% 121
+\BOOKMARK [1][]{section.7.6}{7.6 Summary}{chapter.7}% 122
+\BOOKMARK [0][]{chapter.8}{8 References}{part.4}% 123

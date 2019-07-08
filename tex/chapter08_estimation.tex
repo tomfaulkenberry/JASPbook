@@ -127,13 +127,13 @@ Each of these IQ scores is sampled from a normal distribution with mean 100 and 
 
 In the previous section I showed you the results of one fictitious IQ experiment with a sample size of $N=100$. The results were somewhat encouraging as the true population mean is 100 and the sample mean of 98.5 is a pretty reasonable approximation to it. In many scientific studies that level of precision is perfectly acceptable, but in other situations you need to be a lot more precise. If we want our sample statistics to be much closer to the population parameters, what can we do about it?
 
-The obvious answer is to collect more data. Suppose that we ran a much larger experiment, this time measuring the IQs of 10,000 people. We can simulate the results of this experiment using jamovi. The \rtext{IQsim.omv} file is a jamovi data file. In this file I have generated 10,000 random numbers sampled from a normal distribution for a population with \rtext{mean = 100} and \rtext{sd = 15}. This was done by computing a new variable using the \rtext{ = NORM(100,15)} function. A histogram and density plot shows that this larger sample is a much better approximation to the true population distribution than the smaller one. This is reflected in the sample statistics. The mean IQ for the larger sample turns out to be 99.68 and the standard deviation is 14.90. These values are now very close to the true population. See Figure \ref{fig:iqsim}
+The obvious answer is to collect more data. Suppose that we ran a much larger experiment, this time measuring the IQs of 10,000 people. We can simulate the results of this experiment using JASP. The \rtext{IQsim.jasp} file is a JASP data file. In this file I have generated 10,000 random numbers sampled from a normal distribution for a population with \rtext{mean = 100} and \rtext{sd = 15}. By the way, I did this entirely within JASP computing a new variable using the R code \rtext{rnorm(10000, 100, 15)}. A histogram and density plot shows that this larger sample is a much better approximation to the true population distribution than the smaller one. This is reflected in the sample statistics. The mean IQ for the larger sample turns out to be \rtext{100.107} and the standard deviation is \rtext{14.995}. These values are now very close to the true population. See Figure \ref{fig:iqsim}
 
 \begin{figure}[p]
 \begin{center}
 \epsfig{file=../img/estimation/IQsim.png,clip=true,width=14cm}
 \end{center}
-\caption{A random sample drawn from a normal distribution using jamovi}
+\caption{A random sample drawn from a normal distribution using JASP}
 \label{fig:iqsim}
 \HR
 \end{figure}
@@ -157,19 +157,28 @@ As in economics, so too in psychology and statistics. It is not enough to know t
 
 \SUBSECTION{Sampling distribution of the mean~\label{sec:samplingdists}}
 
-With this in mind, let's abandon the idea that our studies will have sample sizes of 10,000 and consider instead a very modest experiment indeed. This time around we'll sample $N=5$ people and measure their IQ scores. As before, I can simulate this experiment in jamovi \rtext{= NORM(100,15)} function, but I only need 5 participant IDs this time, not 10,000. These are the five numbers that jamovi generated:
+With this in mind, let's abandon the idea that our studies will have sample sizes of 10,000 and consider instead a very modest experiment indeed. This time around we'll sample $N=5$ people and measure their IQ scores. As before, I can simulate this experiment in JASP by modifying the \rtext{rnorm} function that was used to generate the \rtext{IQsim} data column.  If you double-click on the $f_x$ label beside \rtext{IQsim}, JASP will open up the `Computed Column' dialog, which contains the R code \rtext{rnorm(10000, 100, 15)}.  Since I only need 5 participant IDs this time, I simply need to change 10000 to 5 and then click `Compute column' (see Figure \ref{fig:IQsample}).  These are the five numbers that JASP generated for me (yours will be different!). I rounded to the nearest whole number for convenience:
+
+\begin{figure}[p]
+\begin{center}
+\epsfig{file=../img/estimation/IQsample.png,clip=true,width=14cm}
+\end{center}
+\caption{Using JASP to draw a random sample of 5 from a normal distribution with $\mu=100$ and $\sigma=15$.}
+\label{fig:IQsample}
+\HR
+\end{figure}
 
 \begin{rblock1}
-90 82 94 99 110
+124 74 87 86 109
 \end{rblock1}
 
-The mean IQ in this sample turns out to be exactly 95. Not surprisingly, this is much less accurate than the previous experiment. Now imagine that I decided to \keyterm{replicate} the experiment. That is, I repeat the procedure as closely as possible and I randomly sample 5 new people and measure their IQ. Again, jamovi allows me to simulate the results of this procedure, and generates these five numbers:
+The mean IQ in this sample turns out to be exactly 96. Not surprisingly, this is much less accurate than the previous experiment. Now imagine that I decided to \keyterm{replicate} the experiment. That is, I repeat the procedure as closely as possible and I randomly sample 5 new people and measure their IQ. Again, jamovi allows me to simulate the results of this procedure, and generates these five numbers:
 
 \begin{rblock1}
-78 88 111 111 117
+91 125 104 106 109
 \end{rblock1}
 
-This time around, the mean IQ in my sample is 101. If I repeat the experiment 10 times I obtain the results shown in Table~\ref{tab:replications}, and as you can see the sample mean varies from one replication to the next. 
+This time around, the mean IQ in my sample is 107. If I repeat the experiment 10 times I obtain the results shown in Table~\ref{tab:replications}, and as you can see the sample mean varies from one replication to the next. 
 
 \begin{table}[t]
 \centering
@@ -179,8 +188,8 @@ This time around, the mean IQ in my sample is 101. If I repeat the experiment 10
  \multicolumn{6}{c}{} \\
  & Person 1 & Person 2 & Person 3 & Person 4 & Person 5 & Sample Mean \\ 
   \hline
-Replication 1 & 90 & 82 & 94 & 99 & 110 & 95.0 \\ 
-  Replication 2 & 78 & 88 & 111 & 111 & 117 & 101.0 \\ 
+Replication 1 & 124 & 74 & 87 & 86 & 109 & 96.0 \\ 
+  Replication 2 & 91 & 125 & 104 & 106 & 109 & 107.0 \\ 
   Replication 3 & 111 & 122 & 91 & 98 & 86 & 101.6 \\ 
   Replication 4 & 98 & 96 & 119 & 99 & 107 & 103.8 \\ 
   Replication 5 & 105 & 113 & 103 & 103 & 98 & 104.4 \\ 
@@ -196,11 +205,11 @@ Replication 1 & 90 & 82 & 94 & 99 & 110 & 95.0 \\
 
 Now suppose that I decided to keep going in this fashion, replicating this ``five IQ scores'' experiment over and over again. Every time I replicate the experiment I write down the sample mean. Over time, I'd be amassing a new data set, in which every experiment generates a single data point. The first 10 observations from my data set are the sample means listed in Table~\ref{tab:replications}, so my data set starts out like this:
 \begin{verbatim}
-                      95.0 101.0 101.6 103.8 104.4 ...
+                      96.0 107.0 101.6 103.8 104.4 ...
 \end{verbatim}
 What if I continued like this for 10,000 replications, and then drew a histogram. Well that's exactly what I did, and you can see the results in Figure~\ref{fig:sampdistmean}. As this picture illustrates, the average of 5 IQ scores is usually between 90 and 110. But more importantly, what it highlights is that if we replicate an experiment over and over again, what we end up with is a {\it distribution} of sample means! This distribution has a special name in statistics, it's called the \keyterm{sampling distribution of the mean}. 
 
-Sampling distributions are another important theoretical idea in statistics, and they're crucial for understanding the behaviour of small samples. For instance, when I ran the very first ``five IQ scores'' experiment, the sample mean turned out to be 95. What the sampling distribution in Figure~\ref{fig:sampdistmean} tells us, though, is that the ``five IQ scores'' experiment is not very accurate. If I repeat the experiment, the sampling distribution tells me that I can expect to see a sample mean anywhere between 80 and 120. 
+Sampling distributions are another important theoretical idea in statistics, and they're crucial for understanding the behaviour of small samples. For instance, when I ran the very first ``five IQ scores'' experiment, the sample mean turned out to be 96. What the sampling distribution in Figure~\ref{fig:sampdistmean} tells us, though, is that the ``five IQ scores'' experiment is not very accurate. If I repeat the experiment, the sampling distribution tells me that I can expect to see a sample mean anywhere between 80 and 120. 
 
 \begin{figure}[!htb]
 \begin{center}
@@ -226,7 +235,7 @@ Sampling distributions are another important theoretical idea in statistics, and
 
 One thing to keep in mind when thinking about sampling distributions is that {\it any} sample statistic you might care to calculate has a sampling distribution. For example, suppose that each time I replicated the ``five IQ scores'' experiment I wrote down the largest IQ score in the experiment. This would give me a data set that started out like this:
 \begin{verbatim}
-                      110 117 122 119 113 ... 
+                      124 125 122 119 113 ... 
 \end{verbatim}
 Doing this over and over again would give me a very different sampling distribution, namely the {\it sampling distribution of the maximum}. The sampling distribution of the maximum of 5 IQ scores is shown in Figure~\ref{fig:sampdistmax}. Not surprisingly, if you pick 5 people at random and then find the person with the highest IQ score, they're going to have an above average IQ. Most of the time you'll end up with someone whose IQ is measured in the 100 to 140 range. 
 

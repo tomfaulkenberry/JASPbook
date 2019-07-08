@@ -10,7 +10,7 @@ Any time that you get a new data set to look at one of the first tasks that you 
 \begin{figure}[htb]
 \begin{center}
 \epsfig{file=../img/descriptives/aflsmall_margins.png,clip=true,width=14cm} 
-\caption{A screenshot of jamovi showing the variables stored in the \filename{aflsmall\_margins.csv} file}
+\caption{A screenshot of JASP showing the variables stored in the \filename{aflsmall\_margins.csv} file}
 \label{fig:aflsmall}
 \HR
 \end{center}
@@ -39,7 +39,7 @@ The \keyterm{mean} of a set of observations is just a normal, old-fashioned aver
 $$
 \frac{56 + 31 + 56 + 8 + 32}{5} = \frac{183}{5} = 36.60
 $$
-Of course, this definition of the mean isn't news to anyone. Averages (i.e., means) are used so often in everyday life that this is pretty familiar stuff. However, since the concept of a mean is something that everyone already understands, I'll use this as an excuse to start introducing some of the mathematical notation that statisticians use to describe this calculation, and talk about how the calculations would be done in jamovi. 
+Of course, this definition of the mean isn't news to anyone. Averages (i.e., means) are used so often in everyday life that this is pretty familiar stuff. However, since the concept of a mean is something that everyone already understands, I'll use this as an excuse to start introducing some of the mathematical notation that statisticians use to describe this calculation, and talk about how the calculations would be done in JASP. 
 
 The first piece of notation to introduce is $N$, which we'll use to refer to the number of observations that we're averaging (in this case $N = 5$). Next, we need to attach a label to the observations themselves. It's traditional to use $X$ for this, and to use subscripts to indicate which observation we're actually talking about. That is, we'll use $X_1$ to refer to the first observation, $X_2$ to refer to the second observation, and so on all the way up to $X_N$ for the last one. Or, to say the same thing in a slightly more abstract way, we use $X_i$ to refer to the $i$-th observation. Just to make sure we're clear on the notation, the following table lists the 5 observations in the \rtext{afl.margins} variable, along with the mathematical symbol used to refer to it and the actual value that the observation corresponds to:
 
@@ -73,9 +73,9 @@ $$
 In all honesty, I can't imagine that all this mathematical notation helps clarify the concept of the mean at all. In fact, it's really just a fancy way of writing out the same thing I said in words: add all the values up and then divide by the total number of items. However, that's not really the reason I went into all that detail. My goal was to try to make sure that everyone reading this book is clear on the notation that we'll be using throughout the book: $\bar{X}$ for the mean, $\scriptstyle\sum$ for the idea of summation, $X_i$ for the $i$th observation, and $N$ for the total number of observations. We're going to be re-using these symbols a fair bit so it's important that you understand them well enough to be able to ``read'' the equations, and to be able to see that it's just saying ``add up lots of things and then divide by another thing''.
 \end{mdframed}
 
-\SUBSECTION{Calculating the mean in jamovi}
+\SUBSECTION{Calculating the mean in JASP}
 
-Okay, that's the maths. So how do we get the magic computing box to do the work for us? When the number of observations starts to become large it's much easier to do these sorts of calculations using a computer. To calculate the mean using all the data we can use jamovi. The first step is to click on the `Exploration' button and then click `Descriptives'. Then you can highlight the \rtext{afl.margins} variable and click the `right arrow' to move it across into the `Variables box'. As soon as you do that a Table appears on the right hand side of the screen containing default `Descriptives' information; see Figure \ref{fig:descriptives_default}. 
+Okay, that's the maths. So how do we get the magic computing box to do the work for us? When the number of observations starts to become large it's much easier to do these sorts of calculations using a computer. To calculate the mean using all the data we can use JASP. The first step is to click on the `Descriptives' button and then click `Descriptive Statistics'. Then you can highlight the \rtext{afl.margins} variable and click the `right arrow' to move it across into the `Variables box'. As soon as you do that a Table appears on the right hand side of the screen containing default `Descriptives' information; see Figure \ref{fig:descriptives_default}. 
 
 \vspace{0.5cm}
 \begin{figure}[ht]
@@ -87,7 +87,7 @@ Okay, that's the maths. So how do we get the magic computing box to do the work 
 \end{center}
 \end{figure}
 
-As you can see in Figure \ref{fig:descriptives_default}, the mean value for the \rtext{afl.margins} variable is 35.30. Other information presented includes the total number of observations (N=176), the number of missing values (none), and the Median, Minimum and Maximum values for the variable. 
+As you can see in Figure \ref{fig:descriptives_default}, the mean value for the \rtext{afl.margins} variable is 35.301. Other information presented includes the total number of observations (N=176), the number of missing values (none), and the Median, Minimum and Maximum values for the variable. 
 
 \SUBSECTION{The median\label{sec:median}}
 
@@ -99,7 +99,7 @@ From inspection, it's obvious that the median value of these 5 observations is 3
 $$
 8, 14, \mathbf{31}, \mathbf{32}, 56, 56
 $$
-and there are {\it two} middle numbers, 31 and 32. The median is defined as the average of those two numbers, which is of course 31.5. As before, it's very tedious to do this by hand when you've got lots of numbers. In real life, of course, no-one actually calculates the median by sorting the data and then looking for the middle value. In real life we use a computer to do the heavy lifting for us, and jamovi has provided us with a Median value of 30.50 for the \rtext{afl.margins} variable (Figure~\ref{fig:descriptives_default}). 
+and there are {\it two} middle numbers, 31 and 32. The median is defined as the average of those two numbers, which is of course 31.5. As before, it's very tedious to do this by hand when you've got lots of numbers. In real life, of course, no-one actually calculates the median by sorting the data and then looking for the middle value. In real life we use a computer to do the heavy lifting for us. JASP will give us the median if we ask for it; we simply need to click on the 'Statistics' dropdown menu and select 'Median' from the 'Central Tendency' menu. The results will automatically update to include this median, which JASP reports as 30.500 for the \rtext{afl.margins} variable.
 
 \SUBSECTION{Mean or median? What's the difference?}
 
@@ -165,19 +165,19 @@ The mode of a sample is very simple. It is the value that occurs most frequently
 \begin{figure}[!!htp]
 \begin{center}
 \epsfig{file=../img/descriptives/aflsmall_finalists.png,clip=true,width=11cm} 
-\caption{A screenshot of jamovi showing the variables stored in the \filename{aflsmall\_finalists.csv} file}
+\caption{A screenshot of JASP showing the variables stored in the \filename{aflsmall\_finalists.csv} file}
 \label{fig:aflsmall_finalists}
 \HR
 \end{center}
 \end{figure}
 
-What we {\it could} do is read through all 400 entries and count the number of occasions on which each team name appears in our list of finalists, thereby producing a \keyterm{frequency table}. However, that would be mindless and boring: exactly the sort of task that computers are great at. So let's use jamovi to do this for us. Under `Exploration' - `Descriptives' click the small check box labelled `Frequency tables' and you should get something like Figure \ref{fig:aflsmall_finalists_mode}. 
+What we {\it could} do is read through all 400 entries and count the number of occasions on which each team name appears in our list of finalists, thereby producing a \keyterm{frequency table}. However, that would be mindless and boring: exactly the sort of task that computers are great at. So let's use JASP to do this for us. Under `Descriptives' - `Descriptive Statistics', select the \rtext{afl.finalists} variable and move it to the 'Variables' box, then click the small check box labelled `Frequency tables'. You should get something like Figure \ref{fig:aflsmall_finalists_mode}. 
 
 %\vspace{0.5cm}
 \begin{figure}[!!htp]
 \begin{center}
 \epsfig{file=../img/descriptives/aflsmall_finalists_mode.png,clip=true,width=12cm} 
-\caption{A screenshot of jamovi showing the frequency table for the \texttt{afl.finalists} variable }
+\caption{A screenshot of JASP showing the frequency table for the \texttt{afl.finalists} variable }
 \label{fig:aflsmall_finalists_mode}
 \HR
 \end{center}
@@ -185,13 +185,13 @@ What we {\it could} do is read through all 400 entries and count the number of o
 
 Now that we have our frequency table we can just look at it and see that, over the 24 years for which we have data, Geelong has played in more finals than any other team. Thus, the mode of the \rtext{afl.finalists} data is \rtext{"Geelong"}. We can see that Geelong (39 finals) played in more finals than any other team during the 1987-2010 period. It's also worth noting that in the `Descriptives' Table no results are calculated for Mean, Median, Minimum or Maximum. This is because the \rtext{afl.finalists} variable is a nominal text variable so it makes no sense to calculate these values.
 
-One last point to make regarding the mode. Whilst the mode is most often calculated when you have nominal data, because means and medians are useless for those sorts of variables, there are some situations in which you really do want to know the mode of an ordinal, interval or ratio scale variable. For instance, let's go back to our \rtext{afl.margins} variable. This variable is clearly ratio scale (if it's not clear to you, it may help to re-read Section~\ref{sec:scales}), and so in most situations the mean or the median is the measure of central tendency that you want. But consider this scenario: a friend of yours is offering a bet and they pick a football game at random. Without knowing who is playing you have to guess the {\it exact} winning margin. If you guess correctly you win \$50. If you don't you lose \$1. There are no consolation prizes for ``almost'' getting the right answer. You have to guess exactly the right margin. For this bet, the mean and the median are completely useless to you. It is the mode that you should bet on. To calculate the mode for the \rtext{afl.margins} variable in jamovi, go back to that data set and on the `Exploration' - `Descriptives' screen you will see you can expand the section marked `Statistics'. Click on the checkbox marked `Mode' and you will see the modal value presented in the `Descriptives' Table, as in Figure \ref{fig:aflsmall_margins_mode}. So the 2010 data suggest you should bet on a 3 point margin.
+One last point to make regarding the mode. Whilst the mode is most often calculated when you have nominal data, because means and medians are useless for those sorts of variables, there are some situations in which you really do want to know the mode of an ordinal, interval or ratio scale variable. For instance, let's go back to our \rtext{afl.margins} variable. This variable is clearly ratio scale (if it's not clear to you, it may help to re-read Section~\ref{sec:scales}), and so in most situations the mean or the median is the measure of central tendency that you want. But consider this scenario: a friend of yours is offering a bet and they pick a football game at random. Without knowing who is playing you have to guess the {\it exact} winning margin. If you guess correctly you win \$50. If you don't you lose \$1. There are no consolation prizes for ``almost'' getting the right answer. You have to guess exactly the right margin. For this bet, the mean and the median are completely useless to you. It is the mode that you should bet on. To calculate the mode for the \rtext{afl.margins} variable in JASP, go back to that data set and on the `Descriptives' - `Descriptive Statistics' screen you will see you can expand the section marked `Statistics'. Click on the checkbox marked `Mode' and you will see the modal value presented in the `Descriptive Statistics' Table, as in Figure \ref{fig:aflsmall_margins_mode}. So the 2010 data suggest you should bet on a 3 point margin.
 
 \vspace{0.5cm}
 \begin{figure}[!!htb]
 \begin{center}
 \epsfig{file=../img/descriptives/aflsmall_margins_mode.png,clip=true,width=12cm} 
-\caption{A screenshot of jamovi showing the modal value for the \texttt{afl.margins} variable }
+\caption{A screenshot of JASP showing the modal value for the \texttt{afl.margins} variable }
 \label{fig:aflsmall_margins_mode}
 \HR
 \end{center}
@@ -212,13 +212,13 @@ it is clear that the range is not robust. This variable has a range of 110 but i
 
 \SUBSECTION{Interquartile range}
 
-The \keyterm{interquartile range} (IQR) is like the range, but instead of the difference between the biggest and smallest value the difference between the 25th percentile and the 75th percentile is taken. If you don't already know what a \keyterm{percentile} is, the 10th percentile of a data set is the smallest number $x$ such that 10\% of the data is less than $x$. In fact, we've already come across the idea. The median of a data set is its 50th percentile! In jamovi you can easily specify the 25th, 50th and 75th percentiles by clicking the checkbox `Quartiles' in the `Exploration' - `Descriptives' - `Statistics' screen. 
+The \keyterm{interquartile range} (IQR) is like the range, but instead of the difference between the biggest and smallest value the difference between the 25th percentile and the 75th percentile is taken. If you don't already know what a \keyterm{percentile} is, the 10th percentile of a data set is the smallest number $x$ such that 10\% of the data is less than $x$. In fact, we've already come across the idea. The median of a data set is its 50th percentile! In JASP you can easily specify the 25th, 50th and 75th percentiles by clicking the checkbox `Quartiles' in the `Descriptives' - `Descriptive Statistics' - `Statistics' screen. 
 
 %\vspace{0.5cm}
 \begin{figure}[htb]
 \begin{center}
-\epsfig{file=../img/descriptives/aflsmall_margins_iqr.png,clip=true,width=6cm} 
-\caption{A screenshot of jamovi showing the Quartiles for the \texttt{afl.margins} variable }
+\epsfig{file=../img/descriptives/aflsmall_margins_iqr.png,clip=true,width=5cm} 
+\caption{A screenshot of JASP showing the Quartiles for the \texttt{afl.margins} variable }
 \label{fig:aflsmall_margins_iqr}
 \HR
 \end{center}
@@ -292,35 +292,37 @@ maths: & $i$ & $X_i$ & $X_i - \bar{X}$ &  $(X_i - \bar{X})^2$ \\ \hline
 \end{tabular}
 \end{center}
 
-That last column contains all of our squared deviations, so all we have to do is average them. If we do that by hand, i.e. using a calculator, we end up with a variance of 324.64. Exciting, isn't it? For the moment, let's ignore the burning question that you're all probably thinking (i.e., what the heck does a variance of 324.64 actually mean?) and instead talk a bit more about how to do the calculations in jamovi, because this will reveal something very weird. Start a new jamovi session by clicking on the main menu button (three horizontal lines in the top left corner and selecting `New'. Now type in the first five values from the afl.margins data set in column A (\rtext{56, 31, 56, 8, 32}). Change the variable type to `Continuous' and under `Descriptives' click the `Variance' check box, and you get the same values for variance as the one we calculated by hand (\rtext{324.64}). No, wait, you get a completely {\it different} answer (\rtext{405.80}) - see Figure \ref{fig:aflsmall_margins_variance1}. That's just weird. Is jamovi broken? Is this a typo? Am I an idiot? 
+That last column contains all of our squared deviations, so all we have to do is average them. If we do that by hand, i.e. using a calculator, we end up with a variance of 324.64. Exciting, isn't it? For the moment, let's ignore the burning question that you're all probably thinking (i.e., what the heck does a variance of 324.64 actually mean?) and instead talk a bit more about how to do the calculations in JASP, because this will reveal something very weird.
+
+First, you'll need to load a new data file that contains \emph{only} the first 5 rows.  Do to this, load the file \filename{aflsmall\_margins\_first5.csv}.  Next, click `Descriptives' -- 'Descriptive Statistics', and then under the 'Statistics' menu, click the `Variance' check box (you'll find it in the 'Dispersion' group.  Do you get the same values for variance as the one we calculated by hand (\rtext{324.64})?  No, wait, you get a completely {\it different} answer (\rtext{405.800})! That's just weird. Is JASP broken? Is this a typo? What is going on? 
 
 %\vspace{1cm}
-\begin{figure}[ht]
-\begin{center}
-\epsfig{file=../img/descriptives/aflsmall_margins_variance1.png,clip=true,width=14cm} 
-\caption{A screenshot of jamovi showing the Variance for the first 5 values of the \texttt{afl.margins} variable }
-\label{fig:aflsmall_margins_variance1}
-\HR
-\end{center}
-\end{figure}
+%\begin{figure}[ht]
+%\begin{center}
+%\epsfig{file=../img/descriptives/aflsmall_margins_variance1.png,clip=true,width=14cm} 
+%\caption{A screenshot of jamovi showing the Variance for the first 5 values of the \texttt{afl.margins} variable }
+%\label{fig:aflsmall_margins_variance1}
+%\HR
+%\end{center}
+%\end{figure}
 
-As it happens, the answer is no.\FOOTNOTE{With the possible exception of the third question.} It's not a typo, and jamovi is not making a mistake. In fact, it's very simple to explain what jamovi is doing here, but slightly trickier to explain {\it why} jamovi is doing it. So let's start with the ``what''. What jamovi is doing is evaluating a slightly different formula to the one I showed you above. Instead of averaging the squared deviations, which requires you to divide by the number of data points $N$, jamovi has chosen to divide by $N-1$.
+As it happens, the answer is no. It's not a typo, and JASP is not making a mistake. In fact, it's very simple to explain what JASP is doing here, but slightly trickier to explain {\it why} JASP is doing it. So let's start with the ``what''. What JASP is doing is evaluating a slightly different formula to the one I showed you above. Instead of averaging the squared deviations, which requires you to divide by the number of data points $N$, JASP has chosen to divide by $N-1$.
 
 \vspace{0.5cm}
 \begin{mdframed}[style=MyFrame,nobreak=true]
-In other words, the formula that jamovi is using is this one:
+In other words, the formula that JASP is using is this one:
 $$
 \frac{1}{N-1} \sum_{i=1}^N \left( X_i - \bar{X} \right)^2
 $$
 \end{mdframed}
 
-So that's the {\it what}. The real question is {\it why} jamovi is dividing by $N-1$ and not by $N$. After all, the variance is supposed to be the {\it mean} squared deviation, right? So shouldn't we be dividing by $N$, the actual number of observations in the sample? Well, yes, we should. However, as we'll discuss in Chapter~\ref{ch:estimation}, there's a subtle distinction between ``describing a sample'' and ``making guesses about the population from which the sample came''. Up to this point, it's been a distinction without a difference. Regardless of whether you're describing a sample or drawing inferences about the population, the mean is calculated exactly the same way. Not so for the variance, or the standard deviation, or for many other measures besides. What I outlined to you initially (i.e., take the actual average, and thus divide by $N$) assumes that you literally intend to calculate the variance of the sample. Most of the time, however, you're not terribly interested in the sample {\it in and of itself}. Rather, the sample exists to tell you something about the world. If so, you're actually starting to move away from calculating a ``sample statistic'' and towards the idea of estimating a ``population parameter''. However, I'm getting ahead of myself. For now, let's just take it on faith that jamovi knows what it's doing, and we'll revisit the question later on when we talk about estimation in Chapter~\ref{ch:estimation}. 
+So that's the {\it what}. The real question is {\it why} JASP is dividing by $N-1$ and not by $N$. After all, the variance is supposed to be the {\it mean} squared deviation, right? So shouldn't we be dividing by $N$, the actual number of observations in the sample? Well, yes, we should. However, as we'll discuss in Chapter~\ref{ch:estimation}, there's a subtle distinction between ``describing a sample'' and ``making guesses about the population from which the sample came''. Up to this point, it's been a distinction without a difference. Regardless of whether you're describing a sample or drawing inferences about the population, the mean is calculated exactly the same way. Not so for the variance, or the standard deviation, or for many other measures besides. What I outlined to you initially (i.e., take the actual average, and thus divide by $N$) assumes that you literally intend to calculate the variance of the sample. Most of the time, however, you're not terribly interested in the sample {\it in and of itself}. Rather, the sample exists to tell you something about the world. If so, you're actually starting to move away from calculating a ``sample statistic'' and towards the idea of estimating a ``population parameter''. However, I'm getting ahead of myself. For now, let's just take it on faith that JASP knows what it's doing, and we'll revisit the question later on when we talk about estimation in Chapter~\ref{ch:estimation}. 
 
-Okay, one last thing. This section so far has read a bit like a mystery novel. I've shown you how to calculate the variance, described the weird ``$N-1$'' thing that jamovi does and hinted at the reason why it's there, but I haven't mentioned the single most important thing. How do you {\it interpret} the variance? Descriptive statistics are supposed to describe things, after all, and right now the variance is really just a gibberish number. Unfortunately, the reason why I haven't given you the human-friendly interpretation of the variance is that there really isn't one. This is the most serious problem with the variance. Although it has some elegant mathematical properties that suggest that it really is a fundamental quantity for expressing variation, it's completely useless if you want to communicate with an actual human. Variances are completely uninterpretable in terms of the original variable! All the numbers have been squared and they don't mean anything anymore. This is a huge issue. For instance, according to the table I presented earlier, the margin in game 1 was ``376.36 points-squared higher than the average margin''. This is {\it exactly} as stupid as it sounds, and so when we calculate a variance of 324.64 we're in the same situation. I've watched a lot of footy games, and at no time has anyone ever  referred to ``points squared''. It's {\it not} a real unit of measurement, and since the variance is expressed in terms of this gibberish unit, it is totally meaningless to a human.
+Okay, one last thing. This section so far has read a bit like a mystery novel. I've shown you how to calculate the variance, described the weird ``$N-1$'' thing that JASP does and hinted at the reason why it's there, but I haven't mentioned the single most important thing. How do you {\it interpret} the variance? Descriptive statistics are supposed to describe things, after all, and right now the variance is really just a gibberish number. Unfortunately, the reason why I haven't given you the human-friendly interpretation of the variance is that there really isn't one. This is the most serious problem with the variance. Although it has some elegant mathematical properties that suggest that it really is a fundamental quantity for expressing variation, it's completely useless if you want to communicate with an actual human. Variances are completely uninterpretable in terms of the original variable! All the numbers have been squared and they don't mean anything anymore. This is a huge issue. For instance, according to the table I presented earlier, the margin in game 1 was ``376.36 points-squared higher than the average margin''. This is {\it exactly} as stupid as it sounds, and so when we calculate a variance of 324.64 we're in the same situation. I've watched a lot of football games, and at no time has anyone ever referred to ``points squared''. It's {\it not} a real unit of measurement, and since the variance is expressed in terms of this gibberish unit, it is totally meaningless to a human.
 
 \SUBSECTION{Standard deviation\label{sec:sd}}
 
-Okay, suppose that you like the idea of using the variance because of those nice mathematical properties that I haven't talked about, but since you're a human and not a robot you'd like to have a measure that is expressed in the same units as the data itself (i.e., points, not points-squared). What should you do? The solution to the problem is obvious! Take the square root of the variance, known as the \keyterm{standard deviation}, also called the ``root mean squared deviation'', or RMSD. This solves our problem fairly neatly. Whilst nobody has a clue what ``a variance of 324.68 points-squared'' really means, it's much easier to understand ``a standard deviation of 18.01 points'' since it's expressed in the original units. It is traditional to refer to the standard deviation of a sample of data as $s$, though 	``sd'' and ``std dev.'' are also used at times. 
+Okay, suppose that you like the idea of using the variance because of those nice mathematical properties that I haven't talked about, but since you're a human and not a robot you'd like to have a measure that is expressed in the same units as the data itself (i.e., points, not points-squared). What should you do? The solution to the problem is obvious! Take the square root of the variance, known as the \keyterm{standard deviation}, also called the ``root mean squared deviation'', or RMSD. This solves our problem fairly neatly. Whilst nobody has a clue what ``a variance of 324.68 points-squared'' really means, it's much easier to understand ``a standard deviation of 18.01 points'' since it's expressed in the original units. It is traditional to refer to the standard deviation of a sample of data as $s$, though ``sd'' and ``std dev.'' are also used at times. 
 
 \vspace{0.5cm}
 \begin{mdframed}[style=MyFrame,nobreak=true]
@@ -328,10 +330,10 @@ Because the standard deviation is equal to the square root of the variance, you 
 $$
 s = \sqrt{ \frac{1}{N} \sum_{i=1}^N \left( X_i - \bar{X} \right)^2 }
 $$
-and in jamovi there is a check box for `Std. deviation' right above the check box for `Variance'. Selecting this gives a value of \rtext{26.07} for the standard deviation. 
+and in JASP there is a check box for `Std. deviation' in the same section as the check box for `Variance'. As you can see in Figure \ref{fig:aflsmall_margins_iqr}, the value JASP gives for the standard deviation of \rtext{afl.margins} is \rtext{26.074}.  Note that because standard deviation is used so often, it is checked by default, so you will rarely have to actually select it yourself!
 \end{mdframed}
 
-However, as you might have guessed from our discussion of the variance, what jamovi actually calculates is slightly different to the formula given above. Just like the we saw with the variance, what jamovi calculates is a version that divides by $N-1$ rather than $N$. 
+However, as you might have guessed from our discussion of the variance, what JASP actually calculates is slightly different to the formula given above. Just like the we saw with the variance, what JASP calculates is a version that divides by $N-1$ rather than $N$. 
 
 \vspace{0.5cm}
 \begin{mdframed}[style=MyFrame,nobreak=true]
@@ -392,7 +394,7 @@ $$
 where $N$ is the number of observations, $\bar{X}$ is the sample mean, and $\hat{\sigma}$ is the standard deviation (the ``divide by $N-1$'' version, that is). 
 \end{mdframed}
 
-Perhaps more helpfully, you can use jamovi to calculate skewness: it's a check box in the `Statistics' options under `Exploration' - `Descriptives'. For the \rtext{afl.margins} variable, the skewness figure is \rtext{0.780}. If you divide the skewness estimate by the Std. error for skewness you have an indication of how skewed the data is. Especially in small samples (N<50), one rule of thumb suggests that a value of 2 or less can mean that the data is not very skewed, and a value of over 2 that there is sufficient skew in the data to possibly limit its use in some statistical analyses. Though there is no clear agreement on this interpretation. That said, this does indicate that the AFL winning margins data is somewhat skewed (\rtext{0.780 / 0.183 = 4.262}). 
+Perhaps more helpfully, you can use JASP to calculate skewness: it's a check box in the `Statistics' options under `Descriptives' - `Descriptive Statistics'. For the \rtext{afl.margins} variable, the skewness figure is \rtext{0.780}. If you divide the skewness estimate by the Std. error for skewness you have an indication of how skewed the data is. Especially in small samples ($N<50$), one rule of thumb suggests that a value of 2 or less can mean that the data is not very skewed, and a value of over 2 that there is sufficient skew in the data to possibly limit its use in some statistical analyses. Note that this is a rule of thumb -- there is no clear agreement on this interpretation. That said, such analysis does indicate that the AFL winning margins data is somewhat skewed (\rtext{0.780 / 0.183 = 4.262}, which is certainly greater than 2). 
 
 The final measure that is sometimes referred to, though very rarely in practice, is the \keyterm{kurtosis} of a data set. Put simply, kurtosis is a measure of the ``pointiness'' of a data set, as illustrated in Figure~\ref{fig:kurtosis}. By convention, we say that the ``normal curve'' (black lines) has zero kurtosis, so the pointiness of a data set is assessed relative to this curve. 
 
@@ -418,25 +420,25 @@ informal term & technical name & kurtosis value \\ \hline
 
 \vspace{0.5cm}
 \begin{mdframed}[style=MyFrame,nobreak=true]
-The equation for kurtosis is pretty similar in spirit to the formulas we've seen already for the variance and the skewness. Except that where the variance involved squared deviations and the skewness involved cubed deviations, the kurtosis involves raising the deviations to the fourth power:\FOOTNOTE{The ``$-3$'' part is something that statisticians tack on to ensure that the normal curve has kurtosis zero. It looks a bit stupid, just sticking a ``-3'' at the end of the formula, but there are good mathematical reasons for doing this.}
+The equation for kurtosis is pretty similar in spirit to the formulas we've seen already for the variance and the skewness. Except that where the variance involved squared deviations and the skewness involved cubed deviations, the kurtosis involves raising the deviations to the fourth power:\FOOTNOTE{The ``$-3$'' part is something that statisticians tack on to ensure that the normal curve has kurtosis zero. It looks a bit silly, just sticking a ``-3'' at the end of the formula, but there are good mathematical reasons for doing this.}
 $$
-\mbox{kurtosis}(X) = \frac{1}{N \hat\sigma^4} \sum_{i=1}^N \left( X_i - \bar{X} \right)^4  - 3
+\mbox{kurtosis}(X) = \frac{1}{N \hat\sigma^4} \sum_{i=1}^N \left( X_i - \bar{X} \right)^4  - 3.
 $$
-I know, it's not terribly interesting to me either. 
+
 \end{mdframed}
 
-More to the point, jamovi has a check box for kurtosis just below the check box for skewness, and this gives a value for kurtosis of \rtext{0.101} with a standard error of \rtext{0.364}. This means that the AFL winning margins data are just pointy enough.
+More to the point, JASP has a check box for kurtosis just below the check box for skewness, and this gives a value for kurtosis of \rtext{0.101} with a standard error of \rtext{0.364}. Using the same idea as before where we divide the kurtosis by the standard error of the kurtosis, we note that this value is much less than 2 (\rtext{0.101}/\rtext{0.364} = \rtext{0.277}). This means that the AFL winning margins data are just pointy enough.
 
 
 \section{Descriptive statistics separately for each group~\label{sec:groupdescriptives}}
 
-It is very commonly the case that you find yourself needing to look at descriptive statistics broken down by some grouping variable. This is pretty easy to do in jamovi. For instance, let's  say I want to look at the descriptive statistics for some \rtext{clin.trial} data, broken down separately by \rtext{therapy} type. This is a new data set, one that you've never seen before. The data is stored in the \filename{clinicaltrial.csv} file and we'll use it a lot in Chapter~\ref{ch:anova} (you can find a complete description of the data at the start of that chapter). Let's load it and see what we've got:
+It is very commonly the case that you find yourself needing to look at descriptive statistics broken down by some grouping variable. This is pretty easy to do in JASP. For instance, let's say I want to look at the descriptive statistics for some \rtext{clin.trial} data, broken down separately by \rtext{therapy} type. This is a new data set, one that you've never seen before. The data is stored in the \filename{clinicaltrial.csv} file and we'll use it a lot in Chapter~\ref{ch:anova} (you can find a complete description of the data at the start of that chapter). Let's load it and see what we've got:
 
 \vspace{0.5cm}
 \begin{figure}[ht]
 \begin{center}
 \epsfig{file=../img/descriptives/clinicaltrial.png,clip=true,width=14cm} 
-\caption{A screenshot of jamovi showing the variables stored in the \filename{clinicaltrial.csv} file}
+\caption{A screenshot of JASP showing the variables stored in the \filename{clinicaltrial.csv} file}
 \label{fig:clinicaltrial}
 \HR
 \end{center}
@@ -444,19 +446,17 @@ It is very commonly the case that you find yourself needing to look at descripti
 
 Evidently there were three drugs: a placebo, something called ``anxifree'' and something called ``joyzepam'', and there were 6 people administered each drug. There were 9 people treated using cognitive behavioural therapy (CBT) and 9 people who received no psychological treatment. And we can see from looking at the `Descriptives' of the \rtext{mood.gain} variable that most people did show a mood gain (mean $=0.88$), though without knowing what the scale is here it's hard to say much more than that. Still, that's not too bad. Overall I feel that I learned something from that.
 
-We can also go ahead and look at some other descriptive statistics, and this time separately for each type of therapy. In jamovi, check Std. deviation, Skewness and Kurtosis in the `Statistics' options. At the same time, transfer the \rtext{therapy} variable into the `Split by' box, and you should get something like Figure \ref{fig:clinicaltrial_grouping}
+We can also go ahead and look at some other descriptive statistics, and this time separately for each type of therapy. In JASP, check Std. deviation, Skewness, and Kurtosis in the `Statistics' options. At the same time, transfer the \rtext{therapy} variable into the `Split' box, and you should get something like Figure \ref{fig:clinicaltrial_grouping}
 
 \vspace{0.5cm}
 \begin{figure}[htb]
 \begin{center}
 \epsfig{file=../img/descriptives/clinicaltrial_grouping.png,clip=true,width=14cm} 
-\caption{A screenshot of jamovi showing Descriptives split by therapy type}
+\caption{A screenshot of JASP showing Descriptives split by therapy type}
 \label{fig:clinicaltrial_grouping}
 \HR
 \end{center}
 \end{figure}
-
-What if you have multiple grouping variables? Suppose you want to look at the average mood gain separately for all possible combinations of drug and therapy. It is possible to do this by adding another variable, \rtext{drug}, into the `Split by' box. Easy peasy, though sometimes if you split too much there isn't enough data in each breakdown combination to make meaningful calculations. In this case jamovi tells you this by stating something like \rtext{NaN} or \rtext{Inf}.\FOOTNOTE{Sometimes jamovi will also present numbers in an unusual way. If a number is very small, or very large, then jamovi switches to an exponential form for numbers. For example \rtext{6.51e-4} is the same as saying that the decimal point is moved 4 places to the left, so the actual number is 0.000651. If there is a plus sign (i.e. \rtext{6.51e+4} then the decimal point is moved to the right, i.e. 65,100.00. Usually only very small or very large numbers are expressed in this way, for example \rtext{6.51e-16}, which would be quite unwieldy to write out in the normal way.}
 
 
 \section{Standard scores~\label{sec:zscore}}
@@ -497,7 +497,7 @@ Calculating some basic descriptive statistics is one of the very first things yo
 \item {\it Measures of central tendency}. Broadly speaking, central tendency measures tell you where the data are. There's three measures that are typically reported in the literature: the mean, median and mode. (Section~\ref{sec:centraltendency})
 \item {\it Measures of variability}. In contrast, measures of variability tell you about how ``spread out'' the data are. The key measures are: range, standard deviation, and interquartile range. (Section~\ref{sec:var})
 \item {\it Measures of skewness and kurtosis}. We also looked at assymetry in a variable's distribution (skew) and pointness (kurtosis). (Section~\ref{sec:skewkurt})
-\item {\it Getting group summaries of variables in jamovi}. Since this book focuses on doing data analysis in jamovi, we spent a bit of time talking about how descriptive statistics are computed for different subgroups. (Section~\ref{sec:groupdescriptives})
+\item {\it Getting group summaries of variables in JASP}. Since this book focuses on doing data analysis in JASP, we spent a bit of time talking about how descriptive statistics are computed for different subgroups. (Section~\ref{sec:groupdescriptives})
 \item {\it Standard scores}. The $z$-score is a slightly unusual beast. It's not quite a descriptive statistic, and not quite an inference. We talked about it in Section~\ref{sec:zscore}. Make sure you understand that section. It'll come up again later. 
 \end{itemize}
 In the next Chapter we'll move on to a discussion of how to draw pictures! Everyone loves a pretty picture, right? But before we do, I want to end on an important point. A traditional first course in statistics spends only a small proportion of the class on descriptive statistics, maybe one or two lectures at most. The vast majority of the lecturer's time is spent on inferential statistics because that's where all the hard stuff is. That makes sense, but it hides the practical everyday importance of choosing good descriptives. With that in mind\ldots
