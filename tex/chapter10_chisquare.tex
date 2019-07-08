@@ -15,9 +15,9 @@ The $\chi^2$ goodness-of-fit test is one of the oldest hypothesis tests around. 
 
 \SUBSECTION{The cards data}
 
-Over the years there have been many studies showing that humans find it difficult to simulate randomness. Try as we might to ``act'' random, we {\it think} in terms of patterns and structure and so, when asked to ``do something at random'', what people actually do is anything but random. As a consequence, the study of human randomness (or non-randomness, as the case may be) opens up a lot of deep psychological questions about how we think about the world. With this in mind, let's consider a very simple study. Suppose I asked people to imagine a shuffled deck of cards, and mentally pick one card from this imaginary deck ``at random''. After they've chosen one card I ask them to mentally select a second one. For both choices what we're going to look at is the suit (hearts, clubs, spades or diamonds) that people chose. After asking, say, $N=200$ people to do this, I'd like to look at the data and figure out whether or not the cards that people pretended to select were really random. The data are contained in the \filename{randomness.csv} file in which, when you open it up in jamovi and take a look at the spreadsheet view, you will see three variables. These are: an \rtext{id} variable that assigns a unique identifier to each participant, and the two variables \rtextverb#choice_1# and \rtextverb#choice_2# that indicate the card suits that people chose. 
+Over the years there have been many studies showing that humans find it difficult to simulate randomness. Try as we might to ``act'' random, we {\it think} in terms of patterns and structure and so, when asked to ``do something at random'', what people actually do is anything but random. As a consequence, the study of human randomness (or non-randomness, as the case may be) opens up a lot of deep psychological questions about how we think about the world. With this in mind, let's consider a very simple study. Suppose I asked people to imagine a shuffled deck of cards, and mentally pick one card from this imaginary deck ``at random''. After they've chosen one card I ask them to mentally select a second one. For both choices what we're going to look at is the suit (hearts, clubs, spades or diamonds) that people chose. After asking, say, $N=200$ people to do this, I'd like to look at the data and figure out whether or not the cards that people pretended to select were really random. The data are contained in the \filename{randomness.csv} file in which, when you open it up in JASP, you will see three variables. These are: an \rtext{id} variable that assigns a unique identifier to each participant, and the two variables \rtextverb#choice_1# and \rtextverb#choice_2# that indicate the card suits that people chose. 
 
-For the moment, let's just focus on the first choice that people made. We'll use the \rtext{Frequency tables} option under `Exploration' - `Descriptives' to count the number of times that we observed people choosing each suit. This is what we get: 
+For the moment, let's just focus on the first choice that people made. We'll use the \rtext{Frequency tables} option under `Descriptives' - `Descriptive Statistics' to count the number of times that we observed people choosing each suit. This is what we get: 
 
 \begin{rblock1}
    clubs diamonds   hearts   spades 
@@ -26,7 +26,7 @@ For the moment, let's just focus on the first choice that people made. We'll use
 
 That little frequency table is quite helpful. Looking at it, there's a bit of a hint that people {\it might} be more likely to select hearts than clubs, but it's not completely obvious just from looking at it whether that's really true, or if this is just due to chance. So we'll probably have to do some kind of statistical analysis to find out, which is what I'm going to talk about in the next section. 
 
-Excellent. From this point on, we'll treat this table as the data that we're looking to analyse. However, since I'm going to have to talk about this data in mathematical terms (sorry!) it might be a good idea to be clear about what the notation is. In mathematical notation, we shorten the human-readable word “observed” to the letter $O$, and we use subscripts to denote the position of the observation. So the second observation in our table is written as $O_2$ in maths. The relationship between the English descriptions and the mathematical symbols are illustrated below: 
+Excellent. From this point on, we'll treat this table as the data that we're looking to analyse. However, since I'm going to have to talk about this data in mathematical terms, it might be a good idea to be clear about what the notation is. In mathematical notation, we shorten the human-readable word “observed” to the letter $O$, and we use subscripts to denote the position of the observation. So the second observation in our table is written as $O_2$ in maths. The relationship between the English descriptions and the mathematical symbols are illustrated below: 
 
 \begin{center}
 \begin{tabular}{cc|cc}
@@ -39,7 +39,7 @@ label &  index, $i$  & math. symbol &  the value \\  \hline
 \end{center}
 
 \noindent
-Hopefully that's pretty clear. It's also worth noting that mathematicians prefer to talk about general rather than specific things, so you'll also see the notation $O_i$, which refers to the number of observations that fall within the $i$-th category (where $i$ could be 1, 2, 3 or 4). Finally, if we want to refer to the set of all observed frequencies, statisticians group all observed values into a vector\FOOTNOTE{A vector is a sequence of data elements of the same basic type}, which I'll refer to as $\bm{O}$. 
+Hopefully that's pretty clear. It's also worth noting that mathematicians prefer to talk about general rather than specific things, so you'll also see the notation $O_i$, which refers to the number of observations that fall within the $i$-th category (where $i$ could be 1, 2, 3 or 4). Finally, if we want to refer to the set of all observed frequencies, statisticians group all observed values into a vector\FOOTNOTE{A vector is a sequence of data elements of the same basic type}, which I'll refer to using boldface type as $\bm{O}$. 
 
 $$
 \bm{O} = (O_1, O_2, O_3, O_4)
@@ -109,28 +109,32 @@ difference score & $O_i - E_i$ & -15 & 1 & 14 & 0 \\
 \end{tabular}
 \end{center}
 
-So, based on our calculations, it's clear that people chose more hearts and fewer clubs than the null hypothesis predicted. However, a moment's thought suggests that these raw differences aren't quite what we're looking for. Intuitively, it feels like it's just as bad when the null hypothesis predicts too few observations (which is what happened with hearts) as it is when it predicts too many (which is what happened with clubs). So it's a bit weird that we have a negative number for clubs and a positive number for hearts. One easy way to fix this is to square everything, so that we now calculate the squared differences, $(E_i - O_i)^2$. As before, we can do this by hand: 
+So, based on our calculations, it's clear that people chose more hearts and fewer clubs than the null hypothesis predicted. However, a moment's thought suggests that these raw differences aren't quite what we're looking for. Intuitively, it feels like it's just as bad when the null hypothesis predicts too few observations (which is what happened with hearts) as it is when it predicts too many (which is what happened with clubs). So it's a bit weird that we have a negative number for clubs and a positive number for hearts. One easy way to fix this is to square everything, so that we now calculate the squared differences, $(O_i - E_i)^2$. As before, we can do this by hand: 
 
-\begin{rblock1}
-(observed - expected)^2
-   clubs diamonds   hearts   spades 
-     225        1      196        0 
-\end{rblock1}
+\begin{center}
+\begin{tabular}{rc|cccc}
+& & $\clubsuit$ & $\diamondsuit$ & $\heartsuit$ & $\spadesuit$ \\ \hline 
+expected frequency &$E_i$ & 50 & 50 & 50 & 50 \\ 
+observed frequency &$O_i$ & 35 & 51 & 64 & 50 \\ 
+  difference score & $O_i - E_i$ & -15 & 1 & 14 & 0 \\
+  squared difference & $(O_i-E_i)^2$ & 225 & 1 & 196 & 0\\
+\end{tabular}
+\end{center}
 
-Now we're making progress. What we've got now is a collection of numbers that are big whenever the null hypothesis makes a bad prediction (clubs and hearts), but are small whenever it makes a good one (diamonds and spades). Next, for some technical reasons that I'll explain in a moment, let's also divide all these numbers by the expected frequency $E_i$, so we're actually calculating $\frac{(E_i-O_i)^2}{E_i}$. Since $E_i = 50$ for all categories in our example, it's not a very interesting calculation, but let's do it anyway: 
-\begin{rblock1}
-(observed - expected)^2 / expected
-   clubs diamonds   hearts   spades 
-    4.50     0.02     3.92     0.00 
-\end{rblock1}
+Now we're making progress. What we've got now is a collection of numbers that are big whenever the null hypothesis makes a bad prediction (clubs and hearts), but are small whenever it makes a good one (diamonds and spades). Next, for some technical reasons that I'll explain in a moment, let's also divide all these numbers by the expected frequency $E_i$, so we're actually calculating the \emph{scaled} squared difference, $\frac{(E_i-O_i)^2}{E_i}$. Since $E_i = 50$ for all categories in our example, it's not a very interesting calculation, but let's do it anyway:
 
-In effect, what we've got here are four different ``error'' scores, each one telling us how big a ``mistake'' the null hypothesis made when we tried to use it to predict our observed frequencies. So, in order to convert this into a useful test statistic, one thing we could do is just add these numbers up. The result is called the \keyterm{goodness-of-fit} statistic, conventionally referred to either as $\chi^2$ (chi-square) or GOF. We can calculate it as follows: 
+\begin{center}
+\begin{tabular}{rc|cccc}
+& & $\clubsuit$ & $\diamondsuit$ & $\heartsuit$ & $\spadesuit$ \\ \hline 
+expected frequency &$E_i$ & 50 & 50 & 50 & 50 \\ 
+observed frequency &$O_i$ & 35 & 51 & 64 & 50 \\ 
+  difference score & $O_i - E_i$ & -15 & 1 & 14 & 0 \\
+  squared difference & $(O_i-E_i)^2$ & 225 & 1 & 196 & 0\\
+  scaled sq. diff. & $(O_i-E_i)^2/E_i$ & 4.50 & 0.02 & 3.92 & 0.00\\
+\end{tabular}
+\end{center}
 
-\begin{rblock1}
-sum( (observed - expected)^2 / expected )
-\end{rblock1}
-
-This gives us a value of \rtext{8.44}.
+In effect, what we've got here are four different ``error'' scores, each one telling us how big a ``mistake'' the null hypothesis made when we tried to use it to predict our observed frequencies. So, in order to convert this into a useful test statistic, one thing we could do is just add these numbers up. The result is called the \keyterm{goodness-of-fit} statistic, conventionally referred to either as $\chi^2$ (chi-square) or GOF. We can calculate it as \rtext{$4.50+0.02+3.92+0.00 = 8.44$}.
 
 \vspace{0.5cm}
 \begin{mdframed}[style=MyFrame,nobreak=true]
@@ -196,14 +200,14 @@ Ah but, I hear you ask, how do I find the critical value of a chi-square distrib
 
 So, if our calculated $\chi^2$ statistic is bigger than the critical value of 7.815, then we can reject the null hypothesis (remember that the null hypothesis, $H_0$, is that all four suits are chosen with equal probability). Since we actually already calculated that before (i.e., $\chi^2 = 8.44$) we can reject the null hypothesis.  And that's it, basically. You now know ``Pearson's $\chi^2$ test for the goodness-of-fit''. Lucky you.
 
-\SUBSECTION{Doing the test in jamovi\label{sec:gofTestInjamovi}}
+\SUBSECTION{Doing the test in JASP\label{sec:gofTestInJASP}}
 
-Not surprisingly, jamovi provides an analysis that will do these calculations for you. From the main `Analyses' toolbar select `Frequencies' - `One Sample Proportion Tests' - `N Outcomes'. Then in the analysis window that appears move the variable you want to analyse (\rtext{choice\_1} across into the `Variable' box. Also, click on the `Expected counts' check box so that these are shown on the results table. When you have done all this, you should see the analysis results in jamovi as in Figure~\ref{fig:chisquare.analysis1}. No surprise then that jamovi provides the same expected counts and statistics that we calculated by hand above, with a $\chi^2$ value of 8.44 with 3 d.f. and $p$=0.038. Note that we don't need to look up a critical p-value threshold value any more, as jamovi gives us the actual $p$-value of the calculated $\chi^2$ for 3 d.f.  
+Not surprisingly, JASP provides an analysis that will do these calculations for you. From the main `Analyses' toolbar select `Frequencies' - `Multinomial Test'. Then in the analysis window that appears move the variable you want to analyse (\rtext{choice\_1} across into the `Factor' box. Also, click on the `Descriptives' check box so that you see the expected counts in the results table. When you have done all this, you should see the analysis results in JASP as in Figure~\ref{fig:chisquare.analysis1}. No surprise then that JASP provides the same expected counts and statistics that we calculated by hand above, with a $\chi^2$ value of 8.44 with 3 d.f. and $p$=0.038. Note that we don't need to look up a critical p-value threshold value any more, as JASP gives us the actual $p$-value of the calculated $\chi^2$ for 3 d.f.  
 
 \begin{figure}
 \begin{center}
 \epsfig{file=../img/chisquare/chisquared_analysis1.png,clip=true,width=14cm}
-\caption{A $\chi^2$ One Sample Proportion Test in jamovi, with table showing both observed and expected frequencies and proportions.}
+\caption{A $\chi^2$ goodness-of-fit test in JASP, with table showing both observed and expected frequencies.}
 \label{fig:chisquare.analysis1}
 \HR
 \end{center}
@@ -211,12 +215,12 @@ Not surprisingly, jamovi provides an analysis that will do these calculations fo
 
 \SUBSECTION{Specifying a different null hypothesis}
 
-At this point you might be wondering what to do if you want to run a goodness-of-fit test but your null hypothesis is {\it not} that all categories are equally likely. For instance, let's suppose that someone had made the theoretical prediction that people should choose red cards 60\% of the time, and black cards 40\% of the time (I've no idea why you'd predict that), but had no other preferences. If that were the case, the null hypothesis would be to expect 30\% of the choices to be hearts, 30\% to be diamonds, 20\% to be spades and 20\% to be clubs. In other words we would expect hearts and diamonds to appear 1.5 times more often than spades and clubs (the ratio 30\% : 20\% is the same as 1.5 : 1). This seems like a silly theory to me, and it's pretty easy to test this explicitly specified null hypothesis with the data in our jamovi analysis. In the analysis window (labelled `Proportion Test (N Outcomes)' in Figure~\ref{fig:chisquare.analysis1} you can expand the options for `Expected Proportions'. When you do this, there are options for entering different ratio values for the variable you have selected, in our case this is \rtext{choice\_1}. Change the ratio to reflect the new null hypothesis, as in Figure~ \ref{fig:chisquare.analysis2}, and see how the results change. 
+At this point you might be wondering what to do if you want to run a goodness-of-fit test but your null hypothesis is {\it not} that all categories are equally likely. For instance, let's suppose that someone had made the theoretical prediction that people should choose red cards 60\% of the time, and black cards 40\% of the time (I've no idea why you'd predict that), but had no other preferences. If that were the case, the null hypothesis would be to expect 30\% of the choices to be hearts, 30\% to be diamonds, 20\% to be spades and 20\% to be clubs. In other words we would expect hearts and diamonds to each appear 60 times (30\% of 200 is 60), and spades and clubs to each appear 40 times (20\% of 200 is 40). This seems like a silly theory to me, but nonetheless, it's pretty easy to test this explicitly specified null hypothesis with the data in our JASP analysis. In the analysis window (see Figure~\ref{fig:chisquare.analysis1}) you can click the radio button for `Expected Proportions ($\chi^2$ test)'. When you do this, there are options for entering different expected counts for the variable you have selected, in our case this is \rtext{choice\_1}. Change the counts to reflect the new null hypothesis, as in Figure~ \ref{fig:chisquare.analysis2}, and see how the results change. 
 
 \begin{figure}[htb]
 \begin{center}
-\epsfig{file=../img/chisquare/chisquared_analysis2.png,clip=true,width=14cm}
-\caption{Changing the expected proportions in the \texorpdfstring{$\chi^2$}{} One Sample Proportion Test in jamovi}
+\epsfig{file=../img/chisquare/chisquared_analysis2.png,clip=true,width=10cm}
+\caption{Changing the expected proportions in the \texorpdfstring{$\chi^2$}{} goodness-of-fit test in JASP}
 \label{fig:chisquare.analysis2}
 \HR
 \end{center}
@@ -230,11 +234,11 @@ The expected counts are now:
 expected frequency &$E_i$ & 40 & 60 & 60 & 40 \\ 
 \end{tabular}
 \end{center}
-and the $\chi^2$ statistic is 4.74, 3 d.f., $p$ = 0.182. Now, the results of our updated hypotheses and the expected frequencies are different from what they were last time. As a consequence our $\chi^2$ test statistic is different, and our $p$-value is different too. Annoyingly, the $p$-value is .182, so we can't reject the null hypothesis (look back at section \ref{sec:pvalue} to remind yourself why). Sadly, despite the fact that the null hypothesis corresponds to a very silly theory, these data don't provide enough evidence against it.
+and the $\chi^2$ statistic is 4.742, 3 d.f., $p$ = 0.192. Now, the results of our updated hypotheses and the expected frequencies are different from what they were last time. As a consequence our $\chi^2$ test statistic is different, and our $p$-value is different too. Annoyingly, the $p$-value is .192, so we can't reject the null hypothesis (look back at section \ref{sec:pvalue} to remind yourself why). Sadly, despite the fact that the null hypothesis corresponds to a very silly theory, these data don't provide enough evidence against it.
 
 \SUBSECTION{How to report the results of the test~\label{sec:chisqreport}}
 
-So now you know how the test works, and you know how to do the test using a wonderful jamovi flavoured magic computing box. The next thing you need to know is how to write up the results. After all, there's no point in designing and running an experiment and then analysing the data if you don't tell anyone about it! So let's now talk about what you need to do when reporting your analysis. Let's stick with our card-suits example. If I wanted to write this result up for a paper or something, then the conventional way to report this would be to write something like this:
+So now you know how the test works, and you know how to do the test using a wonderful JASP-flavoured magic computing box. The next thing you need to know is how to write up the results. After all, there's no point in designing and running an experiment and then analysing the data if you don't tell anyone about it! So let's now talk about what you need to do when reporting your analysis. Let's stick with our card-suits example. If I wanted to write this result up for a paper or something, then the conventional way to report this would be to write something like this:
 
 \begin{quote}
 Of the 200 participants in the experiment, 64 selected hearts for their first choice, 51 selected diamonds, 50 selected spades, and 35 selected clubs. A chi-square goodness-of-fit test was conducted to test whether the choice probabilities were identical for all four suits. The results were significant ($\chi^2(3) = 8.44, p<.05$), suggesting that people did not select suits purely at random.
@@ -263,7 +267,7 @@ As with everything else, your overriding concern should be that you {\it explain
 \noindent
 If you've been reading very closely, and are as much of a mathematical pedant as I am, there is one thing about the way I wrote up the chi-square test in the last section that might be bugging you a little bit. There's something that feels a bit wrong with writing ``$\chi^2(3) = 8.44$'', you might be thinking. After all, it's the goodness-of-fit statistic that is equal to 8.44, so shouldn't I have written $X^2 = 8.44$ or maybe GOF$=8.44$? This seems to be conflating the {\it sampling distribution} (i.e., $\chi^2$ with $df = 3$) with the {\it test statistic} (i.e., $X^2$). Odds are you figured it was a typo, since $\chi$ and $X$ look pretty similar. Oddly, it's not. Writing $\chi^2(3) = 8.44$ is essentially a highly condensed way of writing ``the sampling distribution of the test statistic is $\chi^2(3)$, and the value of the test statistic is 8.44''. 
 
-In one sense, this is kind of stupid. There are {\it lots} of different test statistics out there that turn out to have a chi-square sampling distribution. The $X^2$ statistic that we've used for our goodness-of-fit test is only one of many (albeit one of the most commonly encountered ones). In a sensible, perfectly organised world we'd {\it always} have a separate name for the test statistic and the sampling distribution. That way, the stat block itself would tell you exactly what it was that the researcher had calculated. Sometimes this happens. For instance, the test statistic used in the Pearson goodness-of-fit test is written $X^2$, but there's a closely related test known as the $G$-test\FOOTNOTE{Complicating matters, the $G$-test is a special case of a whole class of tests that are known as {\it likelihood ratio tests}. I don't cover LRTs in this book, but they are quite handy things to know about.} \parencite{Sokal1994}, in which the test statistic is written as $G$. As it happens, the Pearson goodness-of-fit test and the $G$-test both test the same null hypothesis, and the sampling distribution is exactly the same (i.e., chi-square with $k-1$ degrees of freedom). If I'd done a $G$-test for the cards data rather than a goodness-of-fit test, then I'd have ended up with a test statistic of $G = 8.65$, which is slightly different from the $X^2 = 8.44$ value that I got earlier and which produces a slightly smaller $p$-value of $p = .034$. Suppose that the convention was to report the test statistic, then the sampling distribution, and then the $p$-value. If that were true, then these two situations would produce different stat blocks: my original result would be written $X^2 = 8.44, \chi^2(3), p = .038$, whereas the new version using the $G$-test would be written as $G = 8.65, \chi^2(3), p = .034$. However, using the condensed reporting standard, the original result is written $\chi^2(3) = 8.44, p = .038$, and the new one is written $\chi^2(3) = 8.65, p = .034$, and so it's actually unclear which test I actually ran.  
+In one sense, this is kind of silly. There are {\it lots} of different test statistics out there that turn out to have a chi-square sampling distribution. The $X^2$ statistic that we've used for our goodness-of-fit test is only one of many (albeit one of the most commonly encountered ones). In a sensible, perfectly organised world we'd {\it always} have a separate name for the test statistic and the sampling distribution. That way, the stat block itself would tell you exactly what it was that the researcher had calculated. Sometimes this happens. For instance, the test statistic used in the Pearson goodness-of-fit test is written $X^2$, but there's a closely related test known as the $G$-test\FOOTNOTE{Complicating matters, the $G$-test is a special case of a whole class of tests that are known as {\it likelihood ratio tests}. I don't cover LRTs in this book, but they are quite handy things to know about.} \parencite{Sokal1994}, in which the test statistic is written as $G$. As it happens, the Pearson goodness-of-fit test and the $G$-test both test the same null hypothesis, and the sampling distribution is exactly the same (i.e., chi-square with $k-1$ degrees of freedom). If I'd done a $G$-test for the cards data rather than a goodness-of-fit test, then I'd have ended up with a test statistic of $G = 8.65$, which is slightly different from the $X^2 = 8.44$ value that I got earlier and which produces a slightly smaller $p$-value of $p = .034$. Suppose that the convention was to report the test statistic, then the sampling distribution, and then the $p$-value. If that were true, then these two situations would produce different stat blocks: my original result would be written $X^2 = 8.44, \chi^2(3), p = .038$, whereas the new version using the $G$-test would be written as $G = 8.65, \chi^2(3), p = .034$. However, using the condensed reporting standard, the original result is written $\chi^2(3) = 8.44, p = .038$, and the new one is written $\chi^2(3) = 8.65, p = .034$, and so it's actually unclear which test I actually ran.  
 
 So why don't we live in a world in which the contents of the stat block uniquely specifies what tests were ran? The deep reason is that life is messy. We (as users of statistical tools) want it to be nice and neat and organised. We want it to be {\it designed}, as if it were a product, but that's not how life works. Statistics is an intellectual discipline just as much as any other one, and as such it's a massively distributed, partly-collaborative and partly-competitive project that no-one really understands completely. The things that you and I use as data analysis tools weren't created by an Act of the Gods of Statistics. They were invented by lots of different people, published as papers in academic journals, implemented, corrected and modified by lots of other people, and then explained to students in textbooks by someone else. As a consequence, there's a {\it lot} of test statistics that don't even have names, and as a consequence they're just given the same name as the corresponding sampling distribution. As we'll see later, any test statistic that follows a $\chi^2$ distribution is commonly called a ``chi-square statistic'', anything that follows a $t$-distribution is called a ``$t$-statistic'', and so on. But, as the $\chi^2$ versus $G$ example illustrates, two different things with the same sampling distribution are still, well, different. 
 
@@ -292,7 +296,7 @@ GUARDBOT 1:& Choose! \\
 \end{quote}
 
 \noindent
-The other day I was watching an animated documentary examining the quaint customs of the natives of the planet {\it Chapek 9}. Apparently, in order to gain access to their capital city a visitor must prove that they're a robot, not a human. In order to determine whether or not a visitor is human, the natives ask whether the visitor prefers puppies, flowers, or large, properly formatted data files. ``Pretty clever,'' I thought to myself ``but what if humans and robots have the same preferences? That probably wouldn't be a very good test then, would it?'' As it happens, I got my hands on the testing data that the civil authorities of {\it Chapek 9} used to check this. It turns out that what they did was very simple. They found a bunch of robots and a bunch of humans and asked them what they preferred. I saved their data in a file called \filename{chapek9.omv}, which we can now load into jamovi. As well as the \rtext{ID} variable that identifies individual people, there are two nominal text variables, \rtext{species} and \rtext{choice}. In total there are 180 entries in the data set, one for each person (counting both robots and humans as ``people'') who was asked to make a choice. Specifically, there are 93 humans and 87 robots, and overwhelmingly the preferred choice is the data file. You can check this yourself by asking jamovi for Frequency Tables, under the `Exploration' - `Descriptives' button. However, this summary does not address the question we're interested in. To do that, we need a more detailed description of the data. What we want to do is look at the \rtext{choices} broken down {\it by} \rtext{species}. That is, we need to cross-tabulate the data (see Section~\ref{sec:freqtables}). In jamovi we do this using the `Frequencies' - `Contingency Tables' - `Independent Samples' analysis, and we should get a table something like this:
+The other day I was watching an animated documentary examining the quaint customs of the natives of the planet {\it Chapek 9}. Apparently, in order to gain access to their capital city a visitor must prove that they're a robot, not a human. In order to determine whether or not a visitor is human, the natives ask whether the visitor prefers puppies, flowers, or large, properly formatted data files. ``Pretty clever,'' I thought to myself ``but what if humans and robots have the same preferences? That probably wouldn't be a very good test then, would it?'' As it happens, I got my hands on the testing data that the civil authorities of {\it Chapek 9} used to check this. It turns out that what they did was very simple. They found a bunch of robots and a bunch of humans and asked them what they preferred. I saved their data in a file called \filename{chapek9.csv}, which we can now load into JASP. As well as the \rtext{ID} variable that identifies individual people, there are two nominal text variables, \rtext{species} and \rtext{choice}. In total there are 180 entries in the data set, one for each person (counting both robots and humans as ``people'') who was asked to make a choice. Specifically, there are 93 humans and 87 robots, and overwhelmingly the preferred choice is the data file. You can check this yourself by asking JASP for Frequency Tables, under the `Descriptives' - `Descriptive Statistics' button. However, this summary does not address the question we're interested in. To do that, we need a more detailed description of the data. What we want to do is look at the \rtext{choices} broken down {\it by} \rtext{species}. That is, we need to cross-tabulate the data. In JASP we do this using the `Frequencies' - `Contingency Tables' button, moving \rtext{species} into the `Columns' box and \rtext{choice} into the `Rows' box. This procedure should produce a table similar to this:
 \begin{center}
 \begin{tabular}{l|cc|c}
           & Robot & Human & Total \\ \hline
@@ -385,11 +389,11 @@ df &=& \mbox{(number of observations)} - \mbox{(number of constraints)} \\
 $$
 Amazing. 
 
-\SUBSECTION{Doing the test in jamovi\label{sec:AssocTestInjamovi}}
+\SUBSECTION{Doing the test in JASP\label{sec:AssocTestInJASP}}
 
-Okay, now that we know how the test works let's have a look at how it's done in jamovi. As tempting as it is to lead you through the tedious calculations so that you're forced to learn it the long way, I figure there's no point. I already showed you how to do it the long way for the goodness-of-fit test in the last section, and since the test of independence isn't conceptually any different, you won't learn anything new by doing it the long way. So instead I'll go straight to showing you the easy way. After you have run the test in jamovi (‘Frequencies’ - ‘Contingency Tables’ - ‘Independent Samples’), all you have to do is look underneath the contingency table in the jamovi results window and there is the $\chi^2$ statistic for you. This shows a $\chi^2$ statistic value of 10.72, with 2 d.f. and $p$-value = 0.005. 
+Okay, now that we know how the test works let's have a look at how it's done in JASP. As tempting as it is to lead you through the tedious calculations so that you're forced to learn it the long way, I figure there's no point. I already showed you how to do it the long way for the goodness-of-fit test in the last section, and since the test of independence isn't conceptually any different, you won't learn anything new by doing it the long way. So instead I'll go straight to showing you the easy way. After you have run the test in JASP (‘Frequencies’ - ‘Contingency Tables’), all you have to do is look underneath the contingency table in the JASP results window and there is the $\chi^2$ statistic for you. This shows a $\chi^2$ statistic value of 10.722, with 2 d.f. and $p$-value = 0.005. 
 
-That was easy, wasn't it! You can also ask jamovi to show you the expected counts - just click on the check box for `Counts' - `Expected' in the `Cells' options and the expected counts will appear in the contingency table. And whilst you are doing that, an effect size measure would be helpful. We'll choose Cramer's V, and you can specify this from a check box in the `Statistics' options, and it gives a value for Cramer's V of 0.24. We will talk about this some more in just a moment.
+That was easy, wasn't it! You can also ask JASP to show you the expected counts - just click on the check box for `Counts' - `Expected' in the `Cells' options and the expected counts will appear in the contingency table. And whilst you are doing that, an effect size measure would be helpful. We'll choose Cramer's V, and you can specify this from a check box in the `Statistics' options, and it gives a value for Cramer's V of 0.244. We will talk about this some more in just a moment.
 
 This output gives us enough information to write up the result:
 \begin{quote}
@@ -421,7 +425,7 @@ $$
 Basically, he just subtracts off 0.5 everywhere. 
 \end{mdframed}
 
-As far as I can tell from reading Yates' paper, the correction is basically a hack. It's not derived from any principled theory. Rather, it's based on an examination of the behaviour of the test, and observing that the corrected version seems to work better. You can specify this correction in jamovi from a check box in the `Statistics' options, where it is called `$\chi^2$ continuity correction'. 
+As far as I can tell from reading Yates' paper, the correction is basically a hack. It's not derived from any principled theory. Rather, it's based on an examination of the behaviour of the test, and observing that the corrected version seems to work better. You can specify this correction in JASP from a check box in the `Statistics' options, where it is called `$\chi^2$ continuity correction'. 
 
 
 \section{Effect size~\label{sec:chisqeffectsize}}
@@ -457,146 +461,8 @@ All statistical tests make assumptions, and it's usually a good idea to check th
 \end{itemize}
 
 \noindent
-If you happen to find yourself in a situation where independence is violated, it may be possible to use the McNemar test (which we'll discuss) or the Cochran test (which we won't). Similarly, if your expected cell counts are too small, check out the Fisher exact test. It is to these topics that we now turn. 
+If you happen to find yourself in a situation where independence is violated, it may be possible to use the nonparametric tests, such as the McNemar test or the Cochran test. Similarly, if your expected cell counts are too small, check out the Fisher exact test. At present, JASP does not implement these tests, but check back later!  For now, we'll just mention that these tests exist, but describing them is beyond the scope of this book. 
 
-
-\section{The Fisher exact test~\label{sec:fisherexacttest}}
-
-What should you do if your cell counts are too small, but you'd still like to test the null hypothesis that the two variables are independent? One answer would be ``collect more data'', but that's far too glib There are a lot of situations in which it would be either infeasible or unethical do that. If so, statisticians have a kind of moral obligation to provide scientists with better tests. In this instance, Fisher (1922) kindly provided the right answer to the question. To illustrate the basic idea let's suppose that we're analysing data from a field experiment looking at the emotional status of people who have been accused of Witchcraft, some of whom are currently being burned at the stake.\FOOTNOTE{This example is based on a joke article published in the {\it Journal of Irreproducible Results}.} Unfortunately for the scientist (but rather fortunately for the general populace), it's actually quite hard to find people in the process of being set on fire, so the cell counts are awfully small in some cases. A contingency table of the \filename{salem.csv} data illustrates the point:
-
-\begin{rblock1}
-       on.fire
-happy   FALSE TRUE
-  FALSE     3    3
-  TRUE     10    0
-\end{rblock1}
-
-Looking at this data, you'd be hard pressed not to suspect that people not on fire are more likely to be happy than people on fire. However, the chi-square test makes this very hard to test because of the small sample size. So, speaking as someone who doesn't want to be set on fire, I'd {\it really} like to be able to get a better answer than this. This is where \keyterm{Fisher's exact test} \parencite{Fisher1922} comes in very handy. 
-
-The Fisher exact test works somewhat differently to the chi-square test (or in fact any of the other hypothesis tests that I talk about in this book) insofar as it doesn't have a test statistic, but it calculates the $p$-value ``directly''. I'll explain the basics of how the test works for a $2 \times 2$ contingency table. As before, let's have some notation: 
-
-\begin{center}
-\begin{tabular}{l|cc|c}
-& Happy & Sad & Total \\ \hline
-Set on fire   & $O_{11}$ & $O_{12}$ & $R_{1}$ \\
-Not set on fire & $O_{21}$ & $O_{22}$ & $R_{2}$ \\ \hline
-Total & $C_{1}$ & $C_{2}$ & $N$
-\end{tabular}
-\end{center}
-
-\noindent
-In order to construct the test Fisher treats both the row and column totals ($R_1$, $R_2$, $C_1$ and $C_2$) as known, fixed quantities and then calculates the probability that we would have obtained the observed frequencies that we did ($O_{11}$, $O_{12}$, $O_{21}$ and $O_{22}$) given those totals. In the notation that we developed in Chapter~\ref{ch:probability} this is written:
-$$
-P(O_{11}, O_{12}, O_{21}, O_{22} \ | \ R_1, R_2, C_1, C_2) 
-$$
-and as you might imagine, it's a slightly tricky exercise to figure out what this probability is. But it turns out that this probability is described by a distribution known as the {\it hypergeometric distribution}. What we have to do to calculate our $p$-value is calculate the probability of observing this particular table {\it or a table that is ``more extreme''}.\FOOTNOTE{Not surprisingly, the Fisher exact test is motivated by Fisher's interpretation of a $p$-value, not Neyman's! See Section~\ref{sec:pvalue}.} Back in the 1920s, computing this sum was daunting even in the simplest of situations, but these days it's pretty easy as long as the tables aren't too big and the sample size isn't too large. The conceptually tricky issue is to figure out what it means to say that one contingency table is more ``extreme'' than another. The easiest solution is to say that the table with the lowest probability is the most extreme. This then gives us the $p$-value. 
-
-You can specify this test in jamovi from a check box in the `Statistics' options of the `Contingency Tables' analysis. When you do this with the data from the \filename{salem.csv} file, the Fisher exact test statistic is shown in the results. The main thing we're interested in here is the $p$-value, which in this case is small enough ($p=.036$) to justify rejecting the null hypothesis that people on fire are just as happy as people not on fire. See Figure \ref{fig:Fisher}.
-
-\begin{figure}[!t]
-\begin{center}
-\epsfig{file=../img/chisquare/Fisher.png,clip=true,width=10cm}
-\caption{Fisher exact test output in jamovi. Ignore the `Value' and just refer to the $p$-value.}
-\label{fig:Fisher}
-\HR
-\end{center}
-\end{figure}
-
-\section{The McNemar test~\label{sec:mcnemar}}
-
-Suppose you've been hired to work for the {\it Australian Generic Political Party} (AGPP), and part of your job is to find out how effective the AGPP political advertisements are. So you decide to put together a sample of N = 100 people and ask them to watch the AGPP ads. Before they see anything, you ask them if they intend to vote for the AGPP, and then after showing the ads you ask them again to see if anyone has changed their minds. Obviously, if you're any good at your job, you'd also do a whole lot of other things too, but let's consider just this one simple experiment. One way to describe your data is via the following contingency table:
-
-\begin{center}
-\begin{tabular}{l|cc|c}
-& Before & After & Total \\ \hline
-Yes   & 30 & 10 & 40 \\
-No    & 70 & 90 & 160 \\ \hline
-Total & 100 & 100 & 200
-\end{tabular}
-\end{center}
-
-\noindent
-At first pass, you might think that this situation lends itself to the Pearson $\chi^2$ test of independence (as per Section~\ref{sec:chisqindependence}). However, a little bit of thought reveals that we've got a problem. We have 100 participants but 200 observations. This is because each person has provided us with an answer in {\it both} the before column and the after column. What this means is that the 200 observations aren't independent of each other. If voter A says ``yes'' the first time and voter B says ``no'', then you'd expect that voter A is more likely to say ``yes'' the second time than voter B! The consequence of this is that the usual $\chi^2$ test won't give trustworthy answers due to the violation of the independence assumption. Now, if this were a really uncommon situation, I wouldn't be bothering to waste your time talking about it. But it's not uncommon at all. This is a {\it standard} repeated measures design, and none of the tests we've considered so far can handle it. Eek. 
-
-The solution to the problem was published by \textcite{McNemar1947}. The trick is to start by tabulating your data in a slightly different way:
-\begin{center}
-\begin{tabular}{l|cc|c}
-& Before: Yes & Before: No & Total \\ \hline
-After: Yes   & 5 & 5 & 10 \\
-After: No    & 25 & 65 & 90 \\ \hline
-Total        & 30 & 70 & 100
-\end{tabular}
-\end{center}
-\noindent
-This is exactly the same data, but it's been rewritten so that each of our 100 participants appears in only one cell. Because we've written our data this way the independence assumption is now satisfied, and this is a contingency table that we {\it can} use to construct a $\chi^2$ goodness-of-fit statistic. However, as we'll see, we need to do it in a slightly non-standard way. To see what's going on, it helps to label the entries in our table a little differently:
-\begin{center}
-\begin{tabular}{l|cc|c}
-& Before: Yes & Before: No & Total \\ \hline
-After: Yes   & $a$ & $b$ & $a+b$ \\
-After: No & $c$ & $d$ & $c+d$ \\ \hline
-Total & $a+c$ & $b+d$ & $n$
-\end{tabular}
-\end{center}
-\noindent
-Next, let's think about what our null hypothesis is: it's that the ``before'' test and the ``after'' test have the same proportion of people saying ``Yes, I will vote for AGPP''. Because of the way that we have rewritten the data, it means that we're now testing the hypothesis that the {\it row totals} and {\it column totals} come from the same distribution. Thus, the null hypothesis in McNemar's test is that we have ``marginal homogeneity''. That is, the row totals and column totals have the same distribution: $P_a + P_b = P_a + P_c$ and similarly that $P_c + P_d = P_b + P_d$. Notice that this means that the null hypothesis actually simplifies to $P_b = P_c$. In other words, as far as the McNemar test is concerned, it's only the off-diagonal entries in this table (i.e., $b$ and $c$) that matter! After noticing this, the \keyterm{McNemar test of marginal homogeneity} is no different to a usual $\chi^2$ test. After applying the Yates correction, our test statistic becomes:
-$$
-\chi^2 = \frac{(|b-c| - 0.5)^2}{b+c}
-$$
-or, to revert to the notation that we used earlier in this chapter:
-$$
-\chi^2 = \frac{(|O_{12}-O_{21}| - 0.5)^2}{O_{12} + O_{21}}
-$$
-and this statistic has a $\chi^2$ distribution (approximately) with $df=1$. However, remember that just like the other $\chi^2$ tests it's only an approximation, so you need to have reasonably large expected cell counts for it to work.
-
-
-\SUBSECTION{Doing the McNemar test in jamovi}
-
-Now that you know what the McNemar test is all about, lets actually run one. The \filename{agpp.csv} file contains the raw data that I discussed previously. The \rtext{agpp} data set contains three variables, an \rtext{id} variable that labels each participant in the data set (we'll see why that's useful in a moment), a \rtextverb#response_before# variable that records the person's answer when they were asked the question the first time, and a \rtextverb#response_after# variable that shows the answer that they gave when asked the same question a second time. Notice that each participant appears only once in this data set. Go to the `Analyses' - `Frequencies' - `Contingency Tables' - `Paired Samples' analysis in jamovi, and move \rtextverb#response_before# into the `Rows' box, and \rtextverb#response_after# into the `Columns' box. You will then get a contingency table in the results window, with the statistic for the McNemar test just below it, see Figure \ref{fig:McNemar}
-
-\vspace{1cm}
-\begin{figure}[htb]
-\begin{center}
-\epsfig{file=../img/chisquare/McNemar.png,clip=true,width=14cm}
-\caption{McNemar test output in jamovi}
-\label{fig:McNemar}
-\HR
-\end{center}
-\end{figure}
-
-And we're done. We've just run a McNemar's test to determine if people were just as likely to vote AGPP after the ads as they were before hand. The test was significant ($\chi^2(1) = 12.03, p<.001$), suggesting that they were not. And, in fact it looks like the ads had a negative effect: people were less likely to vote AGPP after seeing the ads. Which makes a lot of sense when you consider the quality of a typical political advertisement.
-
-\vspace{3cm}
-\section{What's the difference between McNemar and independence?}
-
-Let's go all the way back to the beginning of the chapter and look at the \rtext{cards} data set again. If you recall, the actual experimental design that I described involved people making {\it two} choices. Because we have information about the first choice and the second choice that everyone made, we can construct the following contingency table that cross-tabulates the first choice against the second choice.
-
-\vspace{1.0cm}
-\begin{rblock1}
-          choice_2
-choice_1   clubs diamonds hearts spades
-  clubs       10        9     10      6
-  diamonds    20        4     13     14
-  hearts      20       18      3     23
-  spades      18       13     15      4
-\end{rblock1}
-
-Suppose I wanted to know whether the choice you make the second time is dependent on the choice you made the first time. This is where a test of independence is useful, and what we're trying to do is see if there's some relationship between the rows and columns of this table. 
-
-Alternatively, suppose I wanted to know if {\it on average}, the frequencies of suit choices were different the second time than the first time. In that situation, what I'm really trying to see is if the row totals are different from the column totals. That's when you use the McNemar test.
-
-The different statistics produced by these different analyses are shown in Figure \ref{fig:ind_paired}. 
-Notice that the results are different! These aren't the same test. 
-
-\begin{figure}[p]
-\begin{center}
-\epsfig{file=../img/chisquare/ind_paired.png,clip=true,width=12cm, height=18cm}
-\caption{Independent vs. Paired (McNemar) test output in jamovi}
-\label{fig:ind_paired}
-\HR
-\end{center}
-\end{figure}
-
-\vspace{15cm}
 \section{Summary}
 
 The key ideas discussed in this chapter are:
@@ -605,7 +471,7 @@ The key ideas discussed in this chapter are:
 \item The $\chi^2$ (chi-square) goodness-of-fit test (Section~\ref{sec:goftest}) is used when you have a table of observed frequencies of different categories, and the null hypothesis gives you a set of ``known'' probabilities to compare them to. 
 \item The $\chi^2$ (chi-square) test of independence (Section~\ref{sec:chisqindependence}) is used when you have a contingency table (cross-tabulation) of two categorical variables. The null hypothesis is that there is no relationship or association between the variables. 
 \item Effect size for a contingency table can be measured in several ways (Section~\ref{sec:chisqeffectsize}). In particular we noted the Cram\'er's $V$ statistic.
-\item Both versions of the Pearson test rely on two assumptions: that the expected frequencies are sufficiently large, and that the observations are independent (Section~\ref{sec:chisqassumptions}). The Fisher exact test (Section~\ref{sec:fisherexacttest}) can be used when the expected frequencies are small. The McNemar test (Section~\ref{sec:mcnemar}) can be used for some kinds of violations of independence. 
+\item Both versions of the Pearson test rely on two assumptions: that the expected frequencies are sufficiently large, and that the observations are independent (Section~\ref{sec:chisqassumptions}). Various nonparametric tests can be used for certain kinds of violations of independence or count assumptions. 
 \end{itemize}
 
 \noindent

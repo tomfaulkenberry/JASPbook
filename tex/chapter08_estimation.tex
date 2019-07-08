@@ -172,7 +172,7 @@ With this in mind, let's abandon the idea that our studies will have sample size
 124 74 87 86 109
 \end{rblock1}
 
-The mean IQ in this sample turns out to be exactly 96. Not surprisingly, this is much less accurate than the previous experiment. Now imagine that I decided to \keyterm{replicate} the experiment. That is, I repeat the procedure as closely as possible and I randomly sample 5 new people and measure their IQ. Again, jamovi allows me to simulate the results of this procedure, and generates these five numbers:
+The mean IQ in this sample turns out to be exactly 96. Not surprisingly, this is much less accurate than the previous experiment. Now imagine that I decided to \keyterm{replicate} the experiment. That is, I repeat the procedure as closely as possible and I randomly sample 5 new people and measure their IQ. Again, JASP allows me to simulate the results of this procedure, and generates these five numbers:
 
 \begin{rblock1}
 91 125 104 106 109
@@ -367,11 +367,11 @@ The sample variance $s^2$ is a biased estimator of the population variance $\sig
 $$
 \hat\sigma^2 = \frac{1}{N-1} \sum_{i=1}^N (X_i - \bar{X})^2 
 $$
-This is an unbiased estimator of the population variance $\sigma$. Moreover, this finally answers the question we raised in Section~\ref{sec:var}. Why did jamovi give us slightly different answers for variance? It's because jamovi calculates $\hat\sigma^2$ not $s^2$, that's why. A similar story applies for the standard deviation. If we divide by $N-1$ rather than $N$ our estimate of the population standard deviation becomes:
+This is an unbiased estimator of the population variance $\sigma$. Moreover, this finally answers the question we raised in Section~\ref{sec:var}. Why did JASP give us slightly different answers for variance? It's because JASP calculates $\hat\sigma^2$ not $s^2$, that's why. A similar story applies for the standard deviation. If we divide by $N-1$ rather than $N$ our estimate of the population standard deviation becomes:
 $$
 \hat\sigma = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (X_i - \bar{X})^2} 
 $$
-and when we use jamovi's built in standard deviation function, what it's doing is calculating $\hat\sigma$, not $s$.\FOOTNOTE{Okay, I'm hiding something else here. In a bizarre and counter-intuitive twist, since $\hat\sigma^2$ is an unbiased estimator of $\sigma^2$, you'd assume that taking the square root would be fine and $\hat\sigma$ would be an unbiased estimator of $\sigma$. Right? Weirdly, it's not. There's actually a subtle, tiny bias in $\hat\sigma$. This is just bizarre: $\hat\sigma^2$ is an unbiased estimate of the population variance $\sigma^2$, but when you take the square root, it turns out that $\hat\sigma$ is a biased estimator of the population standard deviation $\sigma$. Weird, weird, weird, right? So, why is $\hat\sigma$ biased? The technical answer is ``because non-linear transformations (e.g., the square root) don't commute with expectation'', but that just sounds like gibberish to everyone who hasn't taken a course in mathematical statistics. Fortunately, it doesn't matter for practical purposes. The bias is small, and in real life everyone uses $\hat\sigma$ and it works just fine. Sometimes mathematics is just annoying.} 
+and when we use JASP's built in standard deviation function, what it's doing is calculating $\hat\sigma$, not $s$.\FOOTNOTE{Okay, I'm hiding something else here. In a bizarre and counter-intuitive twist, since $\hat\sigma^2$ is an unbiased estimator of $\sigma^2$, you'd assume that taking the square root would be fine and $\hat\sigma$ would be an unbiased estimator of $\sigma$. Right? Weirdly, it's not. There's actually a subtle, tiny bias in $\hat\sigma$. This is just bizarre: $\hat\sigma^2$ is an unbiased estimate of the population variance $\sigma^2$, but when you take the square root, it turns out that $\hat\sigma$ is a biased estimator of the population standard deviation $\sigma$. Weird, weird, weird, right? So, why is $\hat\sigma$ biased? The technical answer is ``because non-linear transformations (e.g., the square root) don't commute with expectation'', but that just sounds like gibberish to everyone who hasn't taken a course in mathematical statistics. Fortunately, it doesn't matter for practical purposes. The bias is small, and in real life everyone uses $\hat\sigma$ and it works just fine. Sometimes mathematics is just annoying.} 
 \end{mdframed}
 
 One final point. In practice, a lot of people tend to refer to $\hat{\sigma}$ (i.e., the formula where we divide by $N-1$) as the {\it sample} standard deviation. Technically, this is incorrect. The {\it sample} standard deviation should be equal to $s$ (i.e., the formula where we divide by $N$). These aren't the same thing, either conceptually or numerically. One is a property of the sample, the other is an estimated characteristic of the population. However, in almost every real life application what we actually care about is the estimate of the population parameter, and so people always report $\hat\sigma$ rather than $s$. This is the right number to report, of course. It's just that people tend to get a little bit imprecise about terminology when they write it up, because ``sample standard deviation'' is shorter than ``estimated population standard deviation''. It's no big deal, and in practice I do the same thing everyone else does. Nevertheless, I think it's important to keep the two {\it concepts} separate. It's never a good idea to confuse ``known properties of your sample'' with ``guesses about the population from which it came''. The moment you start thinking that $s$ and $\hat\sigma$ are the same thing, you start doing exactly that. 
@@ -463,23 +463,23 @@ The critical difference here is that the Bayesian claim makes a probability stat
 I know that this seems a little pedantic, but it does matter. It matters because the difference in interpretation leads to a difference in the mathematics. There is a Bayesian alternative to confidence intervals, known as {\it credible intervals}. In most situations credible intervals are quite similar to confidence intervals, but in other cases they are drastically different. As promised, though, I'll talk more about the Bayesian perspective in Chapter~\ref{ch:bayes}.
 
 
-\SUBSECTION{Calculating confidence intervals in jamovi}
+\SUBSECTION{Calculating confidence intervals in JASP}
 
-As far as I can tell, jamovi does not (yet) include a simple way to  calculate confidence intervals for the mean as part of the `Descriptives' functionality. But the `Descriptives' do have a check box for the S.E. Mean, so you can use this to calculate the lower 95\% confidence interval as:
+As of this edition, JASP does not (yet) include a simple way to calculate confidence intervals for the mean as part of the `Descriptives' functionality. But the `Descriptives' do have a check box for the S.E. Mean, so you can use this to calculate the lower 95\% confidence interval as:
 
 \rtext{Mean - (1.96 * S.E. Mean)} , and the upper 95\% confidence interval as:
 
 \rtext{Mean + (1.96 * S.E. Mean)} 
 
-95\% confidence intervals are the de facto standard in psychology. So, for example, if I load the \filename{IQsim.omv} file, check mean and S.E mean under `Descriptives, I can work out the confidence interval associated with the simulated mean IQ: 
+95\% confidence intervals are the de facto standard in psychology. So, for example, if I load the \filename{IQsim.jasp} file, check mean and S.E mean under `Descriptives', I can work out the confidence interval associated with the simulated mean IQ: 
 
-Lower 95\% CI = 99.68 - (1.96 * 0.15) = 99.39
+Lower 95\% CI = 100.107 - (1.96 * 0.150) = 99.813
 
-Upper 95\% CI = 99.68 + (1.96 * 0.15) = 99.98 
+Upper 95\% CI = 100.107 + (1.96 * 0.150) = 100.401
 
-So, in our simulated large sample data with N=10,000, the mean IQ score is 99.68 with a 95\% CI from 99.39 to 99.98. Hopefully that's fairly clear. So, although there currently is not a straightforward way to get jamovi to calculate the confidence interval as part of the variable `Descriptives' options, if we wanted to we could pretty easily work it out by hand. 
+So, in our simulated large sample data with N=10,000, the mean IQ score is 100.107 with a 95\% CI from 99.813 to 100.401. Hopefully that's clear and fairly easy to interpret. So, although there currently is not a straightforward way to get JASP to calculate the confidence interval as part of the variable `Descriptives' options, if we wanted to we could pretty easily work it out by hand. 
 
-Similarly, when it comes to plotting confidence intervals in jamovi, this is not (yet) available as part of the `Descriptives' options. However, when we get onto learning about specific statistical tests, for example in Chapter  \ref{ch:anova}, we will see that we can plot confidence intervals as part of the data analysis. That's pretty cool, so we'll show you how to do that later on.
+Similarly, when it comes to plotting confidence intervals in JASP, this is also not (yet) available as part of the `Descriptives' options. However, when we get onto learning about specific statistical tests, for example in Chapter  \ref{ch:anova}, we will see that we can plot confidence intervals as part of the data analysis. That's pretty cool, so we'll show you how to do that later on.
 
 
 \section{Summary}

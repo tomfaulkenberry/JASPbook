@@ -285,12 +285,12 @@ In light of all this, you might be wondering exactly what you should do. There's
 
 \section{Running the hypothesis test in practice~\label{sec:runhyp}}
 
-At this point some of you might be wondering if this is a ``real'' hypothesis test, or just a toy example that I made up. It's real. In the previous discussion I built the test from first principles, thinking that it was the simplest possible problem that you might ever encounter in real life. However, this test already exists. It's called the {\it binomial test}, and it's implemented by jamovi as one of the statistical analyses available when you hit the `Frequencies' button. To test the null hypothesis that the response probability is one-half \rtext{p = .5},\FOOTNOTE{Note that the \rtextsmall{p} here has nothing to do with a $p$ value. The \rtextsmall{p} argument in the jamovi binomial test corresponds to the probability of making a correct response, according to the null hypothesis. In other words, it's the $\theta$ value.} and using data in which \rtext{x = 62} of \rtext{n = 100} people made the correct response, available in the \rtext{binomialtest.omv} data file, we get the results shown in Figure \ref{fig:binomialtest}.
+At this point some of you might be wondering if this is a ``real'' hypothesis test, or just a toy example that I made up. It's real. In the previous discussion I built the test from first principles, thinking that it was the simplest possible problem that you might ever encounter in real life. However, this test already exists. It's called the {\it binomial test}, and it's implemented by JASP as one of the statistical analyses available when you hit the `Frequencies' button. To test the null hypothesis that the response probability is one-half \rtext{p = .5},\FOOTNOTE{Note that the \rtextsmall{p} here has nothing to do with a $p$ value. The \rtextsmall{p} argument in the JASP binomial test corresponds to the probability of making a correct response, according to the null hypothesis. In other words, it's the $\theta$ value.} and using data in which \rtext{x = 62} of \rtext{n = 100} people made the correct response, available in the \rtext{binomialtest.jasp} data file, we get the results shown in Figure \ref{fig:binomialtest}.
 
 \begin{figure}[ht]
 \begin{center}
 \epsfig{file=../img/nhst/binomialtest.png,clip=true,width=14cm}
-\caption{Binomial test analysis and results in jamovi}
+\caption{Binomial test analysis and results in JASP}
 \HR
 \label{fig:binomialtest}
 \end{center}

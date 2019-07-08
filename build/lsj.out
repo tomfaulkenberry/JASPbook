@@ -43,7 +43,7 @@
 \BOOKMARK [2][-]{subsection.2.7.11}{2.7.11 Situation, measurement and sub-population effects}{section.2.7}% 43
 \BOOKMARK [2][-]{subsection.2.7.12}{2.7.12 Fraud, deception and self-deception}{section.2.7}% 44
 \BOOKMARK [1][]{section.2.8}{2.8 Summary}{chapter.2}% 45
-\BOOKMARK [-1][]{part.2}{II An introduction to JASP}{}% 46
+\BOOKMARK [-1][]{part.2}{II Describing and displaying data with JASP}{}% 46
 \BOOKMARK [0][]{chapter.3}{3 Getting started with JASP}{part.2}% 47
 \BOOKMARK [1][]{section.3.1}{3.1 Installing JASP }{chapter.3}% 48
 \BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 Starting up JASP}{section.3.1}% 49
@@ -57,67 +57,114 @@
 \BOOKMARK [1][]{section.3.5}{3.5 Changing data from one measurement scale to another}{chapter.3}% 57
 \BOOKMARK [1][]{section.3.6}{3.6 Quitting JASP }{chapter.3}% 58
 \BOOKMARK [1][]{section.3.7}{3.7 Summary}{chapter.3}% 59
-\BOOKMARK [-1][]{part.3}{III Working with data}{}% 60
-\BOOKMARK [0][]{chapter.4}{4 Descriptive statistics}{part.3}% 61
-\BOOKMARK [1][]{section.4.1}{4.1 Measures of central tendency }{chapter.4}% 62
-\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 The mean}{section.4.1}% 63
-\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Calculating the mean in JASP}{section.4.1}% 64
-\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 The median}{section.4.1}% 65
-\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 Mean or median? What's the difference?}{section.4.1}% 66
-\BOOKMARK [2][-]{subsection.4.1.5}{4.1.5 A real life example }{section.4.1}% 67
-\BOOKMARK [2][-]{subsection.4.1.6}{4.1.6 Mode}{section.4.1}% 68
-\BOOKMARK [1][]{section.4.2}{4.2 Measures of variability}{chapter.4}% 69
-\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Range}{section.4.2}% 70
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Interquartile range}{section.4.2}% 71
-\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Mean absolute deviation }{section.4.2}% 72
-\BOOKMARK [2][-]{subsection.4.2.4}{4.2.4 Variance}{section.4.2}% 73
-\BOOKMARK [2][-]{subsection.4.2.5}{4.2.5 Standard deviation}{section.4.2}% 74
-\BOOKMARK [2][-]{subsection.4.2.6}{4.2.6 Which measure to use?}{section.4.2}% 75
-\BOOKMARK [1][]{section.4.3}{4.3 Skew and kurtosis }{chapter.4}% 76
-\BOOKMARK [1][]{section.4.4}{4.4 Descriptive statistics separately for each group }{chapter.4}% 77
-\BOOKMARK [1][]{section.4.5}{4.5 Standard scores }{chapter.4}% 78
-\BOOKMARK [1][]{section.4.6}{4.6 Summary}{chapter.4}% 79
-\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 Epilogue: Good descriptive statistics are descriptive!}{section.4.6}% 80
-\BOOKMARK [0][]{chapter.5}{5 Drawing graphs}{part.3}% 81
-\BOOKMARK [1][]{section.5.1}{5.1 Histograms}{chapter.5}% 82
-\BOOKMARK [1][]{section.5.2}{5.2 Boxplots }{chapter.5}% 83
-\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Violin plots }{section.5.2}% 84
-\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Drawing multiple boxplots }{section.5.2}% 85
-\BOOKMARK [1][]{section.5.3}{5.3 Saving image files using JASP }{chapter.5}% 86
-\BOOKMARK [1][]{section.5.4}{5.4 Summary}{chapter.5}% 87
-\BOOKMARK [-1][]{part.4}{IV Statistical theory}{}% 88
-\BOOKMARK [0][]{chapter.6}{6 Introduction to probability}{part.4}% 89
-\BOOKMARK [1][]{section.6.1}{6.1 How are probability and statistics different? }{chapter.6}% 90
-\BOOKMARK [1][]{section.6.2}{6.2 What does probability mean?}{chapter.6}% 91
-\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 The frequentist view}{section.6.2}% 92
-\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 The Bayesian view}{section.6.2}% 93
-\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 What's the difference? And who is right?}{section.6.2}% 94
-\BOOKMARK [1][]{section.6.3}{6.3 Basic probability theory }{chapter.6}% 95
-\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Introducing probability distributions}{section.6.3}% 96
-\BOOKMARK [1][]{section.6.4}{6.4 The binomial distribution}{chapter.6}% 97
-\BOOKMARK [2][-]{subsection.6.4.1}{6.4.1 Introducing the binomial}{section.6.4}% 98
-\BOOKMARK [1][]{section.6.5}{6.5 The normal distribution}{chapter.6}% 99
-\BOOKMARK [2][-]{subsection.6.5.1}{6.5.1 Probability density \040}{section.6.5}% 100
-\BOOKMARK [1][]{section.6.6}{6.6 Other useful distributions }{chapter.6}% 101
-\BOOKMARK [1][]{section.6.7}{6.7 Summary}{chapter.6}% 102
-\BOOKMARK [0][]{chapter.7}{7 Estimating unknown quantities from a sample}{part.4}% 103
-\BOOKMARK [1][]{section.7.1}{7.1 Samples, populations and sampling }{chapter.7}% 104
-\BOOKMARK [2][-]{subsection.7.1.1}{7.1.1 Defining a population }{section.7.1}% 105
-\BOOKMARK [2][-]{subsection.7.1.2}{7.1.2 Simple random samples}{section.7.1}% 106
-\BOOKMARK [2][-]{subsection.7.1.3}{7.1.3 Most samples are not simple random samples}{section.7.1}% 107
-\BOOKMARK [2][-]{subsection.7.1.4}{7.1.4 How much does it matter if you don't have a simple random sample?}{section.7.1}% 108
-\BOOKMARK [2][-]{subsection.7.1.5}{7.1.5 Population parameters and sample statistics}{section.7.1}% 109
-\BOOKMARK [1][]{section.7.2}{7.2 The law of large numbers }{chapter.7}% 110
-\BOOKMARK [1][]{section.7.3}{7.3 Sampling distributions and the central limit theorem }{chapter.7}% 111
-\BOOKMARK [2][-]{subsection.7.3.1}{7.3.1 Sampling distribution of the mean }{section.7.3}% 112
-\BOOKMARK [2][-]{subsection.7.3.2}{7.3.2 Sampling distributions exist for any sample statistic!}{section.7.3}% 113
-\BOOKMARK [2][-]{subsection.7.3.3}{7.3.3 The central limit theorem }{section.7.3}% 114
-\BOOKMARK [1][]{section.7.4}{7.4 Estimating population parameters }{chapter.7}% 115
-\BOOKMARK [2][-]{subsection.7.4.1}{7.4.1 Estimating the population mean}{section.7.4}% 116
-\BOOKMARK [2][-]{subsection.7.4.2}{7.4.2 Estimating the population standard deviation}{section.7.4}% 117
-\BOOKMARK [1][]{section.7.5}{7.5 Estimating a confidence interval}{chapter.7}% 118
-\BOOKMARK [2][-]{subsection.7.5.1}{7.5.1 A slight mistake in the formula}{section.7.5}% 119
-\BOOKMARK [2][-]{subsection.7.5.2}{7.5.2 Interpreting a confidence interval}{section.7.5}% 120
-\BOOKMARK [2][-]{subsection.7.5.3}{7.5.3 Calculating confidence intervals in jamovi}{section.7.5}% 121
-\BOOKMARK [1][]{section.7.6}{7.6 Summary}{chapter.7}% 122
-\BOOKMARK [0][]{chapter.8}{8 References}{part.4}% 123
+\BOOKMARK [0][]{chapter.4}{4 Descriptive statistics}{part.2}% 60
+\BOOKMARK [1][]{section.4.1}{4.1 Measures of central tendency }{chapter.4}% 61
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 The mean}{section.4.1}% 62
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Calculating the mean in JASP}{section.4.1}% 63
+\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 The median}{section.4.1}% 64
+\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 Mean or median? What's the difference?}{section.4.1}% 65
+\BOOKMARK [2][-]{subsection.4.1.5}{4.1.5 A real life example }{section.4.1}% 66
+\BOOKMARK [2][-]{subsection.4.1.6}{4.1.6 Mode}{section.4.1}% 67
+\BOOKMARK [1][]{section.4.2}{4.2 Measures of variability}{chapter.4}% 68
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Range}{section.4.2}% 69
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Interquartile range}{section.4.2}% 70
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Mean absolute deviation }{section.4.2}% 71
+\BOOKMARK [2][-]{subsection.4.2.4}{4.2.4 Variance}{section.4.2}% 72
+\BOOKMARK [2][-]{subsection.4.2.5}{4.2.5 Standard deviation}{section.4.2}% 73
+\BOOKMARK [2][-]{subsection.4.2.6}{4.2.6 Which measure to use?}{section.4.2}% 74
+\BOOKMARK [1][]{section.4.3}{4.3 Skew and kurtosis }{chapter.4}% 75
+\BOOKMARK [1][]{section.4.4}{4.4 Descriptive statistics separately for each group }{chapter.4}% 76
+\BOOKMARK [1][]{section.4.5}{4.5 Standard scores }{chapter.4}% 77
+\BOOKMARK [1][]{section.4.6}{4.6 Summary}{chapter.4}% 78
+\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 Epilogue: Good descriptive statistics are descriptive!}{section.4.6}% 79
+\BOOKMARK [0][]{chapter.5}{5 Drawing graphs}{part.2}% 80
+\BOOKMARK [1][]{section.5.1}{5.1 Histograms}{chapter.5}% 81
+\BOOKMARK [1][]{section.5.2}{5.2 Boxplots }{chapter.5}% 82
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Violin plots }{section.5.2}% 83
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Drawing multiple boxplots }{section.5.2}% 84
+\BOOKMARK [1][]{section.5.3}{5.3 Saving image files using JASP }{chapter.5}% 85
+\BOOKMARK [1][]{section.5.4}{5.4 Summary}{chapter.5}% 86
+\BOOKMARK [-1][]{part.3}{III Statistical theory}{}% 87
+\BOOKMARK [0][]{chapter.6}{6 Introduction to probability}{part.3}% 88
+\BOOKMARK [1][]{section.6.1}{6.1 How are probability and statistics different? }{chapter.6}% 89
+\BOOKMARK [1][]{section.6.2}{6.2 What does probability mean?}{chapter.6}% 90
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 The frequentist view}{section.6.2}% 91
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 The Bayesian view}{section.6.2}% 92
+\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 What's the difference? And who is right?}{section.6.2}% 93
+\BOOKMARK [1][]{section.6.3}{6.3 Basic probability theory }{chapter.6}% 94
+\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Introducing probability distributions}{section.6.3}% 95
+\BOOKMARK [1][]{section.6.4}{6.4 The binomial distribution}{chapter.6}% 96
+\BOOKMARK [2][-]{subsection.6.4.1}{6.4.1 Introducing the binomial}{section.6.4}% 97
+\BOOKMARK [1][]{section.6.5}{6.5 The normal distribution}{chapter.6}% 98
+\BOOKMARK [2][-]{subsection.6.5.1}{6.5.1 Probability density \040}{section.6.5}% 99
+\BOOKMARK [1][]{section.6.6}{6.6 Other useful distributions }{chapter.6}% 100
+\BOOKMARK [1][]{section.6.7}{6.7 Summary}{chapter.6}% 101
+\BOOKMARK [0][]{chapter.7}{7 Estimating unknown quantities from a sample}{part.3}% 102
+\BOOKMARK [1][]{section.7.1}{7.1 Samples, populations and sampling }{chapter.7}% 103
+\BOOKMARK [2][-]{subsection.7.1.1}{7.1.1 Defining a population }{section.7.1}% 104
+\BOOKMARK [2][-]{subsection.7.1.2}{7.1.2 Simple random samples}{section.7.1}% 105
+\BOOKMARK [2][-]{subsection.7.1.3}{7.1.3 Most samples are not simple random samples}{section.7.1}% 106
+\BOOKMARK [2][-]{subsection.7.1.4}{7.1.4 How much does it matter if you don't have a simple random sample?}{section.7.1}% 107
+\BOOKMARK [2][-]{subsection.7.1.5}{7.1.5 Population parameters and sample statistics}{section.7.1}% 108
+\BOOKMARK [1][]{section.7.2}{7.2 The law of large numbers }{chapter.7}% 109
+\BOOKMARK [1][]{section.7.3}{7.3 Sampling distributions and the central limit theorem }{chapter.7}% 110
+\BOOKMARK [2][-]{subsection.7.3.1}{7.3.1 Sampling distribution of the mean }{section.7.3}% 111
+\BOOKMARK [2][-]{subsection.7.3.2}{7.3.2 Sampling distributions exist for any sample statistic!}{section.7.3}% 112
+\BOOKMARK [2][-]{subsection.7.3.3}{7.3.3 The central limit theorem }{section.7.3}% 113
+\BOOKMARK [1][]{section.7.4}{7.4 Estimating population parameters }{chapter.7}% 114
+\BOOKMARK [2][-]{subsection.7.4.1}{7.4.1 Estimating the population mean}{section.7.4}% 115
+\BOOKMARK [2][-]{subsection.7.4.2}{7.4.2 Estimating the population standard deviation}{section.7.4}% 116
+\BOOKMARK [1][]{section.7.5}{7.5 Estimating a confidence interval}{chapter.7}% 117
+\BOOKMARK [2][-]{subsection.7.5.1}{7.5.1 A slight mistake in the formula}{section.7.5}% 118
+\BOOKMARK [2][-]{subsection.7.5.2}{7.5.2 Interpreting a confidence interval}{section.7.5}% 119
+\BOOKMARK [2][-]{subsection.7.5.3}{7.5.3 Calculating confidence intervals in JASP}{section.7.5}% 120
+\BOOKMARK [1][]{section.7.6}{7.6 Summary}{chapter.7}% 121
+\BOOKMARK [0][]{chapter.8}{8 Hypothesis testing}{part.3}% 122
+\BOOKMARK [1][]{section.8.1}{8.1 A menagerie of hypotheses }{chapter.8}% 123
+\BOOKMARK [2][-]{subsection.8.1.1}{8.1.1 Research hypotheses versus statistical hypotheses}{section.8.1}% 124
+\BOOKMARK [2][-]{subsection.8.1.2}{8.1.2 Null hypotheses and alternative hypotheses}{section.8.1}% 125
+\BOOKMARK [1][]{section.8.2}{8.2 Two types of errors }{chapter.8}% 126
+\BOOKMARK [1][]{section.8.3}{8.3 Test statistics and sampling distributions }{chapter.8}% 127
+\BOOKMARK [1][]{section.8.4}{8.4 Making decisions }{chapter.8}% 128
+\BOOKMARK [2][-]{subsection.8.4.1}{8.4.1 Critical regions and critical values}{section.8.4}% 129
+\BOOKMARK [2][-]{subsection.8.4.2}{8.4.2 A note on statistical ``significance''}{section.8.4}% 130
+\BOOKMARK [2][-]{subsection.8.4.3}{8.4.3 The difference between one sided and two sided tests}{section.8.4}% 131
+\BOOKMARK [1][]{section.8.5}{8.5 The \040value of a test }{chapter.8}% 132
+\BOOKMARK [2][-]{subsection.8.5.1}{8.5.1 A softer view of decision making}{section.8.5}% 133
+\BOOKMARK [2][-]{subsection.8.5.2}{8.5.2 The probability of extreme data}{section.8.5}% 134
+\BOOKMARK [2][-]{subsection.8.5.3}{8.5.3 A common mistake}{section.8.5}% 135
+\BOOKMARK [1][]{section.8.6}{8.6 Reporting the results of a hypothesis test }{chapter.8}% 136
+\BOOKMARK [2][-]{subsection.8.6.1}{8.6.1 The issue}{section.8.6}% 137
+\BOOKMARK [2][-]{subsection.8.6.2}{8.6.2 Two proposed solutions}{section.8.6}% 138
+\BOOKMARK [1][]{section.8.7}{8.7 Running the hypothesis test in practice }{chapter.8}% 139
+\BOOKMARK [1][]{section.8.8}{8.8 Effect size, sample size and power }{chapter.8}% 140
+\BOOKMARK [2][-]{subsection.8.8.1}{8.8.1 The power function}{section.8.8}% 141
+\BOOKMARK [2][-]{subsection.8.8.2}{8.8.2 Effect size}{section.8.8}% 142
+\BOOKMARK [2][-]{subsection.8.8.3}{8.8.3 Increasing the power of your study}{section.8.8}% 143
+\BOOKMARK [1][]{section.8.9}{8.9 Some issues to consider }{chapter.8}% 144
+\BOOKMARK [2][-]{subsection.8.9.1}{8.9.1 Neyman versus Fisher}{section.8.9}% 145
+\BOOKMARK [2][-]{subsection.8.9.2}{8.9.2 Bayesians versus frequentists}{section.8.9}% 146
+\BOOKMARK [2][-]{subsection.8.9.3}{8.9.3 Traps}{section.8.9}% 147
+\BOOKMARK [1][]{section.8.10}{8.10 Summary}{chapter.8}% 148
+\BOOKMARK [-1][]{part.4}{IV Statistical tools}{}% 149
+\BOOKMARK [0][]{chapter.9}{9 Categorical data analysis}{part.4}% 150
+\BOOKMARK [1][]{section.9.1}{9.1 The \040\(chi-square\) goodness-of-fit test }{chapter.9}% 151
+\BOOKMARK [2][-]{subsection.9.1.1}{9.1.1 The cards data}{section.9.1}% 152
+\BOOKMARK [2][-]{subsection.9.1.2}{9.1.2 The null hypothesis and the alternative hypothesis}{section.9.1}% 153
+\BOOKMARK [2][-]{subsection.9.1.3}{9.1.3 The ``goodness-of-fit'' test statistic}{section.9.1}% 154
+\BOOKMARK [2][-]{subsection.9.1.4}{9.1.4 The sampling distribution of the GOF statistic }{section.9.1}% 155
+\BOOKMARK [2][-]{subsection.9.1.5}{9.1.5 Degrees of freedom}{section.9.1}% 156
+\BOOKMARK [2][-]{subsection.9.1.6}{9.1.6 Testing the null hypothesis}{section.9.1}% 157
+\BOOKMARK [2][-]{subsection.9.1.7}{9.1.7 Doing the test in JASP}{section.9.1}% 158
+\BOOKMARK [2][-]{subsection.9.1.8}{9.1.8 Specifying a different null hypothesis}{section.9.1}% 159
+\BOOKMARK [2][-]{subsection.9.1.9}{9.1.9 How to report the results of the test }{section.9.1}% 160
+\BOOKMARK [2][-]{subsection.9.1.10}{9.1.10 A comment on statistical notation }{section.9.1}% 161
+\BOOKMARK [1][]{section.9.2}{9.2 The \040test of independence \(or association\) }{chapter.9}% 162
+\BOOKMARK [2][-]{subsection.9.2.1}{9.2.1 Constructing our hypothesis test}{section.9.2}% 163
+\BOOKMARK [2][-]{subsection.9.2.2}{9.2.2 Doing the test in JASP}{section.9.2}% 164
+\BOOKMARK [2][-]{subsection.9.2.3}{9.2.3 Postscript}{section.9.2}% 165
+\BOOKMARK [1][]{section.9.3}{9.3 The continuity correction }{chapter.9}% 166
+\BOOKMARK [1][]{section.9.4}{9.4 Effect size }{chapter.9}% 167
+\BOOKMARK [1][]{section.9.5}{9.5 Assumptions of the test\(s\) }{chapter.9}% 168
+\BOOKMARK [1][]{section.9.6}{9.6 Summary}{chapter.9}% 169
+\BOOKMARK [0][]{chapter.10}{10 References}{part.4}% 170
