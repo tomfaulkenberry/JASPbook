@@ -205,4 +205,44 @@
 \BOOKMARK [2][-]{subsection.10.9.1}{10.9.1 Two sample Mann-Whitney U test}{section.10.9}% 205
 \BOOKMARK [2][-]{subsection.10.9.2}{10.9.2 One sample Wilcoxon test}{section.10.9}% 206
 \BOOKMARK [1][]{section.10.10}{10.10 Summary}{chapter.10}% 207
-\BOOKMARK [0][]{chapter.11}{11 References}{part.4}% 208
+\BOOKMARK [0][]{chapter.11}{11 Correlation and linear regression}{part.4}% 208
+\BOOKMARK [1][]{section.11.1}{11.1 Correlations}{chapter.11}% 209
+\BOOKMARK [2][-]{subsection.11.1.1}{11.1.1 The data}{section.11.1}% 210
+\BOOKMARK [2][-]{subsection.11.1.2}{11.1.2 The strength and direction of a relationship}{section.11.1}% 211
+\BOOKMARK [2][-]{subsection.11.1.3}{11.1.3 The correlation coefficient}{section.11.1}% 212
+\BOOKMARK [2][-]{subsection.11.1.4}{11.1.4 Calculating correlations in jamovi}{section.11.1}% 213
+\BOOKMARK [2][-]{subsection.11.1.5}{11.1.5 Interpreting a correlation }{section.11.1}% 214
+\BOOKMARK [2][-]{subsection.11.1.6}{11.1.6 Spearman's rank correlations}{section.11.1}% 215
+\BOOKMARK [1][]{section.11.2}{11.2 Scatterplots}{chapter.11}% 216
+\BOOKMARK [2][-]{subsection.11.2.1}{11.2.1 More elaborate options}{section.11.2}% 217
+\BOOKMARK [1][]{section.11.3}{11.3 What is a linear regression model? }{chapter.11}% 218
+\BOOKMARK [1][]{section.11.4}{11.4 Estimating a linear regression model }{chapter.11}% 219
+\BOOKMARK [2][-]{subsection.11.4.1}{11.4.1 Linear regression in jamovi }{section.11.4}% 220
+\BOOKMARK [2][-]{subsection.11.4.2}{11.4.2 Interpreting the estimated model}{section.11.4}% 221
+\BOOKMARK [1][]{section.11.5}{11.5 Multiple linear regression }{chapter.11}% 222
+\BOOKMARK [2][-]{subsection.11.5.1}{11.5.1 Doing it in jamovi}{section.11.5}% 223
+\BOOKMARK [2][-]{subsection.11.5.2}{11.5.2 Formula for the general case}{section.11.5}% 224
+\BOOKMARK [1][]{section.11.6}{11.6 Quantifying the fit of the regression model }{chapter.11}% 225
+\BOOKMARK [2][-]{subsection.11.6.1}{11.6.1 The R-squared value }{section.11.6}% 226
+\BOOKMARK [2][-]{subsection.11.6.2}{11.6.2 The relationship between regression and correlation}{section.11.6}% 227
+\BOOKMARK [2][-]{subsection.11.6.3}{11.6.3 The adjusted R-squared value}{section.11.6}% 228
+\BOOKMARK [1][]{section.11.7}{11.7 Hypothesis tests for regression models }{chapter.11}% 229
+\BOOKMARK [2][-]{subsection.11.7.1}{11.7.1 Testing the model as a whole}{section.11.7}% 230
+\BOOKMARK [2][-]{subsection.11.7.2}{11.7.2 Tests for individual coefficients}{section.11.7}% 231
+\BOOKMARK [2][-]{subsection.11.7.3}{11.7.3 Running the hypothesis tests in jamovi }{section.11.7}% 232
+\BOOKMARK [1][]{section.11.8}{11.8 Regarding regression coefficients }{chapter.11}% 233
+\BOOKMARK [2][-]{subsection.11.8.1}{11.8.1 Confidence intervals for the coefficients}{section.11.8}% 234
+\BOOKMARK [2][-]{subsection.11.8.2}{11.8.2 Calculating standardised regression coefficients}{section.11.8}% 235
+\BOOKMARK [1][]{section.11.9}{11.9 Assumptions of regression }{chapter.11}% 236
+\BOOKMARK [1][]{section.11.10}{11.10 Model checking }{chapter.11}% 237
+\BOOKMARK [2][-]{subsection.11.10.1}{11.10.1 Three kinds of residuals}{section.11.10}% 238
+\BOOKMARK [2][-]{subsection.11.10.2}{11.10.2 Three kinds of anomalous data }{section.11.10}% 239
+\BOOKMARK [2][-]{subsection.11.10.3}{11.10.3 Checking the normality of the residuals }{section.11.10}% 240
+\BOOKMARK [2][-]{subsection.11.10.4}{11.10.4 Checking for collinearity }{section.11.10}% 241
+\BOOKMARK [1][]{section.11.11}{11.11 Model selection}{chapter.11}% 242
+\BOOKMARK [2][-]{subsection.11.11.1}{11.11.1 Backward elimination}{section.11.11}% 243
+\BOOKMARK [2][-]{subsection.11.11.2}{11.11.2 Forward selection}{section.11.11}% 244
+\BOOKMARK [2][-]{subsection.11.11.3}{11.11.3 A caveat}{section.11.11}% 245
+\BOOKMARK [2][-]{subsection.11.11.4}{11.11.4 Comparing two regression models}{section.11.11}% 246
+\BOOKMARK [1][]{section.11.12}{11.12 Summary}{chapter.11}% 247
+\BOOKMARK [0][]{chapter.12}{12 References}{part.4}% 248

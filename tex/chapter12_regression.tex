@@ -42,7 +42,7 @@ Next, I'll take a look at some basic descriptive statistics and, to give a graph
 \epsfig{file = ../img/descriptives/grumpHist3.eps, clip=true, width=4.5cm}
 \\ (a) & (b) & (c)
 \end{tabular}
-\caption{Histograms for the three interesting variables in the \rtext{parenthood} data set.}
+\caption{Histograms for the three interesting variables in the \texttt{parenthood} data set.}
 \HR
 \label{fig:parenthood}
 \end{center}
@@ -57,7 +57,7 @@ Next, I'll take a look at some basic descriptive statistics and, to give a graph
 \epsfig{file = ../img/descriptives/grumpCor2.eps, clip=true, width =7cm} \\
 (a) & (b)
 \end{tabular}
-\caption{Scatterplots showing the relationship between \rtext{dan.sleep} and \rtext{dan.grump} (left) and the relationship between \rtext{baby.sleep} and \rtext{dan.grump} (right).}
+\caption{Scatterplots showing the relationship between \texttt{dan.sleep} and \texttt{dan.grump} (left) and the relationship between \texttt{baby.sleep} and \texttt{dan.grump} (right).}
 \HR
 \label{fig:scatterparent}
 \end{center}
@@ -78,7 +78,7 @@ In contrast, let's consider the two scatterplots shown in Figure~\ref{fig:scatte
 \epsfig{file = ../img/descriptives/grumpCor3.eps, clip=true, width =7cm} \\
 (a) & (b)
 \end{tabular}
-\caption{Scatterplots showing the relationship between \rtext{baby.sleep} and \rtext{dan.grump} (left), as compared to the relationship between \rtext{baby.sleep} and \rtext{dan.sleep} (right).}
+\caption{Scatterplots showing the relationship between \texttt{baby.sleep} and \texttt{dan.grump} (left), as compared to the relationship between \texttt{baby.sleep} and \texttt{dan.sleep} (right).}
 \HR
 \label{fig:scatterparent2}
 \end{center}
@@ -364,7 +364,7 @@ As before, $\epsilon_i$ is the residual associated with the $i$-th observation, 
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/regression2/scatter3d_1.eps,clip=true, width = 14cm}
-\caption{A 3D visualisation of a multiple regression model. There are two predictors in the model, \rtext{dan.sleep} and \rtext{baby.sleep} and the outcome variable is \rtext{dan.grump}. Together, these three variables form a 3D space. Each observation (dot) is a point in this space. In much the same way that a simple linear regression model forms a line in 2D space, this multiple regression model forms a plane in 3D space. When we estimate the regression coefficients what we're trying to do is find a plane that is as close to all the blue dots as possible.}
+\caption{A 3D visualisation of a multiple regression model. There are two predictors in the model, \texttt{dan.sleep} and \texttt{baby.sleep} and the outcome variable is \texttt{dan.grump}. Together, these three variables form a 3D space. Each observation (dot) is a point in this space. In much the same way that a simple linear regression model forms a line in 2D space, this multiple regression model forms a plane in 3D space. When we estimate the regression coefficients what we're trying to do is find a plane that is as close to all the blue dots as possible.}
 \label{fig:multipleregression}
 \end{center}
 \end{figure}
@@ -775,7 +775,7 @@ The second way in which an observation can be unusual is if it has high \keyterm
 In general, if an observation lies far away from the other ones in terms of the predictor variables, it will have a large hat value (as a rough guide, high leverage is when the hat value is more than 2-3 times the average; and note that the sum of the hat values is constrained to be equal to $K+1$). High leverage points are also worth looking at in more detail, but they're much less likely to be a cause for concern unless they are also outliers.  % guide from Venables and Ripley.
 
 This brings us to our third measure of unusualness, the \keyterm{influence} of an observation. A high influence observation is an outlier that has high leverage. That is, it is an observation that is very different to all the other ones in some respect, and also lies a long way from the regression line. This is illustrated in Figure~\ref{fig:influence}. Notice the contrast to the previous two figures. Outliers don't move the regression line much and neither do high leverage points. But something that is both an outlier and has high leverage, well that has a big effect on the regression line. That's why we call these points high influence, and it's why they're the biggest worry. We operationalise influence in terms of a measure known as \keyterm{Cook's distance}.
-\newpage
+
 \vspace{0.5cm}
 \begin{mdframed}[style=MyFrame,nobreak=true]
 $$

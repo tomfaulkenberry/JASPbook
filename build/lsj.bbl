@@ -96,6 +96,54 @@
       \field{title}{Categorical Data Analysis}
       \field{year}{2002}
     \endentry
+    \entry{Akaike1974}{article}{}
+      \name{author}{1}{}{%
+        {{hash=926ba39bebf207bb661b158164603311}{%
+           family={Akaike},
+           familyi={A\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{926ba39bebf207bb661b158164603311}
+      \strng{fullhash}{926ba39bebf207bb661b158164603311}
+      \strng{authornamehash}{926ba39bebf207bb661b158164603311}
+      \strng{authorfullhash}{926ba39bebf207bb661b158164603311}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Automatic Control}
+      \field{title}{A new look at the statistical model identification}
+      \field{volume}{19}
+      \field{year}{1974}
+      \field{pages}{716\bibrangedash 723}
+      \range{pages}{8}
+    \endentry
+    \entry{Anscombe1973}{article}{}
+      \name{author}{1}{}{%
+        {{hash=641eddcb42c9a580a25b62e3126758e9}{%
+           family={Anscombe},
+           familyi={A\bibinitperiod},
+           given={F.\bibnamedelimi J.},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{641eddcb42c9a580a25b62e3126758e9}
+      \strng{fullhash}{641eddcb42c9a580a25b62e3126758e9}
+      \strng{authornamehash}{641eddcb42c9a580a25b62e3126758e9}
+      \strng{authorfullhash}{641eddcb42c9a580a25b62e3126758e9}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Statistician}
+      \field{title}{Graphs in statistical analysis}
+      \field{volume}{27}
+      \field{year}{1973}
+      \field{pages}{17\bibrangedash 21}
+      \range{pages}{5}
+    \endentry
     \entry{Bickel1975}{article}{}
       \name{author}{3}{}{%
         {{hash=81da12d1d569ad1b87d11018046e2e1a}{%
@@ -456,6 +504,38 @@
       \field{year}{1922}
       \field{pages}{309\bibrangedash 368}
       \range{pages}{60}
+    \endentry
+    \entry{Fox2011}{book}{}
+      \name{author}{2}{}{%
+        {{hash=19b133b9f5cb7faf674cb8cd372897a8}{%
+           family={Fox},
+           familyi={F\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f4aa6cd87cbbbffc1419070e09119937}{%
+           family={Weisberg},
+           familyi={W\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Los Angeles}%
+      }
+      \list{publisher}{1}{%
+        {Sage}%
+      }
+      \strng{namehash}{3ee7604fbaa561c5fe319df24cdf2262}
+      \strng{fullhash}{307b705ed1c57b3febe8c41bc79c34e9}
+      \strng{authornamehash}{3ee7604fbaa561c5fe319df24cdf2262}
+      \strng{authorfullhash}{307b705ed1c57b3febe8c41bc79c34e9}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd}
+      \field{title}{An {R} Companion to Applied Regression}
+      \field{year}{2011}
     \endentry
     \entry{Gelman2006}{article}{}
       \name{author}{2}{uniquelist=2}{%

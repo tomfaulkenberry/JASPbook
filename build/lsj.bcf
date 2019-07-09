@@ -2190,6 +2190,10 @@
     <bcf:citekey order="42">Hedges1981</bcf:citekey>
     <bcf:citekey order="43">Hedges1985</bcf:citekey>
     <bcf:citekey order="44">Shapiro1965</bcf:citekey>
+    <bcf:citekey order="45">Anscombe1973</bcf:citekey>
+    <bcf:citekey order="46">Fox2011</bcf:citekey>
+    <bcf:citekey order="47">Fox2011</bcf:citekey>
+    <bcf:citekey order="48">Akaike1974</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nyt/global/" type="entry" sortscheme="nyt" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
