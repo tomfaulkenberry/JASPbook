@@ -266,7 +266,7 @@ This is not highly surprising. The line that I've drawn in Figure~\ref{fig:regre
 $$
 y = a + bx 
 $$ 
-Or, at least, that's what it was when I went to high school all those years ago. The two {\it variables} are $x$ and $y$, and we have two {\it coefficients}, $a$ and $b$.\FOOTNOTE{Also sometimes written as $y = mx + c$ where m is the slope coefficient and b is the intercept (constant) coefficient.} The coefficient $a$ represents the {\it $y$-intercept} of the line, and coefficient $b$ represents the {\it slope} of the line. Digging further back into our decaying memories of high school (sorry, for some of us high school was a long time ago), we remember that the intercept is interpreted as ``the value of $y$ that you get when $x=0$''. Similarly, a slope of $b$ means that if you increase the $x$-value by 1 unit, then the $y$-value goes up by $b$ units, and a negative slope means that the $y$-value would go down rather than up. Ah yes, it's all coming back to me now. Now that we've remembered that it should come as no surprise to discover that we use the exact same formula for a regression line. If $Y$ is the outcome variable (the DV) and $X$ is the predictor variable (the IV), then the formula that describes our regression is written like this
+Or, at least, that's what it was when I went to high school all those years ago. The two {\it variables} are $x$ and $y$, and we have two {\it coefficients}, $a$ and $b$.\FOOTNOTE{Also sometimes written as $y = mx + b$ where m is the slope coefficient and b is the intercept (constant) coefficient.} The coefficient $a$ represents the {\it $y$-intercept} of the line, and coefficient $b$ represents the {\it slope} of the line. Digging further back into our decaying memories of high school (sorry, for some of us high school was a long time ago), we remember that the intercept is interpreted as ``the value of $y$ that you get when $x=0$''. Similarly, a slope of $b$ means that if you increase the $x$-value by 1 unit, then the $y$-value goes up by $b$ units, and a negative slope means that the $y$-value would go down rather than up. Ah yes, it's all coming back to me now. Now that we've remembered that it should come as no surprise to discover that we use the exact same formula for a regression line. If $Y$ is the outcome variable (the DV) and $X$ is the predictor variable (the IV), then the formula that describes our regression is written like this
 $$
 \hat{Y_i} = b_0 + b_1 X_i 
 $$
@@ -302,22 +302,22 @@ The estimated regression coefficients, $\hat{b}_0$ and $\hat{b}_1$, are those th
 \end{quote}
 Yes, yes that sounds even better. And since I've indented it like that, it probably means that this is the right answer. And since this is the right answer, it's probably worth making a note of the fact that our regression coefficients are {\it estimates} (we're trying to guess the parameters that describe a population!), which is why I've added the little hats, so that we get $\hat{b}_0$ and $\hat{b}_1$ rather than $b_0$ and $b_1$. Finally, I should also note that, since there's actually more than one way to estimate a regression model, the more technical name for this estimation process is \keyterm{ordinary least squares (OLS) regression}.  
 
-At this point, we now have a concrete definition for what counts as our ``best'' choice of regression coefficients, $\hat{b}_0$ and $\hat{b}_1$. The natural question to ask next is,  if our optimal regression coefficients are those that minimise the sum squared residuals, how do we {\it find} these wonderful numbers? The actual answer to this question is complicated and doesn't help you understand the logic of regression.\FOOTNOTE{Or at least, I'm assuming that it doesn't help most people. But on the off chance that someone reading this is a proper kung fu master of linear algebra (and to be fair, I always have a few of these people in my intro stats class), it {\it will} help {\it you} to know that the solution to the estimation problem turns out to be $\hat{\bm{b}} = (\mathbf{X}^\T\mathbf{X})^{-1} \mathbf{X}^\T \bm{y}$, where $\hat{\bm{b}}$ is a vector containing the estimated regression coefficients,  $\mathbf{X}$ is the ``design matrix'' that contains the predictor variables (plus an additional column containing all ones; strictly $\mathbf{X}$ is a matrix of the regressors, but I haven't discussed the distinction yet), and $\bm{y}$ is a vector containing the outcome variable. For everyone else, this isn't exactly helpful and can be downright scary. However, since quite a few things in linear regression can be written in linear algebra terms, you'll see a bunch of footnotes like this one in this chapter. If you can follow the maths in them, great. If not, ignore it.}  This time I'm going to let you off the hook. Instead of showing you the long and tedious way first and then ``revealing'' the wonderful shortcut that jamovi provides, let's cut straight to the chase and just use jamovi to do all the heavy lifting. 
+At this point, we now have a concrete definition for what counts as our ``best'' choice of regression coefficients, $\hat{b}_0$ and $\hat{b}_1$. The natural question to ask next is,  if our optimal regression coefficients are those that minimise the sum squared residuals, how do we {\it find} these wonderful numbers? The actual answer to this question is complicated and doesn't help you understand the logic of regression.\FOOTNOTE{Or at least, I'm assuming that it doesn't help most people. But on the off chance that someone reading this is a proper kung fu master of linear algebra (and to be fair, I always have a few of these people in my intro stats class), it {\it will} help {\it you} to know that the solution to the estimation problem turns out to be $\hat{\bm{b}} = (\mathbf{X}^\T\mathbf{X})^{-1} \mathbf{X}^\T \bm{y}$, where $\hat{\bm{b}}$ is a vector containing the estimated regression coefficients,  $\mathbf{X}$ is the ``design matrix'' that contains the predictor variables (plus an additional column containing all ones; strictly $\mathbf{X}$ is a matrix of the regressors, but I haven't discussed the distinction yet), and $\bm{y}$ is a vector containing the outcome variable. For everyone else, this isn't exactly helpful and can be downright scary. However, since quite a few things in linear regression can be written in linear algebra terms, you'll see a bunch of footnotes like this one in this chapter. If you can follow the maths in them, great. If not, ignore it.}  This time I'm going to let you off the hook. Instead of showing you the long and tedious way first and then ``revealing'' the wonderful shortcut that JASP provides, let's cut straight to the chase and just use JASP to do all the heavy lifting. 
 
-\SUBSECTION{Linear regression in jamovi~\label{sec:lm}}
+\SUBSECTION{Linear regression in JASP~\label{sec:lm}}
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/regression/reg1,clip=true, width = 14cm} 
-\caption{A jamovi screenshot showing a simple linear regression analysis.}
+\epsfig{file = ../img/regression/reg1.png ,clip=true, width = 14cm} 
+\caption{A JASP screenshot showing a simple linear regression analysis.}
 \HR
 \label{fig:reg1}
 \end{center}
 \end{figure}
 
-To run my linear regression, open up the `Regression' - `Linear Regression' analysis in jamovi, using the \rtext{parenthood.csv} data file. Then specify \rtext{dan.grump} as the `Dependent Variable' and \rtext{dan.sleep} as the variable entered in the `Covariates' box. This gives the results shown in Figure \ref{fig:reg1}, showing an intercept $\hat{b}_0 = 125.96$ and the slope $\hat{b}_1 = -8.94$. In other words, the best-fitting regression line that I plotted in Figure~\ref{fig:regression1} has this formula:
+To run my linear regression, open up the `Regression' - `Linear Regression' analysis in JASP, using the \rtext{parenthood.csv} data file. Then specify \rtext{dan.grump} as the `Dependent Variable' and \rtext{dan.sleep} as the variable entered in the `Covariates' box. This gives the results shown in Figure \ref{fig:reg1}, showing an intercept $\hat{b}_0 = 125.956$ and the slope $\hat{b}_1 = -8.937$. In other words, the best-fitting regression line that I plotted in Figure~\ref{fig:regression1} has this formula:
 $$
-\hat{Y}_i = 125.96 + (-8.94 \ X_i)
+\hat{Y}_i = 125.956 + (-8.937 \ X_i)
 $$ 
 
 \SUBSECTION{Interpreting the estimated model}
@@ -343,13 +343,13 @@ As before, $\epsilon_i$ is the residual associated with the $i$-th observation, 
 \end{center}
 \end{figure}
 
-\SUBSECTION{Doing it in jamovi} 
+\SUBSECTION{Doing it in JASP} 
 
-Multiple regression in jamovi is no different to simple regression. All we have to do is add additional variables to the `Covariates' box in jamovi. For example, if we want to use both \rtext{dan.sleep} and \rtext{baby.sleep} as predictors in our attempt to explain why I'm so grumpy, then move \rtext{baby.sleep} across into the `Covariates' box alongside \rtext{dan.sleep}. By default, jamovi assumes that the model should include an intercept. The coefficients we get this time are:
+Multiple regression in JASP is no different to simple regression. All we have to do is add additional variables to the `Covariates' box in JASP. For example, if we want to use both \rtext{dan.sleep} and \rtext{baby.sleep} as predictors in our attempt to explain why I'm so grumpy, then move \rtext{baby.sleep} across into the `Covariates' box alongside \rtext{dan.sleep}. By default, JASP assumes that the model should include an intercept. The coefficients we get this time are:
 
 \begin{rblock1}
 (Intercept)    dan.sleep   baby.sleep  
-  125.97        -8.95        0.01  
+  125.966        -8.950       0.011  
 \end{rblock1}
 
 The coefficient associated with \rtext{dan.sleep} is quite large, suggesting that every hour of sleep I lose makes me a lot grumpier. However, the coefficient for \rtext{baby.sleep} is very small, suggesting that it doesn't really matter how much sleep my son gets. What matters as far as my grumpiness goes is how much sleep {\it I} get. To get a sense of what this multiple regression model looks like, Figure~\ref{fig:multipleregression} shows a 3D plot that plots all three variables, along with the regression model itself. 
@@ -366,7 +366,7 @@ $$
 
 \section{Quantifying the fit of the regression model~\label{sec:r2}}
 
-So we now know how to estimate the coefficients of a linear regression model. The problem is, we don't yet know if this regression model is any good. For example, the \rtext{regression.1} model {\it claims} that every hour of sleep will improve my mood by quite a lot, but it might just be rubbish. Remember, the regression model only produces a prediction $\hat{Y}_i$ about what my mood is like, but my actual mood is $Y_i$. If these two are very close, then the regression model has done a good job. If they are very different, then it has done a bad job. 
+So we now know how to estimate the coefficients of a linear regression model. The problem is, we don't yet know if this regression model is any good. For example, the regression model that we constructed in section \ref{sec:lm} {\it claims} that every hour of sleep will improve my mood by quite a lot, but it might just be rubbish. Remember, the regression model only produces a prediction $\hat{Y}_i$ about what my mood is like, but my actual mood is $Y_i$. If these two are very close, then the regression model has done a good job. If they are very different, then it has done a bad job. 
 
 \SUBSECTION{The \texorpdfstring{$R^2$}{R-squared} value~\label{sec:rsquared}}
 
@@ -378,44 +378,55 @@ which we would hope to be pretty small. Specifically, what we'd like is for it t
 $$
 \mbox{SS}_{tot} = \sum_i (Y_i - \bar{Y})^2
 $$
-While we're here, let's calculate these values ourselves, not by hand though. Let's use something like Excel or another standard spreadsheet programme. I have done this by opening up the \rtext{parenthood.csv} file in Excel and saving it as \rtext{parenthood\_rsquared.xls} so that I can work on it. The first thing to do is calculate the $\hat{Y}$ values, and for the simple model that uses only a single predictor we would do the following:
+While we're here, let's calculate these values ourselves, not by hand though.  I have constructed a JASP file called \rtext{parenthood\_rsquared.jasp}, which you can open from the book's data folder.  You'll notice that this data file has 5 variables; two of them are the original \rtext{dan.sleep} and \rtext{dan.grump} variables that we've already been using.  The other three are \emph{calculated} variables:
 
 \noindent
-1. create a new column called `\rtext{Y.pred}' using the formula `\rtext{= 125.97 + (-8.94 * dan.sleep)}'
-
-Okay, now that we've got a variable which stores the regression model predictions for how grumpy I will be on any given day, let's calculate our sum of squared residuals. We would do that using the following formula: 
+1. \rtext{Y.pred} is the predicted value of grumpiness using the regression equation.  It is calculated using the formula `\rtext{125.97 + (-8.94 * dan.sleep)}'.
 
 \noindent
-2. calculate the SS(resid) by creating a new column called '\rtext{(Y-Y.pred)\^{}2}' using the formula \\`\rtext{ = (dan.grump - Y.pred)\^{}2}'.
+2. \rtext{resid} is a measure of the residual error $\epsilon_i = Y_i-\hat{Y}_i$, which represents the difference between our \emph{predicted} value of grumpiness and our \emph{actual} value of grumpiness.  It is calculated using the formula `\rtext{dan.grump - Y.pred}'.
 
 \noindent
-3. Then, at the bottom of this column calculate the sum of these values, \\i.e. `\rtext{sum( ( Y-Y.pred)\^{}2 )}. 
+3. \rtext{sq.resid} is the square of the residual, and is calculated using the formula `\rtext{resid\^2}'.
 
-This should give you a value of `\rtext{1838.722}'. Wonderful. A big number that doesn't mean very much. Still, let's forge boldly onwards anyway and calculate the total sum of squares as well. That's also pretty simple. Calculate the \rtext{SS(tot)} by: 
 
+Since $SS_{res}$ is the sum of these squared residuals, we can use JASP to find the sum of the \rtext{sq.resid} column. Simply click `Descriptives' - `Descriptive Statistics' and move \rtext{sq.resid} to the `Variables' box.  You'll then need to select `Sum' from the `Statistics' options below. This should give you a value of `\rtext{1838.714}'.
+
+Wonderful. A big number that doesn't mean very much. Still, let's forge boldly onwards anyway and calculate the total sum of squares as well. That's also pretty simple. Let's calculate $SS_{tot}$ similarly.  This time, you'll need to create a new computed column.  Click the ``+'' symbol to start. For `Name', let's type `\rtext{sq.resid2}' (you'll see why in a minute). Be sure to select the ``R'' button, then click `Create Column'. For your R code, type the following (see Figure \ref{fig:resid}):
+
+\begin{rblock}
+  (dan.grump - mean(dan.grump))^2
+\end{rblock}
+
+Then click `Compute column'.  This will produce a column of values that are themselves residuals, but they are residuals (errors) against a \emph{really bad} predictive model; that is, the model that just predicts grumpiness using the \emph{mean} of all grumpiness values.  To find $SS_{tot}$, we need to compute the sum of \rtext{sq.resid2}, just like we did above.
 \noindent
-4. At the bottom of the dan.grump column, calculate the mean value for \rtext{dan.grump} \\(NB Excel uses the word `\rtext{AVERAGE}' rather than `mean' in its function).
 
-\noindent
-5. Then create a new column, called `\rtext{(Y - mean(Y))\^{}2 )}' using the formula \\`\rtext{ = (dan.grump - AVERAGE(dan.grump))\^{}2 } '.
+\begin{figure}[!htb]
+\begin{center}
+\epsfig{file = ../img/regression/createResid.png ,clip=true, width = 14cm} 
+\caption{A JASP screenshot showing a residual computation in R.}
+\HR
+\label{fig:resid}
+\end{center}
+\end{figure}
 
-\noindent
-6. Then, at the bottom of this column calculate the sum of these values, \\i.e. `\rtext{sum( (Y - mean(Y))\^{}2 )}'.
-
-This should give you a value of `\rtext{9998.59}'. Hmm. Well, it's a much bigger number than the last one, so this does suggest that our regression model was making good predictions. But it's not very interpretable. 
+This should give you a value of `\rtext{9998.590}'. Hmm. Well, it's a much bigger number than the last one, so this does suggest that our regression model was making good predictions (that is, it has greatly reduced the residual error compared to the model that uses the mean as a single predictor). But it's not very interpretable. 
 
 Perhaps we can fix this. What we'd like to do is to convert these two fairly meaningless numbers into one number. A nice, interpretable number, which for no particular reason we'll call $R^2$. What we would like is for the value of $R^2$ to be equal to 1 if the regression model makes no errors in predicting the data. In other words, if it turns out that the residual errors are zero. That is, if $\mbox{SS}_{res} = 0$ then we expect $R^2 = 1$. Similarly, if the model is completely useless, we would like $R^2$ to be equal to 0. What do I mean by ``useless''? Tempting as it is to demand that the regression model move out of the house, cut its hair and get a real job, I'm probably going to have to pick a more practical definition. In this case, all I mean is that the residual sum of squares is no smaller than the total sum of squares, $\mbox{SS}_{res} = \mbox{SS}_{tot}$. Wait, why don't we do exactly that? The formula that provides us with our $R^2$ value is pretty simple to write down,
 $$
 R^2 = 1 - \frac{\mbox{SS}_{res}}{\mbox{SS}_{tot}}
 $$
-and equally simple to calculate in Excel: 
+and equally simple to calculate by hand: 
 
-\noindent
-7. Calculate \rtext{R.squared} by typing into a blank cell the following: \\`\rtext{ = 1 - (SS(resid) / SS(tot) )} '.
+\begin{align*}
+  R^2 &= 1-\frac{SS_{res}}{SS_{tot}}\\
+      &= 1 - \frac{1838.714}{9998.590}\\
+      &= 1-0.1839\\
+  &= 0.8161.
+\end{align*}
+The $R^2$ value, sometimes called the \keyterm{coefficient of determination}\FOOTNOTE{And by ``sometimes'' I mean ``almost never''. In practice everyone just calls it ``$R$-squared''.} has a simple interpretation: it is the {\it proportion} of the variance in the outcome variable that can be accounted for by the predictor. So, in this case the fact that we have obtained $R^2 = .8161$ means that the predictor (\rtext{dan.sleep}) explains 81.61\% of the variance in the outcome (\rtext{dan.grump}). 
 
-This gives a value for $R^2$ of `\rtext{0.8161018}'. The $R^2$ value, sometimes called the \keyterm{coefficient of determination}\FOOTNOTE{And by ``sometimes'' I mean ``almost never''. In practice everyone just calls it ``$R$-squared''.} has a simple interpretation: it is the {\it proportion} of the variance in the outcome variable that can be accounted for by the predictor. So, in this case the fact that we have obtained $R^2 = .816$ means that the predictor (\rtext{my.sleep}) explains 81.6\% of the variance in the outcome (\rtext{my.grump}). 
-
-Naturally, you don't actually need to type all these commands into Excel yourself if you want to obtain the $R^2$ value for your regression model. As we'll see later on in Section~\ref{sec:regressionsummary}, all you need to do is specify this as an option in jamovi. However, let's put that to one side for the moment. There's another property of $R^2$ that I want to point out. 
+Naturally, you don't actually need to do all these computations by hand if you want to obtain the $R^2$ value for your regression model. It turns out that JASP gives you this by default!  Take a look at Figure \ref{fig:reg1} again; notice that in the top table labeled `Model Summary', the value of $R^2$ is already there!
 
 \SUBSECTION{The relationship between regression and correlation}
 

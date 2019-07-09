@@ -216,10 +216,10 @@
 \BOOKMARK [1][]{section.11.2}{11.2 Scatterplots}{chapter.11}% 216
 \BOOKMARK [1][]{section.11.3}{11.3 What is a linear regression model? }{chapter.11}% 217
 \BOOKMARK [1][]{section.11.4}{11.4 Estimating a linear regression model }{chapter.11}% 218
-\BOOKMARK [2][-]{subsection.11.4.1}{11.4.1 Linear regression in jamovi }{section.11.4}% 219
+\BOOKMARK [2][-]{subsection.11.4.1}{11.4.1 Linear regression in JASP }{section.11.4}% 219
 \BOOKMARK [2][-]{subsection.11.4.2}{11.4.2 Interpreting the estimated model}{section.11.4}% 220
 \BOOKMARK [1][]{section.11.5}{11.5 Multiple linear regression }{chapter.11}% 221
-\BOOKMARK [2][-]{subsection.11.5.1}{11.5.1 Doing it in jamovi}{section.11.5}% 222
+\BOOKMARK [2][-]{subsection.11.5.1}{11.5.1 Doing it in JASP}{section.11.5}% 222
 \BOOKMARK [2][-]{subsection.11.5.2}{11.5.2 Formula for the general case}{section.11.5}% 223
 \BOOKMARK [1][]{section.11.6}{11.6 Quantifying the fit of the regression model }{chapter.11}% 224
 \BOOKMARK [2][-]{subsection.11.6.1}{11.6.1 The R-squared value }{section.11.6}% 225

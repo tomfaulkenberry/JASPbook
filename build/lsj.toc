@@ -437,60 +437,60 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {11.4}Estimating a linear regression model~}{265}{section.11.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.4.1}Linear regression in jamovi~}{266}{subsection.11.4.1}% 
+\contentsline {subsection}{\numberline {11.4.1}Linear regression in JASP~}{266}{subsection.11.4.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {11.4.2}Interpreting the estimated model}{266}{subsection.11.4.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {11.5}Multiple linear regression~}{267}{section.11.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.5.1}Doing it in jamovi}{269}{subsection.11.5.1}% 
+\contentsline {subsection}{\numberline {11.5.1}Doing it in JASP}{268}{subsection.11.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.5.2}Formula for the general case}{269}{subsection.11.5.2}% 
+\contentsline {subsection}{\numberline {11.5.2}Formula for the general case}{268}{subsection.11.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.6}Quantifying the fit of the regression model~}{269}{section.11.6}% 
+\contentsline {section}{\numberline {11.6}Quantifying the fit of the regression model~}{270}{section.11.6}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {11.6.1}The $R^2$ value~}{270}{subsection.11.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.6.2}The relationship between regression and correlation}{271}{subsection.11.6.2}% 
+\contentsline {subsection}{\numberline {11.6.2}The relationship between regression and correlation}{272}{subsection.11.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.6.3}The adjusted \mathversion {bold}$R^2$\mathversion {normal} value}{271}{subsection.11.6.3}% 
+\contentsline {subsection}{\numberline {11.6.3}The adjusted \mathversion {bold}$R^2$\mathversion {normal} value}{273}{subsection.11.6.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.7}Hypothesis tests for regression models~}{272}{section.11.7}% 
+\contentsline {section}{\numberline {11.7}Hypothesis tests for regression models~}{273}{section.11.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.7.1}Testing the model as a whole}{272}{subsection.11.7.1}% 
+\contentsline {subsection}{\numberline {11.7.1}Testing the model as a whole}{274}{subsection.11.7.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.7.2}Tests for individual coefficients}{274}{subsection.11.7.2}% 
+\contentsline {subsection}{\numberline {11.7.2}Tests for individual coefficients}{275}{subsection.11.7.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.7.3}Running the hypothesis tests in jamovi~}{275}{subsection.11.7.3}% 
+\contentsline {subsection}{\numberline {11.7.3}Running the hypothesis tests in jamovi~}{276}{subsection.11.7.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.8}Regarding regression coefficients~}{276}{section.11.8}% 
+\contentsline {section}{\numberline {11.8}Regarding regression coefficients~}{277}{section.11.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.8.1}Confidence intervals for the coefficients}{276}{subsection.11.8.1}% 
+\contentsline {subsection}{\numberline {11.8.1}Confidence intervals for the coefficients}{278}{subsection.11.8.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.8.2}Calculating standardised regression coefficients}{277}{subsection.11.8.2}% 
+\contentsline {subsection}{\numberline {11.8.2}Calculating standardised regression coefficients}{278}{subsection.11.8.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {11.9}Assumptions of regression~}{279}{section.11.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.10}Model checking~}{280}{section.11.10}% 
+\contentsline {section}{\numberline {11.10}Model checking~}{281}{section.11.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.10.1}Three kinds of residuals}{280}{subsection.11.10.1}% 
+\contentsline {subsection}{\numberline {11.10.1}Three kinds of residuals}{281}{subsection.11.10.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.10.2}Three kinds of anomalous data~}{282}{subsection.11.10.2}% 
+\contentsline {subsection}{\numberline {11.10.2}Three kinds of anomalous data~}{283}{subsection.11.10.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.10.3}Checking the normality of the residuals~}{286}{subsection.11.10.3}% 
+\contentsline {subsection}{\numberline {11.10.3}Checking the normality of the residuals~}{287}{subsection.11.10.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.10.4}Checking for collinearity~}{288}{subsection.11.10.4}% 
+\contentsline {subsection}{\numberline {11.10.4}Checking for collinearity~}{290}{subsection.11.10.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.11}Model selection}{289}{section.11.11}% 
+\contentsline {section}{\numberline {11.11}Model selection}{291}{section.11.11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.11.1}Backward elimination}{291}{subsection.11.11.1}% 
+\contentsline {subsection}{\numberline {11.11.1}Backward elimination}{293}{subsection.11.11.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.11.2}Forward selection}{291}{subsection.11.11.2}% 
+\contentsline {subsection}{\numberline {11.11.2}Forward selection}{293}{subsection.11.11.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.11.3}A caveat}{292}{subsection.11.11.3}% 
+\contentsline {subsection}{\numberline {11.11.3}A caveat}{293}{subsection.11.11.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.11.4}Comparing two regression models}{292}{subsection.11.11.4}% 
+\contentsline {subsection}{\numberline {11.11.4}Comparing two regression models}{294}{subsection.11.11.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.12}Summary}{295}{section.11.12}% 
+\contentsline {section}{\numberline {11.12}Summary}{296}{section.11.12}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {12}References}{297}{chapter.12}% 
+\contentsline {chapter}{\numberline {12}References}{299}{chapter.12}% 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  9 JUL 2019 09:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  9 JUL 2019 14:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1532,7 +1532,7 @@ LaTeX Info: Redefining \nameref on input line 8.
 \@outlinefile=\write5
 \openout5 = `lsj.out'.
 
-<../img/bookcoverA4.pdf, id=1000, 596.2275pt x 845.55902pt>
+<../img/bookcoverA4.pdf, id=996, 596.2275pt x 845.55902pt>
 File: ../img/bookcoverA4.pdf Graphic file (type pdf)
 <use ../img/bookcoverA4.pdf>
 Package pdftex.def Info: ../img/bookcoverA4.pdf  used on input line 11.
@@ -1541,7 +1541,7 @@ File: ../img/bookcoverA4.pdf Graphic file (type pdf)
 <use ../img/bookcoverA4.pdf>
 Package pdftex.def Info: ../img/bookcoverA4.pdf  used on input line 11.
 (pdftex.def)             Requested size: 596.22604pt x 845.55696pt.
-<../img/bookcoverA4.pdf, id=1003, page=1, 596.2275pt x 845.55902pt>
+<../img/bookcoverA4.pdf, id=999, page=1, 596.2275pt x 845.55902pt>
 File: ../img/bookcoverA4.pdf Graphic file (type pdf)
 <use ../img/bookcoverA4.pdf, page 1>
 Package pdftex.def Info: ../img/bookcoverA4.pdf , page1 used on input line 11.
@@ -1649,7 +1649,7 @@ nverted-to.pdf>
 missions3-eps-converted-to.pdf ../img/whystats/berkeleyadmissions3.eps>
 (epstopdf)             \includegraphics on input line 141.
 Package epstopdf Info: Output file is already uptodate.
-<../img/whystats/berkeleyadmissions3-eps-converted-to.pdf, id=1236, 561.09625pt
+<../img/whystats/berkeleyadmissions3-eps-converted-to.pdf, id=1232, 561.09625pt
  x 578.16pt>
 File: ../img/whystats/berkeleyadmissions3-eps-converted-to.pdf Graphic file (ty
 pe pdf)
@@ -1674,20 +1674,20 @@ Chapter 3.
 [45
 
 ]
-<../img/introj/startingjasp.pdf, id=1488, 794.97pt x 614.295pt>
+<../img/introj/startingjasp.pdf, id=1484, 794.97pt x 614.295pt>
 File: ../img/introj/startingjasp.pdf Graphic file (type pdf)
 <use ../img/introj/startingjasp.pdf>
 Package pdftex.def Info: ../img/introj/startingjasp.pdf  used on input line 40.
 
 (pdftex.def)             Requested size: 398.33858pt x 307.81224pt.
  [46] [47 <../img/introj/startingjasp.pdf, page is rotated 90 degrees>]
-<../img/introj/booksalescsv.pdf, id=1517, 794.97pt x 614.295pt>
+<../img/introj/booksalescsv.pdf, id=1513, 794.97pt x 614.295pt>
 File: ../img/introj/booksalescsv.pdf Graphic file (type pdf)
 <use ../img/introj/booksalescsv.pdf>
 Package pdftex.def Info: ../img/introj/booksalescsv.pdf  used on input line 72.
 
 (pdftex.def)             Requested size: 398.33858pt x 307.81224pt.
-<../img/introj/openscreen.pdf, id=1519, 794.97pt x 614.295pt>
+<../img/introj/openscreen.pdf, id=1515, 794.97pt x 614.295pt>
 File: ../img/introj/openscreen.pdf Graphic file (type pdf)
 <use ../img/introj/openscreen.pdf>
 Package pdftex.def Info: ../img/introj/openscreen.pdf  used on input line 83.
@@ -1699,7 +1699,7 @@ img/introj/openscreen.pdf, page is rotated 90 degrees>] [51] [52])
 
 ]
 Chapter 4.
-<../img/descriptives/aflsmall_margins.png, id=1589, 765.86125pt x 551.05875pt>
+<../img/descriptives/aflsmall_margins.png, id=1585, 765.86125pt x 551.05875pt>
 File: ../img/descriptives/aflsmall_margins.png Graphic file (type png)
 <use ../img/descriptives/aflsmall_margins.png>
 Package pdftex.def Info: ../img/descriptives/aflsmall_margins.png  used on inpu
@@ -1716,7 +1716,7 @@ ed-to.pdf>
 gins-eps-converted-to.pdf ../img/descriptives/aflMargins.eps>
 (epstopdf)             \includegraphics on input line 25.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/aflMargins-eps-converted-to.pdf, id=1596, 561.09625pt x 43
+<../img/descriptives/aflMargins-eps-converted-to.pdf, id=1592, 561.09625pt x 43
 3.62pt>
 File: ../img/descriptives/aflMargins-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -1732,7 +1732,7 @@ LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <8> not available
 LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <6> not available
 (Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 64.
  [58]
-<../img/descriptives/descriptives_default.png, id=1635, 1011.78pt x 678.535pt>
+<../img/descriptives/descriptives_default.png, id=1631, 1011.78pt x 678.535pt>
 File: ../img/descriptives/descriptives_default.png Graphic file (type png)
 <use ../img/descriptives/descriptives_default.png>
 Package pdftex.def Info: ../img/descriptives/descriptives_default.png  used on 
@@ -1759,7 +1759,7 @@ Package epstopdf Info: Source file: <../img/descriptives2/mean.eps>
 eps-converted-to.pdf ../img/descriptives2/mean.eps>
 (epstopdf)             \includegraphics on input line 116.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives2/mean-eps-converted-to.pdf, id=1647, 387.4475pt x 335.2525
+<../img/descriptives2/mean-eps-converted-to.pdf, id=1643, 387.4475pt x 335.2525
 pt>
 File: ../img/descriptives2/mean-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/descriptives2/mean-eps-converted-to.pdf>
@@ -1777,7 +1777,7 @@ d-to.pdf>
 ian-eps-converted-to.pdf ./../img/descriptives2/median.eps>
 (epstopdf)             \includegraphics on input line 117.
 Package epstopdf Info: Output file is already uptodate.
-<./../img/descriptives2/median-eps-converted-to.pdf, id=1649, 399.4925pt x 322.
+<./../img/descriptives2/median-eps-converted-to.pdf, id=1645, 399.4925pt x 322.
 20375pt>
 File: ./../img/descriptives2/median-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -1792,14 +1792,14 @@ LaTeX Font Warning: Font shape `OT1/cmbr/bx/n' in size <5> not available
 
 [61 <../img/descriptives2/mean-eps-converted-to.pdf> <./../img/descriptives2/me
 dian-eps-converted-to.pdf>] [62]
-<../img/descriptives/aflsmall_finalists.png, id=1680, 866.23625pt x 518.93875pt
+<../img/descriptives/aflsmall_finalists.png, id=1676, 866.23625pt x 518.93875pt
 >
 File: ../img/descriptives/aflsmall_finalists.png Graphic file (type png)
 <use ../img/descriptives/aflsmall_finalists.png>
 Package pdftex.def Info: ../img/descriptives/aflsmall_finalists.png  used on in
 put line 167.
 (pdftex.def)             Requested size: 312.9803pt x 187.49878pt.
-<../img/descriptives/aflsmall_finalists_mode.png, id=1683, 1263.72125pt x 901.3
+<../img/descriptives/aflsmall_finalists_mode.png, id=1679, 1263.72125pt x 901.3
 675pt>
 File: ../img/descriptives/aflsmall_finalists_mode.png Graphic file (type png)
 <use ../img/descriptives/aflsmall_finalists_mode.png>
@@ -1808,7 +1808,7 @@ on input line 179.
 (pdftex.def)             Requested size: 341.43306pt x 243.53752pt.
  [63 <../img/descriptives/aflsmall_finalists.png>] [64 <../img/descriptives/afl
 small_finalists_mode.png>]
-<../img/descriptives/aflsmall_margins_mode.png, id=1701, 989.6975pt x 747.79375
+<../img/descriptives/aflsmall_margins_mode.png, id=1697, 989.6975pt x 747.79375
 pt>
 File: ../img/descriptives/aflsmall_margins_mode.png Graphic file (type png)
 <use ../img/descriptives/aflsmall_margins_mode.png>
@@ -1816,7 +1816,7 @@ Package pdftex.def Info: ../img/descriptives/aflsmall_margins_mode.png  used on
  input line 193.
 (pdftex.def)             Requested size: 341.43306pt x 257.9777pt.
  [65 <../img/descriptives/aflsmall_margins_mode.png>]
-<../img/descriptives/aflsmall_margins_iqr.png, id=1710, 221.82875pt x 321.2pt>
+<../img/descriptives/aflsmall_margins_iqr.png, id=1706, 221.82875pt x 321.2pt>
 File: ../img/descriptives/aflsmall_margins_iqr.png Graphic file (type png)
 <use ../img/descriptives/aflsmall_margins_iqr.png>
 Package pdftex.def Info: ../img/descriptives/aflsmall_margins_iqr.png  used on 
@@ -1848,7 +1848,7 @@ Package epstopdf Info: Source file: <../img/descriptives/aflSD.eps>
 eps-converted-to.pdf ../img/descriptives/aflSD.eps>
 (epstopdf)             \includegraphics on input line 351.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/aflSD-eps-converted-to.pdf, id=1754, 561.09625pt x 433.62p
+<../img/descriptives/aflSD-eps-converted-to.pdf, id=1750, 561.09625pt x 433.62p
 t>
 File: ../img/descriptives/aflSD-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/descriptives/aflSD-eps-converted-to.pdf>
@@ -1867,7 +1867,7 @@ Package epstopdf Info: Source file: <../img/descriptives/skewness.eps>
 ss-eps-converted-to.pdf ../img/descriptives/skewness.eps>
 (epstopdf)             \includegraphics on input line 379.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/skewness-eps-converted-to.pdf, id=1772, 561.09625pt x 216.
+<../img/descriptives/skewness-eps-converted-to.pdf, id=1768, 561.09625pt x 216.
 81pt>
 File: ../img/descriptives/skewness-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1889,7 +1889,7 @@ Package epstopdf Info: Source file: <../img/descriptives/kurtosis.eps>
 is-eps-converted-to.pdf ../img/descriptives/kurtosis.eps>
 (epstopdf)             \includegraphics on input line 403.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/kurtosis-eps-converted-to.pdf, id=1781, 561.09625pt x 216.
+<../img/descriptives/kurtosis-eps-converted-to.pdf, id=1777, 561.09625pt x 216.
 81pt>
 File: ../img/descriptives/kurtosis-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1903,13 +1903,13 @@ Package mdframed Info: mdframed works in twoside mode on input line 422.
 
 LaTeX Warning: Reference `ch:anova' on page 76 undefined on input line 435.
 
-<../img/descriptives/clinicaltrial.png, id=1810, 760.8425pt x 717.68124pt>
+<../img/descriptives/clinicaltrial.png, id=1806, 760.8425pt x 717.68124pt>
 File: ../img/descriptives/clinicaltrial.png Graphic file (type png)
 <use ../img/descriptives/clinicaltrial.png>
 Package pdftex.def Info: ../img/descriptives/clinicaltrial.png  used on input l
 ine 440.
 (pdftex.def)             Requested size: 398.33858pt x 375.74796pt.
-<../img/descriptives/clinicaltrial_grouping.png, id=1813, 1079.03125pt x 755.82
+<../img/descriptives/clinicaltrial_grouping.png, id=1809, 1079.03125pt x 755.82
 375pt>
 File: ../img/descriptives/clinicaltrial_grouping.png Graphic file (type png)
 <use ../img/descriptives/clinicaltrial_grouping.png>
@@ -1932,7 +1932,7 @@ df>
 s-converted-to.pdf ../img/graphics/snowMap.eps>
 (epstopdf)             \includegraphics on input line 22.
 Package epstopdf Info: Output file is already uptodate.
-<../img/graphics/snowMap-eps-converted-to.pdf, id=1864, 561.09625pt x 433.62pt>
+<../img/graphics/snowMap-eps-converted-to.pdf, id=1860, 561.09625pt x 433.62pt>
 
 File: ../img/graphics/snowMap-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/graphics/snowMap-eps-converted-to.pdf>
@@ -1942,32 +1942,32 @@ input line 22.
 [83
 
 ] [84 <../img/graphics/snowMap-eps-converted-to.pdf>]
-<../img/graphics/jasp_histogram.png, id=1890, 1252.68pt x 863.225pt>
+<../img/graphics/jasp_histogram.png, id=1886, 1252.68pt x 863.225pt>
 File: ../img/graphics/jasp_histogram.png Graphic file (type png)
 <use ../img/graphics/jasp_histogram.png>
 Package pdftex.def Info: ../img/graphics/jasp_histogram.png  used on input line
  36.
 (pdftex.def)             Requested size: 398.33858pt x 274.49898pt.
  [85 <../img/graphics/jasp_histogram.png>]
-<../img/graphics/histogram2.png, id=1901, 516.93124pt x 400.49625pt>
+<../img/graphics/histogram2.png, id=1897, 516.93124pt x 400.49625pt>
 File: ../img/graphics/histogram2.png Graphic file (type png)
 <use ../img/graphics/histogram2.png>
 Package pdftex.def Info: ../img/graphics/histogram2.png  used on input line 47.
 
 (pdftex.def)             Requested size: 284.52756pt x 220.44472pt.
-<../img/graphics/boxplot1.png, id=1903, 1253.68375pt x 864.22874pt>
+<../img/graphics/boxplot1.png, id=1899, 1253.68375pt x 864.22874pt>
 File: ../img/graphics/boxplot1.png Graphic file (type png)
 <use ../img/graphics/boxplot1.png>
 Package pdftex.def Info: ../img/graphics/boxplot1.png  used on input line 63.
 (pdftex.def)             Requested size: 398.33858pt x 274.59396pt.
  [86 <../img/graphics/histogram2.png>]
-<../img/graphics/boxplot2.png, id=1912, 525.965pt x 397.485pt>
+<../img/graphics/boxplot2.png, id=1908, 525.965pt x 397.485pt>
 File: ../img/graphics/boxplot2.png Graphic file (type png)
 <use ../img/graphics/boxplot2.png>
 Package pdftex.def Info: ../img/graphics/boxplot2.png  used on input line 76.
 (pdftex.def)             Requested size: 284.52756pt x 215.03293pt.
  [87 <../img/graphics/boxplot1.png>] [88 <../img/graphics/boxplot2.png>]
-<../img/graphics/boxplot3.png, id=1931, 1286.8075pt x 860.21375pt>
+<../img/graphics/boxplot3.png, id=1927, 1286.8075pt x 860.21375pt>
 File: ../img/graphics/boxplot3.png Graphic file (type png)
 <use ../img/graphics/boxplot3.png>
 Package pdftex.def Info: ../img/graphics/boxplot3.png  used on input line 93.
@@ -1991,7 +1991,7 @@ verted-to.pdf>
 tistProb-eps-converted-to.pdf ../img/probability/frequentistProb.eps>
 (epstopdf)             \includegraphics on input line 105.
 Package epstopdf Info: Output file is already uptodate.
-<../img/probability/frequentistProb-eps-converted-to.pdf, id=2009, 561.09625pt 
+<../img/probability/frequentistProb-eps-converted-to.pdf, id=2005, 561.09625pt 
 x 578.16pt>
 File: ../img/probability/frequentistProb-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -2015,7 +2015,7 @@ onverted-to.pdf>
 stribution-eps-converted-to.pdf ../img/probability/pantsDistribution.eps>
 (epstopdf)             \includegraphics on input line 160.
 Package epstopdf Info: Output file is already uptodate.
-<../img/probability/pantsDistribution-eps-converted-to.pdf, id=2046, 561.09625p
+<../img/probability/pantsDistribution-eps-converted-to.pdf, id=2042, 561.09625p
 t x 433.62pt>
 File: ../img/probability/pantsDistribution-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -2038,7 +2038,7 @@ rted-to.pdf>
 ulls20-eps-converted-to.pdf ../img/probability/binomSkulls20.eps>
 (epstopdf)             \includegraphics on input line 400.
 Package epstopdf Info: Output file is already uptodate.
-<../img/probability/binomSkulls20-eps-converted-to.pdf, id=2074, 561.09625pt x 
+<../img/probability/binomSkulls20-eps-converted-to.pdf, id=2070, 561.09625pt x 
 433.62pt>
 File: ../img/probability/binomSkulls20-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -2058,7 +2058,7 @@ ted-to.pdf>
 ads20-eps-converted-to.pdf ../img/probability/binomHeads20.eps>
 (epstopdf)             \includegraphics on input line 419.
 Package epstopdf Info: Output file is already uptodate.
-<../img/probability/binomHeads20-eps-converted-to.pdf, id=2087, 561.09625pt x 4
+<../img/probability/binomHeads20-eps-converted-to.pdf, id=2083, 561.09625pt x 4
 33.62pt>
 File: ../img/probability/binomHeads20-eps-converted-to.pdf Graphic file (type p
 df)
@@ -2077,7 +2077,7 @@ rted-to.pdf>
 ads100-eps-converted-to.pdf ../img/probability/binomHeads100.eps>
 (epstopdf)             \includegraphics on input line 420.
 Package epstopdf Info: Output file is already uptodate.
-<../img/probability/binomHeads100-eps-converted-to.pdf, id=2089, 561.09625pt x 
+<../img/probability/binomHeads100-eps-converted-to.pdf, id=2085, 561.09625pt x 
 433.62pt>
 File: ../img/probability/binomHeads100-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -2100,7 +2100,7 @@ erted-to.pdf>
 dNormal-eps-converted-to.pdf ../img/probability/standardNormal.eps>
 (epstopdf)             \includegraphics on input line 433.
 Package epstopdf Info: Output file is already uptodate.
-<../img/probability/standardNormal-eps-converted-to.pdf, id=2091, 561.09625pt x
+<../img/probability/standardNormal-eps-converted-to.pdf, id=2087, 561.09625pt x
  433.62pt>
 File: ../img/probability/standardNormal-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -2123,7 +2123,7 @@ verted-to.pdf>
 ftNormal-eps-converted-to.pdf ../img/probability/meanShiftNormal.eps>
 (epstopdf)             \includegraphics on input line 451.
 Package epstopdf Info: Output file is already uptodate.
-<../img/probability/meanShiftNormal-eps-converted-to.pdf, id=2144, 561.09625pt 
+<../img/probability/meanShiftNormal-eps-converted-to.pdf, id=2140, 561.09625pt 
 x 433.62pt>
 File: ../img/probability/meanShiftNormal-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -2142,7 +2142,7 @@ nverted-to.pdf>
 iftNormal-eps-converted-to.pdf ../img/probability/scaleShiftNormal.eps>
 (epstopdf)             \includegraphics on input line 460.
 Package epstopdf Info: Output file is already uptodate.
-<../img/probability/scaleShiftNormal-eps-converted-to.pdf, id=2146, 561.09625pt
+<../img/probability/scaleShiftNormal-eps-converted-to.pdf, id=2142, 561.09625pt
  x 433.62pt>
 File: ../img/probability/scaleShiftNormal-eps-converted-to.pdf Graphic file (ty
 pe pdf)
@@ -2163,7 +2163,7 @@ ed-to.pdf>
 a1SD-eps-converted-to.pdf ../img/probability/normArea1SD.eps>
 (epstopdf)             \includegraphics on input line 475.
 Package epstopdf Info: Output file is already uptodate.
-<../img/probability/normArea1SD-eps-converted-to.pdf, id=2183, 433.62pt x 289.0
+<../img/probability/normArea1SD-eps-converted-to.pdf, id=2179, 433.62pt x 289.0
 8pt>
 File: ../img/probability/normArea1SD-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -2182,7 +2182,7 @@ ed-to.pdf>
 a2SD-eps-converted-to.pdf ../img/probability/normArea2SD.eps>
 (epstopdf)             \includegraphics on input line 476.
 Package epstopdf Info: Output file is already uptodate.
-<../img/probability/normArea2SD-eps-converted-to.pdf, id=2185, 433.62pt x 289.0
+<../img/probability/normArea2SD-eps-converted-to.pdf, id=2181, 433.62pt x 289.0
 8pt>
 File: ../img/probability/normArea2SD-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -2201,7 +2201,7 @@ erted-to.pdf>
 aOther1-eps-converted-to.pdf ../img/probability/normAreaOther1.eps>
 (epstopdf)             \includegraphics on input line 488.
 Package epstopdf Info: Output file is already uptodate.
-<../img/probability/normAreaOther1-eps-converted-to.pdf, id=2187, 433.62pt x 28
+<../img/probability/normAreaOther1-eps-converted-to.pdf, id=2183, 433.62pt x 28
 9.08pt>
 File: ../img/probability/normAreaOther1-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -2220,7 +2220,7 @@ erted-to.pdf>
 aOther2-eps-converted-to.pdf ../img/probability/normAreaOther2.eps>
 (epstopdf)             \includegraphics on input line 489.
 Package epstopdf Info: Output file is already uptodate.
-<../img/probability/normAreaOther2-eps-converted-to.pdf, id=2189, 433.62pt x 28
+<../img/probability/normAreaOther2-eps-converted-to.pdf, id=2185, 433.62pt x 28
 9.08pt>
 File: ../img/probability/normAreaOther2-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -2242,7 +2242,7 @@ pdf>
 ps-converted-to.pdf ../img/probability/tDist.eps>
 (epstopdf)             \includegraphics on input line 519.
 Package epstopdf Info: Output file is already uptodate.
-<../img/probability/tDist-eps-converted-to.pdf, id=2240, 561.09625pt x 433.62pt
+<../img/probability/tDist-eps-converted-to.pdf, id=2236, 561.09625pt x 433.62pt
 >
 File: ../img/probability/tDist-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/probability/tDist-eps-converted-to.pdf>
@@ -2264,7 +2264,7 @@ Package epstopdf Info: Source file: <../img/probability/chiSqDist.eps>
 st-eps-converted-to.pdf ../img/probability/chiSqDist.eps>
 (epstopdf)             \includegraphics on input line 528.
 Package epstopdf Info: Output file is already uptodate.
-<../img/probability/chiSqDist-eps-converted-to.pdf, id=2242, 561.09625pt x 433.
+<../img/probability/chiSqDist-eps-converted-to.pdf, id=2238, 561.09625pt x 433.
 62pt>
 File: ../img/probability/chiSqDist-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2283,7 +2283,7 @@ pdf>
 ps-converted-to.pdf ../img/probability/FDist.eps>
 (epstopdf)             \includegraphics on input line 537.
 Package epstopdf Info: Output file is already uptodate.
-<../img/probability/FDist-eps-converted-to.pdf, id=2244, 561.09625pt x 433.62pt
+<../img/probability/FDist-eps-converted-to.pdf, id=2240, 561.09625pt x 433.62pt
 >
 File: ../img/probability/FDist-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/probability/FDist-eps-converted-to.pdf>
@@ -2312,7 +2312,7 @@ f>
 -converted-to.pdf ../img/estimation/srs1.eps>
 (epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/srs1-eps-converted-to.pdf, id=2327, 845.1575pt x 487.8225pt>
+<../img/estimation/srs1-eps-converted-to.pdf, id=2323, 845.1575pt x 487.8225pt>
 
 File: ../img/estimation/srs1-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/estimation/srs1-eps-converted-to.pdf>
@@ -2331,7 +2331,7 @@ Package epstopdf Info: Source file: <../img/estimation/brs.eps>
 converted-to.pdf ../img/estimation/brs.eps>
 (epstopdf)             \includegraphics on input line 59.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/brs-eps-converted-to.pdf, id=2342, 827.09pt x 487.8225pt>
+<../img/estimation/brs-eps-converted-to.pdf, id=2338, 827.09pt x 487.8225pt>
 File: ../img/estimation/brs-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/estimation/brs-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/estimation/brs-eps-converted-to.pdf  used on in
@@ -2348,7 +2348,7 @@ f>
 -converted-to.pdf ../img/estimation/srs2.eps>
 (epstopdf)             \includegraphics on input line 69.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/srs2-eps-converted-to.pdf, id=2344, 845.1575pt x 487.8225pt>
+<../img/estimation/srs2-eps-converted-to.pdf, id=2340, 845.1575pt x 487.8225pt>
 
 File: ../img/estimation/srs2-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/estimation/srs2-eps-converted-to.pdf>
@@ -2368,7 +2368,7 @@ ed-to.pdf>
 tion-eps-converted-to.pdf ../img/estimation/IQpopulation.eps>
 (epstopdf)             \includegraphics on input line 108.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/IQpopulation-eps-converted-to.pdf, id=2383, 325.215pt x 325.
+<../img/estimation/IQpopulation-eps-converted-to.pdf, id=2379, 325.215pt x 325.
 215pt>
 File: ../img/estimation/IQpopulation-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -2387,7 +2387,7 @@ d-to.pdf>
 100-eps-converted-to.pdf ../img/estimation/IQsample100.eps>
 (epstopdf)             \includegraphics on input line 109.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/IQsample100-eps-converted-to.pdf, id=2385, 325.215pt x 325.2
+<../img/estimation/IQsample100-eps-converted-to.pdf, id=2381, 325.215pt x 325.2
 15pt>
 File: ../img/estimation/IQsample100-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -2406,7 +2406,7 @@ ted-to.pdf>
 10000-eps-converted-to.pdf ../img/estimation/IQsample10000.eps>
 (epstopdf)             \includegraphics on input line 110.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/IQsample10000-eps-converted-to.pdf, id=2387, 325.215pt x 325
+<../img/estimation/IQsample10000-eps-converted-to.pdf, id=2383, 325.215pt x 325
 .215pt>
 File: ../img/estimation/IQsample10000-eps-converted-to.pdf Graphic file (type p
 df)
@@ -2417,27 +2417,27 @@ used on input line 110.
  [130 <../img/estimation/IQpopulation-eps-converted-to.pdf> <../img/estimation/
 IQsample100-eps-converted-to.pdf> <../img/estimation/IQsample10000-eps-converte
 d-to.pdf>]
-<../img/estimation/IQsim.png, id=2423, 1305.87875pt x 843.15pt>
+<../img/estimation/IQsim.png, id=2419, 1305.87875pt x 843.15pt>
 File: ../img/estimation/IQsim.png Graphic file (type png)
 <use ../img/estimation/IQsim.png>
 Package pdftex.def Info: ../img/estimation/IQsim.png  used on input line 134.
 (pdftex.def)             Requested size: 398.33858pt x 257.17967pt.
  [131] [132 <../img/estimation/IQsim.png>]
 [133]
-<../img/estimation/IQsample.png, id=2450, 886.31125pt x 617.30624pt>
+<../img/estimation/IQsample.png, id=2446, 886.31125pt x 617.30624pt>
 File: ../img/estimation/IQsample.png Graphic file (type png)
 <use ../img/estimation/IQsample.png>
 Package pdftex.def Info: ../img/estimation/IQsample.png  used on input line 164
 .
 (pdftex.def)             Requested size: 398.33858pt x 277.44614pt.
  [134] [135 <../img/estimation/IQsample.png>]
-<../img/estimation/samplingDist4.png, id=2468, 881.2925pt x 749.80125pt>
+<../img/estimation/samplingDist4.png, id=2464, 881.2925pt x 749.80125pt>
 File: ../img/estimation/samplingDist4.png Graphic file (type png)
 <use ../img/estimation/samplingDist4.png>
 Package pdftex.def Info: ../img/estimation/samplingDist4.png  used on input lin
 e 216.
 (pdftex.def)             Requested size: 199.16928pt x 169.45311pt.
-<../img/estimation/samplingDistMax.png, id=2470, 867.24pt x 623.32875pt>
+<../img/estimation/samplingDistMax.png, id=2466, 867.24pt x 623.32875pt>
 File: ../img/estimation/samplingDistMax.png Graphic file (type png)
 <use ../img/estimation/samplingDistMax.png>
 Package pdftex.def Info: ../img/estimation/samplingDistMax.png  used on input l
@@ -2455,7 +2455,7 @@ ted-to.pdf>
 Dist1-eps-converted-to.pdf ../img/estimation/samplingDist1.eps>
 (epstopdf)             \includegraphics on input line 247.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/samplingDist1-eps-converted-to.pdf, id=2480, 325.215pt x 325
+<../img/estimation/samplingDist1-eps-converted-to.pdf, id=2476, 325.215pt x 325
 .215pt>
 File: ../img/estimation/samplingDist1-eps-converted-to.pdf Graphic file (type p
 df)
@@ -2474,7 +2474,7 @@ ted-to.pdf>
 Dist2-eps-converted-to.pdf ../img/estimation/samplingDist2.eps>
 (epstopdf)             \includegraphics on input line 248.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/samplingDist2-eps-converted-to.pdf, id=2482, 325.215pt x 325
+<../img/estimation/samplingDist2-eps-converted-to.pdf, id=2478, 325.215pt x 325
 .215pt>
 File: ../img/estimation/samplingDist2-eps-converted-to.pdf Graphic file (type p
 df)
@@ -2493,7 +2493,7 @@ ted-to.pdf>
 Dist3-eps-converted-to.pdf ../img/estimation/samplingDist3.eps>
 (epstopdf)             \includegraphics on input line 249.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/samplingDist3-eps-converted-to.pdf, id=2484, 325.215pt x 325
+<../img/estimation/samplingDist3-eps-converted-to.pdf, id=2480, 325.215pt x 325
 .215pt>
 File: ../img/estimation/samplingDist3-eps-converted-to.pdf Graphic file (type p
 df)
@@ -2515,7 +2515,7 @@ o.pdf>
 -eps-converted-to.pdf ../img/estimation/cltDemo1.eps>
 (epstopdf)             \includegraphics on input line 265.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/cltDemo1-eps-converted-to.pdf, id=2530, 433.62pt x 433.62pt>
+<../img/estimation/cltDemo1-eps-converted-to.pdf, id=2526, 433.62pt x 433.62pt>
 
 File: ../img/estimation/cltDemo1-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/estimation/cltDemo1-eps-converted-to.pdf>
@@ -2533,7 +2533,7 @@ o.pdf>
 -eps-converted-to.pdf ../img/estimation/cltDemo2.eps>
 (epstopdf)             \includegraphics on input line 266.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/cltDemo2-eps-converted-to.pdf, id=2532, 433.62pt x 433.62pt>
+<../img/estimation/cltDemo2-eps-converted-to.pdf, id=2528, 433.62pt x 433.62pt>
 
 File: ../img/estimation/cltDemo2-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/estimation/cltDemo2-eps-converted-to.pdf>
@@ -2551,7 +2551,7 @@ o.pdf>
 -eps-converted-to.pdf ../img/estimation/cltDemo4.eps>
 (epstopdf)             \includegraphics on input line 268.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/cltDemo4-eps-converted-to.pdf, id=2534, 433.62pt x 433.62pt>
+<../img/estimation/cltDemo4-eps-converted-to.pdf, id=2530, 433.62pt x 433.62pt>
 
 File: ../img/estimation/cltDemo4-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/estimation/cltDemo4-eps-converted-to.pdf>
@@ -2569,7 +2569,7 @@ o.pdf>
 -eps-converted-to.pdf ../img/estimation/cltDemo8.eps>
 (epstopdf)             \includegraphics on input line 269.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/cltDemo8-eps-converted-to.pdf, id=2536, 433.62pt x 433.62pt>
+<../img/estimation/cltDemo8-eps-converted-to.pdf, id=2532, 433.62pt x 433.62pt>
 
 File: ../img/estimation/cltDemo8-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/estimation/cltDemo8-eps-converted-to.pdf>
@@ -2597,7 +2597,7 @@ Package epstopdf Info: Source file: <../img/estimation/samplingDistSampleSD.eps
 DistSampleSD-eps-converted-to.pdf ../img/estimation/samplingDistSampleSD.eps>
 (epstopdf)             \includegraphics on input line 336.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/samplingDistSampleSD-eps-converted-to.pdf, id=2591, 487.8225
+<../img/estimation/samplingDistSampleSD-eps-converted-to.pdf, id=2587, 487.8225
 pt x 487.8225pt>
 File: ../img/estimation/samplingDistSampleSD-eps-converted-to.pdf Graphic file 
 (type pdf)
@@ -2617,7 +2617,7 @@ o.pdf>
 -eps-converted-to.pdf ../img/estimation/biasMean.eps>
 (epstopdf)             \includegraphics on input line 350.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/biasMean-eps-converted-to.pdf, id=2617, 433.62pt x 433.62pt>
+<../img/estimation/biasMean-eps-converted-to.pdf, id=2613, 433.62pt x 433.62pt>
 
 File: ../img/estimation/biasMean-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/estimation/biasMean-eps-converted-to.pdf>
@@ -2635,7 +2635,7 @@ pdf>
 ps-converted-to.pdf ../img/estimation/biasSD.eps>
 (epstopdf)             \includegraphics on input line 351.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/biasSD-eps-converted-to.pdf, id=2619, 433.62pt x 433.62pt>
+<../img/estimation/biasSD-eps-converted-to.pdf, id=2615, 433.62pt x 433.62pt>
 File: ../img/estimation/biasSD-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/estimation/biasSD-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/estimation/biasSD-eps-converted-to.pdf  used on
@@ -2657,7 +2657,7 @@ nverted-to.pdf>
 eplicated-eps-converted-to.pdf ../img/estimation/confIntReplicated.eps>
 (epstopdf)             \includegraphics on input line 452.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/confIntReplicated-eps-converted-to.pdf, id=2670, 867.24pt x 
+<../img/estimation/confIntReplicated-eps-converted-to.pdf, id=2666, 867.24pt x 
 361.35pt>
 File: ../img/estimation/confIntReplicated-eps-converted-to.pdf Graphic file (ty
 pe pdf)
@@ -2676,7 +2676,7 @@ onverted-to.pdf>
 eplicated2-eps-converted-to.pdf ../img/estimation/confIntReplicated2.eps>
 (epstopdf)             \includegraphics on input line 453.
 Package epstopdf Info: Output file is already uptodate.
-<../img/estimation/confIntReplicated2-eps-converted-to.pdf, id=2672, 867.24pt x
+<../img/estimation/confIntReplicated2-eps-converted-to.pdf, id=2668, 867.24pt x
  361.35pt>
 File: ../img/estimation/confIntReplicated2-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -2709,7 +2709,7 @@ pdf>
 ps-converted-to.pdf ../img/nhst/samplingDist.eps>
 (epstopdf)             \includegraphics on input line 107.
 Package epstopdf Info: Output file is already uptodate.
-<../img/nhst/samplingDist-eps-converted-to.pdf, id=2745, 561.09625pt x 433.62pt
+<../img/nhst/samplingDist-eps-converted-to.pdf, id=2741, 561.09625pt x 433.62pt
 >
 File: ../img/nhst/samplingDist-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/nhst/samplingDist-eps-converted-to.pdf>
@@ -2728,7 +2728,7 @@ Package epstopdf Info: Source file: <../img/nhst/rejectionRegion1.eps>
 n1-eps-converted-to.pdf ../img/nhst/rejectionRegion1.eps>
 (epstopdf)             \includegraphics on input line 138.
 Package epstopdf Info: Output file is already uptodate.
-<../img/nhst/rejectionRegion1-eps-converted-to.pdf, id=2766, 561.09625pt x 397.
+<../img/nhst/rejectionRegion1-eps-converted-to.pdf, id=2762, 561.09625pt x 397.
 485pt>
 File: ../img/nhst/rejectionRegion1-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2748,7 +2748,7 @@ Package epstopdf Info: Source file: <../img/nhst/rejectionRegion2.eps>
 n2-eps-converted-to.pdf ../img/nhst/rejectionRegion2.eps>
 (epstopdf)             \includegraphics on input line 194.
 Package epstopdf Info: Output file is already uptodate.
-<../img/nhst/rejectionRegion2-eps-converted-to.pdf, id=2805, 561.09625pt x 397.
+<../img/nhst/rejectionRegion2-eps-converted-to.pdf, id=2801, 561.09625pt x 397.
 485pt>
 File: ../img/nhst/rejectionRegion2-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2758,7 +2758,7 @@ d on input line 194.
 (pdftex.def)             Requested size: 341.43306pt x 241.87111pt.
  [164] [165 <../img/nhst/rejectionRegion2-eps-converted-to.pdf>]
 [166] [167] [168]
-<../img/nhst/binomialtest.png, id=2848, 1303.87125pt x 727.71875pt>
+<../img/nhst/binomialtest.png, id=2844, 1303.87125pt x 727.71875pt>
 File: ../img/nhst/binomialtest.png Graphic file (type png)
 <use ../img/nhst/binomialtest.png>
 Package pdftex.def Info: ../img/nhst/binomialtest.png  used on input line 292.
@@ -2775,7 +2775,7 @@ Package epstopdf Info: Source file: <../img/nhst/rejectionRegion3.eps>
 n3-eps-converted-to.pdf ../img/nhst/rejectionRegion3.eps>
 (epstopdf)             \includegraphics on input line 310.
 Package epstopdf Info: Output file is already uptodate.
-<../img/nhst/rejectionRegion3-eps-converted-to.pdf, id=2856, 561.09625pt x 397.
+<../img/nhst/rejectionRegion3-eps-converted-to.pdf, id=2852, 561.09625pt x 397.
 485pt>
 File: ../img/nhst/rejectionRegion3-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2795,7 +2795,7 @@ Package epstopdf Info: Source file: <../img/nhst/rejectionRegion4.eps>
 n4-eps-converted-to.pdf ../img/nhst/rejectionRegion4.eps>
 (epstopdf)             \includegraphics on input line 321.
 Package epstopdf Info: Output file is already uptodate.
-<../img/nhst/rejectionRegion4-eps-converted-to.pdf, id=2866, 561.09625pt x 397.
+<../img/nhst/rejectionRegion4-eps-converted-to.pdf, id=2862, 561.09625pt x 397.
 485pt>
 File: ../img/nhst/rejectionRegion4-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2814,7 +2814,7 @@ f>
 -converted-to.pdf ../img/nhst/powerTheta.eps>
 (epstopdf)             \includegraphics on input line 330.
 Package epstopdf Info: Output file is already uptodate.
-<../img/nhst/powerTheta-eps-converted-to.pdf, id=2868, 561.09625pt x 397.485pt>
+<../img/nhst/powerTheta-eps-converted-to.pdf, id=2864, 561.09625pt x 397.485pt>
 
 File: ../img/nhst/powerTheta-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/nhst/powerTheta-eps-converted-to.pdf>
@@ -2834,7 +2834,7 @@ Package epstopdf Info: Source file: <../img/nhst/powerN.eps>
 verted-to.pdf ../img/nhst/powerN.eps>
 (epstopdf)             \includegraphics on input line 372.
 Package epstopdf Info: Output file is already uptodate.
-<../img/nhst/powerN-eps-converted-to.pdf, id=2943, 561.09625pt x 433.62pt>
+<../img/nhst/powerN-eps-converted-to.pdf, id=2939, 561.09625pt x 433.62pt>
 File: ../img/nhst/powerN-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/nhst/powerN-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/nhst/powerN-eps-converted-to.pdf  used on input
@@ -2872,7 +2872,7 @@ to.pdf>
 s-eps-converted-to.pdf ../img/chisquare/chiSqDists.eps>
 (epstopdf)             \includegraphics on input line 166.
 Package epstopdf Info: Output file is already uptodate.
-<../img/chisquare/chiSqDists-eps-converted-to.pdf, id=3055, 561.09625pt x 433.6
+<../img/chisquare/chiSqDists-eps-converted-to.pdf, id=3051, 561.09625pt x 433.6
 2pt>
 File: ../img/chisquare/chiSqDists-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/chisquare/chiSqDists-eps-converted-to.pdf>
@@ -2880,13 +2880,13 @@ Package pdftex.def Info: ../img/chisquare/chiSqDists-eps-converted-to.pdf  used
  on input line 166.
 (pdftex.def)             Requested size: 341.43306pt x 263.85939pt.
  [189 <../img/chisquare/chiSqDists-eps-converted-to.pdf>]
-<../img/chisquare/chiSqTest.pdf, id=3075, 561.09625pt x 433.62pt>
+<../img/chisquare/chiSqTest.pdf, id=3071, 561.09625pt x 433.62pt>
 File: ../img/chisquare/chiSqTest.pdf Graphic file (type pdf)
 <use ../img/chisquare/chiSqTest.pdf>
 Package pdftex.def Info: ../img/chisquare/chiSqTest.pdf  used on input line 181
 .
 (pdftex.def)             Requested size: 341.43306pt x 263.85939pt.
-<../img/chisquare/chisquared_critvalues.png, id=3080, 812.03375pt x 463.7325pt>
+<../img/chisquare/chisquared_critvalues.png, id=3076, 812.03375pt x 463.7325pt>
 
 File: ../img/chisquare/chisquared_critvalues.png Graphic file (type png)
 <use ../img/chisquare/chisquared_critvalues.png>
@@ -2894,7 +2894,7 @@ Package pdftex.def Info: ../img/chisquare/chisquared_critvalues.png  used on in
 put line 194.
 (pdftex.def)             Requested size: 398.33858pt x 227.47856pt.
  [190]
-<../img/chisquare/chisquared_analysis1.png, id=3091, 1233.60875pt x 696.6025pt>
+<../img/chisquare/chisquared_analysis1.png, id=3087, 1233.60875pt x 696.6025pt>
 
 File: ../img/chisquare/chisquared_analysis1.png Graphic file (type png)
 <use ../img/chisquare/chisquared_analysis1.png>
@@ -2902,7 +2902,7 @@ Package pdftex.def Info: ../img/chisquare/chisquared_analysis1.png  used on inp
 ut line 209.
 (pdftex.def)             Requested size: 398.33858pt x 224.93692pt.
  [191 <../img/chisquare/chiSqTest.pdf>]
-<../img/chisquare/chisquared_analysis2.png, id=3123, 447.6725pt x 287.0725pt>
+<../img/chisquare/chisquared_analysis2.png, id=3119, 447.6725pt x 287.0725pt>
 File: ../img/chisquare/chisquared_analysis2.png Graphic file (type png)
 <use ../img/chisquare/chisquared_analysis2.png>
 Package pdftex.def Info: ../img/chisquare/chisquared_analysis2.png  used on inp
@@ -2932,7 +2932,7 @@ Package epstopdf Info: Source file: <../img/ttest/Zeppo.eps>
 verted-to.pdf ../img/ttest/Zeppo.eps>
 (epstopdf)             \includegraphics on input line 33.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/Zeppo-eps-converted-to.pdf, id=3255, 433.62pt x 433.62pt>
+<../img/ttest/Zeppo-eps-converted-to.pdf, id=3251, 433.62pt x 433.62pt>
 File: ../img/ttest/Zeppo-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/ttest/Zeppo-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/ttest/Zeppo-eps-converted-to.pdf  used on input
@@ -2950,7 +2950,7 @@ ed-to.pdf>
 tHyp-eps-converted-to.pdf ../img/ttest/oneSampleZTestHyp.eps>
 (epstopdf)             \includegraphics on input line 59.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/oneSampleZTestHyp-eps-converted-to.pdf, id=3277, 561.09625pt x 28
+<../img/ttest/oneSampleZTestHyp-eps-converted-to.pdf, id=3273, 561.09625pt x 28
 9.08pt>
 File: ../img/ttest/oneSampleZTestHyp-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -2970,7 +2970,7 @@ to.pdf>
 d-eps-converted-to.pdf ../img/ttest/zTestTwoTailed.eps>
 (epstopdf)             \includegraphics on input line 112.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/zTestTwoTailed-eps-converted-to.pdf, id=3308, 433.62pt x 289.08pt
+<../img/ttest/zTestTwoTailed-eps-converted-to.pdf, id=3304, 433.62pt x 289.08pt
 >
 File: ../img/ttest/zTestTwoTailed-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/ttest/zTestTwoTailed-eps-converted-to.pdf>
@@ -2988,7 +2988,7 @@ to.pdf>
 d-eps-converted-to.pdf ../img/ttest/zTestOneTailed.eps>
 (epstopdf)             \includegraphics on input line 113.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/zTestOneTailed-eps-converted-to.pdf, id=3310, 433.62pt x 289.08pt
+<../img/ttest/zTestOneTailed-eps-converted-to.pdf, id=3306, 433.62pt x 289.08pt
 >
 File: ../img/ttest/zTestOneTailed-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/ttest/zTestOneTailed-eps-converted-to.pdf>
@@ -3009,7 +3009,7 @@ ed-to.pdf>
 tHyp-eps-converted-to.pdf ../img/ttest/oneSampleTTestHyp.eps>
 (epstopdf)             \includegraphics on input line 166.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/oneSampleTTestHyp-eps-converted-to.pdf, id=3344, 561.09625pt x 28
+<../img/ttest/oneSampleTTestHyp-eps-converted-to.pdf, id=3340, 561.09625pt x 28
 9.08pt>
 File: ../img/ttest/oneSampleTTestHyp-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -3029,7 +3029,7 @@ Package epstopdf Info: Source file: <../img/ttest2/tdist_3.eps>
 converted-to.pdf ../img/ttest2/tdist_3.eps>
 (epstopdf)             \includegraphics on input line 183.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest2/tdist_3-eps-converted-to.pdf, id=3375, 775.89874pt x 354.32375pt
+<../img/ttest2/tdist_3-eps-converted-to.pdf, id=3371, 775.89874pt x 354.32375pt
 >
 File: ../img/ttest2/tdist_3-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/ttest2/tdist_3-eps-converted-to.pdf>
@@ -3038,7 +3038,7 @@ put line 183.
 (pdftex.def)             Requested size: 369.88582pt x 168.91646pt.
 
 [216 <../img/ttest2/tdist_3-eps-converted-to.pdf>]
-<../img/ttest/ttest_one.png, id=3391, 1327.96124pt x 742.775pt>
+<../img/ttest/ttest_one.png, id=3387, 1327.96124pt x 742.775pt>
 File: ../img/ttest/ttest_one.png Graphic file (type png)
 <use ../img/ttest/ttest_one.png>
 Package pdftex.def Info: ../img/ttest/ttest_one.png  used on input line 197.
@@ -3055,7 +3055,7 @@ to.pdf>
 a-eps-converted-to.pdf ../img/ttest/HarpoAnastasia.eps>
 (epstopdf)             \includegraphics on input line 247.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/HarpoAnastasia-eps-converted-to.pdf, id=3415, 433.62pt x 433.62pt
+<../img/ttest/HarpoAnastasia-eps-converted-to.pdf, id=3411, 433.62pt x 433.62pt
 >
 File: ../img/ttest/HarpoAnastasia-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/ttest/HarpoAnastasia-eps-converted-to.pdf>
@@ -3073,7 +3073,7 @@ Package epstopdf Info: Source file: <../img/ttest/HarpoBernadette.eps>
 te-eps-converted-to.pdf ../img/ttest/HarpoBernadette.eps>
 (epstopdf)             \includegraphics on input line 248.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/HarpoBernadette-eps-converted-to.pdf, id=3417, 433.62pt x 433.62p
+<../img/ttest/HarpoBernadette-eps-converted-to.pdf, id=3413, 433.62pt x 433.62p
 t>
 File: ../img/ttest/HarpoBernadette-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -3081,7 +3081,7 @@ File: ../img/ttest/HarpoBernadette-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../img/ttest/HarpoBernadette-eps-converted-to.pdf  use
 d on input line 248.
 (pdftex.def)             Requested size: 199.16928pt x 199.16988pt.
-<../img/ttest2/ttestci.png, id=3419, 825.0825pt x 679.53876pt>
+<../img/ttest2/ttestci.png, id=3415, 825.0825pt x 679.53876pt>
 File: ../img/ttest2/ttestci.png Graphic file (type png)
 <use ../img/ttest2/ttestci.png>
 Package pdftex.def Info: ../img/ttest2/ttestci.png  used on input line 259.
@@ -3099,7 +3099,7 @@ to.pdf>
 p-eps-converted-to.pdf ../img/ttest/studentTestHyp.eps>
 (epstopdf)             \includegraphics on input line 281.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/studentTestHyp-eps-converted-to.pdf, id=3457, 561.09625pt x 289.0
+<../img/ttest/studentTestHyp-eps-converted-to.pdf, id=3453, 561.09625pt x 289.0
 8pt>
 File: ../img/ttest/studentTestHyp-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/ttest/studentTestHyp-eps-converted-to.pdf>
@@ -3534,7 +3534,7 @@ Package mdframed Info: You first box width is to small
 [223 <../img/ttest/studentTestHyp-eps-converted-to.pdf>] [224]
 Package mdframed Info: mdframed works in twoside mode on input line 337.
  [225]
-<../img/ttest/ttest_ind.png, id=3494, 1442.38875pt x 868.24374pt>
+<../img/ttest/ttest_ind.png, id=3490, 1442.38875pt x 868.24374pt>
 File: ../img/ttest/ttest_ind.png Graphic file (type png)
 <use ../img/ttest/ttest_ind.png>
 Package pdftex.def Info: ../img/ttest/ttest_ind.png  used on input line 356.
@@ -3554,7 +3554,7 @@ Package epstopdf Info: Source file: <../img/ttest/welchTestHyp.eps>
 eps-converted-to.pdf ../img/ttest/welchTestHyp.eps>
 (epstopdf)             \includegraphics on input line 411.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/welchTestHyp-eps-converted-to.pdf, id=3521, 561.09625pt x 289.08p
+<../img/ttest/welchTestHyp-eps-converted-to.pdf, id=3517, 561.09625pt x 289.08p
 t>
 File: ../img/ttest/welchTestHyp-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/ttest/welchTestHyp-eps-converted-to.pdf>
@@ -3565,13 +3565,13 @@ Package mdframed Info: mdframed works in twoside mode on input line 425.
 [229]
 Package mdframed Info: mdframed works in twoside mode on input line 436.
  [230 <../img/ttest/welchTestHyp-eps-converted-to.pdf>]
-<../img/ttest/ttest_welch.png, id=3551, 889.3225pt x 213.79875pt>
+<../img/ttest/ttest_welch.png, id=3547, 889.3225pt x 213.79875pt>
 File: ../img/ttest/ttest_welch.png Graphic file (type png)
 <use ../img/ttest/ttest_welch.png>
 Package pdftex.def Info: ../img/ttest/ttest_welch.png  used on input line 450.
 (pdftex.def)             Requested size: 398.33858pt x 95.7616pt.
  [231 <../img/ttest/ttest_welch.png>]
-<../img/ttest/ttest_paired1.png, id=3562, 1034.86626pt x 679.53876pt>
+<../img/ttest/ttest_paired1.png, id=3558, 1034.86626pt x 679.53876pt>
 File: ../img/ttest/ttest_paired1.png Graphic file (type png)
 <use ../img/ttest/ttest_paired1.png>
 Package pdftex.def Info: ../img/ttest/ttest_paired1.png  used on input line 481
@@ -3589,7 +3589,7 @@ pdf>
 ps-converted-to.pdf ../img/ttest/pairedMeans.eps>
 (epstopdf)             \includegraphics on input line 493.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/pairedMeans-eps-converted-to.pdf, id=3572, 289.08pt x 289.08pt>
+<../img/ttest/pairedMeans-eps-converted-to.pdf, id=3568, 289.08pt x 289.08pt>
 File: ../img/ttest/pairedMeans-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/ttest/pairedMeans-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/ttest/pairedMeans-eps-converted-to.pdf  used on
@@ -3606,7 +3606,7 @@ ed-to.pdf>
 plot-eps-converted-to.pdf ../img/ttest/pairedScatterplot.eps>
 (epstopdf)             \includegraphics on input line 494.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/pairedScatterplot-eps-converted-to.pdf, id=3574, 289.08pt x 289.0
+<../img/ttest/pairedScatterplot-eps-converted-to.pdf, id=3570, 289.08pt x 289.0
 8pt>
 File: ../img/ttest/pairedScatterplot-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -3625,13 +3625,13 @@ df>
 s-converted-to.pdf ../img/ttest/pairedHist.eps>
 (epstopdf)             \includegraphics on input line 495.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/pairedHist-eps-converted-to.pdf, id=3576, 289.08pt x 289.08pt>
+<../img/ttest/pairedHist-eps-converted-to.pdf, id=3572, 289.08pt x 289.08pt>
 File: ../img/ttest/pairedHist-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/ttest/pairedHist-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/ttest/pairedHist-eps-converted-to.pdf  used on 
 input line 495.
 (pdftex.def)             Requested size: 128.0374pt x 128.03368pt.
-<../img/ttest/improvement.png, id=3580, 1252.68pt x 791.95876pt>
+<../img/ttest/improvement.png, id=3576, 1252.68pt x 791.95876pt>
 File: ../img/ttest/improvement.png Graphic file (type png)
 <use ../img/ttest/improvement.png>
 Package pdftex.def Info: ../img/ttest/improvement.png  used on input line 509.
@@ -3639,27 +3639,27 @@ Package pdftex.def Info: ../img/ttest/improvement.png  used on input line 509.
  [233 <../img/ttest/ttest_paired1.png>] [234 <../img/ttest/pairedMeans-eps-conv
 erted-to.pdf> <../img/ttest/pairedScatterplot-eps-converted-to.pdf> <../img/tte
 st/pairedHist-eps-converted-to.pdf>] [235 <../img/ttest/improvement.png>]
-<../img/ttest/ttest_paired2.png, id=3628, 687.56876pt x 233.87375pt>
+<../img/ttest/ttest_paired2.png, id=3624, 687.56876pt x 233.87375pt>
 File: ../img/ttest/ttest_paired2.png Graphic file (type png)
 <use ../img/ttest/ttest_paired2.png>
 Package pdftex.def Info: ../img/ttest/ttest_paired2.png  used on input line 550
 .
 (pdftex.def)             Requested size: 398.33858pt x 135.4934pt.
  [236 <../img/ttest/ttest_paired2.png>]
-<../img/ttest/ttest_onesided1.png, id=3641, 620.3175pt x 254.9525pt>
+<../img/ttest/ttest_onesided1.png, id=3637, 620.3175pt x 254.9525pt>
 File: ../img/ttest/ttest_onesided1.png Graphic file (type png)
 <use ../img/ttest/ttest_onesided1.png>
 Package pdftex.def Info: ../img/ttest/ttest_onesided1.png  used on input line 5
 68.
 (pdftex.def)             Requested size: 398.33858pt x 163.71756pt.
  [237 <../img/ttest/ttest_onesided1.png>]
-<../img/ttest/ttest_onesided2.png, id=3653, 765.86125pt x 205.76875pt>
+<../img/ttest/ttest_onesided2.png, id=3649, 765.86125pt x 205.76875pt>
 File: ../img/ttest/ttest_onesided2.png Graphic file (type png)
 <use ../img/ttest/ttest_onesided2.png>
 Package pdftex.def Info: ../img/ttest/ttest_onesided2.png  used on input line 5
 81.
 (pdftex.def)             Requested size: 398.33858pt x 107.02547pt.
-<../img/ttest/ttest_onesided3.png, id=3656, 881.2925pt x 221.82875pt>
+<../img/ttest/ttest_onesided3.png, id=3652, 881.2925pt x 221.82875pt>
 File: ../img/ttest/ttest_onesided3.png Graphic file (type png)
 <use ../img/ttest/ttest_onesided3.png>
 Package pdftex.def Info: ../img/ttest/ttest_onesided3.png  used on input line 5
@@ -3678,7 +3678,7 @@ Package epstopdf Info: Source file: <../img/ttest/qqNormalHist.eps>
 eps-converted-to.pdf ../img/ttest/qqNormalHist.eps>
 (epstopdf)             \includegraphics on input line 673.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/qqNormalHist-eps-converted-to.pdf, id=3701, 361.35pt x 361.35pt>
+<../img/ttest/qqNormalHist-eps-converted-to.pdf, id=3697, 361.35pt x 361.35pt>
 File: ../img/ttest/qqNormalHist-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/ttest/qqNormalHist-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/ttest/qqNormalHist-eps-converted-to.pdf  used o
@@ -3695,7 +3695,7 @@ Package epstopdf Info: Source file: <../img/ttest/qqNormalPlot.eps>
 eps-converted-to.pdf ../img/ttest/qqNormalPlot.eps>
 (epstopdf)             \includegraphics on input line 674.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/qqNormalPlot-eps-converted-to.pdf, id=3703, 361.35pt x 361.35pt>
+<../img/ttest/qqNormalPlot-eps-converted-to.pdf, id=3699, 361.35pt x 361.35pt>
 File: ../img/ttest/qqNormalPlot-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/ttest/qqNormalPlot-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/ttest/qqNormalPlot-eps-converted-to.pdf  used o
@@ -3712,7 +3712,7 @@ Package epstopdf Info: Source file: <../img/ttest/qqSkewedHist.eps>
 eps-converted-to.pdf ../img/ttest/qqSkewedHist.eps>
 (epstopdf)             \includegraphics on input line 686.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/qqSkewedHist-eps-converted-to.pdf, id=3705, 361.35pt x 361.35pt>
+<../img/ttest/qqSkewedHist-eps-converted-to.pdf, id=3701, 361.35pt x 361.35pt>
 File: ../img/ttest/qqSkewedHist-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/ttest/qqSkewedHist-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/ttest/qqSkewedHist-eps-converted-to.pdf  used o
@@ -3729,7 +3729,7 @@ Package epstopdf Info: Source file: <../img/ttest/qqSkewedPlot.eps>
 eps-converted-to.pdf ../img/ttest/qqSkewedPlot.eps>
 (epstopdf)             \includegraphics on input line 687.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/qqSkewedPlot-eps-converted-to.pdf, id=3707, 361.35pt x 361.35pt>
+<../img/ttest/qqSkewedPlot-eps-converted-to.pdf, id=3703, 361.35pt x 361.35pt>
 File: ../img/ttest/qqSkewedPlot-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/ttest/qqSkewedPlot-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/ttest/qqSkewedPlot-eps-converted-to.pdf  used o
@@ -3746,7 +3746,7 @@ ed-to.pdf>
 Hist-eps-converted-to.pdf ../img/ttest/qqHeavyTailedHist.eps>
 (epstopdf)             \includegraphics on input line 689.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/qqHeavyTailedHist-eps-converted-to.pdf, id=3709, 361.35pt x 361.3
+<../img/ttest/qqHeavyTailedHist-eps-converted-to.pdf, id=3705, 361.35pt x 361.3
 5pt>
 File: ../img/ttest/qqHeavyTailedHist-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -3765,7 +3765,7 @@ ed-to.pdf>
 Plot-eps-converted-to.pdf ../img/ttest/qqHeavyTailedPlot.eps>
 (epstopdf)             \includegraphics on input line 690.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest/qqHeavyTailedPlot-eps-converted-to.pdf, id=3711, 361.35pt x 361.3
+<../img/ttest/qqHeavyTailedPlot-eps-converted-to.pdf, id=3707, 361.35pt x 361.3
 5pt>
 File: ../img/ttest/qqHeavyTailedPlot-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -3789,7 +3789,7 @@ d-to.pdf>
 ist-eps-converted-to.pdf ../img/ttest2/shapirowilkdist.eps>
 (epstopdf)             \includegraphics on input line 718.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest2/shapirowilkdist-eps-converted-to.pdf, id=3784, 526.96875pt x 380
+<../img/ttest2/shapirowilkdist-eps-converted-to.pdf, id=3780, 526.96875pt x 380
 .42125pt>
 File: ../img/ttest2/shapirowilkdist-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -3808,14 +3808,14 @@ Package epstopdf Info: Source file: <../img/ttest2/qq_2b.eps>
 nverted-to.pdf ../img/ttest2/qq_2b.eps>
 (epstopdf)             \includegraphics on input line 732.
 Package epstopdf Info: Output file is already uptodate.
-<../img/ttest2/qq_2b-eps-converted-to.pdf, id=3805, 393.47pt x 369.38pt>
+<../img/ttest2/qq_2b-eps-converted-to.pdf, id=3801, 393.47pt x 369.38pt>
 File: ../img/ttest2/qq_2b-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/ttest2/qq_2b-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/ttest2/qq_2b-eps-converted-to.pdf  used on inpu
 t line 732.
 (pdftex.def)             Requested size: 256.0748pt x 240.39287pt.
  [246 <../img/ttest2/qq_2b-eps-converted-to.pdf>] [247]
-<../img/ttest/ttest_nonparametric.png, id=3830, 1252.68pt x 792.9625pt>
+<../img/ttest/ttest_nonparametric.png, id=3826, 1252.68pt x 792.9625pt>
 File: ../img/ttest/ttest_nonparametric.png Graphic file (type png)
 <use ../img/ttest/ttest_nonparametric.png>
 Package pdftex.def Info: ../img/ttest/ttest_nonparametric.png  used on input li
@@ -3839,7 +3839,7 @@ ed-to.pdf>
 ist1-eps-converted-to.pdf ../img/descriptives/grumpHist1.eps>
 (epstopdf)             \includegraphics on input line 40.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/grumpHist1-eps-converted-to.pdf, id=3863, 325.215pt x 325.
+<../img/descriptives/grumpHist1-eps-converted-to.pdf, id=3859, 325.215pt x 325.
 215pt>
 File: ../img/descriptives/grumpHist1-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -3858,7 +3858,7 @@ ed-to.pdf>
 ist2-eps-converted-to.pdf ../img/descriptives/grumpHist2.eps>
 (epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/grumpHist2-eps-converted-to.pdf, id=3865, 325.215pt x 325.
+<../img/descriptives/grumpHist2-eps-converted-to.pdf, id=3861, 325.215pt x 325.
 215pt>
 File: ../img/descriptives/grumpHist2-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -3877,7 +3877,7 @@ ed-to.pdf>
 ist3-eps-converted-to.pdf ../img/descriptives/grumpHist3.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/grumpHist3-eps-converted-to.pdf, id=3867, 325.215pt x 325.
+<../img/descriptives/grumpHist3-eps-converted-to.pdf, id=3863, 325.215pt x 325.
 215pt>
 File: ../img/descriptives/grumpHist3-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -3896,7 +3896,7 @@ d-to.pdf>
 or1-eps-converted-to.pdf ../img/descriptives/grumpCor1.eps>
 (epstopdf)             \includegraphics on input line 56.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/grumpCor1-eps-converted-to.pdf, id=3869, 433.62pt x 433.62
+<../img/descriptives/grumpCor1-eps-converted-to.pdf, id=3865, 433.62pt x 433.62
 pt>
 File: ../img/descriptives/grumpCor1-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -3915,7 +3915,7 @@ d-to.pdf>
 or2-eps-converted-to.pdf ../img/descriptives/grumpCor2.eps>
 (epstopdf)             \includegraphics on input line 57.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/grumpCor2-eps-converted-to.pdf, id=3871, 433.62pt x 433.62
+<../img/descriptives/grumpCor2-eps-converted-to.pdf, id=3867, 433.62pt x 433.62
 pt>
 File: ../img/descriptives/grumpCor2-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -3954,7 +3954,7 @@ d-to.pdf>
 or3-eps-converted-to.pdf ../img/descriptives/grumpCor3.eps>
 (epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/grumpCor3-eps-converted-to.pdf, id=3910, 433.62pt x 433.62
+<../img/descriptives/grumpCor3-eps-converted-to.pdf, id=3906, 433.62pt x 433.62
 pt>
 File: ../img/descriptives/grumpCor3-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -3973,7 +3973,7 @@ Package epstopdf Info: Source file: <../img/descriptives/corr0.eps>
 eps-converted-to.pdf ../img/descriptives/corr0.eps>
 (epstopdf)             \includegraphics on input line 98.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/corr0-eps-converted-to.pdf, id=3913, 289.08pt x 289.08pt>
+<../img/descriptives/corr0-eps-converted-to.pdf, id=3909, 289.08pt x 289.08pt>
 File: ../img/descriptives/corr0-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/descriptives/corr0-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/descriptives/corr0-eps-converted-to.pdf  used o
@@ -4006,7 +4006,7 @@ o.pdf>
 -eps-converted-to.pdf ../img/descriptives/corr33.eps>
 (epstopdf)             \includegraphics on input line 100.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/corr33-eps-converted-to.pdf, id=3916, 289.08pt x 289.08pt>
+<../img/descriptives/corr33-eps-converted-to.pdf, id=3912, 289.08pt x 289.08pt>
 
 File: ../img/descriptives/corr33-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/descriptives/corr33-eps-converted-to.pdf>
@@ -4024,7 +4024,7 @@ to.pdf>
 n-eps-converted-to.pdf ../img/descriptives/corr33n.eps>
 (epstopdf)             \includegraphics on input line 101.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/corr33n-eps-converted-to.pdf, id=3918, 289.08pt x 289.08pt
+<../img/descriptives/corr33n-eps-converted-to.pdf, id=3914, 289.08pt x 289.08pt
 >
 File: ../img/descriptives/corr33n-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/descriptives/corr33n-eps-converted-to.pdf>
@@ -4042,7 +4042,7 @@ o.pdf>
 -eps-converted-to.pdf ../img/descriptives/corr67.eps>
 (epstopdf)             \includegraphics on input line 102.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/corr67-eps-converted-to.pdf, id=3920, 289.08pt x 289.08pt>
+<../img/descriptives/corr67-eps-converted-to.pdf, id=3916, 289.08pt x 289.08pt>
 
 File: ../img/descriptives/corr67-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/descriptives/corr67-eps-converted-to.pdf>
@@ -4060,7 +4060,7 @@ to.pdf>
 n-eps-converted-to.pdf ../img/descriptives/corr67n.eps>
 (epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/corr67n-eps-converted-to.pdf, id=3922, 289.08pt x 289.08pt
+<../img/descriptives/corr67n-eps-converted-to.pdf, id=3918, 289.08pt x 289.08pt
 >
 File: ../img/descriptives/corr67n-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/descriptives/corr67n-eps-converted-to.pdf>
@@ -4078,7 +4078,7 @@ to.pdf>
 0-eps-converted-to.pdf ../img/descriptives/corr100.eps>
 (epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/corr100-eps-converted-to.pdf, id=3924, 289.08pt x 289.08pt
+<../img/descriptives/corr100-eps-converted-to.pdf, id=3920, 289.08pt x 289.08pt
 >
 File: ../img/descriptives/corr100-eps-converted-to.pdf Graphic file (type pdf)
 <use ../img/descriptives/corr100-eps-converted-to.pdf>
@@ -4096,7 +4096,7 @@ Package epstopdf Info: Source file: <../img/descriptives/corr100n.eps>
 0n-eps-converted-to.pdf ../img/descriptives/corr100n.eps>
 (epstopdf)             \includegraphics on input line 105.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/corr100n-eps-converted-to.pdf, id=3926, 289.08pt x 289.08p
+<../img/descriptives/corr100n-eps-converted-to.pdf, id=3922, 289.08pt x 289.08p
 t>
 File: ../img/descriptives/corr100n-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -4120,7 +4120,7 @@ ptives/corr0-eps-converted-to.pdf> <../img/descriptives/corr33-eps-converted-to
 orr67-eps-converted-to.pdf> <../img/descriptives/corr67n-eps-converted-to.pdf> 
 <../img/descriptives/corr100-eps-converted-to.pdf> <../img/descriptives/corr100
 n-eps-converted-to.pdf>]
-<../img/descriptives/correlations.png, id=4012, 1273.75874pt x 668.4975pt>
+<../img/descriptives/correlations.png, id=4008, 1273.75874pt x 668.4975pt>
 File: ../img/descriptives/correlations.png Graphic file (type png)
 <use ../img/descriptives/correlations.png>
 Package pdftex.def Info: ../img/descriptives/correlations.png  used on input li
@@ -4138,7 +4138,7 @@ d-to.pdf>
 be1-eps-converted-to.pdf ../img/descriptives/anscombe1.eps>
 (epstopdf)             \includegraphics on input line 174.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/anscombe1-eps-converted-to.pdf, id=4021, 325.215pt x 325.2
+<../img/descriptives/anscombe1-eps-converted-to.pdf, id=4017, 325.215pt x 325.2
 15pt>
 File: ../img/descriptives/anscombe1-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -4157,7 +4157,7 @@ d-to.pdf>
 be2-eps-converted-to.pdf ../img/descriptives/anscombe2.eps>
 (epstopdf)             \includegraphics on input line 175.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/anscombe2-eps-converted-to.pdf, id=4023, 325.215pt x 325.2
+<../img/descriptives/anscombe2-eps-converted-to.pdf, id=4019, 325.215pt x 325.2
 15pt>
 File: ../img/descriptives/anscombe2-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -4176,7 +4176,7 @@ d-to.pdf>
 be3-eps-converted-to.pdf ../img/descriptives/anscombe3.eps>
 (epstopdf)             \includegraphics on input line 176.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/anscombe3-eps-converted-to.pdf, id=4025, 325.215pt x 325.2
+<../img/descriptives/anscombe3-eps-converted-to.pdf, id=4021, 325.215pt x 325.2
 15pt>
 File: ../img/descriptives/anscombe3-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -4195,7 +4195,7 @@ d-to.pdf>
 be4-eps-converted-to.pdf ../img/descriptives/anscombe4.eps>
 (epstopdf)             \includegraphics on input line 177.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/anscombe4-eps-converted-to.pdf, id=4027, 325.215pt x 325.2
+<../img/descriptives/anscombe4-eps-converted-to.pdf, id=4023, 325.215pt x 325.2
 15pt>
 File: ../img/descriptives/anscombe4-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -4216,7 +4216,7 @@ lRelationship-eps-converted-to.pdf ../img/descriptives/ordinalRelationship.eps>
 
 (epstopdf)             \includegraphics on input line 194.
 Package epstopdf Info: Output file is already uptodate.
-<../img/descriptives/ordinalRelationship-eps-converted-to.pdf, id=4033, 505.89p
+<../img/descriptives/ordinalRelationship-eps-converted-to.pdf, id=4029, 505.89p
 t x 433.62pt>
 File: ../img/descriptives/ordinalRelationship-eps-converted-to.pdf Graphic file
  (type pdf)
@@ -4229,13 +4229,18 @@ nscombe1-eps-converted-to.pdf> <../img/descriptives/anscombe2-eps-converted-to.
 pdf> <../img/descriptives/anscombe3-eps-converted-to.pdf> <../img/descriptives/
 anscombe4-eps-converted-to.pdf>] [260 <../img/descriptives/ordinalRelationship-
 eps-converted-to.pdf>]
-<../img/graphics/scatterplot1.png, id=4101, 1383.1675pt x 1017.8025pt>
+<../img/graphics/scatterplot1.png, id=4097, 1383.1675pt x 1017.8025pt>
 File: ../img/graphics/scatterplot1.png Graphic file (type png)
 <use ../img/graphics/scatterplot1.png>
 Package pdftex.def Info: ../img/graphics/scatterplot1.png  used on input line 2
 37.
 (pdftex.def)             Requested size: 398.33858pt x 293.10516pt.
- [261] [262 <../img/graphics/scatterplot1.png>]
+ [261]
+
+LaTeX Warning: Reference `fig:scatterplot2' on page 262 undefined on input line
+ 250.
+
+[262 <../img/graphics/scatterplot1.png>]
 Package epstopdf Info: Source file: <../img/regression/introPicGoodLine.eps>
 (epstopdf)                    date: 2019-07-01 09:09:23
 (epstopdf)                    size: 7031 bytes
@@ -4247,7 +4252,7 @@ verted-to.pdf>
 GoodLine-eps-converted-to.pdf ../img/regression/introPicGoodLine.eps>
 (epstopdf)             \includegraphics on input line 255.
 Package epstopdf Info: Output file is already uptodate.
-<../img/regression/introPicGoodLine-eps-converted-to.pdf, id=4120, 433.62pt x 4
+<../img/regression/introPicGoodLine-eps-converted-to.pdf, id=4115, 433.62pt x 4
 33.62pt>
 File: ../img/regression/introPicGoodLine-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -4266,7 +4271,7 @@ erted-to.pdf>
 BadLine-eps-converted-to.pdf ../img/regression/introPicBadLine.eps>
 (epstopdf)             \includegraphics on input line 256.
 Package epstopdf Info: Output file is already uptodate.
-<../img/regression/introPicBadLine-eps-converted-to.pdf, id=4122, 433.62pt x 43
+<../img/regression/introPicBadLine-eps-converted-to.pdf, id=4117, 433.62pt x 43
 3.62pt>
 File: ../img/regression/introPicBadLine-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -4274,8 +4279,17 @@ File: ../img/regression/introPicBadLine-eps-converted-to.pdf Graphic file (type
 Package pdftex.def Info: ../img/regression/introPicBadLine-eps-converted-to.pdf
   used on input line 256.
 (pdftex.def)             Requested size: 199.16928pt x 199.16988pt.
- [263 <../img/regression/introPicGoodLine-eps-converted-to.pdf> <../img/regress
-ion/introPicBadLine-eps-converted-to.pdf>]
+
+
+LaTeX Warning: Reference `fig:scatterplot2' on page 263 undefined on input line
+ 259.
+
+
+LaTeX Warning: Reference `fig:scatterplot2' on page 263 undefined on input line
+ 259.
+
+[263 <../img/regression/introPicGoodLine-eps-converted-to.pdf> <../img/regressi
+on/introPicBadLine-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <../img/regression/introPicGoodSSE.eps>
 (epstopdf)                    date: 2019-07-01 09:09:23
 (epstopdf)                    size: 10203 bytes
@@ -4287,7 +4301,7 @@ erted-to.pdf>
 GoodSSE-eps-converted-to.pdf ../img/regression/introPicGoodSSE.eps>
 (epstopdf)             \includegraphics on input line 289.
 Package epstopdf Info: Output file is already uptodate.
-<../img/regression/introPicGoodSSE-eps-converted-to.pdf, id=4153, 433.62pt x 43
+<../img/regression/introPicGoodSSE-eps-converted-to.pdf, id=4145, 433.62pt x 43
 3.62pt>
 File: ../img/regression/introPicGoodSSE-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -4306,7 +4320,7 @@ rted-to.pdf>
 BadSSE-eps-converted-to.pdf ../img/regression/introPicBadSSE.eps>
 (epstopdf)             \includegraphics on input line 290.
 Package epstopdf Info: Output file is already uptodate.
-<../img/regression/introPicBadSSE-eps-converted-to.pdf, id=4155, 433.62pt x 433
+<../img/regression/introPicBadSSE-eps-converted-to.pdf, id=4147, 433.62pt x 433
 .62pt>
 File: ../img/regression/introPicBadSSE-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -4316,11 +4330,11 @@ Package pdftex.def Info: ../img/regression/introPicBadSSE-eps-converted-to.pdf
 (pdftex.def)             Requested size: 199.16928pt x 199.16988pt.
  [264] [265 <../img/regression/introPicGoodSSE-eps-converted-to.pdf> <../img/re
 gression/introPicBadSSE-eps-converted-to.pdf>]
-<../img/regression/reg1.png, id=4191, 1168.365pt x 575.14874pt>
+<../img/regression/reg1.png, id=4182, 1378.14874pt x 799.98875pt>
 File: ../img/regression/reg1.png Graphic file (type png)
 <use ../img/regression/reg1.png>
 Package pdftex.def Info: ../img/regression/reg1.png  used on input line 311.
-(pdftex.def)             Requested size: 398.33858pt x 196.0921pt.
+(pdftex.def)             Requested size: 398.33858pt x 231.22176pt.
  [266] [267 <../img/regression/reg1.png>]
 Package epstopdf Info: Source file: <../img/regression2/scatter3d_1.eps>
 (epstopdf)                    date: 2019-07-01 09:09:23
@@ -4333,7 +4347,7 @@ ed-to.pdf>
 3d_1-eps-converted-to.pdf ../img/regression2/scatter3d_1.eps>
 (epstopdf)             \includegraphics on input line 340.
 Package epstopdf Info: Output file is already uptodate.
-<../img/regression2/scatter3d_1-eps-converted-to.pdf, id=4208, 483.8075pt x 446
+<../img/regression2/scatter3d_1-eps-converted-to.pdf, id=4199, 483.8075pt x 446
 .66875pt>
 File: ../img/regression2/scatter3d_1-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -4341,51 +4355,471 @@ f)
 Package pdftex.def Info: ../img/regression2/scatter3d_1-eps-converted-to.pdf  u
 sed on input line 340.
 (pdftex.def)             Requested size: 398.33858pt x 367.77698pt.
- [268 <../img/regression2/scatter3d_1-eps-converted-to.pdf>]
 Package mdframed Info: mdframed works in twoside mode on input line 358.
- [269] [270]
-Package mdframed Info: mdframed works in twoside mode on input line 429.
- [271]
-Package mdframed Info: Not enough space on this page on input line 434.
-Package mdframed Info: mdframed works in twoside mode on input line 451.
+ [268] [269 <../img/regression2/scatter3d_1-eps-converted-to.pdf>] [270]
+<../img/regression/createResid.png, id=4223, 1039.885pt x 811.03pt>
+File: ../img/regression/createResid.png Graphic file (type png)
+<use ../img/regression/createResid.png>
+Package pdftex.def Info: ../img/regression/createResid.png  used on input line 
+406.
+(pdftex.def)             Requested size: 398.33858pt x 310.66966pt.
+ [271 <../img/regression/createResid.png>] [272]
+Package mdframed Info: mdframed works in twoside mode on input line 440.
+ [273]
+Package mdframed Info: mdframed works in twoside mode on input line 462.
 
 
-LaTeX Warning: Reference `ch:anova' on page 272 undefined on input line 461.
+LaTeX Warning: Reference `ch:anova' on page 274 undefined on input line 472.
 
-[272]
-Package mdframed Info: Not enough space on this page on input line 478.
-
-
-LaTeX Warning: Reference `ch:anova' on page 273 undefined on input line 480.
-
-[273] [274]
-<../img/regression/reg2.png, id=4257, 1353.055pt x 847.165pt>
-File: ../img/regression/reg2.png Graphic file (type png)
-<use ../img/regression/reg2.png>
-Package pdftex.def Info: ../img/regression/reg2.png  used on input line 515.
-(pdftex.def)             Requested size: 398.33858pt x 249.40736pt.
- [275 <../img/regression/reg2.png>]
-Package mdframed Info: mdframed works in twoside mode on input line 618.
- [276]
-Package mdframed Info: Not enough space on this page on input line 624.
-
-
-LaTeX Warning: Reference `ch:anova2' on page 277 undefined on input line 633.
-
-[277]
-Package mdframed Info: mdframed works in twoside mode on input line 636.
-<../img/regression/reg3.pdf, id=4282, 527.18507pt x 339.41876pt>
-File: ../img/regression/reg3.pdf Graphic file (type pdf)
-<use ../img/regression/reg3.pdf>
-Package pdftex.def Info: ../img/regression/reg3.pdf  used on input line 648.
-(pdftex.def)             Requested size: 398.33858pt x 256.47452pt.
- [278 <../img/regression/reg3.pdf>] [279] [280]
-Package mdframed Info: mdframed works in twoside mode on input line 688.
-Package mdframed Info: mdframed works in twoside mode on input line 699.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 709.
- [281]
+(mdframed)              on input line 489.
+[274]
+
+LaTeX Warning: Reference `ch:anova' on page 275 undefined on input line 491.
+
+[275]
+<../img/regression/reg2.png, id=4258, 1353.055pt x 847.165pt>
+File: ../img/regression/reg2.png Graphic file (type png)
+<use ../img/regression/reg2.png>
+Package pdftex.def Info: ../img/regression/reg2.png  used on input line 526.
+(pdftex.def)             Requested size: 398.33858pt x 249.40736pt.
+ [276] [277 <../img/regression/reg2.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 629.
+
+
+LaTeX Warning: Reference `ch:anova2' on page 278 undefined on input line 644.
+
+[278]
+Package mdframed Info: mdframed works in twoside mode on input line 647.
+<../img/regression/reg3.pdf, id=4283, 527.18507pt x 339.41876pt>
+File: ../img/regression/reg3.pdf Graphic file (type pdf)
+<use ../img/regression/reg3.pdf>
+Package pdftex.def Info: ../img/regression/reg3.pdf  used on input line 659.
+(pdftex.def)             Requested size: 398.33858pt x 256.47452pt.
+ [279] [280 <../img/regression/reg3.pdf>] [281]
+Package mdframed Info: mdframed works in twoside mode on input line 699.
+Package mdframed Info: mdframed works in twoside mode on input line 710.
+
+Overfull \vbox (1.2396pt too high) detected at line 720
+ []
+
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 720.
+
+Overfull \vbox (2.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (3.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (4.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (5.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (6.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (7.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (8.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (9.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (10.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (11.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (12.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (13.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (14.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (15.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (16.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (17.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (18.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (19.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (20.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (21.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (22.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (23.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (24.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (25.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (26.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (27.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (28.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (29.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (30.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (31.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (32.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (33.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (34.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (35.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (36.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (37.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (38.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (39.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (40.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (41.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (42.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (43.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (44.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (45.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (46.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (47.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (48.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (49.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (50.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (51.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (52.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (53.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (54.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (55.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (56.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (57.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (58.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (59.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (60.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (61.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (62.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (63.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (64.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (65.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (66.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (67.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (68.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (69.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (70.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (71.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (72.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (73.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (74.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (75.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (76.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (77.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (78.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (79.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (80.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (81.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (82.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (83.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (84.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (85.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (86.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (87.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (88.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (89.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (90.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (91.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (92.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (93.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (94.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (95.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (96.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (97.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (98.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (99.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (100.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (101.2396pt too high) detected at line 720
+ []
+
+
+Overfull \vbox (102.2396pt too high) detected at line 720
+ []
+
+
+Package mdframed Warning: correct box splittet fails
+ It seems you are using a non splittable contents
+(mdframed)                 on input line 720.
+
+Package mdframed Info: You first box width is to small
+ mdframed fixed it
+(mdframed)              on input line 720.
+[282]
 Package epstopdf Info: Source file: <../img/regression2/unusual_outlier.eps>
 (epstopdf)                    date: 2019-07-01 09:09:23
 (epstopdf)                    size: 4767 bytes
@@ -4395,15 +4829,15 @@ verted-to.pdf>
 (epstopdf)                    size: 9171 bytes
 (epstopdf)             Command: <repstopdf --outfile=../img/regression2/unusual
 _outlier-eps-converted-to.pdf ../img/regression2/unusual_outlier.eps>
-(epstopdf)             \includegraphics on input line 718.
+(epstopdf)             \includegraphics on input line 729.
 Package epstopdf Info: Output file is already uptodate.
-<../img/regression2/unusual_outlier-eps-converted-to.pdf, id=4320, 469.755pt x 
+<../img/regression2/unusual_outlier-eps-converted-to.pdf, id=4323, 469.755pt x 
 469.755pt>
 File: ../img/regression2/unusual_outlier-eps-converted-to.pdf Graphic file (typ
 e pdf)
 <use ../img/regression2/unusual_outlier-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/regression2/unusual_outlier-eps-converted-to.pd
-f  used on input line 718.
+f  used on input line 729.
 (pdftex.def)             Requested size: 284.52756pt x 284.5288pt.
 Package epstopdf Info: Source file: <../img/regression2/unusual_leverage.eps>
 (epstopdf)                    date: 2019-07-01 09:09:23
@@ -4414,15 +4848,15 @@ nverted-to.pdf>
 (epstopdf)                    size: 9754 bytes
 (epstopdf)             Command: <repstopdf --outfile=../img/regression2/unusual
 _leverage-eps-converted-to.pdf ../img/regression2/unusual_leverage.eps>
-(epstopdf)             \includegraphics on input line 727.
+(epstopdf)             \includegraphics on input line 738.
 Package epstopdf Info: Output file is already uptodate.
-<../img/regression2/unusual_leverage-eps-converted-to.pdf, id=4322, 469.755pt x
+<../img/regression2/unusual_leverage-eps-converted-to.pdf, id=4325, 469.755pt x
  469.755pt>
 File: ../img/regression2/unusual_leverage-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use ../img/regression2/unusual_leverage-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/regression2/unusual_leverage-eps-converted-to.p
-df  used on input line 727.
+df  used on input line 738.
 (pdftex.def)             Requested size: 284.52756pt x 284.5288pt.
 Package epstopdf Info: Source file: <../img/regression2/unusual_influence.eps>
 (epstopdf)                    date: 2019-07-01 09:09:23
@@ -4433,87 +4867,86 @@ onverted-to.pdf>
 (epstopdf)                    size: 9662 bytes
 (epstopdf)             Command: <repstopdf --outfile=../img/regression2/unusual
 _influence-eps-converted-to.pdf ../img/regression2/unusual_influence.eps>
-(epstopdf)             \includegraphics on input line 736.
+(epstopdf)             \includegraphics on input line 747.
 Package epstopdf Info: Output file is already uptodate.
-<../img/regression2/unusual_influence-eps-converted-to.pdf, id=4324, 469.755pt 
+<../img/regression2/unusual_influence-eps-converted-to.pdf, id=4327, 469.755pt 
 x 469.755pt>
 File: ../img/regression2/unusual_influence-eps-converted-to.pdf Graphic file (t
 ype pdf)
 <use ../img/regression2/unusual_influence-eps-converted-to.pdf>
 Package pdftex.def Info: ../img/regression2/unusual_influence-eps-converted-to.
-pdf  used on input line 736.
+pdf  used on input line 747.
 (pdftex.def)             Requested size: 284.52756pt x 284.5288pt.
 
 
-LaTeX Warning: Reference `sec:boxplotoutliers' on page 282 undefined on input l
-ine 743.
+LaTeX Warning: Reference `sec:boxplotoutliers' on page 283 undefined on input l
+ine 754.
 
-[282] [283 <../img/regression2/unusual_outlier-eps-converted-to.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 754.
- [284 <../img/regression2/unusual_leverage-eps-converted-to.pdf>]
-<../img/regression/reg4.png, id=4365, 410.53375pt x 182.6825pt>
+[283] [284 <../img/regression2/unusual_outlier-eps-converted-to.pdf>]
+Package mdframed Info: mdframed works in twoside mode on input line 765.
+ [285 <../img/regression2/unusual_leverage-eps-converted-to.pdf>]
+<../img/regression/reg4.png, id=4367, 410.53375pt x 182.6825pt>
 File: ../img/regression/reg4.png Graphic file (type png)
 <use ../img/regression/reg4.png>
-Package pdftex.def Info: ../img/regression/reg4.png  used on input line 767.
+Package pdftex.def Info: ../img/regression/reg4.png  used on input line 778.
 (pdftex.def)             Requested size: 284.52756pt x 126.61133pt.
- [285 <../img/regression2/unusual_influence-eps-converted-to.pdf>]
+ [286 <../img/regression2/unusual_influence-eps-converted-to.pdf>]
 <../img/regression/reg5.pdf, id=4383, 451.6875pt x 401.5pt>
 File: ../img/regression/reg5.pdf Graphic file (type pdf)
 <use ../img/regression/reg5.pdf>
-Package pdftex.def Info: ../img/regression/reg5.pdf  used on input line 786.
+Package pdftex.def Info: ../img/regression/reg5.pdf  used on input line 797.
 (pdftex.def)             Requested size: 398.33858pt x 354.09914pt.
-<../img/regression/reg6a.pdf, id=4386, 401.5pt x 301.125pt>
+ [287 <../img/regression/reg4.png>]
+<../img/regression/reg6a.pdf, id=4395, 401.5pt x 301.125pt>
 File: ../img/regression/reg6a.pdf Graphic file (type pdf)
 <use ../img/regression/reg6a.pdf>
-Package pdftex.def Info: ../img/regression/reg6a.pdf  used on input line 798.
+Package pdftex.def Info: ../img/regression/reg6a.pdf  used on input line 809.
 (pdftex.def)             Requested size: 199.16928pt x 149.38126pt.
-<../img/regression/reg6b.pdf, id=4388, 401.5pt x 301.125pt>
+<../img/regression/reg6b.pdf, id=4397, 401.5pt x 301.125pt>
 File: ../img/regression/reg6b.pdf Graphic file (type pdf)
 <use ../img/regression/reg6b.pdf>
-Package pdftex.def Info: ../img/regression/reg6b.pdf  used on input line 799.
+Package pdftex.def Info: ../img/regression/reg6b.pdf  used on input line 810.
 (pdftex.def)             Requested size: 199.16928pt x 149.38126pt.
-<../img/regression/reg6c.pdf, id=4390, 401.5pt x 301.125pt>
+<../img/regression/reg6c.pdf, id=4399, 401.5pt x 301.125pt>
 File: ../img/regression/reg6c.pdf Graphic file (type pdf)
 <use ../img/regression/reg6c.pdf>
-Package pdftex.def Info: ../img/regression/reg6c.pdf  used on input line 801.
+Package pdftex.def Info: ../img/regression/reg6c.pdf  used on input line 812.
 (pdftex.def)             Requested size: 199.16928pt x 149.38126pt.
-<../img/regression/reg6d.pdf, id=4392, 401.5pt x 301.125pt>
+<../img/regression/reg6d.pdf, id=4401, 401.5pt x 301.125pt>
 File: ../img/regression/reg6d.pdf Graphic file (type pdf)
 <use ../img/regression/reg6d.pdf>
-Package pdftex.def Info: ../img/regression/reg6d.pdf  used on input line 802.
+Package pdftex.def Info: ../img/regression/reg6d.pdf  used on input line 813.
 (pdftex.def)             Requested size: 199.16928pt x 149.38126pt.
 
 
-LaTeX Warning: Reference `sec:transform' on page 286 undefined on input line 81
-1.
+LaTeX Warning: Reference `sec:transform' on page 288 undefined on input line 82
+2.
 
 
-LaTeX Warning: Reference `sec:mathfunc' on page 286 undefined on input line 811
+LaTeX Warning: Reference `sec:mathfunc' on page 288 undefined on input line 822
 .
 
-[286 <../img/regression/reg4.png>]
-Package mdframed Info: mdframed works in twoside mode on input line 814.
- [287 <../img/regression/reg5.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 829.
- [288 <../img/regression/reg6a.pdf> <../img/regression/reg6b.pdf> <../img/regre
+[288 <../img/regression/reg5.pdf>]
+Package mdframed Info: mdframed works in twoside mode on input line 825.
+ [289 <../img/regression/reg6a.pdf> <../img/regression/reg6b.pdf> <../img/regre
 ssion/reg6c.pdf> <../img/regression/reg6d.pdf>]
-<../img/regression/reg7.png, id=4457, 1186.4325pt x 860.21375pt>
+Package mdframed Info: mdframed works in twoside mode on input line 840.
+<../img/regression/reg7.png, id=4459, 1186.4325pt x 860.21375pt>
 File: ../img/regression/reg7.png Graphic file (type png)
 <use ../img/regression/reg7.png>
-Package pdftex.def Info: ../img/regression/reg7.png  used on input line 854.
+Package pdftex.def Info: ../img/regression/reg7.png  used on input line 865.
 (pdftex.def)             Requested size: 398.33858pt x 288.8067pt.
- [289] [290 <../img/regression/reg7.png>]
-Package mdframed Info: mdframed works in twoside mode on input line 874.
-
-[291] [292]
-Package mdframed Info: mdframed works in twoside mode on input line 911.
- [293]
-<../img/regression/reg8.png, id=4491, 1273.75874pt x 867.24pt>
+ [290] [291 <../img/regression/reg7.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 885.
+ [292] [293]
+Package mdframed Info: mdframed works in twoside mode on input line 922.
+ [294]
+<../img/regression/reg8.png, id=4493, 1273.75874pt x 867.24pt>
 File: ../img/regression/reg8.png Graphic file (type png)
 <use ../img/regression/reg8.png>
-Package pdftex.def Info: ../img/regression/reg8.png  used on input line 930.
+Package pdftex.def Info: ../img/regression/reg8.png  used on input line 941.
 (pdftex.def)             Requested size: 398.33858pt x 271.21033pt.
- [294 <../img/regression/reg8.png>]) [295] [296
+ [295] [296 <../img/regression/reg8.png>]) [297] [298
 
 ]
 Chapter 12.
@@ -4524,15 +4957,15 @@ Overfull \hbox (17.085pt too wide) in paragraph at lines 69--69
 ty Press (page [][]204[][]). 
  []
 
-[297]
+[299]
 Overfull \hbox (6.08162pt too wide) in paragraph at lines 69--69
 [][]\T1/cmbr/m/sc/10.95 Lehmann, Erich L. (2011). \T1/cmbr/m/sl/10.95 Fisher, N
 ey-man, and the Cre-ation of Clas-si-cal Statis-tics\T1/cmbr/m/sc/10.95 . Sprin
 ger (page [][]177[][]). 
  []
 
-[298]
-<../img/backcover.pdf, id=4584, 597.65839pt x 845.30275pt>
+[300]
+<../img/backcover.pdf, id=4591, 597.65839pt x 845.30275pt>
 File: ../img/backcover.pdf Graphic file (type pdf)
 <use ../img/backcover.pdf>
 Package pdftex.def Info: ../img/backcover.pdf  used on input line 74.
@@ -4541,7 +4974,7 @@ File: ../img/backcover.pdf Graphic file (type pdf)
 <use ../img/backcover.pdf>
 Package pdftex.def Info: ../img/backcover.pdf  used on input line 74.
 (pdftex.def)             Requested size: 597.65692pt x 845.30067pt.
-<../img/backcover.pdf, id=4587, page=1, 597.65839pt x 845.30275pt>
+<../img/backcover.pdf, id=4594, page=1, 597.65839pt x 845.30275pt>
 File: ../img/backcover.pdf Graphic file (type pdf)
 <use ../img/backcover.pdf, page 1>
 Package pdftex.def Info: ../img/backcover.pdf , page1 used on input line 74.
@@ -4550,12 +4983,12 @@ File: ../img/backcover.pdf Graphic file (type pdf)
 <use ../img/backcover.pdf, page 1>
 Package pdftex.def Info: ../img/backcover.pdf , page1 used on input line 74.
 (pdftex.def)             Requested size: 562.26405pt x 795.24251pt.
- [299]pdfTeX warning (ext4): destination with the same identifier (name{page.29
-9}) has been already used, duplicate ignored
+ [301]pdfTeX warning (ext4): destination with the same identifier (name{page.30
+1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.74 ...autoscale=false,pages=-]{../img/backcover}
-                                                   [299]
+                                                   [301]
 File: ../img/backcover.pdf Graphic file (type pdf)
 <use ../img/backcover.pdf, page 1>
 Package pdftex.def Info: ../img/backcover.pdf , page1 used on input line 74.
@@ -4568,89 +5001,67 @@ File: ../img/backcover.pdf Graphic file (type pdf)
 <use ../img/backcover.pdf, page 1>
 Package pdftex.def Info: ../img/backcover.pdf , page1 used on input line 74.
 (pdftex.def)             Requested size: 562.26405pt x 795.24251pt.
- [300 <../img/backcover.pdf>]
+ [302 <../img/backcover.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./lsj.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
+Package rerunfilecheck Info: File `lsj.out' has not changed.
+(rerunfilecheck)             Checksum: E9A888383999AAE308724C4C6E240906;20579.
 
-
-Package rerunfilecheck Warning: File `lsj.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `lsj.out':
-(rerunfilecheck)             Before: 8D8A0B3FEEEE2BA9DF806FBFBB14D45C;20669
-(rerunfilecheck)             After:  77FA45C62CBF83B73E0821426CC34F40;20583.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'lsj.run.xml'.
 \openout1 = `lsj.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29765 strings out of 492616
- 539103 string characters out of 6129482
- 997747 words of memory out of 5000000
- 32250 multiletter control sequences out of 15000+600000
+ 29769 strings out of 492616
+ 539224 string characters out of 6129482
+ 997714 words of memory out of 5000000
+ 32253 multiletter control sequences out of 15000+600000
  584050 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,18n,65p,2946b,2048s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{figure.11.24} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.11.23} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.11.2.1} has been referenced but does not
- exist, replaced by a fixed one
-
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pf
-b></usr/local/texlive/2019/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/hfbright/hfbr17.pfb></usr/
-local/texlive/2019/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb></usr/local
-/texlive/2019/texmf-dist/fonts/type1/public/hfbright/hfbr9.pfb></usr/local/texl
-ive/2019/texmf-dist/fonts/type1/public/hfbright/hfbras10.pfb></usr/local/texliv
-e/2019/texmf-dist/fonts/type1/public/hfbright/hfbrbx10.pfb></usr/local/texlive/
-2019/texmf-dist/fonts/type1/public/hfbright/hfbrmb10.pfb></usr/local/texlive/20
-19/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb></usr/local/texlive/2019
-/texmf-dist/fonts/type1/public/hfbright/hfbrmi8.pfb></usr/local/texlive/2019/te
-xmf-dist/fonts/type1/public/hfbright/hfbrmi9.pfb></usr/local/texlive/2019/texmf
--dist/fonts/type1/public/hfbright/hfbrsy10.pfb></usr/local/texlive/2019/texmf-d
-ist/fonts/type1/public/mathabx-type1/matha10.pfb></usr/local/texlive/2019/texmf
--dist/fonts/type1/public/mathabx-type1/matha12.pfb></usr/local/texlive/2019/tex
-mf-dist/fonts/type1/public/mathabx-type1/matha6.pfb></usr/local/texlive/2019/te
-xmf-dist/fonts/type1/public/mathabx-type1/matha8.pfb></usr/local/texlive/2019/t
-exmf-dist/fonts/type1/public/mathabx-type1/matha9.pfb></usr/local/texlive/2019/
-texmf-dist/fonts/type1/public/mathabx-type1/mathb10.pfb></usr/local/texlive/201
-9/texmf-dist/fonts/type1/public/mathabx-type1/mathx10.pfb></usr/local/texlive/2
-019/texmf-dist/fonts/type1/public/cm-super/sfbbx10.pfb></usr/local/texlive/2019
-/texmf-dist/fonts/type1/public/cm-super/sfbmo10.pfb></usr/local/texlive/2019/te
-xmf-dist/fonts/type1/public/cm-super/sfbmo8.pfb></usr/local/texlive/2019/texmf-
-dist/fonts/type1/public/cm-super/sfbmo9.pfb></usr/local/texlive/2019/texmf-dist
-/fonts/type1/public/cm-super/sfbmr10.pfb></usr/local/texlive/2019/texmf-dist/fo
-nts/type1/public/cm-super/sfbmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts
-/type1/public/cm-super/sfbmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/typ
-e1/public/cm-super/sfbmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/p
-ublic/cm-super/sfbtl10.pfb>
-Output written on lsj.pdf (314 pages, 6881102 bytes).
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.
+pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/hfbright/hfbr17.pfb></us
+r/local/texlive/2019/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/hfbright/hfbr9.pfb></usr/local/te
+xlive/2019/texmf-dist/fonts/type1/public/hfbright/hfbras10.pfb></usr/local/texl
+ive/2019/texmf-dist/fonts/type1/public/hfbright/hfbrbx10.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/hfbright/hfbrmb10.pfb></usr/local/texlive/
+2019/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb></usr/local/texlive/20
+19/texmf-dist/fonts/type1/public/hfbright/hfbrmi8.pfb></usr/local/texlive/2019/
+texmf-dist/fonts/type1/public/hfbright/hfbrmi9.pfb></usr/local/texlive/2019/tex
+mf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb></usr/local/texlive/2019/texmf
+-dist/fonts/type1/public/mathabx-type1/matha10.pfb></usr/local/texlive/2019/tex
+mf-dist/fonts/type1/public/mathabx-type1/matha12.pfb></usr/local/texlive/2019/t
+exmf-dist/fonts/type1/public/mathabx-type1/matha6.pfb></usr/local/texlive/2019/
+texmf-dist/fonts/type1/public/mathabx-type1/matha8.pfb></usr/local/texlive/2019
+/texmf-dist/fonts/type1/public/mathabx-type1/matha9.pfb></usr/local/texlive/201
+9/texmf-dist/fonts/type1/public/mathabx-type1/mathb10.pfb></usr/local/texlive/2
+019/texmf-dist/fonts/type1/public/mathabx-type1/mathx10.pfb></usr/local/texlive
+/2019/texmf-dist/fonts/type1/public/cm-super/sfbbx10.pfb></usr/local/texlive/20
+19/texmf-dist/fonts/type1/public/cm-super/sfbmo10.pfb></usr/local/texlive/2019/
+texmf-dist/fonts/type1/public/cm-super/sfbmo8.pfb></usr/local/texlive/2019/texm
+f-dist/fonts/type1/public/cm-super/sfbmo9.pfb></usr/local/texlive/2019/texmf-di
+st/fonts/type1/public/cm-super/sfbmr10.pfb></usr/local/texlive/2019/texmf-dist/
+fonts/type1/public/cm-super/sfbmr17.pfb></usr/local/texlive/2019/texmf-dist/fon
+ts/type1/public/cm-super/sfbmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
+ype1/public/cm-super/sfbmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1
+/public/cm-super/sfbtl10.pfb>
+Output written on lsj.pdf (316 pages, 7026888 bytes).
 PDF statistics:
- 4896 PDF objects out of 5155 (max. 8388607)
- 3943 compressed objects within 40 object streams
+ 4902 PDF objects out of 5155 (max. 8388607)
+ 3945 compressed objects within 40 object streams
  821 named destinations out of 1000 (max. 500000)
- 3614 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3617 words of extra memory for PDF output out of 10000 (max. 10000000)
 
