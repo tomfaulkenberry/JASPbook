@@ -30,9 +30,9 @@ Dan's son's hours slept & 3.25 & 12.07 & 8.05 & 7.95 & 2.07 & 3.21 \\
 \end{table}
 
 
-Let's turn to a topic close to every parent's heart: sleep. The data set we'll use is fictitious, but based on real events. Suppose I'm curious to find out how much my infant son's sleeping habits affect my mood. Let's say that I can rate my grumpiness very precisely, on a scale from 0 (not at all grumpy) to 100 (grumpy as a very, very grumpy old man or woman). And lets also assume that I've been measuring my grumpiness, my sleeping patterns and my son's sleeping patterns for quite some time now. Let's say, for 100 days. And, being a nerd, I've saved the data as a file called \rtext{parenthood.csv}. If we load the data we can see that the file contains four variables \rtext{dan.sleep}, \rtext{baby.sleep}, \rtext{dan.grump} and \rtext{day}. Note that when you first load this data set jamovi may not have guessed the data type for each variable correctly, in which case you should fix it:  \rtext{dan.sleep}, \rtext{baby.sleep}, \rtext{dan.grump} and \rtext{day} can be specified as continuous variables, and \rtext{ID} is a nominal(integer) variable.\FOOTNOTE{I've noticed that in some versions of jamovi you can also specify an `ID' variable type, but for our purposes it does not matter how we specify the ID variable as we won't be including it in any analyses.}
+Let's turn to a topic close to every parent's heart: sleep. The data set we'll use is fictitious, but based on real events. Suppose I'm curious to find out how much my infant son's sleeping habits affect my mood. Let's say that I can rate my grumpiness very precisely, on a scale from 0 (not at all grumpy) to 100 (grumpy as a very, very grumpy old man or woman). And lets also assume that I've been measuring my grumpiness, my sleeping patterns and my son's sleeping patterns for quite some time now. Let's say, for 100 days. And, being a nerd, I've saved the data as a file called \rtext{parenthood.csv}. If we load the data into JASP we can see that the file contains four variables \rtext{dan.sleep}, \rtext{baby.sleep}, \rtext{dan.grump} and \rtext{day}. Note that when you first load this data set JASP may not have guessed the data type for each variable correctly, in which case you should fix it:  \rtext{dan.sleep}, \rtext{baby.sleep}, \rtext{dan.grump} and \rtext{day} can be specified as continuous variables, and \rtext{ID} is a nominal(integer) variable.
 
-Next, I'll take a look at some basic descriptive statistics and, to give a graphical depiction of what each of the three interesting variables looks like, Figure~\ref{fig:parenthood} plots histograms. One thing to note: just because jamovi can calculate dozens of different statistics doesn't mean you should report all of them. If I were writing this up for a report, I'd probably pick out those statistics that are of most interest to me (and to my readership), and then put them into a nice, simple table like the one in Table~\ref{tab:parenthood}.\FOOTNOTE{Actually, even that table is more than I'd bother with. In practice most people pick {\it one} measure of central tendency, and {\it one} measure of variability only.}  Notice that when I put it into a table, I gave everything ``human readable'' names. This is always good practice. Notice also that I'm not getting enough sleep. This isn't good practice, but other parents tell me that it's pretty standard.  
+Next, I'll take a look at some basic descriptive statistics and, to give a graphical depiction of what each of the three interesting variables looks like, Figure~\ref{fig:parenthood} plots histograms. One thing to note: just because JASP can calculate dozens of different statistics doesn't mean you should report all of them. If I were writing this up for a report, I'd probably pick out those statistics that are of most interest to me (and to my readership), and then put them into a nice, simple table like the one in Table~\ref{tab:parenthood}.\FOOTNOTE{Actually, even that table is more than I'd bother with. In practice most people pick {\it one} measure of central tendency, and {\it one} measure of variability only.}  Notice that when I put it into a table, I gave everything ``human readable'' names. This is always good practice. Notice also that I'm not getting enough sleep. This isn't good practice, but other parents tell me that it's pretty standard.  
 
 \begin{figure}[!htb]
 \begin{center}
@@ -127,17 +127,17 @@ r_{XY}  = \frac{\mbox{Cov}(X,Y)}{ \hat{\sigma}_X \ \hat{\sigma}_Y}
 $$
 \end{mdframed}
 
-By standardising the covariance, not only do we keep all of the nice properties of the covariance discussed earlier, but the actual values of $r$ are on a meaningful scale: $r= 1$ implies a perfect positive relationship and $r = -1$ implies a perfect negative relationship. I'll expand a little more on this point later, in Section~\ref{sec:interpretingcorrelations}. But before I do, let's look at how to calculate correlations in jamovi.
+By standardising the covariance, not only do we keep all of the nice properties of the covariance discussed earlier, but the actual values of $r$ are on a meaningful scale: $r= 1$ implies a perfect positive relationship and $r = -1$ implies a perfect negative relationship. I'll expand a little more on this point later, in Section~\ref{sec:interpretingcorrelations}. But before I do, let's look at how to calculate correlations in JASP.
 
-\SUBSECTION{Calculating correlations in jamovi}
+\SUBSECTION{Calculating correlations in JASP}
 
-Calculating correlations in jamovi can be done by clicking on the `Regression' - `Correlation Matrix' button. Transfer all four continuous variables across into the box on the right to get the output in Figure \ref{fig:correlations}.
+Calculating correlations in JASP can be done by clicking on the `Regression' - `Correlation Matrix' button. Transfer all four continuous variables across into the box on the right to get the output in Figure \ref{fig:correlations}.  Notice that each correlation (denoted `Pearson's $r$') is paired with a $p$-value.  Clearly, something is being tested here, but ignore it for now. We'll talk more about that soon!
 
 \vspace{1cm}
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file=../img/descriptives/correlations.png,clip=true,width=14cm} 
-\caption{A jamovi screenshot showing correlations between variables in the \filename{parenthood.csv} file}
+\caption{A JASP screenshot showing correlations between variables in the \filename{parenthood.csv} file}
 \label{fig:correlations}
 \HR
 \end{center}
@@ -225,50 +225,24 @@ student   10  &  9&    9
 \end{center}
 Hmm. These are {\it identical}. The student who put in the most effort got the best grade, the student with the least effort got the worst grade, etc. As the table above shows, these two rankings are identical, so if we now correlate them we get a perfect relationship, with a correlation of \rtext{1.0}.
 
-What we've just re-invented is \keyterm{Spearman's rank order correlation}, usually denoted $\rho$ to distinguish it from the Pearson correlation $r$. We can calculate Spearman's $\rho$ using jamovi simply by clicking the `Spearman' check box in the `Correlation Matrix' screen. 
+What we've just re-invented is \keyterm{Spearman's rank order correlation}, usually denoted $\rho$ to distinguish it from the Pearson correlation $r$. We can calculate Spearman's $\rho$ using JASP simply by clicking the `Spearman' check box in the `Correlation Matrix' screen. 
 
 
 \section{Scatterplots\label{sec:scatterplots}}
 
-\keyterm{Scatterplots} are a simple but effective tool for visualising the relationship between {\it two} variables, like we saw with the figures in the section on correlation (Section~\ref{sec:correl}). It's this latter application that we usually have in mind when we use the term ``scatterplot''. In this kind of plot each observation corresponds to one dot. The horizontal location of the dot plots the value of the observation on one variable, and the vertical location displays its value on the other variable. In many situations you don't really have a clear opinions about what the {\it causal} relationship is (e.g., does A cause B, or does B cause A, or does some other variable C control both A and B). If that's the case, it doesn't really matter which variable you plot on the x-axis and which one you plot on the y-axis. However, in many situations you do have a pretty strong idea which variable you think is most likely to be causal, or at least you have some suspicions in that direction. If so, then it's conventional to plot the cause variable on the x-axis, and the effect variable on the y-axis. With that in mind, let's look at how to draw scatterplots in jamovi, using the same \rtext{parenthood} data set (i.e. \filename{parenthood.csv)} that I used when introducing correlations.
+\keyterm{Scatterplots} are a simple but effective tool for visualising the relationship between {\it two} variables, like we saw with the figures in the section on correlation (Section~\ref{sec:correl}). It's this latter application that we usually have in mind when we use the term ``scatterplot''. In this kind of plot each observation corresponds to one dot. The horizontal location of the dot plots the value of the observation on one variable, and the vertical location displays its value on the other variable. In many situations you don't really have a clear opinions about what the {\it causal} relationship is (e.g., does A cause B, or does B cause A, or does some other variable C control both A and B). If that's the case, it doesn't really matter which variable you plot on the x-axis and which one you plot on the y-axis. However, in many situations you do have a pretty strong idea which variable you think is most likely to be causal, or at least you have some suspicions in that direction. If so, then it's conventional to plot the cause variable on the x-axis, and the effect variable on the y-axis. With that in mind, let's look at how to draw scatterplots in JASP, using the same \rtext{parenthood} data set (i.e. \filename{parenthood.csv)} that I used when introducing correlations.
 
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/graphics/scatterplot1.png, clip=true,width =14cm} 
-\caption{Scatterplot via the `Correlation Matrix' command in jamovi}
+\caption{Scatterplot via the `Correlation Matrix' method in JASP}
 \label{fig:scatterplot1}
 \HR
 \end{center}
 \end{figure}
 
-Suppose my goal is to draw a scatterplot displaying the relationship between the amount of sleep that I get (\rtext{dan.sleep}) and how grumpy I am the next day (\rtext{dan.grump}). There are two different ways in which we can use jamovi to get the plot that we're after. The first way is to use the `Plot' option under the `Regression' - `Correlation Matrix' button, giving us the output shown in Figure \ref{fig:scatterplot1}. Note that jamovi draws a line through the points, we'll come onto this a bit later in Section~(\ref{sec:introregression}). Plotting a scatterplot in this way also allow you to specify `Densities for variables' and this option adds a density curve showing how the data in each variable is distributed. 
+Suppose my goal is to draw a scatterplot displaying the relationship between the amount of sleep that I get (\rtext{dan.sleep}) and how grumpy I am the next day (\rtext{dan.grump}). The way in which we can use JASP to get this plot is to use the `Plots' option under the `Regression' - `Correlation Matrix' button, giving us the output shown in Figure \ref{fig:scatterplot1}. Note that JASP draws a line through the points, we'll come onto this a bit later in Section~(\ref{sec:introregression}). Plotting a scatterplot in this way also allow you to specify `Densities for variables', which adds a histogram and density curve showing how the data in each variable is distributed. You can also specify the `Statistics' option, which provides an estimate of the correlation along with a 95\% confidence interval.
 
-The second way do to it is to use one of the jamovi add-on modules. This module is called `scatr' and you can install it by clicking on the large `+' icon in the top right of the jamovi screen, opening the jamovi library, scrolling down until you find `scatr' and clicking `install'. When you have done this, you will find a new `Scatterplot' command available under the `Exploration' button. This plot is a bit different than the first way, see Figure \ref{fig:scatterplot2}, but the important information is the same.
-
-\begin{figure}[!htb]
-\begin{center}
-\epsfig{file = ../img/graphics/scatterplot2.pdf, clip=true,width =12cm} 
-\caption{Scatterplot via the `scatr' add-on module in jamovi}
-\label{fig:scatterplot2}
-\HR
-\end{center}
-\end{figure}
-
-\SUBSECTION{More elaborate options}
-
-Often you will want to look at the relationships between several variables at once, using a \keyterm{scatterplot matrix} (in jamovi via the `Correlation Matrix' - `Plot' command). Just add another variable, for example \rtext{baby.sleep} to the list of variables to be correlated, and jamovi will create a scatterplot matrix for you, just like the one in Figure \ref{fig:scatterplot3}.
-
-\begin{figure}[p]
-\begin{center}
-\epsfig{file = ../img/graphics/scatterplot3.pdf,clip=true, width = 14cm}
-\caption{A matrix of scatterplots produced using jamovi.}
-\HR
-\label{fig:scatterplot3}
-\end{center}
-\end{figure}
-
-
-\newpage
 \section{What is a linear regression model?~\label{sec:introregression}}
 
 Stripped to its bare essentials, linear regression models are basically a slightly fancier version of the Pearson correlation (Section~\ref{sec:correl}), though as we'll see regression models are much more powerful tools. 
