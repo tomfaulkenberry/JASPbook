@@ -488,7 +488,7 @@ $$
 and the degrees of freedom associated with this are $K$ and $N-K-1$. 
 \end{mdframed}
 
-We'll see much more of the $F$ statistic in Chapter~\ref{ch:anova}, but for now just know that we can interpret large $F$ values as indicating that the null hypothesis is performing poorly in comparison to the alternative hypothesis. In a moment I'll show you how to do the test in jamovi the easy way, but first let's have a look at the tests for the individual regression coefficients.
+We'll see much more of the $F$ statistic in Chapter~\ref{ch:anova}, but for now just know that we can interpret large $F$ values as indicating that the null hypothesis is performing poorly in comparison to the alternative hypothesis. In a moment I'll show you how to do the test in JASP the easy way, but first let's have a look at the tests for the individual regression coefficients.
 
 \SUBSECTION{Tests for individual coefficients}
 
@@ -496,10 +496,10 @@ The $F$-test that we've just introduced is useful for checking that the model as
 
 \begin{rblock1}
 (Intercept)    dan.sleep   baby.sleep  
-  125.97        -8.95        0.01  
+  125.966        -8.950       0.011  
 \end{rblock1}
 
-I can't help but notice that the estimated regression coefficient for the \rtext{baby.sleep} variable is tiny (0.01), relative to the value that we get for \rtext{dan.sleep} (-8.95). Given that these two variables are absolutely on the same scale (they're both measured in ``hours slept''), I find this illuminating. In fact, I'm beginning to suspect that it's really only the amount of sleep that {\it I} get that matters in order to predict my grumpiness.
+I can't help but notice that the estimated regression coefficient for the \rtext{baby.sleep} variable is tiny (0.011), relative to the value that we get for \rtext{dan.sleep} (-8.950). Given that these two variables are absolutely on the same scale (they're both measured in ``hours slept''), I find this illuminating. In fact, I'm beginning to suspect that it's really only the amount of sleep that {\it I} get that matters in order to predict my grumpiness.
 
 We can re-use a hypothesis test that we discussed earlier, the $t$-test. The test that we're interested in has a null hypothesis that the true regression coefficient is zero ($b = 0$), which is to be tested against the alternative hypothesis that it isn't ($b \neq 0$). That is:
 $$
@@ -517,22 +517,22 @@ I'll skip over the reasons why, but our degrees of freedom in this case are $df 
 In any case, this $t$-statistic can be interpreted in the same way as the $t$-statistics that we discussed in Chapter~\ref{ch:ttest}. Assuming that you have a two-sided alternative (i.e., you don't really care if $b >0$ or $b < 0$), then it's the extreme values of $t$ (i.e., a lot less than zero or a lot greater than zero) that suggest that you should reject the null hypothesis. 
 
 
-\SUBSECTION{Running the hypothesis tests in jamovi~\label{sec:regressionsummary}}
+\SUBSECTION{Running the hypothesis tests in JASP~\label{sec:regressionsummary}}
 
-To compute all of the statistics that we have talked about so far, all you need to do is make sure the relevant options are checked in jamovi and then run the regression. If we do that, as in Figure \ref{fig:reg2}, we get a whole bunch of useful output.
+To compute all of the statistics that we have talked about so far, all you need to do is make sure the relevant options are checked in JASP and then run the regression. Fortunately, these options are usually selected by default. As you can see in Figure \ref{fig:reg2}, we get a whole bunch of useful output.
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/regression/reg2,clip=true, width = 14cm} 
-\caption{A jamovi screenshot showing a multiple linear regression analysis, with some useful options checked.}
+\epsfig{file = ../img/regression/reg2.png ,clip=true, width = 14cm} 
+\caption{A JASP screenshot showing a multiple linear regression analysis, including relevant hypothesis tests.}
 \HR
 \label{fig:reg2}
 \end{center}
 \end{figure}
 
-The `Model Coefficients' at the bottom of the jamovi analysis results shown in \ref{fig:reg2} provides the coefficients of the regression model. Each row in this table refers to one of the coefficients in the regression model. The first row is the intercept term, and the later ones look at each of the predictors. The columns give you all of the relevant information. The first column is the actual estimate of $b$ (e.g., 125.97 for the intercept, and -8.95 for the \rtext{dan.sleep} predictor). The second column is the standard error estimate $\hat\sigma_b$. The third and fourth columns provide the lower and upper values for the 95\% confidence interval around the $b$ estimate (more on this later). The fifth column gives you the $t$-statistic, and it's worth noticing that in this table $t= \hat{b}/ \SE{\hat{b}}$ every time. Finally, the last column gives you the actual $p$-value for each of these tests.\FOOTNOTE{Note that, although jamovi has done multiple tests here, it hasn't done a Bonferroni correction or anything. These are standard one-sample $t$-tests with a two-sided alternative. If you want to make corrections for multiple tests, you need to do that yourself.} 
+The `Coefficients' at the bottom of the JASP analysis results shown in \ref{fig:reg2} provides the coefficients of the regression model. Each row in this table refers to one of the coefficients in the regression model. The first row is the intercept term, and the later ones look at each of the predictors. The columns give you all of the relevant information. The first column (labeled `Unstandardized') is the actual estimate of $b$ (e.g., 125.966 for the intercept, and -8.950 for the \rtext{dan.sleep} predictor). The second column is the standard error estimate $\hat\sigma_b$. The third column provides a `Standardized' regression coefficient; more about this in Section \ref{sec:regressioncoefs}. The fourth column gives you the $t$-statistic, and it's worth noticing that in this table $t= \hat{b}/ \SE{\hat{b}}$ every time. Finally, the last column gives you the actual $p$-value for each of these tests.\FOOTNOTE{Note that, although JASP has done multiple tests here, it hasn't done any sort of correction for multiple comparisons. These are standard one-sample $t$-tests with a two-sided alternative. If you want to make corrections for multiple tests, you need to do that yourself.} 
 
-The only thing that the coefficients table itself doesn't list is the degrees of freedom used in the $t$-test, which is always $N-K-1$ and is listed in the table at the top of the output, labelled `Model Fit Measures'. We can see from this table that the model performs significantly better than you'd expect by chance ($F(2,97) = 215.24$, $p<.001$), which isn't all that surprising: the $R^2 = .81$ value indicate that the regression model accounts for 81\% of the variability in the outcome measure (and 82\% for the adjusted $R^2$). However, when we look back up at the $t$-tests for each of the individual coefficients, we have pretty strong evidence that the \rtext{baby.sleep} variable has no significant effect. All the work in this model is being done by the \rtext{dan.sleep} variable. Taken together, these results suggest that this regression model is actually the wrong model for the data. You'd probably be better off dropping the \rtext{baby.sleep} predictor entirely. In other words, the simple regression model that we started with is the better model.
+The only thing that the coefficients table itself doesn't list is the degrees of freedom used in the $t$-test, which is always $N-K-1$ and is listed in the table in the middle of the output, labelled `ANOVA'. We can see from this table that the model performs significantly better than you'd expect by chance ($F(2,97) = 215.238$, $p<.001$), which isn't all that surprising: the $R^2 = .816$ value indicate that the regression model accounts for 81.6\% of the variability in the outcome measure. However, when we look back up at the $t$-tests for each of the individual coefficients, we can see that the \rtext{baby.sleep} variable seems to have no significant effect. All the work in this model is being done by the \rtext{dan.sleep} variable. Taken together, these results suggest that this regression model is actually the wrong model for the data. You'd probably be better off dropping the \rtext{baby.sleep} predictor entirely. In other words, the simple regression model that we started with is likely the better model.
 
 
 \begin{comment} % can't currently do the cor.test part in  jamovi, so leave this section out for now
@@ -634,7 +634,7 @@ $$
 where $\SE{\hat{b}}$ is the standard error of the regression coefficient, and $t_{crit}$ is the relevant critical value of the appropriate $t$ distribution. For instance, if it's a 95\% confidence interval that we want, then the critical value is the 97.5th quantile of a $t$ distribution with $N-K-1$ degrees of freedom.  In other words, this is basically the same approach to calculating confidence intervals that we've used throughout. 
 \end{mdframed}
 
-In jamovi we had already specified the `95\% Confidence interval' as shown if Figure \ref{fig:reg2}, although we could easily have chosen another value, say a `99\% Confidence interval' if that is what we decided on. 
+In JASP we can display confidence intervals by selecting `Confidence intervals' from the `Statistics' menu in our regression model dialog.  The default is 95\% CI, but we could easily choose something different, say 99\%, if that is what we decided on. 
 
 
 \SUBSECTION{Calculating standardised regression coefficients}
@@ -652,18 +652,7 @@ $$
 where $\sigma_X$ is the standard deviation of the predictor, and $\sigma_Y$ is the standard deviation of the outcome variable $Y$. This makes matters a lot simpler. 
 \end{mdframed}
 
-To make things even simpler, jamovi has an option that computes the $\beta$ coefficients for you using the `Standardized estimate' checkbox in the `Model Coefficients' options, see results in Figure \ref{fig:reg3}. 
-
-\begin{figure}[!htb]
-\begin{center}
-\epsfig{file = ../img/regression/reg3.pdf,clip=true, width = 14cm} 
-\caption{Standardised coefficients, with 95\% confidence intervals, for multiple linear regression}
-\HR
-\label{fig:reg3}
-\end{center}
-\end{figure}
-
-This clearly shows that the \rtext{dan.sleep} variable has a much stronger effect than the \rtext{baby.sleep} variable. However, this is a perfect example of a situation where it would probably make sense to use the original coefficients $b$ rather than the standardised coefficients $\beta$. After all, my sleep and the baby's sleep are {\it already} on the same scale: number of hours slept. Why complicate matters by converting these to $z$-scores?
+To make things even simpler, JASP computes the $\beta$ coefficients by default, as you can see the third column of the `Coefficients' table in Figure \ref{fig:reg2}. This clearly shows that the \rtext{dan.sleep} variable has a much stronger effect than the \rtext{baby.sleep} variable. However, this is a perfect example of a situation where it would probably make sense to use the original coefficients $b$ rather than the standardised coefficients $\beta$. After all, my sleep and the baby's sleep are {\it already} on the same scale: number of hours slept. Why complicate matters by converting these to $z$-scores?
 
 
 \section{Assumptions of regression~\label{sec:regressionassumptions}}
@@ -683,13 +672,13 @@ The linear regression model that I've been discussing relies on several assumpti
 
 The main focus of this section is \keyterm{regression diagnostics}, a term that refers to the art of checking that the assumptions of your regression model have been met, figuring out how to fix the model if the assumptions are violated, and generally to check that nothing ``funny'' is going on. I refer to this as the ``art'' of model checking with good reason. It's not easy, and while there are a lot of fairly standardised tools that you can use to diagnose and maybe even cure the problems that ail your model (if there are any, that is!), you really do need to exercise a certain amount of judgement when doing this. It's easy to get lost in all the details of checking this thing or that thing, and it's quite exhausting to try to remember what all the different things are. This has the very nasty side effect that a lot of people get frustrated when trying to learn {\it all} the tools, so instead they decide not to do {\it any} model checking. This is a bit of a worry! 
 
-In this section I describe several different things you can do to check that your regression model is doing what it's supposed to. It doesn't cover the full space of things you could do, but it's still much more detailed than what I see a lot of people doing in practice, and even I don't usually cover all of this in my intro stats class either. However, I do think it's important that you get a sense of what tools are at your disposal, so I'll try to introduce a bunch of them here. Finally, I should note that this section draws quite heavily from the \textcite{Fox2011} text, the book associated with the \rtext{car} package that is used to conduct regression analysis in \R. The \rtext{car} package is notable for providing some excellent tools for regression diagnostics, and the book itself talks about them in an admirably clear fashion. I don't want to sound too gushy about it, but I do think that \textcite{Fox2011} is well worth reading, even if some of the advanced diagnostic techniques are only available in \R\ and not jamovi.
+In this section I describe several different things you can do to check that your regression model is doing what it's supposed to. It doesn't cover the full space of things you could do, but it's still much more detailed than what I see a lot of people doing in practice, and even I don't usually cover all of this in my intro stats class either. However, I do think it's important that you get a sense of what tools are at your disposal, so I'll try to introduce a bunch of them here. Finally, I should note that this section draws quite heavily from the \textcite{Fox2011} text, the book associated with the \rtext{car} package that is used to conduct regression analysis in \R. The \rtext{car} package is notable for providing some excellent tools for regression diagnostics, and the book itself talks about them in an admirably clear fashion. I don't want to sound too gushy about it, but I do think that \textcite{Fox2011} is well worth reading, even if some of the advanced diagnostic techniques are only available in \R\ and not JASP.
 
 \SUBSECTION{Three kinds of residuals}
 
 The majority of regression diagnostics revolve around looking at the residuals, and by now you've probably formed a sufficiently pessimistic theory of statistics to be able to guess that, precisely {\it because} of the fact that we care a lot about the residuals, there are several different kinds of  residual that we might consider. In particular, the following three kinds of residuals are referred to in this section: ``ordinary residuals'', ``standardised residuals'', and ``Studentised residuals''. There is a fourth kind that you'll see referred to in some of the Figures, and that's the ``Pearson residual''. However, for the models that we're talking about in this chapter the Pearson residual is identical to the ordinary residual. 
 
-The first and simplest kind of residuals that we care about are \keyterm{ordinary residuals}. These are the actual raw residuals that I've been talking about throughout this chapter so far. The ordinary residual is just the difference between the fitted value $\hat{Y}_i$ and the observed value $Y_i$. I've been using the notation $\epsilon_i$ to refer to the $i$-th ordinary residual, and by gum I'm going to stick to it. With this in mind, we have the very simple equation
+The first and simplest kind of residuals that we care about are \keyterm{ordinary residuals}. These are the actual raw residuals that I've been talking about throughout this chapter so far. The ordinary residual is just the difference between the fitted value $\hat{Y}_i$ and the observed value $Y_i$. I've been using the notation $\epsilon_i$ to refer to the $i$-th ordinary residual, and darn it, I'm going to stick to it. With this in mind, we have the very simple equation
 $$
 \epsilon_i = Y_i - \hat{Y}_i
 $$
@@ -771,66 +760,54 @@ Notice that this is a multiplication of something that measures the outlier-ness
 
 In order to have a large Cook's distance an observation must be a fairly substantial outlier {\it and} have high leverage. As a rough guide, Cook's distance greater than 1 is often considered large (that's what I typically use as a quick and dirty rule). 
 
-In jamovi, information about Cook's distance can be calculated by clicking on the `Cook's Distance' checkbox in the `Assumption Checks' - `Data Summary' options. When you do this, for the multiple regression model we have been using as an example in this chapter, you get the results as shown in Figure \ref{fig:reg4}. 
+In JASP, information about Cook's distance can be calculated by clicking on `Casewise diagnostics' under the `Statistics` menu.  There are two ways to visualize these data.  First, you can select `All' to see Cook's distance for each case (i.e., row of data); see Figure \ref{fig:reg4}.  Alternatively, you can opt to display \emph{only} those cases for which Cook's distance is greater than some threshold; the default in JASP is 1.  In either case, you can see that we have no data cases that are beyond this threshold.
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file  = ../img/regression/reg4.png,clip=true, width = 10cm}
-\caption{jamovi output showing the table for the Cook's distance statistics}
+\epsfig{file  = ../img/regression/cooks.png,clip=true, width = 10cm}
+\caption{JASP output showing Cook's distance for each case/row of data}
 \HR
 \label{fig:reg4}
 \end{center}
 \end{figure}
 
-You can see that, in this example, the mean Cook's distance value is 0.01, and the range is from 0.00000262 to 0.11, so this is some way off the rule of thumb figure mentioned above that a Cook's distance greater than 1 is considered large. 
 
-An obvious question to ask next is, if you do have large values of Cook's distance what should you do? As always, there's no hard and fast rule. Probably the first thing to do is to try running the regression with the outlier with the greatest Cook's distance\FOOTNOTE{although currently there isn't a very easy way to do this in jamovi, so a more powerful regression program such as the \rtext{car} package in \R\ would be better for this more advanced analysis} excluded and see what happens to the model performance and to the regression coefficients. If they really are substantially different, it's time to start digging into your data set and your notes that you no doubt were scribbling as your ran your study. Try to figure out {\it why} the point is so different. If you start to become convinced that this one data point is badly distorting your results then you might consider excluding it, but that's less than ideal unless you have a solid explanation for why this particular case is qualitatively different from the others and therefore deserves to be handled separately.
+An obvious question to ask next is, if you do have large values of Cook's distance what should you do? As always, there's no hard and fast rule. Probably the first thing to do is to try running the regression with the outlier with the greatest Cook's distance\FOOTNOTE{although currently there isn't a very easy way to do this in JASP, so a more powerful regression program such as the \rtext{car} package in \R\ would be better for this more advanced analysis} excluded and see what happens to the model performance and to the regression coefficients. If they really are substantially different, it's time to start digging into your data set and your notes that you no doubt were scribbling as your ran your study. Try to figure out {\it why} the point is so different. If you start to become convinced that this one data point is badly distorting your results then you might consider excluding it, but that's less than ideal unless you have a solid explanation for why this particular case is qualitatively different from the others and therefore deserves to be handled separately.
 
 \SUBSECTION{Checking the normality of the residuals~\label{sec:regressionnormality}}
 
-Like many of the statistical tools we've discussed in this book, regression models rely on a normality assumption. In this case, we assume that the residuals are normally distributed. The first thing we can do is draw a QQ-plot via the `Assumption Checks' - `Assumption Checks' - `Q-Q plot of residuals' option. 
-
-The output is shown in Figure~\ref{fig:reg5}, showing the standardised residuals plotted as a function of their theoretical quantiles according to the regression model. 
+Like many of the statistical tools we've discussed in this book, regression models rely on a normality assumption. In this case, we assume that the residuals are normally distributed. The first thing we can do is draw a QQ-plot in JASP via the `Plots' - `Q-Q plot standardized residuals' option. The output is shown in Figure~\ref{fig:reg5}, showing the standardised residuals plotted as a function of their theoretical quantiles according to the regression model. 
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/regression/reg5.pdf, clip=true,width = 14cm}
-\caption{Plot of the theoretical quantiles according to the model, against the quantiles of the standardised residuals, produced in jamovi }
+\epsfig{file = ../img/regression/reg5.png, clip=true,width = 10cm}
+\caption{Plot of the theoretical quantiles according to the model, against the quantiles of the standardised residuals, produced in JASP. }
 \HR
 \label{fig:reg5}
 \end{center}
 \end{figure}
 
-Another thing we should check is the relationship between the fitted values and the residuals themselves. We can get jamovi to do this using the `Residuals Plots' option, which provides a scatterplot for each predictor variable, the outcome variable, and the fitted values against residuals, see Figure \ref{fig:reg6}. In these plots we are looking for a fairly uniform distribution of `dots', with no clear bunching or patterning of the `dots'. Looking at these plots, there is nothing particularly worrying as the dots are fairly evenly spread across the whole plot. There may be a little bit of non-uniformity in plot (b), but it is not a strong deviation and probably not worth worrying about. 
+Another thing we should check is the relationship between the fitted values and the residuals themselves. We can get JASP to do this using the various `Residuals Plots' choices, each of which provides a scatterplot for the predictor variables, the outcome variable, and the fitted values against residuals; see Figure \ref{fig:reg6}. In these plots we are looking for a fairly uniform distribution of `dots', with no clear bunching or patterning of the `dots'. Looking at these plots, there is nothing particularly worrying as the dots are fairly evenly spread across the whole plot. There may be a little bit of non-uniformity in plot (b), but it is not a strong deviation and probably not worth worrying about. 
 
 \begin{figure}[!htb]
 \begin{center}
 \begin{tabular}{cc}
-\epsfig{file = ../img/regression/reg6a.pdf, clip=true,width = 7cm} & 
-\epsfig{file = ../img/regression/reg6b.pdf, clip=true,width = 7cm} \\
+\epsfig{file = ../img/regression/reg6a.png, clip=true,width = 7cm} & 
+\epsfig{file = ../img/regression/reg6b.png, clip=true,width = 7cm} \\
 (a) & (b) \\
-\epsfig{file = ../img/regression/reg6c.pdf, clip=true,width = 7cm} & 
-\epsfig{file = ../img/regression/reg6d.pdf, clip=true,width = 7cm} \\
+\epsfig{file = ../img/regression/reg6c.png, clip=true,width = 7cm} & 
+\epsfig{file = ../img/regression/reg6d.png, clip=true,width = 7cm} \\
 (c) & (d)
 \end{tabular}
-\caption{Residuals plots produced in jamovi}
+\caption{Residuals plots produced in JASP}
 \HR
 \label{fig:reg6}
 \end{center}
 \end{figure}
 
-If we were worried, then in a lot of cases the solution to this problem (and many others) is to transform one or more of the variables. We discussed the basics of variable transformation in Sections~\ref{sec:transform} and \ref{sec:mathfunc}, but I do want to make special note of one additional possibility that I didn't explain fully earlier: the Box-Cox transform.~\label{subsec:boxcox} The Box-Cox function is a fairly simple one and it's very widely used.
+If we were worried, then in a lot of cases the solution to this problem (and many others) is to transform one or more of the variables. Transformations are beyond the scope of this text.
 
-\vspace{0.5cm}
-\begin{mdframed}[style=MyFrame,nobreak=true]
-$$
-f(x,\lambda) = \frac{x^\lambda - 1}{\lambda}
-$$
-for all values of $\lambda$ except $\lambda = 0$. When $\lambda = 0$ we just take the natural logarithm (i.e., $\ln(x)$). 
-\end{mdframed}
-
-You can calculate it using the \rtext{BOXCOX} function in the `Compute' variables screen in jamovi. 
-
+\begin{comment} % not sure how to do this in JASP yet
 
 \SUBSECTION{Checking for collinearity~\label{sec:regressioncollinearity}}
 
@@ -869,31 +846,49 @@ We have some fairly large correlations between some of our predictor variables! 
 \end{center}
 \end{figure}
 
+\end{comment}
+
 
 \section{Model selection\label{sec:modelselreg}}
 
-One fairly major problem that remains is the problem of ``model selection''. That is, if we have a data set that contains several variables, which ones should we include as predictors, and which ones should we not include? In other words, we have a problem of \keyterm{variable selection}. In general, model selection is a complex business but it's made somewhat simpler if we restrict ourselves to the problem of choosing a subset of the variables that ought to be included in the model. Nevertheless, I'm not going to try covering even this reduced topic in a lot of detail. Instead, I'll talk about two broad principles that you need to think about, and then discuss one concrete tool that jamovi provides to help you select a subset of variables to include in your model. First, the two principles:
+One fairly major problem that remains is the problem of ``model selection''. That is, if we have a data set that contains several variables, which ones should we include as predictors, and which ones should we not include? In other words, we have a problem of \keyterm{variable selection}. In general, model selection is a complex business but it's made somewhat simpler if we restrict ourselves to the problem of choosing a subset of the variables that ought to be included in the model. Nevertheless, I'm not going to try covering even this reduced topic in a lot of detail. Instead, I'll talk about two broad principles that you need to think about, and then discuss one concrete tool to help you select a subset of variables to include in your model. First, the two principles:
 \begin{itemize}
 \item It's nice to have an actual substantive basis for your choices. That is, in a lot of situations you the researcher have good reasons to pick out a smallish number of possible regression models that are of theoretical interest. These models will have a sensible interpretation in the context of your field. Never discount the importance of this. Statistics serves the scientific process, not the other way around. 
 \item To the extent that your choices rely on statistical inference, there is a trade off between simplicity and goodness of fit. As you add more predictors to the model you make it more complex. Each predictor adds a new free parameter (i.e., a new regression coefficient), and each new parameter increases the model's capacity to ``absorb'' random variations. So the goodness of fit (e.g., $R^2$) continues to rise, sometimes trivially or by chance, as you add more predictors no matter what. If you want your model to be able to generalise well to new observations you need to avoid throwing in too many variables. 
 \end{itemize}
 This latter principle is often referred to as \keyterm{Ockham's razor} and is often summarised in terms of the following pithy saying: {\it do not multiply entities beyond necessity}. In this context, it means don't chuck in a bunch of largely irrelevant predictors just to boost your $R^2$. Hmm. Yeah, the original was better. 
 
-In any case, what we need is an actual mathematical criterion that will implement the qualitative principle behind Ockham's razor in the context of selecting a regression model. As it turns out there are several possibilities. The one that I'll talk about is the \keyterm{Akaike information criterion} \parencite[AIC; ][]{Akaike1974} simply because it's available as an option in jamovi. 
+In any case, what we need is an actual mathematical criterion that will implement the qualitative principle behind Ockham's razor in the context of selecting a regression model. As it turns out there are several possibilities. The one that I'll talk about is the \keyterm{Akaike information criterion} \parencite[AIC; ][]{Akaike1974}; currently, it is not part of JASP's standard output, but it is quite easy to compute with the model fit data that JASP does produce. 
 
 \vspace{0.5cm}
 \begin{mdframed}[style=MyFrame,nobreak=true]
-In the context of a linear regression model (and ignoring terms that don't depend on the model in any way!), the AIC for a model that has $K$ predictor variables plus an intercept is
+In the context of a linear regression model, the AIC for a model that has $n$ observations and $K$ predictor variables (not including the intercept) can be computed\footnote{Strictly speaking, this formula is not completely correct.  Akaike's original definition was in terms of something called a \emph{maximum likelihood estimate} for the model, and as such, there are some other terms that appear in the computation.  However, many of them don't depend on the model, and given that the purpose of the AIC is to \emph{compare models}, these terms will be present in all models and will mathematically ``wash out''.  Thus, I am presenting a `bare bones' version of the formula that is sufficient for our purposes.} as
 $$
-\mbox{AIC} = \displaystyle\frac{\mbox{SS}_{res}}{\hat{\sigma}^2} + 2K
+AIC = n\ln(SS_{res}) + 2K
 $$
-%\TODO{\bf [check - I'm working from memory here]} 
 \end{mdframed}
 
-The smaller the AIC value, the better the model performance. If we ignore the low level details it's fairly obvious what the AIC does. On the left we have a term that increases as the model predictions get worse; on the right we have a term that increases as the model complexity increases. The best model is the one that fits the data well (low residuals, left hand side) using as few predictors as possible (low $K$, right hand side). In short, this is a simple implementation of Ockham's razor. 
+Here's the basic principle behind using AIC for model comparison:  the smaller the AIC value, the better the model performance. If we ignore the low level details it's fairly obvious what the AIC does. On the left we have a term that decreases as the model predictions get better; on the right we have a term that increases as the model complexity increases. The best model is the one that both fits the data well (small $SS_{res}$, left hand side) and uses as few predictors as possible (small $K$, right hand side). In short, this is a simple mathematical implementation of Ockham's razor. 
 
-AIC can be added to the `Model Fit Measures' output Table when the `AIC' checkbox is clicked, and a rather clunky way of assessing different models is seeing if the `AIC' value is lower if you remove one or more of the predictors in the regression model. This is the only way currently implemented in jamovi, but there are alternatives in other more powerful programmes, such as \R. These alternative methods can automate the process of selectively removing (or adding) predictor variables to find the best AIC. Although these methods are not implemented in jamovi, I will mention them briefly below just so you know about them.
+Let's demonstrate how AIC can be used to compare the two regression models we have computed in this chapter. Consider first the regression model with only one predictor: \rtext{dan.sleep} (see Figure \ref{fig:reg1}). In this model, we have $n=100$ observations, $K=1$ predictor, and $SS_{res}=1838.714$.  Thus,
 
+\begin{align*}
+  AIC_1 &= n\ln(SS_{res})+2K\\
+        &= 100\ln(1838.714) + 2(1)\\
+  &= 753.68\\
+\end{align*}
+
+Now consider the second model using two predictors: \rtext{dan.sleep} and \rtext{baby.sleep} (see Figure \ref{fig:reg2}).  In this model, we have $n=100$ observations, $K=2$ predictors, and $SS_{res}=1838.685$.  This gives us
+
+\begin{align*}
+  AIC_2 &= n\ln(SS_{res})+2K\\
+        &= 100\ln(1838.685) + 2(2)\\
+  &= 755.68.
+\end{align*}
+
+Since $AIC_1 < AIC_2$, this tells us that Model 1 is the better fit, which confirms our intuitions. Adding \rtext{baby.sleep} doesn't add much to the model fit, but it increases model complexity.  AIC balances these two requirements; the penalty for adding an additional parameter is not outweighed by the meager improvement in model fit.
+
+\begin{comment} % this stuff is not yet implemented well in JASP
 \SUBSECTION{Backward elimination}
 
 In backward elimination you start with the complete regression model, including all possible predictors. Then, at each ``step'' we try all possible ways of removing one of the variables, and whichever of these is best (in terms of lowest AIC value) is accepted. This becomes our new regression model, and we then try all possible deletions from the new model, again choosing the option with lowest AIC. This process continues until we end up with a model that has a lower AIC value than any of the other possible models that you could produce by deleting one of its predictors. 
@@ -912,11 +907,14 @@ Or, perhaps not. Firstly, there's very little agreement on what counts as an app
 
 What does this mean in practice? Well, you {\it could} go and spend several years teaching yourself the theory of model selection, learning all the ins and outs of it so that you could finally decide on what you personally think the right thing to do is. Speaking as someone who actually did that, I wouldn't recommend it. You'll probably come out the other side even more confused than when you started. A better strategy is to show a bit of common sense. If you're staring at the results of an automated backwards or forwards selection procedure, and the model that makes sense is close to having the smallest AIC but is narrowly defeated by a model that doesn't make any sense, then trust your instincts. Statistical model selection is an inexact tool, and as I said at the beginning, {\it interpretability matters}. 
 
-\SUBSECTION{Comparing two regression models}
 
-An alternative to using automated model selection procedures is for the researcher to explicitly select two or more regression models to compare to each other. You can do this in a few different ways, depending on what research question you're trying to answer. Suppose we want to know whether or not the amount of sleep that my son got has any relationship to my grumpiness, over and above what we might expect from the amount of sleep that I got. We also want to make sure that the day on which we took the measurement has no influence on the relationship. That is, we're interested in the relationship between \rtext{baby.sleep} and \rtext{dan.grump}, and from that perspective \rtext{dan.sleep} and \rtext{day} are nuisance variable or \keyterm{covariates} that we want to control for. In this situation, what we would like to know is whether \rtextverb#dan.grump ~ dan.sleep + day + baby.sleep# (which I'll call Model 2, or \rtext{M2}) is a better regression model for these data than \rtextverb#dan.grump ~ dan.sleep + day# (which I'll call Model 1, or \rtext{M1}). There are two different ways we can compare these two models, one based on a model selection criterion like AIC, and the other based on an explicit hypothesis test. I'll show you the AIC based approach first because it's simpler, and follows naturally from discussion in the last section. The first thing I need to do is actually run the two regressions, note the AIC for each one, and then select the model with the smaller AIC value as it is judged to be the better model for these data. Actually, don't do this just yet. Read on because there is an easy way in jamovi to get the AIC values for different models included in one table.\FOOTNOTE{While I'm on this topic I should point out that the empirical evidence suggests that BIC is a better criterion than AIC. In most simulation studies that I've seen, BIC does a much better job of selecting the correct model.}
+\SUBSECTION{Other ways to compare two regression models}
 
-A somewhat different approach to the problem comes out of the hypothesis testing framework. Suppose you have two regression models, where one of them (Model 1) contains a {\it subset} of the predictors from the other one (Model 2). That is, Model 2 contains all of the predictors included in Model 1, plus one or more additional predictors. When this happens we say that Model 1 is \keyterm{nested} within Model 2, or possibly that Model 1 is a \keyterm{submodel} of Model 2. Regardless of the terminology, what this means is that we can think of Model 1 as a null hypothesis and Model 2 as an alternative hypothesis. And in fact we can construct an $F$ test for this in a fairly straightforward fashion. 
+%An alternative to using automated model selection procedures is for the researcher to explicitly select two or more regression models to compare to each other. You can do this in a few different ways, depending on what research question you're trying to answer. Suppose we want to know whether or not the amount of sleep that my son got has any relationship to my grumpiness, over and above what we might expect from the amount of sleep that I got. We also want to make sure that the day on which we took the measurement has no influence on the relationship. That is, we're interested in the relationship between \rtext{baby.sleep} and \rtext{dan.grump}, and from that perspective \rtext{dan.sleep} and \rtext{day} are nuisance variable or \keyterm{covariates} that we want to control for. In this situation, what we would like to know is whether \rtextverb#dan.grump ~ dan.sleep + day + baby.sleep# (which I'll call Model 2, or \rtext{M2}) is a better regression model for these data than \rtextverb#dan.grump ~ dan.sleep + day# (which I'll call Model 1, or \rtext{M1}). There are two different ways we can compare these two models, one based on a model selection criterion like AIC, and the other based on an explicit hypothesis test. I'll show you the AIC based approach first because it's simpler, and follows naturally from discussion in the last section. The first thing I need to do is actually run the two regressions, note the AIC for each one, and then select the model with the smaller AIC value as it is judged to be the better model for these data. Actually, don't do this just yet. Read on because there is an easy way in jamovi to get the AIC values for different models included in one table.\FOOTNOTE{While I'm on this topic I should point out that the empirical evidence suggests that BIC is a better criterion than AIC. In most simulation studies that I've seen, BIC does a much better job of selecting the correct model.}
+
+The AIC procedure described above is one way to approach the problem of choosing the best model from two competing models.  However, the AIC number itself is meaningless, so it is not exactly obvious how one should quantify the difference in AIC values between the two models.  For example, how much better does Model 1 fit the observed data compared to Model 2?
+
+One approach to this problem comes out of the hypothesis testing framework. Suppose you have two regression models (like above), where one of them (Model 1) contains a {\it subset} of the predictors from the other one (Model 2). That is, Model 2 contains all of the predictors included in Model 1, plus one or more additional predictors. When this happens we say that Model 1 is \keyterm{nested} within Model 2, or possibly that Model 1 is a \keyterm{submodel} of Model 2. Regardless of the terminology, what this means is that we can think of Model 1 as a null hypothesis and Model 2 as an alternative hypothesis. And in fact we can construct an $F$ test for this in a fairly straightforward fashion. 
 
 \vspace{1.5cm}
 \begin{mdframed}[style=MyFrame,nobreak=false]
@@ -948,7 +946,7 @@ where $\hat{y}_i^{(1)}$ is the fitted value for $y_i$ according to model $M_1$ a
 Okay, so that's the hypothesis test that we use to compare two regression models to one another. Now, how do we do it in jamovi? The answer is to use the `Model Builder' option and specify the Model 1 predictors \rtext{dan.sleep} and \rtext{day} in `Block 1' and then add the additional predictor from Model 2 (\rtext{baby.sleep}) in `Block 2', as in Figure \ref{fig:reg8}. This shows, in the `Model Comparisons' Table, that for the comparisons between Model 1 and Model 2, $F$(1,96) = 0.00, $p$ = 0.954. Since we have $p>.05$ we retain the null hypothesis (\rtext{M1}).  This approach to regression, in which we add all of our covariates into a null model, then {\it add} the variables of interest into an alternative model, and then compare the two models in a hypothesis testing framework, is often referred to as \keyterm{hierarchical regression}.
 
 We can also use this `Model Comparison' option to display a table that shows the AIC and BIC for each model, making it easy to compare and identify which model has the lowest value, as in Figure \ref{fig:reg8}.
-
+\end{comment}
 
 \section{Summary}
 

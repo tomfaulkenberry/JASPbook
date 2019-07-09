@@ -228,7 +228,7 @@
 \BOOKMARK [1][]{section.11.7}{11.7 Hypothesis tests for regression models }{chapter.11}% 228
 \BOOKMARK [2][-]{subsection.11.7.1}{11.7.1 Testing the model as a whole}{section.11.7}% 229
 \BOOKMARK [2][-]{subsection.11.7.2}{11.7.2 Tests for individual coefficients}{section.11.7}% 230
-\BOOKMARK [2][-]{subsection.11.7.3}{11.7.3 Running the hypothesis tests in jamovi }{section.11.7}% 231
+\BOOKMARK [2][-]{subsection.11.7.3}{11.7.3 Running the hypothesis tests in JASP }{section.11.7}% 231
 \BOOKMARK [1][]{section.11.8}{11.8 Regarding regression coefficients }{chapter.11}% 232
 \BOOKMARK [2][-]{subsection.11.8.1}{11.8.1 Confidence intervals for the coefficients}{section.11.8}% 233
 \BOOKMARK [2][-]{subsection.11.8.2}{11.8.2 Calculating standardised regression coefficients}{section.11.8}% 234
@@ -237,11 +237,6 @@
 \BOOKMARK [2][-]{subsection.11.10.1}{11.10.1 Three kinds of residuals}{section.11.10}% 237
 \BOOKMARK [2][-]{subsection.11.10.2}{11.10.2 Three kinds of anomalous data }{section.11.10}% 238
 \BOOKMARK [2][-]{subsection.11.10.3}{11.10.3 Checking the normality of the residuals }{section.11.10}% 239
-\BOOKMARK [2][-]{subsection.11.10.4}{11.10.4 Checking for collinearity }{section.11.10}% 240
-\BOOKMARK [1][]{section.11.11}{11.11 Model selection}{chapter.11}% 241
-\BOOKMARK [2][-]{subsection.11.11.1}{11.11.1 Backward elimination}{section.11.11}% 242
-\BOOKMARK [2][-]{subsection.11.11.2}{11.11.2 Forward selection}{section.11.11}% 243
-\BOOKMARK [2][-]{subsection.11.11.3}{11.11.3 A caveat}{section.11.11}% 244
-\BOOKMARK [2][-]{subsection.11.11.4}{11.11.4 Comparing two regression models}{section.11.11}% 245
-\BOOKMARK [1][]{section.11.12}{11.12 Summary}{chapter.11}% 246
-\BOOKMARK [0][]{chapter.12}{12 References}{part.4}% 247
+\BOOKMARK [1][]{section.11.11}{11.11 Model selection}{chapter.11}% 240
+\BOOKMARK [1][]{section.11.12}{11.12 Summary}{chapter.11}% 241
+\BOOKMARK [0][]{chapter.12}{12 References}{part.4}% 242
