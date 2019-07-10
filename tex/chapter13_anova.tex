@@ -30,7 +30,7 @@ As the plot makes clear, there is a larger improvement in mood for participants 
 
 \section{How ANOVA works \label{sec:anovaintro}}
 
-In order to answer the question posed by our clinical trial data we're going to run a one-way ANOVA. I'm going to start by showing you how to do it the hard way, building the statistical tool from the ground up and showing you how you could do it if you didn't have access to any of the cool built-in ANOVA functions in jamovi. And I hope you'll read it carefully, try to do it the long way once or twice to make sure you really understand how ANOVA works, and then once you've grasped the concept never {\it ever} do it this way again.
+In order to answer the question posed by our clinical trial data we're going to run a one-way ANOVA. I'm going to start by showing you how to do it the hard way, building the statistical tool from the ground up and showing you how you could do it if you didn't have access to any of the cool built-in ANOVA functions in JASP. And I hope you'll read it carefully, try to do it the long way once or twice to make sure you really understand how ANOVA works, and then once you've grasped the concept never {\it ever} do it this way again.
 
 The experimental design that I described in the previous section strongly suggests that we're interested in comparing the average mood change for the three different drugs. In that sense, we're talking about an analysis similar to the $t$-test (Chapter~\ref{ch:ttest}) but involving more than two groups. If we let $\mu_P$ denote the population mean for the mood change induced by the placebo, and let $\mu_A$ and $\mu_J$ denote the corresponding means for our two drugs, Anxifree and Joyzepam, then the (somewhat pessimistic) null hypothesis that we want to test is that all three population means are identical. That is, {\it neither} of the two drugs is any more effective than a placebo. We can write out this null hypothesis as:
 $$
@@ -603,14 +603,12 @@ Okay, so originally our ANOVA gave us the result $F(2,15) = 18.6$, whereas the W
 
 \SUBSECTION{Checking the normality assumption~\label{sec:anovanormality}}
 
-Testing the normality assumption is relatively straightforward. We covered most of what you need to know in Section~\ref{sec:shapiro}. The only thing we really need to do is draw a QQ plot and, in addition if it is available, run the Shapiro-Wilk test. The QQ plot is shown in Figure~\ref{fig:anova5} and it looks pretty normal to me. If the Shapiro-Wilk test is not significant (i.e. $p<.05$) then this indicates that the assumption of normality is not violated. However, as with Levene's test, if the sample size is large then a significant  Shapiro-Wilk test may in fact be a false positive, where the assumption of normality is not violated in any substantive problematic sense for the analysis. And, similarly, a very small sample can produce false negatives. That's why a visual inspection of the QQ plot is important. 
-
-Alongside inspecting the QQ plot for any deviations from normality, the Shapiro-Wilk test for our data does show a non-significant effect, with $p=0.6053$ (see Figure \ref{fig:anova4a}). This therefore supports the QQ plot assessment; both checks find no indication that normality is violated.
+Testing the normality assumption is relatively straightforward. We covered most of what you need to know in Section~\ref{sec:shapiro}. The only thing we really need to do is draw a QQ plot\footnote{We should also run a Shapiro-Wilk text, but that functionality is currently not available in JASP. If the Shapiro-Wilk test is not significant (i.e. $p<.05$) then this indicates that the assumption of normality is not violated. However, as with Levene's test, if the sample size is large then a significant  Shapiro-Wilk test may in fact be a false positive, where the assumption of normality is not violated in any substantive problematic sense for the analysis. And, similarly, a very small sample can produce false negatives. That's why a visual inspection of the QQ plot is important.}. The QQ plot can be produced in JASP by going to `Assumption Checks' and checking `Q-Q plot of residuals'.  The result is shown in Figure~\ref{fig:anova5} and it looks pretty normal to me.  
 
 \begin{figure}[p]
 \begin{center}
-\epsfig{file = ../img/anova/anova5.pdf, clip=true,width = 14cm}
-\caption{QQ plot produced from jamovi one way ANOVA options}
+\epsfig{file = ../img/anova/anova5.png, clip=true,width = 12cm}
+\caption{QQ plot produced from JASP}
 \HR
 \label{fig:anova5}
 \end{center}
@@ -669,25 +667,25 @@ Looking at this table, notice that the third entry in the frequency table has a 
 $$
 \mbox{TCF} = 1 - \frac{\sum_j {f_j}^3 - f_j}{N^3 - N} 
 $$
-The tie-corrected value of the Kruskal-Wallis statistic is obtained by dividing the value of $K$ by this quantity. It is this tie-corrected version that jamovi calculates. And at long last, we're actually finished with the theory of the Kruskal-Wallis test. I'm sure you're all terribly relieved that I've cured you of the existential anxiety that naturally arises when you realise that you {\it don't} know how to calculate the tie-correction factor for the Kruskal-Wallis test. Right?
+The tie-corrected value of the Kruskal-Wallis statistic is obtained by dividing the value of $K$ by this quantity. It is this tie-corrected version that JASP calculates. And at long last, we're actually finished with the theory of the Kruskal-Wallis test. I'm sure you're all terribly relieved that I've cured you of the existential anxiety that naturally arises when you realise that you {\it don't} know how to calculate the tie-correction factor for the Kruskal-Wallis test. Right?
 \end{mdframed}
 
 
-\SUBSECTION{How to run the Kruskal-Wallis test in jamovi} 
+\SUBSECTION{How to run the Kruskal-Wallis test in JASP} 
 
-Despite the horror that we've gone through in trying to understand what the Kruskal-Wallis test actually does, it turns out that running the test is pretty painless, since jamovi has an analysis as part of the ANOVA analysis set called `Non-Parametric' - `One Way ANOVA (Kruskall-Wallis)' Most of the time you'll have data like the \filename{clinicaltrial.csv} data set, in which you have your outcome variable \rtext{mood.gain} and a grouping variable \rtext{drug}. If so, you can just go ahead and run the analysis in jamovi. What this gives us is a Kruskal-Wallis $\chi^2$ = 12.076, df = 2, $p$-value = 0.00239, as in Figure \ref{fig:anova6}
+Despite the horror that we've gone through in trying to understand what the Kruskal-Wallis test actually does, it turns out that running the test is pretty painless, since JASP has an analysis as part of the ANOVA analysis set called `Nonparametrics'. All you need to do is move the grouping variable \rtext{drug} into the active box. What this gives us is a Kruskal-Wallis $\chi^2$ = 12.076, df = 2, $p$-value = 0.002, as in Figure \ref{fig:anova6}
 
 \vspace{0.5cm}
 \begin{figure}[!ht]
 \begin{center}
 \epsfig{file = ../img/anova/anova6.png, clip=true,width = 14cm}
-\caption{Kruskall-Wallis one-way non-parametric ANOVA in jamovi}
+\caption{Kruskall-Wallis one-way non-parametric ANOVA in JASP}
 \HR
 \label{fig:anova6}
 \end{center}
 \end{figure}
 
-\newpage
+
 \section{Repeated measures one-way ANOVA~\label{sec:RManova}}
 
 The one-way repeated measures ANOVA test is a statistical method of testing for significant differences between three or more groups where the same participants are used in each group (or each participant is closely matched with participants in other experimental groups). For this reason, there should always be an equal number of scores (data points) in each experimental group. This type of design and analysis can also be called a `related ANOVA' or a `within-subjects ANOVA'. 
@@ -707,7 +705,7 @@ Repeated Measures ANOVA: $\mbox{SS}_{error}$ = $\mbox{SS}_w$ - $\mbox{SS}_{subje
 
 This change in $\mbox{SS}_{error}$ term often leads to a more powerful statistical test, but this does depend on whether the reduction in the $\mbox{SS}_{error}$ more than compensates for the reduction in degrees of freedom for the error term (as degrees of freedom go from (n - k)\FOOTNOTE{(n - k) : (number of subjects - number of groups)} to (n - 1)(k - 1) (remembering that there are more subjects in the independent ANOVA design).
 
-\SUBSECTION{Repeated measures ANOVA in jamovi}
+\SUBSECTION{Repeated measures ANOVA in JASP}
 
 First, we need some data. \textcite{Geschwind1972} has suggested that the exact nature of a patient’s language deficit following a stroke can be used to diagnose the specific region of the brain that has been damaged. A researcher is concerned with identifying the specific communication difficulties experienced by six patients suffering from Broca’s Aphasia (a language deficit commonly experienced following a stroke). 
 
@@ -729,27 +727,27 @@ Participant	& Speech & 	Conceptual & Syntax \\ \hline
 \end{center}
 \end{table}
 
-The patients were required to complete three word recognition tasks. On the first (speech production) task, patients were required to repeat single words read out aloud by the researcher. On the second (conceptual) task, designed to test word comprehension, patients were required to match a series of pictures with their correct name. On the third (syntax) task, designed to test knowledge of correct word order, patients were asked to reorder syntactically incorrect sentences. Each patient completed all three tasks. The order in which patients attempted the tasks was counterbalanced between participants. Each task consisted of a series of 10 attempts. The number of attempts successfully completed by each patient are shown in Table \ref{tab:RManova}. Enter these data into jamovi ready for analysis (or take a short-cut and load up the \filename{broca.csv} file). 
+The patients were required to complete three word recognition tasks. On the first (speech production) task, patients were required to repeat single words read out aloud by the researcher. On the second (conceptual) task, designed to test word comprehension, patients were required to match a series of pictures with their correct name. On the third (syntax) task, designed to test knowledge of correct word order, patients were asked to reorder syntactically incorrect sentences. Each patient completed all three tasks. The order in which patients attempted the tasks was counterbalanced between participants. Each task consisted of a series of 10 attempts. The number of attempts successfully completed by each patient are shown in Table \ref{tab:RManova}. You'll find these data in the \filename{broca.csv} file, which you can load into JASP. 
 
-To perform a one-way related ANOVA in jamovi, open the one-way repeated measures ANOVA dialogue box, as in Figure \ref{fig:RManova1}, via \rtext{ANOVA - Repeated Measures ANOVA}. Then:
+To perform a one-way repeated measures ANOVA in JASP, click `ANOVA' - `Repeated Measures ANOVA' and then perform the following (see Figure \ref{fig:RManova1}), 
  
 \begin{itemize} \itemsep -2pt
-\item Enter a Repeated Measures Factor Name. This should be a label that you choose to describe the conditions repeated by all participants. For example, to describe the speech, conceptual and syntax tasks completed by all participants a suitable label would be ‘Task’. Note that this new factor name represents the independent variable in the analysis. 
-\item Add a third level in the Repeated Measures Factors text box, as there are three levels representing the three tasks: speech, conceptual and syntax. Change the labels of the levels accordingly.
-\item Then move each of the levels variables across to the Repeated Measures Cells text box.
-\item Finally, under the Assumption Checks option, tick the “Sphericity checks” text box.
+\item Enter a Repeated Measures Factor Name. This should be a label that you choose to describe the conditions repeated by all participants. For example, to describe the speech, conceptual and syntax tasks completed by all participants a suitable label would be ‘Task’. Note that this new factor name represents the independent variable in the analysis. To accomplish this in JASP, simply click on the `RM Factor 1' name; it will become highlighted and await its new name -- simply type it! 
+\item Next you'll want to name each \emph{level} of the `Task' factor. Note that you'll need to add a third level in the Repeated Measures Factors text box, as there are three levels representing the three tasks: \rtext{speech}, \rtext{conceptual}, and \rtext{syntax}. Change the labels of the levels accordingly; simply click on each and type the new name.
+\item Then move each of the variables in the left box across to the `Repeated Measures Cells' text box.  Make sure the variable names match the level names you specified earlier.
+\item Finally, under the Assumption Checks option, tick the “Sphericity checks” text box (trust me for now!).
 \end{itemize}
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/anova/RManova1.png, clip=true,width = 13cm}
-\caption{Repeated measures ANOVA dialogue box in jamovi}
+\epsfig{file = ../img/anova/RManova1.png, clip=true,width = 14cm}
+\caption{Repeated measures ANOVA in JASP}
 \HR
 \label{fig:RManova1}
 \end{center}
 \end{figure}
 
-jamovi output for a one-way repeated measures ANOVA is produced as shown in the Figures \ref{fig:RManova2} to \ref{fig:RManova5}. The first output we should look at is Mauchly’s Test of Sphericity, which tests the hypothesis that the variances of the differences between the conditions are equal (meaning that the spread of difference scores between the study conditions is approximately the same). In Figure \ref{fig:RManova2}, Mauchly’s test significance level is $p=.720$. If Mauchly’s test is non-significant (i.e. $p>.05$, as is the case in this analysis) then it is reasonable to conclude that the variances of the differences are not significantly different (i.e. they are roughly equal and sphericity can be assumed.). 
+The JASP output for the repeated measures ANOVA is produced as shown in Figures \ref{fig:RManova2}. Before looking at the results, we should take a look at Mauchly’s Test of Sphericity, which tests the hypothesis that the variances of the differences between the conditions are equal (meaning that the spread of difference scores between the study conditions is approximately the same). In Figure \ref{fig:RManova2}, Mauchly’s test significance level is $p=.720$. If Mauchly’s test is non-significant (i.e. $p>.05$, as is the case in this analysis) then it is reasonable to conclude that the variances of the differences are not significantly different (i.e. they are roughly equal and sphericity can be assumed.). 
 
 \begin{figure}[!ht]
 \begin{center}
@@ -778,25 +776,27 @@ Both these corrected $F$-values can be specified in the Sphericity Corrections c
 \end{center}
 \end{figure}
 
-In our analysis, we saw that the significance of Mauchly’s Test of Sphericity was $p=.720$ (i.e. $p>0.05$). So, this means we can assume that the requirement of sphericity has been met so no correction to the $F$-value is needed. Therefore, we can use the ‘None’ Sphericity Correction output values for the repeated measure ‘Task’: $F=6.93, df=2, p=.013$, and we can conclude that the number of tests successfully completed on each language task did vary significantly depending on whether the task was speech, comprehension or syntax based ($F(2,10) = 6.93, p=.013$).
+In our analysis, we saw that the $p$-value for Mauchly’s Test of Sphericity was $p=.720$ (i.e. $p>0.05$). So, this means we can assume that the requirement of sphericity has been met, so no correction to the $F$-value is needed. Therefore, we can use the ‘None’ Sphericity Correction output values for the repeated measure ‘Task’: $F=6.93, df=2, p=.013$, and we can conclude that the number of tests successfully completed on each language task did vary significantly depending on whether the task was speech, comprehension or syntax based ($F(2,10) = 6.93, p=.013$).
 
+\begin{comment}
 \begin{figure}[!ht]
 \begin{center}
 \epsfig{file = ../img/anova/RManova4.png, clip=true,width = 14cm}
-\caption{Post-hoc tests in repeated measures ANOVA in jamovi}
+\caption{Post-hoc tests in repeated measures ANOVA in JASP}
 \HR
 \label{fig:RManova4}
 \end{center}
 \end{figure}
 
-Post-hoc tests can also be specified in jamovi for repeated measures ANOVA in the same way as for independent ANOVA. The results are shown in Figure \ref{fig:RManova4}. These indicate that there is a significant difference between Speech and Syntax, but not between other levels.
+Post-hoc tests can also be specified in JASP for repeated measures ANOVA in the same way as for independent ANOVA. The results are shown in Figure \ref{fig:RManova4}. These indicate that there is a significant difference between Speech and Syntax, but not between other levels.
+\end{comment}
 
-Descriptive statistics (marginal means) can be reviewed to help interpret the results, produced in the jamovi output as in Figure \ref{fig:RManova5}. Comparison of the mean number of trials successfully completed by participants shows that Broca’s Aphasics perform reasonably well on speech production ($mean=7.17$) and language comprehension ($mean=6.17$) tasks. However, their performance was considerably worse on the syntax task ($mean=4.33$), with a significant difference in post-hoc tests between Speech and Syntax task performance. 
+As usual, descriptive statistics should be reviewed to help interpret the results. One particularly nice way to produce them in the JASP output is to go to the `Additional Options' menu and move `Task' to the action box under `Marginal Means'. This will produce the table shown in Figure \ref{fig:RManova5}, which includes not only means for each condition, but also 95\% CIs for each mean. Comparison of the mean number of trials successfully completed by participants shows that Broca’s Aphasics perform reasonably well on speech production ($mean=7.17$) and language comprehension ($mean=6.17$) tasks. However, their performance was considerably worse on the syntax task ($mean=4.33$), with a significant difference in post-hoc tests between Speech and Syntax task performance. 
 
 \begin{figure}[!ht]
 \begin{center}
 \epsfig{file = ../img/anova/RManova5.png, clip=true,width = 10cm}
-\caption{One-way repeated measures ANOVA output: Descriptive Statistics}
+\caption{Repeated measures ANOVA output: Descriptive statistics via the `Marginal Means' dialogue.}
 \HR
 \label{fig:RManova5}
 \end{center}
@@ -810,18 +810,18 @@ The Friedman test is a non-parametric version of a repeated measures ANOVA and c
 \vspace{0.5cm}
 \begin{figure}[!ht]
 \begin{center}
-\epsfig{file = ../img/anova/RManova6.png, clip=true,width = 16cm}
-\caption{The `Repeated Measures ANOVA (Non-parametric)' dialogue box in jamovi}
+\epsfig{file = ../img/anova/RManova6.png, clip=true,width = 12cm}
+\caption{The Friedman nonparametric repeated measures ANOVA in JASP}
 \HR
 \label{fig:RManova6}
 \end{center}
 \end{figure}
 
-As with the Kruskall-Wallis test, the underlying mathematics is complicated, and won't be presented here. For the purpose of this book, it is sufficient to note that jamovi calculates the tie-corrected version of the Friedman test, and in Figure \ref{fig:RManova6} there is an example using the Broca's Aphasia data we have already looked at. 
+As with the Kruskall-Wallis test, the underlying mathematics is complicated, and won't be presented here. For the purpose of this book, it is sufficient to note that JASP calculates the tie-corrected version of the Friedman test, and in Figure \ref{fig:RManova6} there is an example using the Broca's Aphasia data we have already looked at. 
 
-It's pretty straightforward to run a Friedman test in jamovi. Just select \rtext{Analyses - ANOVA - Repeated Measures ANOVA (Non-parametric)}, as in Figure \ref{fig:RManova6}. Then highlight and transfer the names of the repeated measures variables you wish to compare (Speech, Conceptual, Syntax) into the `\rtext{Measures:}'  text box. To produce descriptive statistics (means and medians) for the three repeated measures variables, click on the Descriptives button 
+It's pretty straightforward to run a Friedman test in JASP. Just go to the `Nonparametrics' menu and move `Task' into the `RM Factor' box.  You should also click the `Conover's post hoc tests' option.
 
-The jamovi results show descriptive statistics, chi-square value, degrees of freedom, and the $p$-value (Figure \ref{fig:RManova6}). Since the $p$-value is less than the level conventionally used to determine significance ($p<.05$), we can conclude that Broca’s Aphasics perform reasonably well on speech production ($median=7.5$) and language comprehension ($median=6.5$) tasks. However, their performance was considerably worse on the syntax task ($median=4.5$), with a significant difference in post-hoc tests between Speech and Syntax task performance. 
+The JASP results in Figure \ref{fig:RManova6} show a chi-square value, degrees of freedom, the $p$-value, and a Kendall's $W$ value. Since the $p$-value is less than the level conventionally used to determine significance ($p<.05$), we can conclude that there is a difference among the 3 levels of task. Conover's post hoc tests indicate that the patients perform reasonably well on speech production ($mean=7.2$) and language comprehension ($mean=6.2$) tasks. However, their performance was considerably worse on the syntax task ($median=4.3$), with a significant difference in post-hoc tests between Speech and Syntax task performance. Do note that this significant difference only appears with the uncorrected $p$-value; both the Bonferroni-corrected and Holm-corrected $p$-values are not significant ($p=0.081$ for both).
 
 
 \section{On the relationship between ANOVA and the Student \texorpdfstring{\boldm{$t$}}{}-test~\label{sec:anovaandt}}
@@ -834,7 +834,7 @@ There's one last thing I want to point out before finishing. It's something that
 There's a fair bit covered in this chapter, but there's still a lot missing. Most obviously, I haven't discussed how to run an ANOVA when you are interested in more than one grouping variable, but that will be discussed in a lot of detail in Chapter~\ref{ch:anova2}. In terms of what we have discussed, the key topics were:
 
 \begin{itemize} \itemsep -2pt
-\item The basic logic behind how ANOVA works (Section~\ref{sec:anovaintro}) and how to run one in jamovi (Section~\ref{sec:introduceaov}).
+\item The basic logic behind how ANOVA works (Section~\ref{sec:anovaintro}) and how to run one in JASP (Section~\ref{sec:introduceaov}).
 \item How to compute an effect size for an ANOVA (Section~\ref{sec:etasquared})
 \item Post-hoc analysis and corrections for multiple testing (Section~\ref{sec:posthoc}).
 \item The assumptions made by ANOVA (Section~\ref{sec:anovaassumptions}).

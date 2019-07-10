@@ -18,7 +18,7 @@ If we cross-tabulate \rtext{drug} by \rtext{therapy}, using the `Frequencies' - 
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factorialanova/factorialanova1.png, clip=true,width = 9cm} 
-\caption{jamovi contingency table of \rtext{drug} by \rtext{therapy}}
+\caption{jamovi contingency table of \texttt{drug} by \texttt{therapy}}
 \label{fig:factorialanova1}
 \HR
 \end{center}
@@ -103,7 +103,7 @@ If the data you're trying to analyse correspond to a balanced factorial design t
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factorialanova/factorialanova2.pdf, clip=true,width = 12cm} 
-\caption{jamovi one way anova of \rtext{mood.gain} by \rtext{drug}}
+\caption{jamovi one way anova of \texttt{mood.gain} by \texttt{drug}}
 \label{fig:factorialanova2}
 \HR
 \end{center}
@@ -114,7 +114,7 @@ Now, suppose I'm also curious to find out if \rtext{therapy} has a relationship 
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factorialanova/factorialanova3.pdf, clip=true,width = 14cm} 
-\caption{jamovi two way anova of \rtext{mood.gain} by \rtext{drug} and \rtext{therapy}}
+\caption{jamovi two way anova of \texttt{mood.gain} by \texttt{drug} and \texttt{therapy}}
 \label{fig:factorialanova3}
 \HR
 \end{center}
@@ -329,7 +329,7 @@ Adding interaction terms to the ANOVA model in jamovi is straightforward. In fac
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factorialanova/factorialanova4.pdf,clip=true, width = 14cm} 
-\caption{Results for the full factorial model, including the interaction component \rtext{drug*therapy}}
+\caption{Results for the full factorial model, including the interaction component \texttt{drug*therapy}}
 \label{fig:factorialanova4}
 \HR
 \end{center}
@@ -392,7 +392,7 @@ In many situations you will find yourself wanting to report estimates of all the
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factorialanova/margmean1.png,clip=true, width = 14cm} 
-\caption{jamovi screenshot showing the marginal means for the saturated model, i.e. including the interaction component, with the \rtext{clinicaltrial} data set}
+\caption{jamovi screenshot showing the marginal means for the saturated model, i.e. including the interaction component, with the \texttt{clinicaltrial} data set}
 \label{fig:margmean1}
 \HR
 \end{center}
@@ -406,7 +406,7 @@ When the model doesn't contain the interaction term, then the estimated group me
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factorialanova/margmean2.png,clip=true, width = 14cm} 
-\caption{jamovi screenshot showing the marginal means for the unsaturated model, i.e. without the interaction component, with the \rtext{clinicaltrial} data set}
+\caption{jamovi screenshot showing the marginal means for the unsaturated model, i.e. without the interaction component, with the \texttt{clinicaltrial} data set}
 \label{fig:margmean2}
 \HR
 \end{center}
@@ -642,7 +642,7 @@ This isn't anything particularly special, of course. It's exactly the format in 
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factorialanova/rtfmdescriptives.png,clip=true, width = 14cm} 
-\caption{jamovi descriptives for the \rtext{rtfm} data set}
+\caption{jamovi descriptives for the \texttt{rtfm} data set}
 \label{fig:rtfmdescriptives}
 \HR
 \end{center}
@@ -659,7 +659,7 @@ This is, of course, the exact same equation that I used earlier to describe a tw
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factorialanova/factorialanova6.pdf,clip=true, width = 14cm} 
-\caption{ANOVA of the \rtext{rtfm.csv} data set in jamovi, without the interaction term}
+\caption{ANOVA of the \texttt{rtfm.csv} data set in jamovi, without the interaction term}
 \label{fig:factorialanova6}
 \HR
 \end{center}
@@ -705,7 +705,7 @@ Okay, now that we're really starting to see why ANOVA and regression are basical
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factorialanova/factorialanova7.pdf,clip=true, width = 14cm} 
-\caption{Regression analysis of the \rtext{rtfm.csv} data set in jamovi, without the interaction term}
+\caption{Regression analysis of the \texttt{rtfm.csv} data set in jamovi, without the interaction term}
 \label{fig:factorialanova7}
 \HR
 \end{center}
@@ -763,7 +763,7 @@ Obviously, there are no surprises here. That's the exact same ANOVA that we ran 
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factorialanova/factorialanova10.pdf,clip=true, width = 11cm} 
-\caption{jamovi regression results, with contrast variables \rtext{druganxifree} and \rtext{drugjoyzepam}}
+\caption{jamovi regression results, with contrast variables \texttt{druganxifree} and \texttt{drugjoyzepam}}
 \label{fig:factorialanova10}
 \HR
 \end{center}
@@ -943,7 +943,7 @@ As usual, it will help us to work with some data. The \filename{coffee.csv} file
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factorialanova/factorialanova15.png,clip=true, width = 14cm} 
-\caption{The \rtext{coffee.csv} data set in jamovi, with descriptive information aggregated by factor levels}
+\caption{The \texttt{coffee.csv} data set in jamovi, with descriptive information aggregated by factor levels}
 \label{fig:factorialanova15}
 \HR
 \end{center}
@@ -1001,7 +1001,7 @@ The big problem with using Type I sum of squares is the fact that it really does
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factorialanova/factorialanova17.pdf,clip=true, width = 14cm} 
-\caption{ANOVA results table using Type I sum of squares in jamovi, but with factors entered in a different order (\rtext{milk} first)}
+\caption{ANOVA results table using Type I sum of squares in jamovi, but with factors entered in a different order (\texttt{milk} first)}
 \label{fig:factorialanova17}
 \HR
 \end{center}

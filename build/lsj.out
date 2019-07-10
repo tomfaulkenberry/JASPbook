@@ -264,10 +264,52 @@
 \BOOKMARK [1][]{section.12.7}{12.7 Removing the normality assumption }{chapter.12}% 264
 \BOOKMARK [2][-]{subsection.12.7.1}{12.7.1 The logic behind the Kruskal-Wallis test}{section.12.7}% 265
 \BOOKMARK [2][-]{subsection.12.7.2}{12.7.2 Additional details}{section.12.7}% 266
-\BOOKMARK [2][-]{subsection.12.7.3}{12.7.3 How to run the Kruskal-Wallis test in jamovi}{section.12.7}% 267
+\BOOKMARK [2][-]{subsection.12.7.3}{12.7.3 How to run the Kruskal-Wallis test in JASP}{section.12.7}% 267
 \BOOKMARK [1][]{section.12.8}{12.8 Repeated measures one-way ANOVA }{chapter.12}% 268
-\BOOKMARK [2][-]{subsection.12.8.1}{12.8.1 Repeated measures ANOVA in jamovi}{section.12.8}% 269
+\BOOKMARK [2][-]{subsection.12.8.1}{12.8.1 Repeated measures ANOVA in JASP}{section.12.8}% 269
 \BOOKMARK [1][]{section.12.9}{12.9 The Friedman non-parametric repeated measures ANOVA test }{chapter.12}% 270
 \BOOKMARK [1][]{section.12.10}{12.10 On the relationship between ANOVA and the Student -test }{chapter.12}% 271
 \BOOKMARK [1][]{section.12.11}{12.11 Summary}{chapter.12}% 272
-\BOOKMARK [0][]{chapter.13}{13 References}{part.4}% 273
+\BOOKMARK [0][]{chapter.13}{13 Factorial ANOVA }{part.4}% 273
+\BOOKMARK [1][]{section.13.1}{13.1 Factorial ANOVA 1: balanced designs, no interactions}{chapter.13}% 274
+\BOOKMARK [2][-]{subsection.13.1.1}{13.1.1 What hypotheses are we testing?}{section.13.1}% 275
+\BOOKMARK [2][-]{subsection.13.1.2}{13.1.2 Running the analysis in jamovi}{section.13.1}% 276
+\BOOKMARK [2][-]{subsection.13.1.3}{13.1.3 How are the sum of squares calculated?}{section.13.1}% 277
+\BOOKMARK [2][-]{subsection.13.1.4}{13.1.4 What are our degrees of freedom?}{section.13.1}% 278
+\BOOKMARK [2][-]{subsection.13.1.5}{13.1.5 Factorial ANOVA versus one-way ANOVAs}{section.13.1}% 279
+\BOOKMARK [2][-]{subsection.13.1.6}{13.1.6 What kinds of outcomes does this analysis capture?}{section.13.1}% 280
+\BOOKMARK [1][]{section.13.2}{13.2 Factorial ANOVA 2: balanced designs, interactions allowed}{chapter.13}% 281
+\BOOKMARK [2][-]{subsection.13.2.1}{13.2.1 What exactly is an interaction effect?}{section.13.2}% 282
+\BOOKMARK [2][-]{subsection.13.2.2}{13.2.2 Calculating sums of squares for the interaction}{section.13.2}% 283
+\BOOKMARK [2][-]{subsection.13.2.3}{13.2.3 Degrees of freedom for the interaction}{section.13.2}% 284
+\BOOKMARK [2][-]{subsection.13.2.4}{13.2.4 Running the ANOVA in jamovi}{section.13.2}% 285
+\BOOKMARK [2][-]{subsection.13.2.5}{13.2.5 Interpreting the results}{section.13.2}% 286
+\BOOKMARK [1][]{section.13.3}{13.3 Effect size }{chapter.13}% 287
+\BOOKMARK [2][-]{subsection.13.3.1}{13.3.1 Estimated group means}{section.13.3}% 288
+\BOOKMARK [1][]{section.13.4}{13.4 Assumption checking }{chapter.13}% 289
+\BOOKMARK [2][-]{subsection.13.4.1}{13.4.1 Homogeneity of variance}{section.13.4}% 290
+\BOOKMARK [2][-]{subsection.13.4.2}{13.4.2 Normality of residuals}{section.13.4}% 291
+\BOOKMARK [1][]{section.13.5}{13.5 Analysis of Covariance \(ANCOVA\)}{chapter.13}% 292
+\BOOKMARK [2][-]{subsection.13.5.1}{13.5.1 Running ANCOVA in jamovi}{section.13.5}% 293
+\BOOKMARK [1][]{section.13.6}{13.6 ANOVA as a linear model}{chapter.13}% 294
+\BOOKMARK [2][-]{subsection.13.6.1}{13.6.1 Some data}{section.13.6}% 295
+\BOOKMARK [2][-]{subsection.13.6.2}{13.6.2 ANOVA with binary factors as a regression model}{section.13.6}% 296
+\BOOKMARK [2][-]{subsection.13.6.3}{13.6.3 How to encode non binary factors as contrasts}{section.13.6}% 297
+\BOOKMARK [2][-]{subsection.13.6.4}{13.6.4 The equivalence between ANOVA and regression for non-binary factors}{section.13.6}% 298
+\BOOKMARK [2][-]{subsection.13.6.5}{13.6.5 Degrees of freedom as parameter counting!}{section.13.6}% 299
+\BOOKMARK [1][]{section.13.7}{13.7 Different ways to specify contrasts}{chapter.13}% 300
+\BOOKMARK [2][-]{subsection.13.7.1}{13.7.1 Treatment contrasts}{section.13.7}% 301
+\BOOKMARK [2][-]{subsection.13.7.2}{13.7.2 Helmert contrasts}{section.13.7}% 302
+\BOOKMARK [2][-]{subsection.13.7.3}{13.7.3 Sum to zero contrasts}{section.13.7}% 303
+\BOOKMARK [2][-]{subsection.13.7.4}{13.7.4 Optional contrasts in jamovi}{section.13.7}% 304
+\BOOKMARK [1][]{section.13.8}{13.8 Post hoc tests}{chapter.13}% 305
+\BOOKMARK [1][]{section.13.9}{13.9 The method of planned comparisons}{chapter.13}% 306
+\BOOKMARK [1][]{section.13.10}{13.10 Factorial ANOVA 3: unbalanced designs}{chapter.13}% 307
+\BOOKMARK [2][-]{subsection.13.10.1}{13.10.1 The coffee data}{section.13.10}% 308
+\BOOKMARK [2][-]{subsection.13.10.2}{13.10.2 ``Standard ANOVA'' does not exist for unbalanced designs}{section.13.10}% 309
+\BOOKMARK [2][-]{subsection.13.10.3}{13.10.3 Type I sum of squares}{section.13.10}% 310
+\BOOKMARK [2][-]{subsection.13.10.4}{13.10.4 Type III sum of squares}{section.13.10}% 311
+\BOOKMARK [2][-]{subsection.13.10.5}{13.10.5 Type II sum of squares}{section.13.10}% 312
+\BOOKMARK [2][-]{subsection.13.10.6}{13.10.6 Effect sizes \(and non-additive sums of squares\)}{section.13.10}% 313
+\BOOKMARK [1][]{section.13.11}{13.11 Summary}{chapter.13}% 314
+\BOOKMARK [0][]{chapter.14}{14 References}{part.4}% 315
