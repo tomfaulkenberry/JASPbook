@@ -273,7 +273,7 @@
 \BOOKMARK [0][]{chapter.13}{13 Factorial ANOVA }{part.4}% 273
 \BOOKMARK [1][]{section.13.1}{13.1 Factorial ANOVA 1: balanced designs, no interactions}{chapter.13}% 274
 \BOOKMARK [2][-]{subsection.13.1.1}{13.1.1 What hypotheses are we testing?}{section.13.1}% 275
-\BOOKMARK [2][-]{subsection.13.1.2}{13.1.2 Running the analysis in jamovi}{section.13.1}% 276
+\BOOKMARK [2][-]{subsection.13.1.2}{13.1.2 Running the analysis in JASP}{section.13.1}% 276
 \BOOKMARK [2][-]{subsection.13.1.3}{13.1.3 How are the sum of squares calculated?}{section.13.1}% 277
 \BOOKMARK [2][-]{subsection.13.1.4}{13.1.4 What are our degrees of freedom?}{section.13.1}% 278
 \BOOKMARK [2][-]{subsection.13.1.5}{13.1.5 Factorial ANOVA versus one-way ANOVAs}{section.13.1}% 279
@@ -282,7 +282,7 @@
 \BOOKMARK [2][-]{subsection.13.2.1}{13.2.1 What exactly is an interaction effect?}{section.13.2}% 282
 \BOOKMARK [2][-]{subsection.13.2.2}{13.2.2 Calculating sums of squares for the interaction}{section.13.2}% 283
 \BOOKMARK [2][-]{subsection.13.2.3}{13.2.3 Degrees of freedom for the interaction}{section.13.2}% 284
-\BOOKMARK [2][-]{subsection.13.2.4}{13.2.4 Running the ANOVA in jamovi}{section.13.2}% 285
+\BOOKMARK [2][-]{subsection.13.2.4}{13.2.4 Running the ANOVA in JASP}{section.13.2}% 285
 \BOOKMARK [2][-]{subsection.13.2.5}{13.2.5 Interpreting the results}{section.13.2}% 286
 \BOOKMARK [1][]{section.13.3}{13.3 Effect size }{chapter.13}% 287
 \BOOKMARK [2][-]{subsection.13.3.1}{13.3.1 Estimated group means}{section.13.3}% 288
@@ -290,7 +290,7 @@
 \BOOKMARK [2][-]{subsection.13.4.1}{13.4.1 Homogeneity of variance}{section.13.4}% 290
 \BOOKMARK [2][-]{subsection.13.4.2}{13.4.2 Normality of residuals}{section.13.4}% 291
 \BOOKMARK [1][]{section.13.5}{13.5 Analysis of Covariance \(ANCOVA\)}{chapter.13}% 292
-\BOOKMARK [2][-]{subsection.13.5.1}{13.5.1 Running ANCOVA in jamovi}{section.13.5}% 293
+\BOOKMARK [2][-]{subsection.13.5.1}{13.5.1 Running ANCOVA in JASP}{section.13.5}% 293
 \BOOKMARK [1][]{section.13.6}{13.6 ANOVA as a linear model}{chapter.13}% 294
 \BOOKMARK [2][-]{subsection.13.6.1}{13.6.1 Some data}{section.13.6}% 295
 \BOOKMARK [2][-]{subsection.13.6.2}{13.6.2 ANOVA with binary factors as a regression model}{section.13.6}% 296

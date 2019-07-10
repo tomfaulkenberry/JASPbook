@@ -13,12 +13,12 @@ The goal in this chapter is to extend the idea of using multiple predictors into
 
 When we discussed analysis of variance in Chapter~\ref{ch:anova}, we assumed a fairly simple experimental design. Each person is in one of several groups and we want to know whether these groups have different mean scores on some outcome variable. In this section, I'll discuss a broader class of experimental designs known as \keyterm{factorial designs}, in which we have more than one grouping variable. I gave one example of how this kind of design might arise above. Another example appears in  Chapter~\ref{ch:anova} in which we were looking at the effect of different drugs on the \rtext{mood.gain} experienced by each person. In that chapter we did find a significant effect of drug, but at the end of the chapter we also ran an analysis to see if there was an effect of therapy. We didn't find one, but there's something a bit worrying about trying to run two {\it separate} analyses trying to predict the same outcome. Maybe there actually {\it is} an effect of therapy on mood gain, but we couldn't find it because it was being ``hidden'' by the effect of drug? In other words, we're going to want to run a {\it single} analysis that includes {\it both} \rtext{drug} and \rtext{therapy} as predictors. For this analysis each person is cross-classified by the drug they were given (a factor with 3 levels) and what therapy they received (a factor with 2 levels). We refer to this as a $3 \times 2$ factorial design. 
 
-If we cross-tabulate \rtext{drug} by \rtext{therapy}, using the `Frequencies' - `Contingency Tables' analysis in jamovi (see Section~\ref{sec:freqtables}), we get the table shown in Figure \ref{fig:factorialanova1}
+If we cross-tabulate \rtext{drug} by \rtext{therapy}, using the `Frequencies' - `Contingency Tables' analysis in JASP (see Section~\ref{sec:freqtables}), we get the table shown in Figure \ref{fig:factorialanova1}
 
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factorialanova/factorialanova1.png, clip=true,width = 9cm} 
-\caption{jamovi contingency table of \texttt{drug} by \texttt{therapy}}
+\caption{JASP contingency table of \texttt{drug} by \texttt{therapy}}
 \label{fig:factorialanova1}
 \HR
 \end{center}
@@ -39,7 +39,7 @@ placebo     CBT      0.600000
 anxifree    CBT      1.033333
 joyzepam    CBT      1.500000
 \end{rblock1}
-Now, this output shows a list of the group means for all possible combinations of the two factors (e.g., people who received the placebo and no therapy, people who received the placebo while getting CBT, etc.). It is helpful to organise all these numbers, plus the marginal and grand means, into a single table which looks like this:
+Now, this output shows a list of the group means for all possible combinations of the two factors (e.g., people who received the placebo and no therapy, people who received the placebo while getting CBT, etc.). It is helpful to organise all these numbers, plus the row and column means and the overall mean, into a single table which looks like this:
 
 \begin{center}
 \begin{tabular}{l|cc|c}
@@ -94,16 +94,16 @@ Alternative hypothesis, $H_1$: & column means are different, i.e., $\mu_{.1} \ne
 \end{tabular}
 \end{center}
 
-\SUBSECTION{Running the analysis in jamovi}
+\SUBSECTION{Running the analysis in JASP}
 
-The null and alternative hypotheses that I described in the last section should seem awfully familiar. They're basically the same as the hypotheses that we were testing in our simpler one-way ANOVAs in Chapter~\ref{ch:anova}. So you're probably expecting that the hypothesis {\it tests} that are used in factorial ANOVA will be essentially the same as the $F$-test from Chapter~\ref{ch:anova}. You're expecting to see references to sums of squares (SS), mean squares (MS), degrees of freedom (df), and finally an $F$-statistic that we can convert into a $p$-value, right? Well, you're absolutely and completely right. So much so that I'm going to depart from my usual approach. Throughout this book, I've generally taken the approach of describing the logic (and to an extent the mathematics) that underpins a particular analysis first and only then introducing the analysis in jamovi. This time I'm going to do it the other way around and show you how to do it in jamovi first. The reason for doing this is that I want to highlight the similarities between the simple one-way ANOVA tool that we discussed in Chapter~\ref{ch:anova}, and the more complicated approach that we're going to use in this chapter. 
+The null and alternative hypotheses that I described in the last section should seem awfully familiar. They're basically the same as the hypotheses that we were testing in our simpler one-way ANOVAs in Chapter~\ref{ch:anova}. So you're probably expecting that the hypothesis {\it tests} that are used in factorial ANOVA will be essentially the same as the $F$-test from Chapter~\ref{ch:anova}. You're expecting to see references to sums of squares (SS), mean squares (MS), degrees of freedom (df), and finally an $F$-statistic that we can convert into a $p$-value, right? Well, you're absolutely and completely right. So much so that I'm going to depart from my usual approach. Throughout this book, I've generally taken the approach of describing the logic (and to an extent the mathematics) that underpins a particular analysis first and only then introducing the analysis in JASP. This time I'm going to do it the other way around and show you how to do it in JASP first. The reason for doing this is that I want to highlight the similarities between the simple one-way ANOVA tool that we discussed in Chapter~\ref{ch:anova}, and the more complicated approach that we're going to use in this chapter. 
 
 If the data you're trying to analyse correspond to a balanced factorial design then running your analysis of variance is easy. To see how easy it is, let's start by reproducing the original analysis from Chapter~\ref{ch:anova}. In case you've forgotten, for that analysis we were using only a single factor (i.e., \rtext{drug}) to predict our outcome variable (i.e., \rtext{mood.gain}), and we got the results shown in Figure \ref{fig:factorialanova2}.
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factorialanova/factorialanova2.pdf, clip=true,width = 12cm} 
-\caption{jamovi one way anova of \texttt{mood.gain} by \texttt{drug}}
+\epsfig{file = ../img/factorialanova/factorialanova2.png, clip=true,width = 12cm} 
+\caption{JASP one way ANOVA of \texttt{mood.gain} by \texttt{drug}}
 \label{fig:factorialanova2}
 \HR
 \end{center}
@@ -113,8 +113,8 @@ Now, suppose I'm also curious to find out if \rtext{therapy} has a relationship 
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factorialanova/factorialanova3.pdf, clip=true,width = 14cm} 
-\caption{jamovi two way anova of \texttt{mood.gain} by \texttt{drug} and \texttt{therapy}}
+\epsfig{file = ../img/factorialanova/factorialanova3.png, clip=true,width = 14cm} 
+\caption{JASP two way ANOVA of \texttt{mood.gain} by \texttt{drug} and \texttt{therapy}}
 \label{fig:factorialanova3}
 \HR
 \end{center}
@@ -126,13 +126,13 @@ Not only are all of the individual quantities pretty familiar, the relationships
 $$
 \mbox{MS} = \frac{\mbox{SS}}{df}
 $$
-regardless of whether we're talking about \rtext{drug}, \rtext{therapy} or the residuals. To see this, let's not worry about how the sums of squares values are calculated. Instead, let's take it on faith that jamovi has calculated the SS values correctly, and try to verify that all the rest of the numbers make sense. First, note that for the \rtext{drug} factor, we divide $3.45$ by $2$ and end up with a mean square value of $1.73$. For the \rtext{therapy} factor, there's only 1 degree of freedom, so our calculations are even simpler: dividing $0.47$ (the SS value) by 1 gives us an answer of $0.47$ (the MS value). 
+regardless of whether we're talking about \rtext{drug}, \rtext{therapy} or the residuals. To see this, let's not worry about how the sums of squares values are calculated. Instead, let's take it on faith that JASP has calculated the SS values correctly, and try to verify that all the rest of the numbers make sense. First, note that for the \rtext{drug} factor, we divide $3.453$ by $2$ and end up with a mean square value of $1.727$. For the \rtext{therapy} factor, there's only 1 degree of freedom, so our calculations are even simpler: dividing $0.467$ (the SS value) by 1 gives us an answer of $0.467$ (the MS value). 
 
 Turning to the $F$ statistics and the $p$ values, notice that we have two of each; one corresponding to the \rtext{drug} factor and the other corresponding to the \rtext{therapy} factor. Regardless of which one we're talking about, the $F$ statistic is calculated by dividing the mean square value associated with the factor by the mean square value associated with the residuals. If we use ``A'' as shorthand notation to refer to the first factor (factor A; in this case \rtext{drug}) and ``R'' as shorthand notation to refer to the residuals, then the $F$ statistic associated with factor A is denoted $F_A$, and is calculated as follows:
 $$
 F_{A} = \frac{\mbox{MS}_{A}}{\mbox{MS}_{R}}
 $$
-and an equivalent formula exists for factor B (i.e., \rtext{therapy}). Note that this use of ``R'' to refer to residuals is a bit awkward, since we also used the letter R to refer to the number of rows in the table, but I'm only going to use ``R'' to mean residuals in the context of SS$_R$ and MS$_R$, so hopefully this shouldn't be confusing. Anyway, to apply this formula to the  \rtext{drugs} factor we take the mean square of $1.73$ and divide it by the residual mean square value of $0.07$, which gives us an $F$-statistic of $26.15$. The corresponding calculation for the \rtext{therapy} variable would be to divide $0.47$ by $0.07$ which gives $7.08$ as the $F$-statistic. Not surprisingly, of course, these are the same values that jamovi has reported in the ANOVA table above.
+and an equivalent formula exists for factor B (i.e., \rtext{therapy}). Note that this use of ``R'' to refer to residuals is a bit awkward, since we also used the letter R to refer to the number of rows in the table, but I'm only going to use ``R'' to mean residuals in the context of SS$_R$ and MS$_R$, so hopefully this shouldn't be confusing. Anyway, to apply this formula to the  \rtext{drugs} factor we take the mean square of $1.727$ and divide it by the residual mean square value of $0.066$, which gives us an $F$-statistic of $26.149$. The corresponding calculation for the \rtext{therapy} variable would be to divide $0.467$ by $0.066$ which gives $7.076$ as the $F$-statistic. Not surprisingly, of course, these are the same values that JASP has reported in the ANOVA table above.
 
 Also in the ANOVA table is the calculation of the $p$ values. Once again, there is nothing new here. For each of our two factors what we're trying to do is test the null hypothesis that there is no relationship between the factor and the outcome variable (I'll be a bit more precise about this later on). To that end, we've (apparently) followed a similar strategy to what we did in the one way ANOVA and have calculated an $F$-statistic for each of these hypotheses. To convert these to $p$ values, all we need to do is note that the sampling distribution for the $F$ {\it statistic} under the null hypothesis (that the factor in question is irrelevant) is an $F$ {\it distribution}. Also note that the two degrees of freedom values are those corresponding to the factor and those corresponding to the residuals. For the \rtext{drug} factor we're talking about an $F$ distribution with 2 and 14 degrees of freedom (I'll discuss degrees of freedom in more detail later). In contrast, for the \rtext{therapy} factor the sampling distribution is $F$ with 1 and 14 degrees of freedom. 
 
@@ -140,7 +140,7 @@ At this point, I hope you can see that the ANOVA table for this more complicated
 
 \SUBSECTION{How are the sum of squares calculated?}
 
-In the previous section I had two goals. Firstly, to show you that the jamovi method needed to do factorial ANOVA is pretty much the same as what we used for a one way ANOVA. The only difference is the addition of a second factor. Secondly, I wanted to show you what the ANOVA table looks like in this case, so that you can see from the outset that the basic logic and structure behind factorial ANOVA is the same as that which underpins one way ANOVA. Try to hold onto that feeling. It's genuinely true, insofar as factorial ANOVA is built in more or less the same way as the simpler one-way ANOVA model. It's just that this feeling of familiarity starts to evaporate once you start digging into the details. Traditionally, this comforting sensation is replaced by an urge to hurl abuse at the authors of statistics textbooks.
+In the previous section I had two goals. Firstly, to show you that the JASP method needed to do factorial ANOVA is pretty much the same as what we used for a one way ANOVA. The only difference is the addition of a second factor. Secondly, I wanted to show you what the ANOVA table looks like in this case, so that you can see from the outset that the basic logic and structure behind factorial ANOVA is the same as that which underpins one way ANOVA. Try to hold onto that feeling. It's genuinely true, insofar as factorial ANOVA is built in more or less the same way as the simpler one-way ANOVA model. It's just that this feeling of familiarity starts to evaporate once you start digging into the details. Traditionally, this comforting sensation is replaced by an urge to hurl abuse at the authors of statistics textbooks.
 
 Okay, let's start by looking at some of those details. The explanation that I gave in the last section illustrates the fact that the hypothesis tests for the main effects (of drug and therapy in this case) are $F$-tests, but what it doesn't do is show you how the sum of squares (SS) values are calculated. Nor does it tell you explicitly how to calculate degrees of freedom ($df$ values) though that's a simple thing by comparison. Let's assume for now that we have only two predictor variables, Factor A and Factor B. If we use $Y$ to refer to the outcome variable, then we would use $Y_{rci}$ to refer to the outcome associated with the $i$-th member of group $rc$ (i.e., level/row $r$ for Factor A and level/column $c$ for Factor B). Thus, if we use $\bar{Y}$ to refer to a sample mean, we can use the same notation as before to refer to group means, marginal means and grand means. That is, $\bar{Y}_{rc}$ is the sample mean associated with the $r$th level of Factor A and the $c$th level of Factor B, $\bar{Y}_{r.} $would be the marginal mean for the $r$th level of Factor A, $\bar{Y}_{.c}$ would be the marginal mean for the $c$th level of Factor B, and $\bar{Y}_{..}$ is the grand mean. In other words, our sample means can be organised into the same table as the population means. For our clinical trial data, that table looks like this:
 \begin{center}
@@ -166,7 +166,7 @@ $$
 \mbox{SS}_{B} = (N \times R) \sum_{c=1}^C \left( \bar{Y}_{.c} - \bar{Y}_{..} \right)^2
 $$
 
-Now that we have these formulas we can check them against the jamovi output from the earlier section. Once again, a dedicated spreadsheet programme is helpful for these sorts of calculations, so please have a go yourself. You can also take a look at the version I did in Excel in the file \filename{clinicaltrial\_factorialanova.xls}. 
+Now that we have these formulas we can check them against the JASP output from the earlier section. Once again, a dedicated spreadsheet programme is helpful for these sorts of calculations.
 
 First, let's calculate the sum of squares associated with the main effect of \rtext{drug}. There are a total of $N=3$ people in each group and $C=2$ different types of therapy. Or, to put it another way, there are $3 \times 2 = 6$ people who received any particular drug. When we do these calculations in a spreadsheet programme, we get a value of 3.45 for the sum of squares associated with the main effect of \rtext{drug}. Not surprisingly, this is the same number that you get when you look up the SS value for the drugs factor in the ANOVA table that I presented earlier, in Figure \ref{fig:factorialanova3}. 
 
@@ -186,7 +186,7 @@ $$
 $$
 Of course, there is a formula that you can use to calculate the residual SS directly, but I think that it makes more conceptual sense to think of it like this. The whole point of calling it a residual is that it's the leftover variation, and the formula above makes that clear. I should also note that, in keeping with the terminology used in the regression chapter, it is commonplace to refer to $\mbox{SS}_A + \mbox{SS}_B$ as the variance attributable to the ``ANOVA model'', denoted SS$_M$, and so we often say that the total sum of squares is equal to the model sum of squares plus the residual sum of squares. Later on in this chapter we'll see that this isn't just a surface similarity: ANOVA and regression are actually the same thing under the hood. 
 
-In any case, it's probably worth taking a moment to check that we can calculate SS$_R$ using this formula and verify that we do obtain the same answer that jamovi produces in its ANOVA table. The calculations are pretty straightforward when done in a spreadsheet (see the \filename{clinicaltrial\_factorialanova.xls} file). We can calculate the total SS using the formulas above (getting an answer of total SS = 4.85) and then the residual SS ( = 0.92). Yet again, we get the same answer. 
+In any case, it's probably worth taking a moment to check that we can calculate SS$_R$ using this formula and verify that we do obtain the same answer that JASP produces in its ANOVA table. Again, the calculations are pretty straightforward when done in a spreadsheet. We can calculate the total SS using the formulas above (getting an answer of total SS = 4.85) and then the residual SS ( = 0.92). Yet again, we get the same answer. 
 
 \end{mdframed}
 
@@ -234,13 +234,13 @@ The ANOVA model that we've been talking about so far covers a range of different
 \end{center}
 \end{figure}
 
-The four patterns of data shown in Figure~\ref{fig:maineffects} are all quite realistic. There are a great many data sets that produce exactly those patterns. However, they are not the whole story and the ANOVA model that we have been talking about up to this point is not sufficient to fully account for a table of group means. Why not? Well, so far we have the ability to talk about the idea that drugs can influence mood, and therapy can influence mood, but no way of talking about the possibility of an \keyterm{interaction} between the two. An interaction between A and B is said to occur whenever the effect of Factor A is {\it different}, depending on which level of Factor B we're talking about. Several examples of an interaction effect with the context of a 2$\times$2 ANOVA are shown in Figure~\ref{fig:interaction}. To give a more concrete example, suppose that the operation of Anxifree and Joyzepam is governed by quite different physiological mechanisms. One consequence of this is that while Joyzepam has more or less the same effect on mood regardless of whether one is in therapy, Anxifree is actually much more effective when administered in conjunction with CBT. The ANOVA that we developed in the previous section does not capture this idea. To get some idea of whether an interaction is actually happening here, it helps to plot the various group means. In jamovi this is done via the ANOVA `Descriptive Plots' option - just move \rtext{drug} across into the `Horizontal axis' box, and move \rtext{therapy} across into the `Separate Lines' box. This should look something like Figure \ref{fig:interactionplot}. Our main concern relates to the fact that the two lines aren't parallel. The effect of CBT (difference between solid line and dotted line) when the drug is Joyzepam (right side) appears to be near zero, even smaller than the effect of CBT when a placebo is used (left side). However, when Anxifree is administered, the effect of CBT is larger than the placebo (middle). Is this effect real, or is this just random variation due to chance? Our original ANOVA cannot answer this question, because we make no allowances for the idea that interactions even exist! In this section, we'll fix this problem.
+The four patterns of data shown in Figure~\ref{fig:maineffects} are all quite realistic. There are a great many data sets that produce exactly those patterns. However, they are not the whole story and the ANOVA model that we have been talking about up to this point is not sufficient to fully account for a table of group means. Why not? Well, so far we have the ability to talk about the idea that drugs can influence mood, and therapy can influence mood, but no way of talking about the possibility of an \keyterm{interaction} between the two. An interaction between A and B is said to occur whenever the effect of Factor A is {\it different}, depending on which level of Factor B we're talking about. Several examples of an interaction effect with the context of a 2$\times$2 ANOVA are shown in Figure~\ref{fig:interaction}. To give a more concrete example, suppose that the operation of Anxifree and Joyzepam is governed by quite different physiological mechanisms. One consequence of this is that while Joyzepam has more or less the same effect on mood regardless of whether one is in therapy, Anxifree is actually much more effective when administered in conjunction with CBT. The ANOVA that we developed in the previous section does not capture this idea. To get some idea of whether an interaction is actually happening here, it helps to plot the various group means. In JASP this is done via the ANOVA `Descriptives Plots' option - just move \rtext{drug} across into the `Horizontal axis' box, and move \rtext{therapy} across into the `Separate Lines' box. This should look something like Figure \ref{fig:interactionplot}. Our main concern relates to the fact that the two lines aren't parallel. The effect of CBT (difference between line with solid dots and line with open dots) when the drug is Joyzepam (middle) appears to be near zero, even smaller than the effect of CBT when a placebo is used (right side). However, when Anxifree is administered, the effect of CBT is larger than the placebo (left side). Is this effect real, or is this just random variation due to chance? Our original ANOVA cannot answer this question, because we make no allowances for the idea that interactions even exist! In this section, we'll fix this problem.
 
 \vspace{0.5cm}
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factorialanova/interaction.png,clip=true, width = 14cm} 
-\caption{jamovi screen showing how to generate a descriptive interaction plot in ANOVA using the clinical trial data}
+\epsfig{file = ../img/factorialanova/interaction.png,clip=true, width = 12cm} 
+\caption{JASP screen showing a `Descriptives Plot' in ANOVA using the clinical trial data}
 \label{fig:interactionplot}
 \HR
 \end{center}
@@ -322,13 +322,13 @@ which is just the product of the degrees of freedom associated with the row fact
 
 What about the residual degrees of freedom? Because we've added interaction terms which absorb some degrees of freedom, there are fewer residual degrees of freedom left over. Specifically, note that if the model with interaction has a total of $(R\times C) - 1$, and there are $N$ observations in your data set that are constrained to satisfy 1 grand mean, your residual degrees of freedom now become $N-(R \times C)-1+1$, or just $N-(R \times C)$.
 
-\SUBSECTION{Running the ANOVA in jamovi}
+\SUBSECTION{Running the ANOVA in JASP}
 
-Adding interaction terms to the ANOVA model in jamovi is straightforward. In fact it is more than straightforward because it is the default option for ANOVA. This means that when you specify an ANOVA with two factors, e.g. \rtext{drug} and \rtext{therapy} then the interaction component - \rtext{drug*therapy} - is added automatically to the model\FOOTNOTE{You may have spotted this already when looking at the main effects analysis in jamovi that we described earlier. For the purpose of the explanation in this book I removed the interaction component from the earlier model to keep things clean and simple}. When we run the ANOVA with the interaction term included, then we get the results shown in Figure \ref{fig:factorialanova4}. 
+Adding interaction terms to the ANOVA model in JASP is straightforward. In fact it is more than straightforward because it is the default option for ANOVA. This means that when you specify an ANOVA with two factors, e.g. \rtext{drug} and \rtext{therapy} then the interaction component - \rtext{drug*therapy} - is added automatically to the model\FOOTNOTE{You may have spotted this already when trying to re-create the main effects analysis in JASP that we described earlier. For the purpose of the explanation in this book I removed the interaction component from the earlier model to keep things clean and simple}. When we run the ANOVA with the interaction term included, then we get the results shown in Figure \ref{fig:factorialanova4}. 
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factorialanova/factorialanova4.pdf,clip=true, width = 14cm} 
+\epsfig{file = ../img/factorialanova/factorialanova4.png,clip=true, width = 14cm} 
 \caption{Results for the full factorial model, including the interaction component \texttt{drug*therapy}}
 \label{fig:factorialanova4}
 \HR
@@ -374,7 +374,7 @@ Looking at the $\eta^2$ values first, we see that \rtext{drug} accounts for 71\%
 
 Now let's look at the partial $\eta^2$ values, shown in Figure \ref{fig:factorialanova3}. Because the effect of \rtext{therapy} isn't all that large, controlling for it doesn't make much of a difference, so the partial $\eta^2$ for \rtext{drug} doesn't increase very much, and we obtain a value of $_p\eta^2 = 0.79$). In contrast, because the effect of \rtext{drug} was very large, controlling for it makes a big difference, and so when we calculate the partial $\eta^2$ for \rtext{therapy} you can see that it rises to $_p\eta^2 = 0.34$. The question that we have to ask ourselves is, what do these partial $\eta^2$ values actually {\it mean}? The way I generally interpret the partial $\eta^2$ for the main effect of Factor A is to interpret it as a statement about a hypothetical experiment in which {\it only} Factor A was being varied. So, even though in {\it this} experiment we varied both A and B, we can easily imagine an experiment in which only Factor A was varied, and the partial $\eta^2$ statistic tells you how much of the variance in the outcome variable you would expect to see accounted for in that experiment. However, it should be noted that this interpretation, like many things associated with main effects, doesn't make a lot of sense when there is a large and significant interaction effect. 
 
-Speaking of interaction effects, here's what we get when we calculate the effect sizes for the model that includes the interaction term, as in Figure \ref{fig:factorialanova4}. As you can see, the $\eta^2$ values for the main effects don't change, but the partial $\eta^2$ values do:
+Speaking of interaction effects, here's what we get when we calculate the effect sizes for the model that includes the interaction term, as in Figure \ref{fig:factorialanova4}. To get these in JASP, simply select `Additional Options' - `Estimates of effect size', and choose the measures you want. As you can see, the $\eta^2$ values for the main effects don't change, but the partial $\eta^2$ values do:
 
 \begin{rblock1}
                eta.sq partial.eta.sq
@@ -386,21 +386,22 @@ drug*therapy    0.06        0.29
 \bigskip
 \SUBSECTION{Estimated group means}
 
-In many situations you will find yourself wanting to report estimates of all the group means based on the results of your ANOVA, as well as confidence intervals associated with them. You can use the `Estimated Marginal Means' option in the jamovi ANOVA analysis to do this, as in Figure~\ref{fig:margmean1}. If the ANOVA that you have run is a \keyterm{saturated model} (i.e., contains all possible main effects and all possible interaction effects) then the estimates of the group means are actually identical to the sample means, though the confidence intervals will use a pooled estimate of the standard errors rather than use a separate one for each group. 
+In many situations you will find yourself wanting to report estimates of all the group means based on the results of your ANOVA, as well as confidence intervals associated with them. You can use the `Additional Options' - `Marginal Means' section in the JASP ANOVA analysis to do this, as in Figure~\ref{fig:margmean1}. Just move the interaction term \rtext{drug*therapy} into the action box. If the ANOVA that you have run is a \keyterm{saturated model} (i.e., contains all possible main effects and all possible interaction effects) then the estimates of the group means are actually identical to the sample means, but importantly, the confidence intervals will use a pooled estimate of the standard errors rather than use a separate one for each group. 
 
 \bigskip
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factorialanova/margmean1.png,clip=true, width = 14cm} 
-\caption{jamovi screenshot showing the marginal means for the saturated model, i.e. including the interaction component, with the \texttt{clinicaltrial} data set}
+\caption{JASP screenshot showing the marginal means for the saturated model, i.e. including the interaction component, with the \texttt{clinicaltrial} data set}
 \label{fig:margmean1}
 \HR
 \end{center}
 \end{figure}
 
-In the output we see that the estimated mean mood gain for the placebo group with no therapy was 0.300, with a 95\% confidence interval from 0.006 to 0.594. Note that these are not the same confidence intervals that you would get if you calculated them separately for each group, because of the fact that the ANOVA model assumes homogeneity of variance and therefore uses a pooled estimate of the standard deviation. 
+In the output we see that the estimated mean mood gain for the placebo group with no therapy was 0.300, with a 95\% confidence interval from 0.006 to 0.594. Note that these are NOT the same confidence intervals that you would get if you calculated them separately for each group, because of the fact that the ANOVA model assumes homogeneity of variance and therefore uses a pooled estimate of the standard deviation. 
 
-When the model doesn't contain the interaction term, then the estimated group means will be different from the sample means. Instead of reporting the sample mean, jamovi will calculate the value of the group means that would be expected on the basis of the marginal means (i.e., assuming no interaction). Using the notation we developed earlier, the estimate reported for $\mu_{rc}$, the mean for level $r$ on the (row) Factor A and level $c$ on the (column) Factor B would be $\mu_{..} + \alpha_r + \beta_c$. If there are genuinely no interactions between the two factors, this is actually a better estimate of the population mean than the raw sample mean would be. Removing the interaction term from the model, via the `Model' options in the jamovi ANOVA analysis, provides the marginal means for the analysis shown in Figure~\ref{fig:margmean2}.
+\begin{comment} % JASP doesn't pool the variance estimate without interaction term
+When the model doesn't contain the interaction term, then the estimated group means will be different from the sample means. Instead of reporting the sample mean, JASP will calculate the value of the group means that would be expected on the basis of the marginal means (i.e., assuming no interaction). Using the notation we developed earlier, the estimate reported for $\mu_{rc}$, the mean for level $r$ on the (row) Factor A and level $c$ on the (column) Factor B would be $\mu_{..} + \alpha_r + \beta_c$. If there are genuinely no interactions between the two factors, this is actually a better estimate of the population mean than the raw sample mean would be. Removing the interaction term from the model, via the `Model' options in the jamovi ANOVA analysis, provides the marginal means for the analysis shown in Figure~\ref{fig:margmean2}.
 
 \bigskip
 \begin{figure}[!htb]
@@ -412,6 +413,7 @@ When the model doesn't contain the interaction term, then the estimated group me
 \end{center}
 \end{figure}
 
+\end{comment}
 
 \section{Assumption checking~\label{sec:factorialanovaassumptions}} 
 
@@ -419,7 +421,7 @@ As with one-way ANOVA, the key assumptions of factorial ANOVA are homogeneity of
 
 \SUBSECTION{Homogeneity of variance}
 
-As mentioned in Section~\ref{sec:levene} it's a good idea to visually inspect a plot of the standard deviations compared across different groups / categories, and also see if the Levene test is consistent with the visual inspection. The theory behind the Levene test was discussed in Section~\ref{sec:levene}, so I won't discuss it again. This test expects that you have a saturated model (i.e., including all of the relevant terms), because the test is primarily concerned with the within-group variance, and it doesn't really make a lot of sense to calculate this any way other than with respect to the full model. The Levene test can be specified under the ANOVA `Assumption Checks' - `Homogeneity Tests' option in jamovi, with the result shown as in Figure \ref{fig:factorialanova5}.  The fact that the Levene test is non-significant means that, providing it is consistent with a visual inspection of the plot of standard deviations, we can safely assume that the homogeneity of variance assumption is not violated.
+As mentioned in Section~\ref{sec:levene} it's a good idea to visually inspect a plot of the standard deviations compared across different groups / categories, and also see if the Levene test is consistent with the visual inspection. The theory behind the Levene test was discussed in Section~\ref{sec:levene}, so I won't discuss it again. This test expects that you have a saturated model (i.e., including all of the relevant terms), because the test is primarily concerned with the within-group variance, and it doesn't really make a lot of sense to calculate this any way other than with respect to the full model. The Levene test can be specified under the ANOVA `Assumption Checks' - `Homogeneity tests' option in JASP, with the result shown as in Figure \ref{fig:factorialanova5}.  The fact that the Levene test is non-significant means that, providing it is consistent with a visual inspection of the plot of standard deviations, we can safely assume that the homogeneity of variance assumption is not violated.
 
 \SUBSECTION{Normality of residuals}
 
@@ -427,7 +429,7 @@ As with one-way ANOVA we can test for the normality of residuals in a straightfo
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factorialanova/factorialanova5.pdf,clip=true, width = 14cm} 
+\epsfig{file = ../img/factorialanova/factorialanova5.png, clip=true, width = 12cm} 
 \caption{Checking assumptions in an ANOVA model}
 \label{fig:factorialanova5}
 \HR
@@ -454,40 +456,22 @@ Despite this advantage, ANCOVA runs the risk of undoing real differences between
 
 Clearly, careful thought needs to be given to an analysis of covariance with distinct groups. This applies to both one-way and factorial designs, as ANCOVA can be used with both.
 
-\SUBSECTION{Running ANCOVA in jamovi}
+\SUBSECTION{Running ANCOVA in JASP}
 
-A health psychologist was interested in the effect of routine cycling and stress on happiness levels, with age as a covariate. You can find the dataset in the file \filename{ancova.csv}. Open this file in jamovi and then, to undertake an ANCOVA, select \rtext{Analyses - ANOVA - ANCOVA}   to open the ANCOVA analysis window (Figure \ref{fig:ancova1}). Highlight the dependent variable ‘happiness’ and transfer it into the ‘Dependent Variable’ text box. Highlight the independent variables  ‘stress’ and ‘commute’ and transfer them  into the ‘Fixed Factors’ text box. Highlight the covariate ‘age’ and transfer it  into the ‘Covariates’ text box. Then Click on Estimated Marginal Means to bring up the plots and tables options. 
+A health psychologist was interested in the effect of routine cycling and stress on happiness levels, with age as a covariate. You can find the dataset in the file \filename{ancova.csv}. Open this file in JASP and then, to undertake an ANCOVA, select `ANOVA' - `ANCOVA' to open the ANCOVA analysis window (Figure \ref{fig:ancova1}). Highlight the dependent variable ‘happiness’ and transfer it into the ‘Dependent Variable’ text box. Highlight the independent variables  ‘stress’ and ‘commute’ and transfer them  into the ‘Fixed Factors’ text box. Highlight the covariate ‘age’ and transfer it  into the ‘Covariates’ text box. Then click on `Additional Options' - `Marginal Means' and transfer the interaction term \rtext{stress*commute} into the action box. 
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factorialanova/ancova1.png,clip=true, width = 12.5cm} 
-\caption{The jamovi ANCOVA analysis window}
+\epsfig{file = ../img/factorialanova/ancova1.png,clip=true, width = 14cm} 
+\caption{The JASP ANCOVA analysis window}
 \label{fig:ancova1}
 \HR
 \end{center}
 \end{figure}
 
-An ANCOVA table showing Tests of Between-Subjects Effects is produced in the jamovi results window (Figure \ref{fig:ancova2}). The F value for the covariate ‘age’ is significant at $p=.023$, suggesting that age is an important predictor of the dependent variable, happiness. When we look at the estimated marginal mean scores (Figure \ref{fig:ancova3}), adjustments have been made (compared to an analysis without the covariate) because of the inclusion of the covariate ‘age’ in this ANCOVA. A plot (Figure \ref{fig:ancova4}) is a good way of visualising and interpreting the significant effects. 
+An ANCOVA table is produced in the JASP results window (Figure \ref{fig:ancova1}). The F value for the covariate ‘age’ is significant at $p=.023$, suggesting that age is an important predictor of the dependent variable \rtext{happiness}. When we look at the estimated marginal mean scores, adjustments have been made (compared to an analysis without the covariate) because of the inclusion of the covariate ‘age’ in this ANCOVA. A plot (Figure \ref{fig:ancova4}) is a good way of visualising and interpreting the significant effects. 
 
 The F value for the main effect ‘stress’ ($52.61$) has an associated probability of $p<.001$. The F value for the main effect ‘commute’ ($42.33$) has an associated probability of $p<.001$. Since both of these are less than the probability that is typically used to decide if a statistical result is significant ($p<.05$) we can conclude that there was a significant main effect of stress ($F(1,15)=52.61, p<.001$) and a significant main effect of commuting method ($F(1,15)=42.33, p<.001$). A significant interaction between stress and commuting method was also found ($F(1,15)=14.15, p=.002$).
-
-\begin{figure}[!htb]
-\begin{center}
-\epsfig{file = ../img/factorialanova/ancova2.png,clip=true, width = 15cm} 
-\caption{jamovi ANCOVA output for happiness as a function of stress and commuting method, with age as a covariate}
-\label{fig:ancova2}
-\HR
-\end{center}
-\end{figure}
-
-\begin{figure}[!htb]
-\begin{center}
-\epsfig{file = ../img/factorialanova/ancova3.png,clip=true, width = 12.5cm} 
-\caption{Table of mean happiness level as a function of stress and commuting method (adjusted for the covariate age) with 95\% confidence intervals}
-\label{fig:ancova3}
-\HR
-\end{center}
-\end{figure}
 
 \begin{figure}[!htb]
 \begin{center}
@@ -500,8 +484,9 @@ The F value for the main effect ‘stress’ ($52.61$) has an associated probabi
 
 In Figure \ref{fig:ancova4} we can see the adjusted, marginal, mean happiness scores when age is a covariate in an ANCOVA. In this analysis there is a significant interaction effect, whereby people with low stress who cycle to work are happier than people with low stress who drive and people with high stress whether they cycle or drive to work. There is also a significant main effect of stress – people with low stress are happier than those with high stress. And there is also a significant main effect of commuting behaviour – people who cycle are happier, on average, than those who drive to work.  
 
-One thing to be aware of is that, if you are thinking of including a covariate in your ANOVA, there is an additional assumption: the relationship between the covariate and the dependent variable should be similar for all levels of the independent variable. This can be checked by adding an interaction term between the covariate and each independent variable in the jamovi \rtext{Model - Model terms} option. If the interaction effect is not significant it can be removed. If it is significant then a different and more advanced statistical technique might be appropriate (which is beyond the scope of this book so you might want to consult a friendly statistician).
-
+\begin{comment} % not sure how to get JASP to do this yet
+One thing to be aware of is that, if you are thinking of including a covariate in your ANOVA, there is an additional assumption: the relationship between the covariate and the dependent variable should be similar for all levels of the independent variable. This can be checked by adding an interaction term between the covariate and each independent variable in the JASP \rtext{Model - Model terms} option. If the interaction effect is not significant it can be removed. If it is significant then a different and more advanced statistical technique might be appropriate (which is beyond the scope of this book so you might want to consult a friendly statistician).
+\end{comment}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -636,17 +621,7 @@ person, $p$ & grade, $Y_p$ & attendance, $X_{1p}$ & reading, $X_{2p}$ \\ \hline
 \end{center}
 
 \noindent
-This isn't anything particularly special, of course. It's exactly the format in which we expect to see our data! See the data file \filename{rtfm.csv}. We can use the jamovi `Descriptives' analysis to confirm that this data set corresponds to a balanced design, with 2 observations for each combination of \rtext{attend} and \rtext{reading}. In the same way we can also calculate the mean grade for each combination. This is shown in Figure~\ref{fig:rtfmdescriptives}. Looking at the mean scores, one gets the strong impression that reading the text and attending the class both matter a lot.
-
-\bigskip
-\begin{figure}[!htb]
-\begin{center}
-\epsfig{file = ../img/factorialanova/rtfmdescriptives.png,clip=true, width = 14cm} 
-\caption{jamovi descriptives for the \texttt{rtfm} data set}
-\label{fig:rtfmdescriptives}
-\HR
-\end{center}
-\end{figure}
+This isn't anything particularly special, of course. It's exactly the format in which we expect to see our data! See the data file \filename{rtfm.csv}. 
 
 \SUBSECTION{ANOVA with binary factors as a regression model}
 
@@ -654,18 +629,18 @@ Okay, let's get back to talking about the mathematics. We now have our data expr
 $$
 Y_{p} = b_0 + b_1 X_{1p} + b_2 X_{2p} + \epsilon_p
 $$
-This is, of course, the exact same equation that I used earlier to describe a two-predictor regression model! The only difference is that $X_1$ and $X_2$ are now {\it binary} variables (i.e., values can only be 0 or 1), whereas in a regression analysis we expect that $X_1$ and $X_2$ will be continuous.  There's a couple of ways I could try to convince you of this. One possibility would be to do a lengthy mathematical exercise proving that the two are identical. However, I'm going to go out on a limb and guess that most of the readership of this book will find that annoying rather than helpful. Instead, I'll explain the basic ideas and then rely on jamovi to show that ANOVA analyses and regression analyses aren't just similar, they're identical for all intents and purposes. Let's start by running this as an ANOVA. To do this, we'll use the \rtext{rtfm} data set, and Figure \ref{fig:factorialanova6} shows what we get when we run the analysis in jamovi.
+This is, of course, the exact same equation that I used earlier to describe a two-predictor regression model! The only difference is that $X_1$ and $X_2$ are now {\it binary} variables (i.e., values can only be 0 or 1), whereas in a regression analysis we expect that $X_1$ and $X_2$ will be continuous.  There's a couple of ways I could try to convince you of this. One possibility would be to do a lengthy mathematical exercise proving that the two are identical. However, I'm going to go out on a limb and guess that most of the readership of this book will find that annoying rather than helpful. Instead, I'll explain the basic ideas and then rely on JASP to show that ANOVA analyses and regression analyses aren't just similar, they're identical for all intents and purposes. Let's start by running this as an ANOVA. To do this, we'll use the \rtext{rtfm} data set, and Figure \ref{fig:factorialanova6} shows what we get when we run the analysis in JASP.
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factorialanova/factorialanova6.pdf,clip=true, width = 14cm} 
-\caption{ANOVA of the \texttt{rtfm.csv} data set in jamovi, without the interaction term}
+\epsfig{file = ../img/factorialanova/factorialanova6.png,clip=true, width = 14cm} 
+\caption{ANOVA of the \texttt{rtfm.csv} data set in JASP, without the interaction term}
 \label{fig:factorialanova6}
 \HR
 \end{center}
 \end{figure}
 
-So, by reading the key numbers off the ANOVA table and the mean scores that we presented earlier, we can see that the students obtained a higher grade if they attended class $(F_{1,5} = 21.6, p = .0056)$ and if they read the textbook $(F_{1,5} = 52.3, p = .0008)$. Let's make a note of those $p$-values and those $F$ statistics. 
+So, by reading the key numbers off the ANOVA table and the mean scores that we presented earlier, we can see that the students obtained a higher grade if they attended class $(F_{1,5} = 21.6, p = .006)$ and if they read the textbook $(F_{1,5} = 52.3, p <0.001)$. Let's make a note of those $p$-values and those $F$ statistics. 
 
 Now let's think about the same analysis from a linear regression perspective. In the \rtext{rtfm} data set, we have encoded \rtext{attend} and \rtext{reading} as if they were numeric predictors. In this case, this is perfectly acceptable. There really is a sense in which a student who turns up to class (i.e. \rtext{attend = 1}) has in fact done ``more attendance'' than a student who does not (i.e. \rtext{attend = 0}). So it's not at all unreasonable to include it as a predictor in a regression model. It's a little unusual, because the predictor only takes on two possible values, but it doesn't violate any of the assumptions of linear regression. And it's easy to interpret. If the regression coefficient for \rtext{attend} is greater than 0 it means that students that attend lectures get higher grades. If it's less than zero then students attending lectures get lower grades. The same is true for our \rtext{reading} variable.
 
@@ -700,22 +675,23 @@ attended? & no & $b_0$ & $b_0 + b_2$ \\
 \end{center} 
 As you can see, the intercept term $b_0$ acts like a kind of ``baseline'' grade that you would expect from those students who don't take the time to attend class or read the textbook. Similarly, $b_1$ represents the boost that you're expected to get if you come to class, and $b_2$ represents the boost that comes from reading the textbook. In fact, if this were an ANOVA you might very well want to characterise $b_1$ as the main effect of attendance, and $b_2$ as the main effect of reading! In fact, for a simple $2 \times 2$ ANOVA that's {\it exactly} how it plays out. 
 
-Okay, now that we're really starting to see why ANOVA and regression are basically the same thing, let's actually run our regression using the \rtext{rtfm} data and the jamovi regression analysis to convince ourselves that this is really true. Running the regression in the usual way gives the results shown in Figure \ref{fig:factorialanova7}.
+Okay, now that we're really starting to see why ANOVA and regression are basically the same thing, let's actually run our regression using the \rtext{rtfm} data and the JASP regression analysis to convince ourselves that this is really true. Running the regression in the usual way gives the results shown in Figure \ref{fig:factorialanova7}.
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factorialanova/factorialanova7.pdf,clip=true, width = 14cm} 
-\caption{Regression analysis of the \texttt{rtfm.csv} data set in jamovi, without the interaction term}
+\epsfig{file = ../img/factorialanova/factorialanova7.png,clip=true, width = 14cm} 
+\caption{Regression analysis of the \texttt{rtfm.csv} data set in JASP, without the interaction term}
 \label{fig:factorialanova7}
 \HR
 \end{center}
 \end{figure}
 
-There's a few interesting things to note here. First, notice that the intercept term is 43.5 which is close to the ``group'' mean of 42.5 observed for those two students who didn't read the text or attend class. Second, notice that we have the regression coefficient of $b_1 = 18.0$ for the attendance variable, suggesting that those students that attended class scored 18\% higher than those who didn't. So our expectation would be that those students who turned up to class but didn't read the textbook would obtain a grade of $b_0 + b_1$, which is equal to $43.5 + 18.0 = 61.5$. You can verify for yourself that the same thing happens when we look at the students that read the textbook.
+There's a few interesting things to note here. First, notice that the intercept term is 43.5 which is close to the ``group'' mean of 42.5 observed for those two students who didn't read the text or attend class. Second, notice that we have the regression coefficient of $b_1 = 18.0$ for the attendance variable, suggesting that those students that attended class scored 18 points higher than those who didn't. So our expectation would be that those students who turned up to class but didn't read the textbook would obtain a grade of $b_0 + b_1$, which is equal to $43.5 + 18.0 = 61.5$. You can verify for yourself that the same thing happens when we look at the students that read the textbook.
 
 Actually, we can push a little further in establishing the equivalence of our ANOVA and our regression. Look at the $p$-values associated with the \rtext{attend} variable and the \rtext{reading} variable in the regression output. They're identical to the ones we encountered earlier when running the ANOVA. This might seem a little surprising, since the test used when running our regression model calculates a $t$-statistic and the ANOVA calculates an $F$-statistic. However, if you can remember all the way back to Chapter~\ref{ch:probability}, I mentioned that there's a relationship between the $t$-distribution and the $F$-distribution. If you have some quantity that is distributed according to a $t$-distribution with $k$ degrees of freedom and you square it, then this new squared quantity follows an $F$-distribution whose degrees of freedom are 1 and $k$. We can check this with respect to the $t$ statistics in our regression model. For the \rtext{attend} variable we get a $t$ value of 4.65. If we square this number we end up with 21.6, which matches the corresponding $F$ statistic in our ANOVA. 
 
-Finally, one last thing you should know. Because jamovi understands the fact that ANOVA and regression are both examples of linear models, it lets you extract the classic ANOVA table from your regression model using the `Linear Regression' - `Model Coefficients' - `Omnibus Test' - `ANOVA Test', and this will give you the table shown in Figure~\ref{fig:factorialanova8}.
+\begin{comment} %JASP Doesn't do this
+Finally, one last thing you should know. Because JASP understands the fact that ANOVA and regression are both examples of linear models, it lets you extract the classic ANOVA table from your regression model using the `Linear Regression' - `Model Coefficients' - `Omnibus Test' - `ANOVA Test', and this will give you the table shown in Figure~\ref{fig:factorialanova8}.
 
 \begin{figure}[!htb]
 \begin{center}
@@ -725,6 +701,8 @@ Finally, one last thing you should know. Because jamovi understands the fact tha
 \HR
 \end{center}
 \end{figure}
+
+\end{comment}
 
 \SUBSECTION{How to encode non binary factors as contrasts}
 
