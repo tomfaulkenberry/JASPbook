@@ -7,19 +7,19 @@
 
 This chapter introduces one of the most widely used tools in psychological statistics, known as ``the analysis of variance'', but usually referred to as ANOVA. The basic technique was developed by Sir Ronald Fisher in the early 20th century and it is to him that we owe the rather unfortunate terminology. The term ANOVA is a little misleading, in two respects. Firstly, although the name of the technique refers to variances, ANOVA is concerned with investigating differences in means. Secondly, there are several different things out there that are all referred to as ANOVAs, some of which have only a very tenuous connection to one another. Later on in the book we'll encounter a range of different ANOVA methods that apply in quite different situations, but for the purposes of this chapter we'll only consider the simplest form of ANOVA, in which we have several different groups of observations, and we're interested in finding out whether those groups differ in terms of some outcome variable of interest. This is the question that is addressed by a \keyterm{one-way ANOVA}. 
 
-The structure of this chapter is as follows: in Section~\ref{sec:anxifree} I'll introduce a fictitious data set that we'll use as a running example throughout the chapter. After introducing the data, I'll describe the mechanics of how a one-way ANOVA actually works (Section~\ref{sec:anovaintro}) and then focus on how you can run one in jamovi (Section~\ref{sec:introduceaov}). These two sections are the core of the chapter. The remainder of the chapter discusses a range of important topics that inevitably arise when running an ANOVA, namely how to calculate effect sizes (Section~\ref{sec:etasquared}), post hoc tests and corrections for multiple comparisons (Section~\ref{sec:posthoc}) and the assumptions that ANOVA relies upon (Section~\ref{sec:anovaassumptions}). We'll also talk about how to check those assumptions and some of the things you can do if the assumptions are violated (Sections~\ref{sec:levene} to \ref{sec:kruskalwallis}). Then we'll cover repeated measures ANOVA in Sections \ref{sec:RManova} and \ref{sec:Friedman}. At the end of the chapter we'll talk a little about the relationship between ANOVA and other statistical tools (Section~\ref{sec:anovaandt}). 
+The structure of this chapter is as follows: in Section~\ref{sec:anxifree} I'll introduce a fictitious data set that we'll use as a running example throughout the chapter. After introducing the data, I'll describe the mechanics of how a one-way ANOVA actually works (Section~\ref{sec:anovaintro}) and then focus on how you can run one in JASP (Section~\ref{sec:introduceaov}). These two sections are the core of the chapter. The remainder of the chapter discusses a range of important topics that inevitably arise when running an ANOVA, namely how to calculate effect sizes (Section~\ref{sec:etasquared}), post hoc tests and corrections for multiple comparisons (Section~\ref{sec:posthoc}) and the assumptions that ANOVA relies upon (Section~\ref{sec:anovaassumptions}). We'll also talk about how to check those assumptions and some of the things you can do if the assumptions are violated (Sections~\ref{sec:levene} to \ref{sec:kruskalwallis}). Then we'll cover repeated measures ANOVA in Sections \ref{sec:RManova} and \ref{sec:Friedman}. At the end of the chapter we'll talk a little about the relationship between ANOVA and other statistical tools (Section~\ref{sec:anovaandt}). 
 
 
 \section{An illustrative data set~\label{sec:anxifree}}
 
 Suppose you've become involved in a clinical trial in which you are testing a new antidepressant drug called {\it Joyzepam}. In order to construct a fair test of the drug's effectiveness, the study involves three separate drugs to be administered. One is a placebo, and the other is an existing antidepressant / anti-anxiety drug called {\it Anxifree}. A collection of 18 participants with moderate to severe depression are recruited for your initial testing. Because the drugs are sometimes administered in conjunction with psychological therapy, your study includes 9 people undergoing cognitive behavioural therapy (CBT) and 9 who are not. Participants are randomly assigned (doubly blinded, of course) a treatment, such that there are 3 CBT people and 3 no-therapy people assigned to each of the 3 drugs. A psychologist assesses the mood of each person after a 3 month run with each drug, and the overall {\it improvement} in each person's mood is assessed on a scale ranging from $-5$ to $+5$.  With that as the study design, let's now load up the data file in \filename{clinicaltrial.csv}. We can see that this data set contains the three variables \rtext{drug}, \rtext{therapy} and \rtext{mood.gain}. 
 
-For the purposes of this chapter, what we're really interested in is the effect of \rtext{drug} on \rtext{mood.gain}. The first thing to do is calculate some descriptive statistics and draw some graphs. In Chapter~\ref{ch:descriptives} we showed you how to do this, and some of the descriptive statistics we can calculate in jamovi are shown in Figure \ref{fig:anova1}.
+For the purposes of this chapter, what we're really interested in is the effect of \rtext{drug} on \rtext{mood.gain}. The first thing to do is calculate some descriptive statistics and draw some graphs. In Chapter~\ref{ch:descriptives} we showed you how to do this in JASP using the `Split' box in `Descriptives' -- `Descriptive Statistics'. The results are shown in Figure \ref{fig:anova1}.
 
 \begin{figure}[ht]
 \begin{center}
 \epsfig{file = ../img/anova/anova1.png, clip=true,width = 14cm}
-\caption{Descriptives for mood gain, and box plots by drug administered}
+\caption{JASP screenshot showing descriptives and box plots for mood gain, split by drug administered}
 \HR
 \label{fig:anova1}
 \end{center}
@@ -287,7 +287,7 @@ $$
 \end{array}
 $$
 \noindent
-Of course, if we actually wanted to get the {\it right} answer we'd need to do this for all 18 observations in the data set, not just the first five. We could continue with the pencil and paper calculations if we wanted to, but it's pretty tedious. Alternatively, it's not too hard to do this in a dedicated spreadsheet programme such as OpenOffice or Excel. Try and do it yourself. The one that I did, in Excel, is in the file \filename{clinicaltrial\_anova.xls}. When you do it you should end up with a within-group sum of squares value of 1.39. 
+Of course, if we actually wanted to get the {\it right} answer we'd need to do this for all 18 observations in the data set, not just the first five. We could continue with the pencil and paper calculations if we wanted to, but it's pretty tedious. Alternatively, it's not too hard to do this in a dedicated spreadsheet programme such as OpenOffice or Excel. Try and do it yourself. When you do it you should end up with a within-group sum of squares value of 1.39. 
 
 Okay. Now that we've calculated the within groups variation, $\mbox{SS}_w$, it's time to turn our attention to the between-group sum of squares, $\mbox{SS}_b$. The calculations for this case are very similar. The main difference is that instead of calculating the differences between an observation $Y_{ik}$ and a group mean $\bar{Y}_k$ for all of the observations, we calculate the differences between the group means $\bar{Y}_k$ and the grand mean $\bar{Y}$ (in this case 0.88) for all of the groups. 
 
@@ -330,7 +330,7 @@ $$
 &=& 3.48
 \end{array}
 $$
-As you can see, the between group calculations are a lot shorter\FOOTNOTE{In the Excel \filename{clinicaltrial\_anova.xls} the value for $SS_b$ worked out to be very slightly different, 3.45, than that shown in the text above (rounding errors!)}. Now that we've calculated our sums of squares values, $\mbox{SS}_b$ and $\mbox{SS}_w$, the rest of the ANOVA is pretty painless. The next step is to calculate the degrees of freedom. Since we have $G = 3$ groups and $N = 18$ observations in total our degrees of freedom can be calculated by simple subtraction:
+As you can see, the between group calculations are a lot shorter. Now that we've calculated our sums of squares values, $\mbox{SS}_b$ and $\mbox{SS}_w$, the rest of the ANOVA is pretty painless. The next step is to calculate the degrees of freedom. Since we have $G = 3$ groups and $N = 18$ observations in total our degrees of freedom can be calculated by simple subtraction:
 $$
 \begin{array}{lclcl}
 \mbox{df}_b &=& G - 1 &=& 2 \\
@@ -359,31 +359,31 @@ within groups   & 15 & 1.39 & 0.09 & - & - \\
 \end{tabular}
 \end{center}
 \noindent
-These days, you'll probably never have much reason to want to construct one of these tables yourself, but you \underline{will} find that almost all statistical software (jamovi included) tends to organise the output of an ANOVA into a table like this, so it's a good idea to get used to reading them. However, although the software will output a full ANOVA table, there's almost never a good reason to include the whole table in your write up. A pretty standard way of reporting this result would be to write something like this:
+These days, you'll probably never have much reason to want to construct one of these tables yourself, but you \underline{will} find that almost all statistical software (JASP included) tends to organise the output of an ANOVA into a table like this, so it's a good idea to get used to reading them. However, although the software will output a full ANOVA table, there's almost never a good reason to include the whole table in your write up. A pretty standard way of reporting this result would be to write something like this:
 \begin{quote}
 One-way ANOVA showed a significant effect of drug on mood gain ($F(2,15) = 19.3, p<.001$).
 \end{quote}
 Sigh. So much work for one short sentence.
 
 
-\section{Running an ANOVA in jamovi\label{sec:introduceaov}}
+\section{Running an ANOVA in JASP \label{sec:introduceaov}}
 
 I'm pretty sure I know what you're thinking after reading the last section, {\it especially} if you followed my advice and did all of that by pencil and paper (i.e., in a spreadsheet) yourself. Doing the ANOVA calculations yourself {\it sucks}. There's quite a lot of calculations that we needed to do along the way, and it would be tedious to have to do this over and over again every time you wanted to do an ANOVA. 
 
-\SUBSECTION{Using jamovi to specify your ANOVA}
+\SUBSECTION{Using JASP to specify your ANOVA}
 
-To make life easier for you, jamovi can do ANOVA..hurrah! Go to the `ANOVA' - `ANOVA' analysis, and move the \rtext{mood.gain} variable across so it is in the `Dependent Variable' box, and then move the \rtext{drug} variable across so it is in the `Fixed Factors' box. This should give the results as shown in Figure \ref{fig:anova2}. \FOOTNOTE{The jamovi results are more accurate than the ones in the text above, due to rounding errors.} Note I have also checked the $\eta^2$ checkbox, pronounced ``eta'' squared, under the `Effect Size' option and this is also shown on the results table. We will come back to effect sizes a bit later.
+To make life easier for you, JASP can do ANOVA..hurrah! Go to the `ANOVA' - `ANOVA' analysis, and move the \rtext{mood.gain} variable across so it is in the `Dependent Variable' box, and then move the \rtext{drug} variable across so it is in the `Fixed Factors' box. This should give the results as shown in Figure \ref{fig:anova2}. \FOOTNOTE{The JASP results are more accurate than the ones in the text above, due to rounding errors.} Note I have also checked the $\eta^2$ checkbox, pronounced ``eta squared'', under the `Estimates of effect size' option that can be found in `Additional Options,' and this is also shown on the results table. We will come back to effect sizes a bit later.
 
 \begin{figure}[htb]
 \begin{center}
 \epsfig{file = ../img/anova/anova2.png, clip=true,width = 14cm}
-\caption{jamovi results table for ANOVA of mood gain by drug administered}
+\caption{JASP results table for ANOVA of mood gain by drug administered}
 \HR
 \label{fig:anova2}
 \end{center}
 \end{figure}
 
-The jamovi results table shows you the sums of squares values, the degrees of freedom, and a couple of other quantities that we're not really interested in right now. Notice, however, that jamovi doesn't use the names ``between-group'' and ``within-group''. Instead, it tries to assign more meaningful names. In our particular example, the {\it between groups} variance corresponds to the effect that the \rtext{drug} has on the outcome variable, and the {\it within groups} variance corresponds to the ``leftover'' variability so it calls that the {\it residuals}. If we compare these numbers to the numbers that I calculated by hand in Section~\ref{sec:anovacalc}, you can see that they're more or less the same, apart from rounding errors. The between groups sums of squares is $\mbox{SS}_b = 3.45$, the within groups sums of squares is $\mbox{SS}_w = 1.39$, and the degrees of freedom are 2 and 15 respectively. We also get the $F$-value and the $p$-value and, again, these are more or less the same, give or take rounding errors, to the numbers that we calculated ourselves when doing it the long and tedious way. 
+The JASP results table shows you the sums of squares values, the degrees of freedom, and a couple of other quantities that we're not really interested in right now. Notice, however, that JASP doesn't use the names ``between-group'' and ``within-group''. Instead, it tries to assign more meaningful names. In our particular example, the {\it between groups} variance corresponds to the effect that the \rtext{drug} has on the outcome variable, and the {\it within groups} variance corresponds to the ``leftover'' variability so it calls that the {\it residual} error. If we compare these numbers to the numbers that I calculated by hand in Section~\ref{sec:anovacalc}, you can see that they're more or less the same, apart from rounding errors. The between groups sums of squares is $\mbox{SS}_b = 3.453$, the within groups sums of squares is $\mbox{SS}_w = 1.392$, and the degrees of freedom are 2 and 15 respectively. We also get the $F$-value and the $p$-value and, again, these are more or less the same, give or take rounding errors, to the numbers that we calculated ourselves when doing it the long and tedious way. 
 
 
 \section{Effect size\label{sec:etasquared}}
@@ -398,7 +398,7 @@ $$
 $$
 The interpretation of $\eta^2$ is equally straightforward. It refers to the proportion of the variability in the outcome variable (\rtext{mood.gain}) that can be explained in terms of the predictor (\rtext{drug}). A value of $\eta^2 = 0$ means that there is no relationship at all between the two, whereas a value of $\eta^2 = 1$ means that the relationship is perfect. Better yet, the $\eta^2$ value is very closely related to $R^2$, as discussed previously in Section \ref{sec:rsquared}), and has an equivalent interpretation.
 
-Although many statistics text books suggest $\eta^2$ as the default effect size measure in ANOVA, there's an interesting blog post by Daniel Lakens suggesting that eta-squared is perhaps not the best measure of effect size in real world data analysis, because it can be a biased estimator (\url{http://daniellakens.blogspot.com.au/2015/06/why-you-should-use-omega-squared.html}). Usefully, there is also an option in jamovi to specify omega-squared ($\omega^2$), which is less biased, alongside eta-squared.
+Although many statistics text books suggest $\eta^2$ as the default effect size measure in ANOVA, there's an interesting blog post by Daniel Lakens suggesting that eta-squared is perhaps not the best measure of effect size in real world data analysis, because it can be a biased estimator (\url{http://daniellakens.blogspot.com.au/2015/06/why-you-should-use-omega-squared.html}). Usefully, there is also an option in JASP to specify omega-squared ($\omega^2$), which is less biased, alongside eta-squared.
 
 
 \section{Multiple comparisons and post hoc tests~\label{sec:posthoc}}
@@ -450,12 +450,12 @@ By rejecting the null hypothesis, we've decided that we {\it don't} believe that
 
 \SUBSECTION{Running ``pairwise'' \texorpdfstring{$t$}{t}-tests}
 
-How might we go about solving our problem? Given that we've got three separate pairs of means (placebo versus Anxifree, placebo versus Joyzepam, and Anxifree versus Joyzepam) to compare, what we could do is run three separate $t$-tests and see what happens. This is easy to do in jamovi. Go to the ANOVA `Post Hoc Tests' options, move the `drug' variable across into the active box on the right, and then click on the `No correction' checkbox. This will produce a neat table showing all the pairwise $t$-test comparisons  amongst the three levels of the \rtext{drug} variable, as in Figure \ref{fig:anova3}.
+How might we go about solving our problem? Given that we've got three separate pairs of means (placebo versus Anxifree, placebo versus Joyzepam, and Anxifree versus Joyzepam) to compare, what we could do is run three separate $t$-tests and see what happens. This is easy to do in JASP. Go to the ANOVA `Post Hoc Tests' options, move the `drug' variable across into the active box on the right. This will immediately produce a neat table showing all the pairwise $t$-test comparisons amongst the three levels of the \rtext{drug} variable, as in Figure \ref{fig:anova3}.
 
 \begin{figure}[htb]
 \begin{center}
 \epsfig{file = ../img/anova/anova3.png, clip=true,width = 14cm}
-\caption{Uncorrected pairwise $t$-tests as post hoc comparisons in jamovi}
+\caption{Pairwise $t$-tests as post hoc comparisons in JASP}
 \HR
 \label{fig:anova3}
 \end{center}
@@ -479,7 +479,7 @@ And therefore, if you're using the Bonferroni correction, you would reject the n
 \begin{quote}
 The method given here is so simple and so general that I am sure it must have been used before this. I do not find it, however, so can only conclude that perhaps its very simplicity has kept statisticians from realizing that it is a very good method in some situations \parencite[pp 52-53]{Dunn1961}
 \end{quote}
-To use the Bonferroni correction in jamovi, just click on the `Bonferroni' checkbox in the `Correction' options, and you will see another column added to the ANOVA results table showing the adjusted $p$-values for the Bonferroni correction (\ref{fig:anova3}). If we compare these three $p$-values to those for the uncorrected, pairwise $t$-tests, it is clear that the only thing that jamovi has done is multiply them by 3. 
+To use the Bonferroni correction in JASP, just click on the `Bonferroni' checkbox in the `Correction' options, and you will see another column added to the ANOVA results table showing the adjusted $p$-values for the Bonferroni correction (\ref{fig:anova3}).
 
 \SUBSECTION{Holm corrections}
 
@@ -504,15 +504,15 @@ whichever one is \underline{larger}. This might sound a little confusing, so let
 \end{center}
 Hopefully that makes things clear. 
 
-Although it's a little harder to calculate, the Holm correction has some very nice properties. It's more powerful than Bonferroni (i.e., it has a lower Type II error rate) but, counter-intuitive as it might seem, it has the {\it same} Type I error rate. As a consequence, in practice there's never any reason to use the simpler Bonferroni correction since it is always outperformed by the slightly more elaborate Holm correction. Because of this, the Holm correction should be your {\it go to} multiple comparison correction. Figure \ref{fig:anova3} also shows the Holm corrected $p$-values and, as you can see, the biggest $p$-value (corresponding to the comparison between Anxifree and the placebo) is unaltered. At a value of $.15$, it is exactly the same as the value we got originally when we applied no correction at all. In contrast, the smallest $p$-value (Joyzepam versus placebo) has been multiplied by three. 
+Although it's a little harder to calculate, the Holm correction has some very nice properties. It's more powerful than Bonferroni (i.e., it has a lower Type II error rate) but, counter-intuitive as it might seem, it has the {\it same} Type I error rate. As a consequence, in practice there's never any reason to use the simpler Bonferroni correction since it is always outperformed by the slightly more elaborate Holm correction. Because of this, the Holm correction should be your {\it go to} multiple comparison correction. Figure \ref{fig:anova3} shows both the Bonferroni and the Holm corrected $p$-values.
 
 \SUBSECTION{Writing up the post hoc test}
 
 Finally, having run the post hoc analysis to determine which groups are significantly different to one another, you might write up the result like this:
 \begin{quote}
-Post hoc tests (using the Holm correction to adjust $p$) indicated that Joyzepam produced a significantly larger mood change than both Anxifree ($p = .001$) and the placebo ($p = 9.0 \times 10^{-5}$). We found no evidence that Anxifree performed better than the placebo ($p = .15$).
+Post hoc tests (using the Holm correction to adjust $p$) indicated that Joyzepam produced a significantly larger mood change than both Anxifree ($p = .001$) and the placebo ($p < 0.001$). We found no evidence that Anxifree performed better than the placebo ($p = .15$).
 \end{quote}
-Or, if you don't like the idea of reporting exact $p$-values, then you'd change those numbers to $p<.01$, $p<.001$ and $p > .05$ respectively. Either way, the key thing is that you indicate that you used Holm's correction to adjust the $p$-values. And of course, I'm assuming that elsewhere in the write up you've included the relevant descriptive statistics (i.e., the group means and standard deviations), since these $p$-values on their own aren't terribly informative. 
+Or, if you don't like the idea of just reporting $p<0.001$, you can compute exact $p$-values by going to `Preferences' - `Results', and then selecting `Display exact p-values'. Either way, the key thing is that you indicate that you used Holm's correction to adjust the $p$-values. And of course, I'm assuming that elsewhere in the write up you've included the relevant descriptive statistics (i.e., the group means and standard deviations), since these $p$-values on their own aren't terribly informative. 
 
 
 \section{Assumptions of one-way ANOVA \label{sec:anovaassumptions}}
@@ -553,7 +553,7 @@ So, how do we check whether the assumption about the residuals is accurate? Well
 
 There's more than one way to skin a cat, as the saying goes, and more than one way to test the homogeneity of variance assumption, too (though for some reason no-one made a saying out of that). The most commonly used test for this that I've seen in the literature is the \keyterm{Levene test} \parencite{Levene1960}, and the closely related \keyterm{Brown-Forsythe test} \parencite{BrownForsythe1974}. 
 
-Regardless of whether you're doing the standard Levene test or the Brown-Forsythe test, the test statistic, which is sometimes denoted $F$ but also sometimes written as $W$, is  calculated in exactly the same way that the $F$-statistic for the regular ANOVA is calculated, just using a $Z_{ik}$ rather than $Y_{ik}$. With that in mind, we can go on to look at how to run the test in jamovi.
+Regardless of whether you're doing the standard Levene test or the Brown-Forsythe test, the test statistic, which is sometimes denoted $F$ but also sometimes written as $W$, is  calculated in exactly the same way that the $F$-statistic for the regular ANOVA is calculated, just using a $Z_{ik}$ rather than $Y_{ik}$. With that in mind, we can go on to look at how to run the test in JASP.
 
 \vspace{0.5cm}
 \begin{mdframed}[style=MyFrame,nobreak=false]
@@ -570,14 +570,14 @@ $$
 where $\mbox{median}_k(Y)$ is the median for group $k$. 
 \end{mdframed}
 
-\SUBSECTION{Running the Levene test in jamovi}
+\SUBSECTION{Running the Levene test in JASP}
 
 Okay, so how do we run the Levene test? Simple really - under the ANOVA `Assumption Checks' option, just click on the `Homogeneity tests' checkbox. If we look at the output, shown in Figure \ref{fig:anova4}, we see that the test is non-significant $(F_{2,15} = 1.45, p = .266)$, so it looks like the homogeneity of variance assumption is fine. However, looks can be deceptive! If your sample size is pretty big, then the Levene test could show up a significant effect (i.e. $p<.05$) even when the homogeneity of variance assumption is not violated to an extent which troubles the robustness of ANOVA. This was the point George Box was making in the quote above. Similarly, if your sample size is quite small, then the homogeneity of variance assumption might not be satisfied and yet a Levene test could be non-significant (i.e. $p>.05$). What this means is that, alongside any statistical test of the assumption being met, you should always plot the standard deviation around the means for each group / category in the analysis...just to see if they look fairly similar (i.e. homogeneity of variance) or not.
 
 \begin{figure}[htb]
 \begin{center}
 \epsfig{file = ../img/anova/anova4.png, clip=true,width = 10cm}
-\caption{Levene test output for one-way ANOVA in jamovi}
+\caption{Levene test output for one-way ANOVA in JASP}
 \HR
 \label{fig:anova4}
 \end{center}
@@ -585,21 +585,21 @@ Okay, so how do we run the Levene test? Simple really - under the ANOVA `Assumpt
 
 \SUBSECTION{Removing the homogeneity of variance assumption~\label{sec:welchoneway}}
 
-In our example, the homogeneity of variance assumption turned out to be a pretty safe one: the Levene test came back non-significant (notwithstanding that we should also look at the plot of standard deviations), so we probably don't need to worry. However, in real life we aren't always that lucky. How do we save our ANOVA when the homogeneity of variance assumption is violated? If you recall from our discussion of $t$-tests, we've seen this problem before. The Student $t$-test assumes equal variances, so the solution was to use the Welch $t$-test, which does not. In fact, \textcite{Welch1951} also showed how we can solve this problem for ANOVA too (the \keyterm{Welch one-way test}). It's implemented in jamovi using the \rtext{One-Way ANOVA} analysis. This is a specific analysis approach just for one-way ANOVA, and to run the Welch one-way ANOVA for our example, we would re-run the analysis as previously, but this time use the jamovi \rtext{ANOVA - One Way ANOVA} analysis command, and check the option for Welch's test (see Figure \ref{fig:anova4a}.
+In our example, the homogeneity of variance assumption turned out to be a pretty safe one: the Levene test came back non-significant (notwithstanding that we should also look at the plot of standard deviations), so we probably don't need to worry. However, in real life we aren't always that lucky. How do we save our ANOVA when the homogeneity of variance assumption is violated? If you recall from our discussion of $t$-tests, we've seen this problem before. The Student $t$-test assumes equal variances, so the solution was to use the Welch $t$-test, which does not. In fact, \textcite{Welch1951} also showed how we can solve this problem for ANOVA too (the \keyterm{Welch one-way test}). It's implemented in JASP using the \rtext{One-Way ANOVA} analysis. To implement the Welch correction, you simply need to choose the option `Welch' under `Assumption Checks' -- `Homogeneity corrections'.  The result is displayed in Figure \ref{fig:anova4a}.
 
 \begin{figure}[htb]
 \begin{center}
 \epsfig{file = ../img/anova/anova4a.png, clip=true,width = 14cm}
-\caption{Welch's test as part of the One Way ANOVA analysis in jamovi}
+\caption{Welch's homogeneity correction as part of the One Way ANOVA analysis in JASP }
 \HR
 \label{fig:anova4a}
 \end{center}
 \end{figure}
 
 \noindent
-To understand what's happening here, let's compare these numbers to what we got earlier in Section~\ref{sec:introduceaov} when we ran our original ANOVA. To save you the trouble of flicking back, this is what we got last time: $F(2,15) = 18.611, p=.00009$, also shown as the Fisher's test in the \rtext{One-Way ANOVA} shown in Figure \ref{fig:anova4a}. 
+To understand what's happening here, let's compare these numbers to what we got earlier in Section~\ref{sec:introduceaov} when we ran our original ANOVA. To save you the trouble of flicking back, this is what we got last time: $F(2,15) = 18.611$, $p<0.001$, also shown as \rtext{None} under \rtext{Homogeneity Correction} in the \rtext{One-Way ANOVA} shown in Figure \ref{fig:anova4a}. 
 
-Okay, so originally our ANOVA gave us the result $F(2,15) = 18.6$, whereas the Welch one-way test gave us $F(2,9.49) = 26.32$. In other words, the Welch test has reduced the within-groups degrees of freedom from 15 to 9.49, and the $F$-value has increased from 18.6 to 26.32. 
+Okay, so originally our ANOVA gave us the result $F(2,15) = 18.6$, whereas the Welch correction gave us $F(2,9.49) = 26.32$. In other words, the Welch correction has reduced the within-groups degrees of freedom from 15 to 9.49, and as a result the $F$-value has increased from 18.6 to 26.32. 
 
 \SUBSECTION{Checking the normality assumption~\label{sec:anovanormality}}
 

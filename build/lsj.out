@@ -239,4 +239,35 @@
 \BOOKMARK [2][-]{subsection.11.10.3}{11.10.3 Checking the normality of the residuals }{section.11.10}% 239
 \BOOKMARK [1][]{section.11.11}{11.11 Model selection}{chapter.11}% 240
 \BOOKMARK [1][]{section.11.12}{11.12 Summary}{chapter.11}% 241
-\BOOKMARK [0][]{chapter.12}{12 References}{part.4}% 242
+\BOOKMARK [0][]{chapter.12}{12 Comparing several means \(one-way ANOVA\)}{part.4}% 242
+\BOOKMARK [1][]{section.12.1}{12.1 An illustrative data set }{chapter.12}% 243
+\BOOKMARK [1][]{section.12.2}{12.2 How ANOVA works }{chapter.12}% 244
+\BOOKMARK [2][-]{subsection.12.2.1}{12.2.1 Two formulas for the variance of Y}{section.12.2}% 245
+\BOOKMARK [2][-]{subsection.12.2.2}{12.2.2 From variances to sums of squares}{section.12.2}% 246
+\BOOKMARK [2][-]{subsection.12.2.3}{12.2.3 From sums of squares to the F-test}{section.12.2}% 247
+\BOOKMARK [2][-]{subsection.12.2.4}{12.2.4 The model for the data and the meaning of F }{section.12.2}% 248
+\BOOKMARK [2][-]{subsection.12.2.5}{12.2.5 A worked example }{section.12.2}% 249
+\BOOKMARK [1][]{section.12.3}{12.3 Running an ANOVA in JASP }{chapter.12}% 250
+\BOOKMARK [2][-]{subsection.12.3.1}{12.3.1 Using JASP to specify your ANOVA}{section.12.3}% 251
+\BOOKMARK [1][]{section.12.4}{12.4 Effect size}{chapter.12}% 252
+\BOOKMARK [1][]{section.12.5}{12.5 Multiple comparisons and post hoc tests }{chapter.12}% 253
+\BOOKMARK [2][-]{subsection.12.5.1}{12.5.1 Running ``pairwise'' t-tests}{section.12.5}% 254
+\BOOKMARK [2][-]{subsection.12.5.2}{12.5.2 Corrections for multiple testing}{section.12.5}% 255
+\BOOKMARK [2][-]{subsection.12.5.3}{12.5.3 Bonferroni corrections}{section.12.5}% 256
+\BOOKMARK [2][-]{subsection.12.5.4}{12.5.4 Holm corrections}{section.12.5}% 257
+\BOOKMARK [2][-]{subsection.12.5.5}{12.5.5 Writing up the post hoc test}{section.12.5}% 258
+\BOOKMARK [1][]{section.12.6}{12.6 Assumptions of one-way ANOVA }{chapter.12}% 259
+\BOOKMARK [2][-]{subsection.12.6.1}{12.6.1 Checking the homogeneity of variance assumption }{section.12.6}% 260
+\BOOKMARK [2][-]{subsection.12.6.2}{12.6.2 Running the Levene test in JASP}{section.12.6}% 261
+\BOOKMARK [2][-]{subsection.12.6.3}{12.6.3 Removing the homogeneity of variance assumption }{section.12.6}% 262
+\BOOKMARK [2][-]{subsection.12.6.4}{12.6.4 Checking the normality assumption }{section.12.6}% 263
+\BOOKMARK [1][]{section.12.7}{12.7 Removing the normality assumption }{chapter.12}% 264
+\BOOKMARK [2][-]{subsection.12.7.1}{12.7.1 The logic behind the Kruskal-Wallis test}{section.12.7}% 265
+\BOOKMARK [2][-]{subsection.12.7.2}{12.7.2 Additional details}{section.12.7}% 266
+\BOOKMARK [2][-]{subsection.12.7.3}{12.7.3 How to run the Kruskal-Wallis test in jamovi}{section.12.7}% 267
+\BOOKMARK [1][]{section.12.8}{12.8 Repeated measures one-way ANOVA }{chapter.12}% 268
+\BOOKMARK [2][-]{subsection.12.8.1}{12.8.1 Repeated measures ANOVA in jamovi}{section.12.8}% 269
+\BOOKMARK [1][]{section.12.9}{12.9 The Friedman non-parametric repeated measures ANOVA test }{chapter.12}% 270
+\BOOKMARK [1][]{section.12.10}{12.10 On the relationship between ANOVA and the Student -test }{chapter.12}% 271
+\BOOKMARK [1][]{section.12.11}{12.11 Summary}{chapter.12}% 272
+\BOOKMARK [0][]{chapter.13}{13 References}{part.4}% 273

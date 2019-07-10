@@ -1,15 +1,15 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
 [1] Config.pm:357> INFO - Logfile is 'lsj.blg'
-[68] biber-darwin:303> INFO - === Tue Jul  9, 2019, 17:29:12
+[65] biber-darwin:303> INFO - === Wed Jul 10, 2019, 06:37:13
 [112] Biber.pm:359> INFO - Reading 'lsj.bcf'
-[241] Biber.pm:835> INFO - Found 45 citekeys in bib section 0
-[259] Biber.pm:3670> INFO - Processing section 0
-[283] Biber.pm:3840> INFO - Looking for bibtex format file '../tex/refs.bib' for section 0
-[289] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[302] bibtex.pm:1292> INFO - Found BibTeX data source '../tex/refs.bib'
-[470] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[470] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[470] Biber.pm:3499> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
-[470] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
-[523] bbl.pm:608> INFO - Writing 'lsj.bbl' with encoding 'UTF-8'
-[532] bbl.pm:712> INFO - Output to lsj.bbl
+[230] Biber.pm:835> INFO - Found 57 citekeys in bib section 0
+[247] Biber.pm:3670> INFO - Processing section 0
+[276] Biber.pm:3840> INFO - Looking for bibtex format file '../tex/refs.bib' for section 0
+[283] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[299] bibtex.pm:1292> INFO - Found BibTeX data source '../tex/refs.bib'
+[496] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[496] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[496] Biber.pm:3499> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
+[496] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
+[569] bbl.pm:608> INFO - Writing 'lsj.bbl' with encoding 'UTF-8'
+[579] bbl.pm:712> INFO - Output to lsj.bbl

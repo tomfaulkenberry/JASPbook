@@ -484,4 +484,66 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {11.12}Summary}{290}{section.11.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {12}References}{293}{chapter.12}
+\contentsline {chapter}{\numberline {12}Comparing several means (one-way ANOVA)}{293}{chapter.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.1}An illustrative data set~}{293}{section.12.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.2}How ANOVA works }{295}{section.12.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.2.1}Two formulas for the variance of $Y$}{296}{subsection.12.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.2.2}From variances to sums of squares}{297}{subsection.12.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.2.3}From sums of squares to the $F$-test}{299}{subsection.12.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.2.4}The model for the data and the meaning of $F$ }{300}{subsection.12.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.2.5}A worked example }{302}{subsection.12.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.3}Running an ANOVA in JASP }{305}{section.12.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.3.1}Using JASP to specify your ANOVA}{305}{subsection.12.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.4}Effect size}{306}{section.12.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.5}Multiple comparisons and post hoc tests~}{307}{section.12.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.5.1}Running ``pairwise'' $t$-tests}{308}{subsection.12.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.5.2}Corrections for multiple testing}{309}{subsection.12.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.5.3}Bonferroni corrections}{309}{subsection.12.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.5.4}Holm corrections}{310}{subsection.12.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.5.5}Writing up the post hoc test}{311}{subsection.12.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.6}Assumptions of one-way ANOVA }{311}{section.12.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.6.1}Checking the homogeneity of variance assumption~}{312}{subsection.12.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.6.2}Running the Levene test in JASP}{313}{subsection.12.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.6.3}Removing the homogeneity of variance assumption~}{314}{subsection.12.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.6.4}Checking the normality assumption~}{315}{subsection.12.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.7}Removing the normality assumption~}{315}{section.12.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.7.1}The logic behind the Kruskal-Wallis test}{315}{subsection.12.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.7.2}Additional details}{318}{subsection.12.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.7.3}How to run the Kruskal-Wallis test in jamovi}{319}{subsection.12.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.8}Repeated measures one-way ANOVA~}{320}{section.12.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.8.1}Repeated measures ANOVA in jamovi}{320}{subsection.12.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.9}The Friedman non-parametric repeated measures ANOVA test~}{324}{section.12.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.10}On the relationship between ANOVA and the Student \mathversion {bold}$t$\mathversion {normal}-test~}{326}{section.12.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.11}Summary}{326}{section.12.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {13}References}{329}{chapter.13}

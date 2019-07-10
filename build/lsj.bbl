@@ -178,6 +178,30 @@
       \field{pages}{398\bibrangedash 404}
       \range{pages}{7}
     \endentry
+    \entry{Box1953}{article}{}
+      \name{author}{1}{}{%
+        {{hash=067f658bfe8ce1763fbbad3ab585281d}{%
+           family={Box},
+           familyi={B\bibinitperiod},
+           given={G.\bibnamedelimi E.\bibnamedelimi P.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{067f658bfe8ce1763fbbad3ab585281d}
+      \strng{fullhash}{067f658bfe8ce1763fbbad3ab585281d}
+      \strng{authornamehash}{067f658bfe8ce1763fbbad3ab585281d}
+      \strng{authorfullhash}{067f658bfe8ce1763fbbad3ab585281d}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biometrika}
+      \field{title}{Non-normality and tests on variances}
+      \field{volume}{40}
+      \field{year}{1953}
+      \field{pages}{318\bibrangedash 335}
+      \range{pages}{18}
+    \endentry
     \entry{Box1976}{article}{}
       \name{author}{1}{}{%
         {{hash=55911e7dd73a9ab7592c871dd1115249}{%
@@ -225,6 +249,35 @@
       \field{year}{1987}
       \field{pages}{45\bibrangedash 52}
       \range{pages}{8}
+    \endentry
+    \entry{BrownForsythe1974}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ced0f2dcca33b6d6a632bb54a1ccf6c1}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=ad48f25055090f9e5898e9490ed60d97}{%
+           family={Forsythe},
+           familyi={F\bibinitperiod},
+           given={A.\bibnamedelimi B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{5069682636a737f92a8a1bf4b315d726}
+      \strng{fullhash}{10a1a2932f17fc1ec15011992136a215}
+      \strng{authornamehash}{5069682636a737f92a8a1bf4b315d726}
+      \strng{authorfullhash}{10a1a2932f17fc1ec15011992136a215}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{title}{Robust tests for equality of variances}
+      \field{volume}{69}
+      \field{year}{1974}
+      \field{pages}{364\bibrangedash 367}
+      \range{pages}{4}
     \endentry
     \entry{Campbell1963}{book}{}
       \name{author}{2}{}{%
@@ -330,6 +383,30 @@
       \field{labeltitlesource}{title}
       \field{title}{Mathematical Methods of Statistics}
       \field{year}{1946}
+    \endentry
+    \entry{Dunn1961}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e9e3757a1f3f3917ae6b290ac17de7a5}{%
+           family={Dunn},
+           familyi={D\bibinitperiod},
+           given={O.J.},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{e9e3757a1f3f3917ae6b290ac17de7a5}
+      \strng{fullhash}{e9e3757a1f3f3917ae6b290ac17de7a5}
+      \strng{authornamehash}{e9e3757a1f3f3917ae6b290ac17de7a5}
+      \strng{authorfullhash}{e9e3757a1f3f3917ae6b290ac17de7a5}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{title}{Multiple comparisons among means}
+      \field{volume}{56}
+      \field{year}{1961}
+      \field{pages}{52\bibrangedash 64}
+      \range{pages}{13}
     \endentry
     \entry{Ellis2010}{book}{}
       \name{author}{1}{}{%
@@ -603,6 +680,57 @@
       \verb http://mfkp.org/INRMM/article/13469628
       \endverb
     \endentry
+    \entry{Geschwind1972}{article}{}
+      \name{author}{1}{}{%
+        {{hash=dbdf75288d6bb0f018a451fe89cc2f38}{%
+           family={Geschwind},
+           familyi={G\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{dbdf75288d6bb0f018a451fe89cc2f38}
+      \strng{fullhash}{dbdf75288d6bb0f018a451fe89cc2f38}
+      \strng{authornamehash}{dbdf75288d6bb0f018a451fe89cc2f38}
+      \strng{authorfullhash}{dbdf75288d6bb0f018a451fe89cc2f38}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scientific American}
+      \field{title}{Language and the brain}
+      \field{volume}{226(4)}
+      \field{year}{1972}
+      \field{pages}{76\bibrangedash 83}
+      \range{pages}{8}
+    \endentry
+    \entry{Hays1994}{book}{}
+      \name{author}{1}{}{%
+        {{hash=53aeb3b79984a1c8a845ee5a2786bda6}{%
+           family={Hays},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi L.},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Fort Worth, TX}%
+      }
+      \list{publisher}{1}{%
+        {Harcourt Brace}%
+      }
+      \strng{namehash}{53aeb3b79984a1c8a845ee5a2786bda6}
+      \strng{fullhash}{53aeb3b79984a1c8a845ee5a2786bda6}
+      \strng{authornamehash}{53aeb3b79984a1c8a845ee5a2786bda6}
+      \strng{authorfullhash}{53aeb3b79984a1c8a845ee5a2786bda6}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{5th}
+      \field{title}{Statistics}
+      \field{year}{1994}
+    \endentry
     \entry{Hedges1981}{article}{}
       \name{author}{1}{}{%
         {{hash=a13a6e6d97b99fc1fdf002815f53923b}{%
@@ -695,6 +823,30 @@
       \field{title}{Introduction to Mathematical Statistics}
       \field{year}{2005}
     \endentry
+    \entry{Holm1979}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a7a3f5b9c49d7e338885fb4422e53abb}{%
+           family={Holm},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7a3f5b9c49d7e338885fb4422e53abb}
+      \strng{fullhash}{a7a3f5b9c49d7e338885fb4422e53abb}
+      \strng{authornamehash}{a7a3f5b9c49d7e338885fb4422e53abb}
+      \strng{authorfullhash}{a7a3f5b9c49d7e338885fb4422e53abb}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scandinavian Journal of Statistics}
+      \field{title}{A simple sequentially rejective multiple test procedure}
+      \field{volume}{6}
+      \field{year}{1979}
+      \field{pages}{65\bibrangedash 70}
+      \range{pages}{6}
+    \endentry
     \entry{Hothersall2004}{book}{}
       \name{author}{1}{}{%
         {{hash=bc3a00602381b6b903efafb81536f695}{%
@@ -747,6 +899,33 @@
       \verb{url}
       \verb https://doi.org//10.1002/14651858.CD003974.pub3
       \endverb
+    \endentry
+    \entry{Hsu1996}{book}{}
+      \name{author}{1}{}{%
+        {{hash=4612cf5aa6ce5c9dec2bc779b393d7e2}{%
+           family={Hsu},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London, UK}%
+      }
+      \list{publisher}{2}{%
+        {Chapman}%
+        {Hall}%
+      }
+      \strng{namehash}{4612cf5aa6ce5c9dec2bc779b393d7e2}
+      \strng{fullhash}{4612cf5aa6ce5c9dec2bc779b393d7e2}
+      \strng{authornamehash}{4612cf5aa6ce5c9dec2bc779b393d7e2}
+      \strng{authorfullhash}{4612cf5aa6ce5c9dec2bc779b393d7e2}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Multiple Comparisons: Theory and Methods}
+      \field{year}{1996}
     \endentry
     \entry{Ioannidis2005}{article}{}
       \name{author}{1}{}{%
@@ -832,6 +1011,35 @@
       \field{title}{A Tract on Monetary Reform}
       \field{year}{1923}
     \endentry
+    \entry{KruskalWallis1952}{article}{}
+      \name{author}{2}{}{%
+        {{hash=77135eb8d33ac51b7935cc37082b5bea}{%
+           family={Kruskal},
+           familyi={K\bibinitperiod},
+           given={W.\bibnamedelimi H.},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=6d7b5bcae24c08165566bbd6e3be4332}{%
+           family={Wallis},
+           familyi={W\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c4c6542dec99c8b000b95e0bf00b2b7}
+      \strng{fullhash}{8457e6298bed2fa17be5208d6e8a4363}
+      \strng{authornamehash}{2c4c6542dec99c8b000b95e0bf00b2b7}
+      \strng{authorfullhash}{8457e6298bed2fa17be5208d6e8a4363}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{title}{Use of ranks in one-criterion variance analysis}
+      \field{volume}{47}
+      \field{year}{1952}
+      \field{pages}{583\bibrangedash 621}
+      \range{pages}{39}
+    \endentry
     \entry{Kuhberger2014}{article}{}
       \name{author}{3}{}{%
         {{hash=348651e71097fd2dcb63a344a2591ec3}{%
@@ -912,6 +1120,46 @@
       \field{labeltitlesource}{title}
       \field{title}{Fisher, {N}eyman, and the Creation of Classical Statistics}
       \field{year}{2011}
+    \endentry
+    \entry{Levene1960}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=b6b33cbf024d6772085c6ad9283377ff}{%
+           family={Levene},
+           familyi={L\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=c624a08fd89d242499b16c0f792ee4d0}{%
+           family={al},
+           familyi={a\bibinitperiod},
+           given={I.\bibnamedelimi Olkin},
+           giveni={I\bibinitperiod\bibinitdelim O\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Palo Alto, CA}%
+      }
+      \list{publisher}{1}{%
+        {Stanford University Press}%
+      }
+      \strng{namehash}{b6b33cbf024d6772085c6ad9283377ff}
+      \strng{fullhash}{b6b33cbf024d6772085c6ad9283377ff}
+      \strng{authornamehash}{b6b33cbf024d6772085c6ad9283377ff}
+      \strng{authorfullhash}{b6b33cbf024d6772085c6ad9283377ff}
+      \strng{editornamehash}{c624a08fd89d242499b16c0f792ee4d0}
+      \strng{editorfullhash}{c624a08fd89d242499b16c0f792ee4d0}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Contributions to Probability and Statistics: Essays in Honor of Harold Hotelling}
+      \field{title}{Robust tests for equality of variances}
+      \field{year}{1960}
+      \field{pages}{278\bibrangedash 292}
+      \range{pages}{15}
     \endentry
     \entry{McGrath2006}{article}{}
       \name{author}{2}{}{%
@@ -1050,6 +1298,61 @@
       \field{labeltitlesource}{title}
       \field{title}{Experimenter effects in behavioral research}
       \field{year}{1966}
+    \endentry
+    \entry{Sahai2000}{book}{}
+      \name{author}{2}{}{%
+        {{hash=7cfde96261bbac264512c3504fc78118}{%
+           family={Sahai},
+           familyi={S\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=fe27a97c34e324290dc69107bb98f3f1}{%
+           family={Ageel},
+           familyi={A\bibinitperiod},
+           given={M.\bibnamedelimi I.},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston}%
+      }
+      \list{publisher}{1}{%
+        {Birkhauser}%
+      }
+      \strng{namehash}{073f76a9a49a54feaed4883180216e78}
+      \strng{fullhash}{c2f7882a0bd22a55638be997c4be621c}
+      \strng{authornamehash}{073f76a9a49a54feaed4883180216e78}
+      \strng{authorfullhash}{c2f7882a0bd22a55638be997c4be621c}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Analysis of Variance: Fixed, Random and Mixed Models}
+      \field{year}{2000}
+    \endentry
+    \entry{Shaffer1995}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6b9aae74fba92b4cc1f3ed580305939a}{%
+           family={Shaffer},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{6b9aae74fba92b4cc1f3ed580305939a}
+      \strng{fullhash}{6b9aae74fba92b4cc1f3ed580305939a}
+      \strng{authornamehash}{6b9aae74fba92b4cc1f3ed580305939a}
+      \strng{authorfullhash}{6b9aae74fba92b4cc1f3ed580305939a}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual Review of Psychology}
+      \field{title}{Multiple hypothesis testing}
+      \field{volume}{46}
+      \field{year}{1995}
+      \field{pages}{561\bibrangedash 584}
+      \range{pages}{24}
     \endentry
     \entry{Shapiro1965}{article}{}
       \name{author}{2}{}{%
@@ -1209,6 +1512,30 @@
       \field{year}{1947}
       \field{pages}{28\bibrangedash 35}
       \range{pages}{8}
+    \endentry
+    \entry{Welch1951}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ebca0ab979aaae0cd4be73ed8504e08d}{%
+           family={Welch},
+           familyi={W\bibinitperiod},
+           given={B.\bibnamedelimi L.},
+           giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{ebca0ab979aaae0cd4be73ed8504e08d}
+      \strng{fullhash}{ebca0ab979aaae0cd4be73ed8504e08d}
+      \strng{authornamehash}{ebca0ab979aaae0cd4be73ed8504e08d}
+      \strng{authorfullhash}{ebca0ab979aaae0cd4be73ed8504e08d}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biometrika}
+      \field{title}{On the comparison of several mean values: An alternative approach}
+      \field{volume}{38}
+      \field{year}{1951}
+      \field{pages}{330\bibrangedash 336}
+      \range{pages}{7}
     \endentry
     \entry{Wilkinson2006}{book}{}
       \name{author}{5}{}{%
