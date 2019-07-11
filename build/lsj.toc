@@ -594,40 +594,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {13.6.2}ANOVA with binary factors as a regression model}{355}{subsection.13.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.6.3}How to encode non binary factors as contrasts}{359}{subsection.13.6.3}
+\contentsline {subsection}{\numberline {13.6.3}Using contrasts to encode non binary factors}{358}{subsection.13.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.6.4}The equivalence between ANOVA and regression for non-binary factors}{360}{subsection.13.6.4}
+\contentsline {subsection}{\numberline {13.6.4}The equivalence between ANOVA and regression for non-binary factors}{359}{subsection.13.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.6.5}Degrees of freedom as parameter counting!}{363}{subsection.13.6.5}
+\contentsline {subsection}{\numberline {13.6.5}Degrees of freedom as parameter counting!}{361}{subsection.13.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.7}Different ways to specify contrasts}{364}{section.13.7}
+\contentsline {section}{\numberline {13.7}Different ways to specify contrasts}{363}{section.13.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.7.1}Treatment contrasts}{364}{subsection.13.7.1}
+\contentsline {subsection}{\numberline {13.7.1}Treatment contrasts}{363}{subsection.13.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.7.2}Helmert contrasts}{365}{subsection.13.7.2}
+\contentsline {subsection}{\numberline {13.7.2}Helmert contrasts}{364}{subsection.13.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.7.3}Sum to zero contrasts}{366}{subsection.13.7.3}
+\contentsline {subsection}{\numberline {13.7.3}Sum to zero contrasts}{365}{subsection.13.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.7.4}Optional contrasts in jamovi}{366}{subsection.13.7.4}
+\contentsline {subsection}{\numberline {13.7.4}Optional contrasts in jamovi}{365}{subsection.13.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.8}Post hoc tests}{367}{section.13.8}
+\contentsline {section}{\numberline {13.8}Post hoc tests}{366}{section.13.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.9}The method of planned comparisons}{370}{section.13.9}
+\contentsline {section}{\numberline {13.9}The method of planned comparisons}{369}{section.13.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.10}Factorial ANOVA 3: unbalanced designs}{370}{section.13.10}
+\contentsline {section}{\numberline {13.10}Factorial ANOVA 3: unbalanced designs}{369}{section.13.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.10.1}The coffee data}{372}{subsection.13.10.1}
+\contentsline {subsection}{\numberline {13.10.1}The coffee data}{371}{subsection.13.10.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.10.2}``Standard ANOVA'' does not exist for unbalanced designs}{373}{subsection.13.10.2}
+\contentsline {subsection}{\numberline {13.10.2}``Standard ANOVA'' does not exist for unbalanced designs}{372}{subsection.13.10.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.10.3}Type I sum of squares}{374}{subsection.13.10.3}
+\contentsline {subsection}{\numberline {13.10.3}Type I sum of squares}{373}{subsection.13.10.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.10.4}Type III sum of squares}{376}{subsection.13.10.4}
+\contentsline {subsection}{\numberline {13.10.4}Type III sum of squares}{375}{subsection.13.10.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.10.5}Type II sum of squares}{379}{subsection.13.10.5}
+\contentsline {subsection}{\numberline {13.10.5}Type II sum of squares}{378}{subsection.13.10.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.10.6}Effect sizes (and non-additive sums of squares)}{381}{subsection.13.10.6}
+\contentsline {subsection}{\numberline {13.10.6}Effect sizes (and non-additive sums of squares)}{380}{subsection.13.10.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.11}Summary}{382}{section.13.11}
+\contentsline {section}{\numberline {13.11}Summary}{381}{section.13.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {14}References}{385}{chapter.14}
+\contentsline {chapter}{\numberline {14}References}{383}{chapter.14}

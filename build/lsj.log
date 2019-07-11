@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2019.5.18)  10 JUL 2019 18:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2019.5.18)  11 JUL 2019 07:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -5334,114 +5334,94 @@ File: ../img/factorialanova/factorialanova7.png Graphic file (type png)
 Package pdftex.def Info: ../img/factorialanova/factorialanova7.png used on inpu
 t line 682.
 (pdftex.def)             Requested size: 398.33858pt x 79.91258pt.
+ [358 <../img/factorialanova/factorialanova7.png>] [359]
+File: ../img/factorialanova/factorialanova3.png Graphic file (type png)
+ <use ../img/factorialanova/factorialanova3.png>
+Package pdftex.def Info: ../img/factorialanova/factorialanova3.png used on inpu
+t line 719.
+(pdftex.def)             Requested size: 398.33858pt x 124.30809pt.
 
-<../img/factorialanova/factorialanova8.pdf, id=5460, 346.12822pt x 123.00665pt>
-File: ../img/factorialanova/factorialanova8.pdf Graphic file (type pdf)
-<use ../img/factorialanova/factorialanova8.pdf>
-Package pdftex.def Info: ../img/factorialanova/factorialanova8.pdf used on inpu
-t line 697.
-(pdftex.def)             Requested size: 398.33858pt x 141.56165pt.
- [358 <../img/factorialanova/factorialanova7.png>] [359 <../img/factorialanova/
-factorialanova8.pdf>]
-<../img/factorialanova/factorialanova9.pdf, id=5484, 449.76001pt x 142.3737pt>
-File: ../img/factorialanova/factorialanova9.pdf Graphic file (type pdf)
-
-<use ../img/factorialanova/factorialanova9.pdf>
-Package pdftex.def Info: ../img/factorialanova/factorialanova9.pdf used on inpu
-t line 729.
-(pdftex.def)             Requested size: 398.33858pt x 126.09737pt.
-
-<../img/factorialanova/factorialanova10.pdf, id=5487, 275.46106pt x 151.49156pt
+<../img/factorialanova/factorialanova10.png, id=5474, 673.51625pt x 171.64125pt
 >
-File: ../img/factorialanova/factorialanova10.pdf Graphic file (type pdf)
- <use ../img/factorialanova/factorialanova10.pdf>
-Package pdftex.def Info: ../img/factorialanova/factorialanova10.pdf used on inp
-ut line 740.
-(pdftex.def)             Requested size: 312.9803pt x 172.13814pt.
- [360 <../img/factorialanova/factorialanova9.pdf>]
-<../img/factorialanova/factorialanova11.png, id=5504, 2428.07124pt x 1397.22pt>
+File: ../img/factorialanova/factorialanova10.png Graphic file (type png)
+ <use ../img/factorialanova/factorialanova10.png>
+Package pdftex.def Info: ../img/factorialanova/factorialanova10.png used on inp
+ut line 730.
+(pdftex.def)             Requested size: 312.9803pt x 79.76257pt.
+ [360 <../img/factorialanova/factorialanova10.png>]
+<../img/factorialanova/factorialanova11.png, id=5487, 674.52pt x 646.415pt>
 File: ../img/factorialanova/factorialanova11.png Graphic file (type png)
+
 <use ../img/factorialanova/factorialanova11.png>
 Package pdftex.def Info: ../img/factorialanova/factorialanova11.png used on inp
-ut line 751.
-(pdftex.def)             Requested size: 398.33858pt x 229.20952pt.
-
-<../img/factorialanova/regfactors.png, id=5506, 1117.17375pt x 589.20125pt>
-File: ../img/factorialanova/regfactors.png Graphic file (type png)
-
-<use ../img/factorialanova/regfactors.png>
-Package pdftex.def Info: ../img/factorialanova/regfactors.png used on input lin
-e 760.
-(pdftex.def)             Requested size: 398.33858pt x 210.08043pt.
- [361 <../img/factorialanova/factorialanova10.pdf>] [362 <../img/factorialanova
-/factorialanova11.png> <../img/factorialanova/regfactors.png>] [363] [364] [365
-] [366] [367]
-<../img/factorialanova/factorialanova13.png, id=5563, 1476.51625pt x 1084.05pt>
+ut line 741.
+(pdftex.def)             Requested size: 398.33858pt x 381.74649pt.
+ [361] [362 <../img/factorialanova/factorialanova11.png>] [363] [364] [365] [36
+6]
+<../img/factorialanova/factorialanova13.png, id=5527, 1476.51625pt x 1084.05pt>
 File: ../img/factorialanova/factorialanova13.png Graphic file (type png)
 <use ../img/factorialanova/factorialanova13.png>
 Package pdftex.def Info: ../img/factorialanova/factorialanova13.png used on inp
-ut line 871.
+ut line 854.
 (pdftex.def)             Requested size: 398.33858pt x 292.4493pt.
- [368] [369 <../img/factorialanova/factorialanova13.png>]
-<../img/factorialanova/factorialanova14.pdf, id=5579, 507.67793pt x 580.03027pt
+ [367] [368 <../img/factorialanova/factorialanova13.png>]
+<../img/factorialanova/factorialanova14.pdf, id=5542, 507.67793pt x 580.03027pt
 >
 File: ../img/factorialanova/factorialanova14.pdf Graphic file (type pdf)
  <use ../img/factorialanova/factorialanova14.pdf>
 Package pdftex.def Info: ../img/factorialanova/factorialanova14.pdf used on inp
-ut line 892.
+ut line 875.
 (pdftex.def)             Requested size: 398.33858pt x 455.1212pt.
- [370] [371 <../img/factorialanova/factorialanova14.pdf>]
-<../img/factorialanova/factorialanova15.png, id=5610, 1021.8175pt x 688.5725pt>
+ [369] [370 <../img/factorialanova/factorialanova14.pdf>]
+<../img/factorialanova/factorialanova15.png, id=5572, 1021.8175pt x 688.5725pt>
 File: ../img/factorialanova/factorialanova15.png Graphic file (type png)
 <use ../img/factorialanova/factorialanova15.png>
 Package pdftex.def Info: ../img/factorialanova/factorialanova15.png used on inp
-ut line 920.
+ut line 903.
 (pdftex.def)             Requested size: 398.33858pt x 268.4266pt.
- [372] [373 <../img/factorialanova/factorialanova15.png>] [374]
-<../img/factorialanova/factorialanova16.pdf, id=5635, 355.83719pt x 136.24731pt
+ [371] [372 <../img/factorialanova/factorialanova15.png>] [373]
+<../img/factorialanova/factorialanova16.pdf, id=5599, 355.83719pt x 136.24731pt
 >
 File: ../img/factorialanova/factorialanova16.pdf Graphic file (type pdf)
  <use ../img/factorialanova/factorialanova16.pdf>
 Package pdftex.def Info: ../img/factorialanova/factorialanova16.pdf used on inp
-ut line 967.
+ut line 950.
 (pdftex.def)             Requested size: 398.33858pt x 152.5294pt.
- [375 <../img/factorialanova/factorialanova16.pdf>]
-<../img/factorialanova/factorialanova17.pdf, id=5659, 362.58119pt x 143.08928pt
+ [374 <../img/factorialanova/factorialanova16.pdf>]
+<../img/factorialanova/factorialanova17.pdf, id=5623, 362.58119pt x 143.08928pt
 >
 File: ../img/factorialanova/factorialanova17.pdf Graphic file (type pdf)
  <use ../img/factorialanova/factorialanova17.pdf>
 Package pdftex.def Info: ../img/factorialanova/factorialanova17.pdf used on inp
-ut line 978.
+ut line 961.
 (pdftex.def)             Requested size: 398.33858pt x 157.20656pt.
- [376 <../img/factorialanova/factorialanova17.pdf>]
-Underfull \hbox (badness 1048) in paragraph at lines 1022--1022
+ [375 <../img/factorialanova/factorialanova17.pdf>]
+Underfull \hbox (badness 1048) in paragraph at lines 1005--1005
 []\T1/cmbr/m/sc/10.95 Term be-ing
  []
 
-[377]
-<../img/factorialanova/factorialanova18.pdf, id=5689, 363.97704pt x 135.23172pt
+[376]
+<../img/factorialanova/factorialanova18.pdf, id=5652, 363.97704pt x 135.23172pt
 >
 File: ../img/factorialanova/factorialanova18.pdf Graphic file (type pdf)
  <use ../img/factorialanova/factorialanova18.pdf>
 Package pdftex.def Info: ../img/factorialanova/factorialanova18.pdf used on inp
-ut line 1042.
+ut line 1025.
 (pdftex.def)             Requested size: 398.33858pt x 148.0001pt.
- [378 <../img/factorialanova/factorialanova18.pdf>] [379]
-Underfull \hbox (badness 1048) in paragraph at lines 1076--1076
+ [377 <../img/factorialanova/factorialanova18.pdf>] [378]
+Underfull \hbox (badness 1048) in paragraph at lines 1059--1059
 []\T1/cmbr/m/sc/10.95 Term be-ing
  []
 
 
-<../img/factorialanova/factorialanova19.pdf, id=5723, 455.16139pt x 168.90845pt
+<../img/factorialanova/factorialanova19.pdf, id=5686, 455.16139pt x 168.90845pt
 >
 File: ../img/factorialanova/factorialanova19.pdf Graphic file (type pdf)
  <use ../img/factorialanova/factorialanova19.pdf>
 Package pdftex.def Info: ../img/factorialanova/factorialanova19.pdf used on inp
-ut line 1116.
+ut line 1099.
 (pdftex.def)             Requested size: 398.33858pt x 147.82286pt.
- [380] [381 <../img/factorialanova/factorialanova19.pdf>] [382]) [383] [384
-
-]
+ [379] [380 <../img/factorialanova/factorialanova19.pdf>] [381]) [382]
 Chapter 14.
 
 Overfull \hbox (17.085pt too wide) in paragraph at lines 69--69
@@ -5450,21 +5430,23 @@ Overfull \hbox (17.085pt too wide) in paragraph at lines 69--69
 ty Press (page [][]204[][]). 
  []
 
-[385]
+[383
+
+]
 Overfull \hbox (0.61246pt too wide) in paragraph at lines 69--69
 [][]\T1/cmbr/m/sc/10.95 Geschwind, N. (1972). ^^P  Lan-guage and the brain^^Q. 
 In: \T1/cmbr/m/sl/10.95 Sci-en-tific Amer-i-can \T1/cmbr/m/sc/10.95 226(4), pp.
  76^^U83 (page [][]320[][]). 
  []
 
-[386]
+[384]
 Overfull \hbox (6.08162pt too wide) in paragraph at lines 69--69
 [][]\T1/cmbr/m/sc/10.95 Lehmann, Erich L. (2011). \T1/cmbr/m/sl/10.95 Fisher, N
 ey-man, and the Cre-ation of Clas-si-cal Statis-tics\T1/cmbr/m/sc/10.95 . Sprin
 ger (page [][]177[][]). 
  []
 
-<../img/backcover.pdf, id=5854, 597.65839pt x 845.30275pt>
+<../img/backcover.pdf, id=5814, 597.65839pt x 845.30275pt>
 File: ../img/backcover.pdf Graphic file (type pdf)
 
 <use ../img/backcover.pdf>
@@ -5475,7 +5457,7 @@ File: ../img/backcover.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../img/backcover.pdf used on input line 74.
 (pdftex.def)             Requested size: 597.65692pt x 845.30067pt.
 
-<../img/backcover.pdf, id=5857, page=1, 597.65839pt x 845.30275pt>
+<../img/backcover.pdf, id=5817, page=1, 597.65839pt x 845.30275pt>
 File: ../img/backcover.pdf Graphic file (type pdf)
 
 <use ../img/backcover.pdf, page 1>
@@ -5485,12 +5467,12 @@ File: ../img/backcover.pdf Graphic file (type pdf)
  <use ../img/backcover.pdf, page 1>
 Package pdftex.def Info: ../img/backcover.pdf, page1 used on input line 74.
 (pdftex.def)             Requested size: 562.26405pt x 795.24251pt.
- [387]pdfTeX warning (ext4): destination with the same identifier (name{page.38
-7}) has been already used, duplicate ignored
+ [385]pdfTeX warning (ext4): destination with the same identifier (name{page.38
+5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.74 ...autoscale=false,pages=-]{../img/backcover}
-                                                   [387]
+                                                   [385]
 File: ../img/backcover.pdf Graphic file (type pdf)
 
 <use ../img/backcover.pdf, page 1>
@@ -5505,14 +5487,14 @@ File: ../img/backcover.pdf Graphic file (type pdf)
 <use ../img/backcover.pdf, page 1>
 Package pdftex.def Info: ../img/backcover.pdf, page1 used on input line 74.
 (pdftex.def)             Requested size: 562.26405pt x 795.24251pt.
- [388 <../img/backcover.pdf>]
+ [386 <../img/backcover.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./lsj.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `lsj.out' has not changed.
-(rerunfilecheck)             Checksum: D9E4ADE6826100F6FC273C8BD8C948EE;26862.
+(rerunfilecheck)             Checksum: E08B12850A6B3248D3ED69BF7CE3EF18;26861.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -5520,18 +5502,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package logreq Info: Writing requests to 'lsj.run.xml'.
 \openout1 = `lsj.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28155 strings out of 493013
- 504633 string characters out of 6133343
- 981739 words of memory out of 5000000
- 29970 multiletter control sequences out of 15000+600000
+ 28134 strings out of 493013
+ 503975 string characters out of 6133343
+ 981511 words of memory out of 5000000
+ 29956 multiletter control sequences out of 15000+600000
  55352 words of font info for 157 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,18n,60p,10447b,1920s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5566,10 +5545,10 @@ ist/fonts/type1/public/cm-super/sfbmr10.pfb></usr/local/texlive/2016/texmf-dist
 nts/type1/public/cm-super/sfbmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/
 type1/public/cm-super/sfbmr9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 1/public/cm-super/sfbtl10.pfb>
-Output written on lsj.pdf (403 pages, 8811999 bytes).
+Output written on lsj.pdf (401 pages, 8461389 bytes).
 PDF statistics:
- 6221 PDF objects out of 7423 (max. 8388607)
- 5021 compressed objects within 51 object streams
- 1051 named destinations out of 1200 (max. 500000)
- 4634 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6178 PDF objects out of 6186 (max. 8388607)
+ 4989 compressed objects within 50 object streams
+ 1047 named destinations out of 1200 (max. 500000)
+ 4607 words of extra memory for PDF output out of 10000 (max. 10000000)
 

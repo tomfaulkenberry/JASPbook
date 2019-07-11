@@ -172,7 +172,7 @@ First, let's calculate the sum of squares associated with the main effect of \rt
 
 We can repeat the same kind of calculation for the effect of therapy. Again there are $N=3$ people in each group, but since there are $R=3$ different drugs, this time around we note that there are $3 \times 3 = 9$ people who received CBT and an additional 9 people who received the placebo. So our calculation in this case gives us a value of 0.47 for the sum of squares associated with the main effect of \rtext{therapy}. Once again, we are not surprised to see that our calculations are identical to the ANOVA output in Figure \ref{fig:factorialanova3}. 
 
-So that's how you calculate the SS values for the two main effects. These SS values are analogous to the between-group sum of squares values that we calculated when doing one-way ANOVA in Chapter~\ref{ch:anova}. However, it's not a good idea to think of them as between-groups SS values anymore, just because we have two different grouping variables and it's easy to get confused. In order to construct an $F$ test, however, we also need to calculate the within-groups sum of squares. In keeping with the terminology that we used in the regression chapter (Chapter~\ref{ch:regression}) and the terminology that jamovi uses when printing out the ANOVA table, I'll start referring to the within-groups SS value as the {\it residual} sum of squares SS$_R$. 
+So that's how you calculate the SS values for the two main effects. These SS values are analogous to the between-group sum of squares values that we calculated when doing one-way ANOVA in Chapter~\ref{ch:anova}. However, it's not a good idea to think of them as between-groups SS values anymore, just because we have two different grouping variables and it's easy to get confused. In order to construct an $F$ test, however, we also need to calculate the within-groups sum of squares. In keeping with the terminology that we used in the regression chapter (Chapter~\ref{ch:regression}) and the terminology that JASP uses when printing out the ANOVA table, I'll start referring to the within-groups SS value as the {\it residual} sum of squares SS$_R$. 
 
 The easiest way to think about the residual SS values in this context, I think, is to think of it as the leftover variation in the outcome variable after you take into account the differences in the marginal means (i.e., after you remove SS$_A$ and SS$_B$). What I mean by that is we can start by calculating the total sum of squares, which I'll label SS$_T$. The formula for this is pretty much the same as it was for one-way ANOVA. We take the difference between each observation $Y_{rci}$ and the grand mean $\bar{Y}_{..}$, square the differences, and add them all up
 $$
@@ -690,21 +690,8 @@ There's a few interesting things to note here. First, notice that the intercept 
 
 Actually, we can push a little further in establishing the equivalence of our ANOVA and our regression. Look at the $p$-values associated with the \rtext{attend} variable and the \rtext{reading} variable in the regression output. They're identical to the ones we encountered earlier when running the ANOVA. This might seem a little surprising, since the test used when running our regression model calculates a $t$-statistic and the ANOVA calculates an $F$-statistic. However, if you can remember all the way back to Chapter~\ref{ch:probability}, I mentioned that there's a relationship between the $t$-distribution and the $F$-distribution. If you have some quantity that is distributed according to a $t$-distribution with $k$ degrees of freedom and you square it, then this new squared quantity follows an $F$-distribution whose degrees of freedom are 1 and $k$. We can check this with respect to the $t$ statistics in our regression model. For the \rtext{attend} variable we get a $t$ value of 4.65. If we square this number we end up with 21.6, which matches the corresponding $F$ statistic in our ANOVA. 
 
-\begin{comment} %JASP Doesn't do this
-Finally, one last thing you should know. Because JASP understands the fact that ANOVA and regression are both examples of linear models, it lets you extract the classic ANOVA table from your regression model using the `Linear Regression' - `Model Coefficients' - `Omnibus Test' - `ANOVA Test', and this will give you the table shown in Figure~\ref{fig:factorialanova8}.
 
-\begin{figure}[!htb]
-\begin{center}
-\epsfig{file = ../img/factorialanova/factorialanova8.pdf,clip=true, width = 14cm} 
-\caption{Omnibus ANOVA Test results from the jamovi regression analysis}
-\label{fig:factorialanova8}
-\HR
-\end{center}
-\end{figure}
-
-\end{comment}
-
-\SUBSECTION{How to encode non binary factors as contrasts}
+\SUBSECTION{Using contrasts to encode non binary factors}
 
 At this point, I've shown you how we can view a $2\times 2$ ANOVA into a linear model. And it's pretty easy to see how this generalises to a $2 \times 2 \times 2$ ANOVA or a $2 \times 2 \times 2 \times 2$ ANOVA. It's the same thing, really. You just add a new binary variable for each of your factors. Where it begins to get trickier is when we consider factors that have more than two levels. Consider, for instance, the $3 \times 2$ ANOVA that we ran earlier in this chapter using the \filename{clinicaltrial.csv} data. How can we convert the three-level \rtext{drug} factor into a numerical form that is appropriate for a regression?
 
@@ -719,18 +706,18 @@ The answer to this question is pretty simple, actually. All we have to do is rea
 \end{center}
 If the drug administered to a patient is a placebo then both of the two contrast variables will equal 0. If the drug is Anxifree then the \rtext{druganxifree} variable will equal 1, and \rtext{drugjoyzepam} will be 0. The reverse is true for Joyzepam: \rtext{drugjoyzepam} is 1 and \rtext{druganxifree} is 0.
 
-Creating contrast variables is not too difficult to do using the jamovi compute new variable command. For example, to create the \rtext{druganxifree} variable, write this logical expression in the compute new variable formula box: \rtext{IF(drug == 'anxifree', 1, 0)'}. Similarly, to create the new variable \rtext{drugjoyzepam} use this logical expression: IF(drug == 'joyzepam', 1, 0). Likewise for \rtext{CBTtherapy}: IF(therapy == 'CBT', 1, 0). You can see these new variables, and the corresponding logical expressions, in the jamovi data file \filename{clinicaltrial2.omv}.  
+Creating contrast variables is not too difficult to do using JASP's `Computed Column' functionality.  For example, to create the \rtext{druganxifree} variable, you can use some simple R code to create the binary variable in the formula box: \rtext{ifelse(drug == 'anxifree', 1, 0)'}. Similarly, to create the new variable \rtext{drugjoyzepam} use this code: ifelse(drug == 'joyzepam', 1, 0). Likewise for \rtext{therapyCBT}: ifelse(therapy == 'CBT', 1, 0). You can see these new variables in the JASP data file \filename{clinicaltrial2.jasp}. As before, if you click on the ``$f_x$'' symbol, you will also be able to see the associated R code.  
 
 We have now recoded our three-level factor in terms of two binary variables, and we've already seen that ANOVA and regression behave the same way for binary variables. However, there are some additional complexities that arise in this case, which we'll discuss in the next section.
 
 \SUBSECTION{The equivalence between ANOVA and regression for non-binary factors}
 
-Now we have two different versions of the same data set. Our original data in which the \rtext{drug} variable from the \filename{clinicaltrial.csv} file is expressed as a single three-level factor, and the expanded data \filename{clinicaltrial2.omv} in which it is expanded into two binary contrasts. Once again, the thing that we want to demonstrate is that our original $3 \times 2$ factorial ANOVA is equivalent to a regression model applied to the contrast variables. Let's start by re-running the ANOVA, with results shown in Figure \ref{fig:factorialanova9}.
+Now we have two different versions of the same data set. Our original data in which the \rtext{drug} variable from the \filename{clinicaltrial.csv} file is expressed as a single three-level factor, and the expanded data \filename{clinicaltrial2.omv} in which it is expanded into two binary contrasts. Once again, the thing that we want to demonstrate is that our original $3 \times 2$ factorial ANOVA is equivalent to a regression model applied to the contrast variables. Let's start by re-running the ANOVA, with results shown in Figure \ref{fig:factorialanova9}.  Let's remove the interaction component; remember to go to `Model' and move the \rtext{drug*therapy} term out of the `Model Terms' box.
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factorialanova/factorialanova9.pdf,clip=true, width = 14cm} 
-\caption{jamovi ANOVA results, without interaction component}
+\epsfig{file = ../img/factorialanova/factorialanova3.png,clip=true, width = 14cm} 
+\caption{JASP ANOVA results, without interaction component}
 \label{fig:factorialanova9}
 \HR
 \end{center}
@@ -740,38 +727,31 @@ Obviously, there are no surprises here. That's the exact same ANOVA that we ran 
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factorialanova/factorialanova10.pdf,clip=true, width = 11cm} 
-\caption{jamovi regression results, with contrast variables \texttt{druganxifree} and \texttt{drugjoyzepam}}
+\epsfig{file = ../img/factorialanova/factorialanova10.png, clip=true, width = 11cm} 
+\caption{JASP regression results, with contrast variables \texttt{druganxifree} and \texttt{drugjoyzepam}}
 \label{fig:factorialanova10}
 \HR
 \end{center}
 \end{figure}
 
-Hmm. This isn't the same output that we got last time. Not surprisingly, the regression output prints out the results for each of the three predictors separately, just like it did every other time we conducted a regression analysis. On the one hand we can see that the $p$-value for the \rtext{CBTtherapy} variable is exactly the same as the one for the \rtext{therapy} factor in our original ANOVA, so we can be reassured that the regression model is doing the same thing as the ANOVA did. On the other hand, this regression model is testing the \rtext{druganxifree} contrast and the \rtext{drugjoyzepam} contrast {\it separately}, as if they were two completely unrelated variables. It's not surprising of course, because the poor regression analysis has no way of knowing that \rtext{drugjoyzepam} and \rtext{druganxifree} are actually the two different contrasts that we used to encode our three-level \rtext{drug} factor. As far as it knows, \rtext{drugjoyzepam} and \rtext{druganxifree} are no more related to one another than \rtext{drugjoyzepam} and \rtext{therapyCBT}. However, you and I know better. At this stage we're not at all interested in determining whether these two contrasts are individually significant. We just want to know if there's an ``overall'' effect of drug. That is, what {\it we} want jamovi to do is to run some kind of ``model comparison'' test, one in which the two ``drug-related'' contrasts are lumped together for the purpose of the test. Sound familiar? All we need to do is specify our null model, which in this case would include the \rtext{CBTtherapy} predictor, and omit both of the drug-related variables, as in Figure \ref{fig:factorialanova11}. 
+Hmm. This will look quite different than what we got last time. Not surprisingly, the regression output prints out the results for each of the three predictors separately, just like it did every other time we conducted a regression analysis. On the one hand we can see that the $p$-value for the \rtext{CBTtherapy} variable is exactly the same as the one for the \rtext{therapy} factor in our original ANOVA, so we can be reassured that the regression model is doing the same thing as the ANOVA did. On the other hand, this regression model is testing the \rtext{druganxifree} contrast and the \rtext{drugjoyzepam} contrast {\it separately}, as if they were two completely unrelated variables. It's not surprising of course, because the poor regression analysis has no way of knowing that \rtext{drugjoyzepam} and \rtext{druganxifree} are actually the two different contrasts that we used to encode our three-level \rtext{drug} factor. As far as it knows, \rtext{drugjoyzepam} and \rtext{druganxifree} are no more related to one another than \rtext{drugjoyzepam} and \rtext{therapyCBT}. However, you and I know better. At this stage we're not at all interested in determining whether these two contrasts are individually significant. We just want to know if there's an ``overall'' effect of drug. That is, what {\it we} want JASP to do is to run some kind of ``model comparison'' test, one in which the two ``drug-related'' contrasts are lumped together for the purpose of the test. Sound familiar? All we need to do is specify a ``null model'', which in this case would include the \rtext{CBTtherapy} predictor, and omit both of the drug-related variables, as in Figure \ref{fig:factorialanova11}. To do this, click the `Model' button and check `Add to null model' for both of the drug terms. You can then assess whether to include \rtext{drug} as a predictor in the model by computing AIC for both models (see Section \ref{sec:modelselreg}).  Remember, smaller is better!
 
 \begin{figure}[p]
 \begin{center}
 \epsfig{file = ../img/factorialanova/factorialanova11.png,clip=true, width = 14cm} 
-\caption{Model comparison in jamovi regression, null model 1 vs. contrasts model 2}
+\caption{Model comparison in JASP regression, null model 0 vs. contrasts model 1}
 \label{fig:factorialanova11}
 \HR
 \end{center}
 \end{figure}
 
-\begin{figure}[p]
-\begin{center}
-\epsfig{file = ../img/factorialanova/regfactors.png,clip=true, width = 14cm} 
-\caption{Regression analysis with factors and contrasts in jamovi, including omnibus ANOVA test results}
-\label{fig:regfactors}
-\HR
-\end{center}
-\end{figure}
 
+\begin{comment} % need to change this a bit .. maybe use AIC for model comparison?
 Ah, that's better. Our $F$-statistic is 26.15, the degrees of freedom are 2 and 14, and the $p$-value is $0.00002$. The numbers are identical to the ones we obtained for the main effect of \rtext{drug} in our original ANOVA. Once again we see that ANOVA and regression are essentially the same. They are both linear models, and the underlying statistical machinery for ANOVA is identical to the machinery used in regression. The importance of this fact should not be understated. Throughout the rest of this chapter we're going to rely heavily on this idea. 
 
 Although we went through all the faff of computing new variables in jamovi for the contrasts \rtext{druganxifree} and \rtext{drugjoyzepam}, just to show that ANOVA and regression are essentially the same, in the jamovi linear regression analysis there is actually a nifty shortcut to get these contrasts, see Figure~\ref{fig:regfactors}. What jamovi is doing here is allowing you to enter the predictor variables that are factors as, wait for it...factors! Smart, eh. You can also specify which group to use as the reference level, via the `Reference Levels' option. We've changed this to `placebo' and `no.therapy', respectively, because this makes most sense. 
 
-If you also click on the `ANOVA' test checkbox under the `Model Coefficients' - `Omnibus Test' option, we see that the $F$-statistic is 26.15, the degrees of freedom are 2 and 14, and the $p$-value is $0.00002$ (Figure~\ref{fig:regfactors}). The numbers are identical to the ones we obtained for the main effect of \rtext{drug} in our original ANOVA. Once again, we see that ANOVA and regression are essentially the same. They are both linear models, and the underlying statistical machinery for ANOVA is identical to the machinery used in regression. 
+\end{comment}
 
 \SUBSECTION{Degrees of freedom as parameter counting!}
 

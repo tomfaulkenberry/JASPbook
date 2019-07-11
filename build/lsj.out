@@ -294,7 +294,7 @@
 \BOOKMARK [1][]{section.13.6}{13.6 ANOVA as a linear model}{chapter.13}% 294
 \BOOKMARK [2][-]{subsection.13.6.1}{13.6.1 Some data}{section.13.6}% 295
 \BOOKMARK [2][-]{subsection.13.6.2}{13.6.2 ANOVA with binary factors as a regression model}{section.13.6}% 296
-\BOOKMARK [2][-]{subsection.13.6.3}{13.6.3 How to encode non binary factors as contrasts}{section.13.6}% 297
+\BOOKMARK [2][-]{subsection.13.6.3}{13.6.3 Using contrasts to encode non binary factors}{section.13.6}% 297
 \BOOKMARK [2][-]{subsection.13.6.4}{13.6.4 The equivalence between ANOVA and regression for non-binary factors}{section.13.6}% 298
 \BOOKMARK [2][-]{subsection.13.6.5}{13.6.5 Degrees of freedom as parameter counting!}{section.13.6}% 299
 \BOOKMARK [1][]{section.13.7}{13.7 Different ways to specify contrasts}{chapter.13}% 300
