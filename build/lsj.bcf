@@ -2209,6 +2209,18 @@
     <bcf:citekey order="61">Sahai2000</bcf:citekey>
     <bcf:citekey order="62">Everitt1996</bcf:citekey>
     <bcf:citekey order="63">Hsu1996</bcf:citekey>
+    <bcf:citekey order="64">Jeffreys1961</bcf:citekey>
+    <bcf:citekey order="65">Kass1995</bcf:citekey>
+    <bcf:citekey order="66">Kass1995</bcf:citekey>
+    <bcf:citekey order="67">Kass1995</bcf:citekey>
+    <bcf:citekey order="68">Fisher1925</bcf:citekey>
+    <bcf:citekey order="69">Johnson2013</bcf:citekey>
+    <bcf:citekey order="70">Johnson2013</bcf:citekey>
+    <bcf:citekey order="71">Johnson2013</bcf:citekey>
+    <bcf:citekey order="72">Johnson2013</bcf:citekey>
+    <bcf:citekey order="73">Johnson2013</bcf:citekey>
+    <bcf:citekey order="74">Kruschke2011</bcf:citekey>
+    <bcf:citekey order="75">Lee2014</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nyt/global/" type="entry" sortscheme="nyt" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

@@ -598,36 +598,86 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {13.6.4}The equivalence between ANOVA and regression for non-binary factors}{359}{subsection.13.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.6.5}Degrees of freedom as parameter counting!}{361}{subsection.13.6.5}
+\contentsline {section}{\numberline {13.7}Different ways to specify contrasts}{361}{section.13.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.7}Different ways to specify contrasts}{363}{section.13.7}
+\contentsline {subsection}{\numberline {13.7.1}Treatment contrasts}{361}{subsection.13.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.7.1}Treatment contrasts}{363}{subsection.13.7.1}
+\contentsline {subsection}{\numberline {13.7.2}Helmert contrasts}{363}{subsection.13.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.7.2}Helmert contrasts}{364}{subsection.13.7.2}
+\contentsline {subsection}{\numberline {13.7.3}Sum to zero contrasts}{364}{subsection.13.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.7.3}Sum to zero contrasts}{365}{subsection.13.7.3}
+\contentsline {subsection}{\numberline {13.7.4}Optional contrasts in JASP}{364}{subsection.13.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.7.4}Optional contrasts in jamovi}{365}{subsection.13.7.4}
+\contentsline {section}{\numberline {13.8}Post hoc tests}{365}{section.13.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.8}Post hoc tests}{366}{section.13.8}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.9}The method of planned comparisons}{369}{section.13.9}
+\contentsline {section}{\numberline {13.9}The method of planned comparisons}{368}{section.13.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {13.10}Factorial ANOVA 3: unbalanced designs}{369}{section.13.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.10.1}The coffee data}{371}{subsection.13.10.1}
+\contentsline {subsection}{\numberline {13.10.1}The coffee data}{369}{subsection.13.10.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.10.2}``Standard ANOVA'' does not exist for unbalanced designs}{372}{subsection.13.10.2}
+\contentsline {subsection}{\numberline {13.10.2}``Standard ANOVA'' does not exist for unbalanced designs}{370}{subsection.13.10.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.10.3}Type I sum of squares}{373}{subsection.13.10.3}
+\contentsline {subsection}{\numberline {13.10.3}Type I sum of squares}{372}{subsection.13.10.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.10.4}Type III sum of squares}{375}{subsection.13.10.4}
+\contentsline {subsection}{\numberline {13.10.4}Type III sum of squares}{374}{subsection.13.10.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.10.5}Type II sum of squares}{378}{subsection.13.10.5}
+\contentsline {subsection}{\numberline {13.10.5}Type II sum of squares}{376}{subsection.13.10.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.10.6}Effect sizes (and non-additive sums of squares)}{380}{subsection.13.10.6}
+\contentsline {subsection}{\numberline {13.10.6}Effect sizes (and non-additive sums of squares)}{379}{subsection.13.10.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.11}Summary}{381}{section.13.11}
+\contentsline {section}{\numberline {13.11}Summary}{380}{section.13.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {14}References}{383}{chapter.14}
+\contentsline {part}{V\hspace {1em}Endings, alternatives and prospects}{381}{part.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {14}Bayesian statistics }{383}{chapter.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14.1}Probabilistic reasoning by rational agents}{384}{section.14.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {14.1.1}Priors: what you believed before}{384}{subsection.14.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {14.1.2}Likelihoods: theories about the data}{385}{subsection.14.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {14.1.3}The joint probability of data and hypothesis}{385}{subsection.14.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {14.1.4}Updating beliefs using Bayes' rule}{387}{subsection.14.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14.2}Bayesian hypothesis tests~}{389}{section.14.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {14.2.1}The Bayes factor}{389}{subsection.14.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {14.2.2}Interpreting Bayes factors}{390}{subsection.14.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14.3}Why be a Bayesian?}{391}{section.14.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {14.3.1}Statistics that mean what you think they mean}{392}{subsection.14.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {14.3.2}Evidentiary standards you can believe}{393}{subsection.14.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {14.3.3}The $p$-value is a lie.}{394}{subsection.14.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {14.3.4}Is it really this bad?}{398}{subsection.14.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14.4}Bayesian \mathversion {bold}$t$\mathversion {normal}-tests}{399}{section.14.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {14.4.1}Independent samples $t$-test}{399}{subsection.14.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {14.4.2}Paired samples $t$-test}{400}{subsection.14.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14.5}Summary}{401}{section.14.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {15}Epilogue}{403}{chapter.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {15.1}The undiscovered statistics}{403}{section.15.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {15.1.1}Omissions within the topics covered}{404}{subsection.15.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {15.1.2}Statistical models missing from the book}{405}{subsection.15.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {15.1.3}Other ways of doing inference}{407}{subsection.15.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {15.1.4}Miscellaneous topics}{410}{subsection.15.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {15.2}Learning the basics, and learning them in JASP}{411}{section.15.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {16}References}{415}{chapter.16}

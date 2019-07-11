@@ -605,6 +605,32 @@
       \field{pages}{309\bibrangedash 368}
       \range{pages}{60}
     \endentry
+    \entry{Fisher1925}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0ad07b6e0c3f0b372cfe0b72e9c60c69}{%
+           family={Fisher},
+           familyi={F\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Edinburgh, UK}%
+      }
+      \list{publisher}{1}{%
+        {Oliver \& Boyd}%
+      }
+      \strng{namehash}{0ad07b6e0c3f0b372cfe0b72e9c60c69}
+      \strng{fullhash}{0ad07b6e0c3f0b372cfe0b72e9c60c69}
+      \strng{authornamehash}{0ad07b6e0c3f0b372cfe0b72e9c60c69}
+      \strng{authorfullhash}{0ad07b6e0c3f0b372cfe0b72e9c60c69}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Statistical Methods for Research Workers}
+      \field{year}{1925}
+    \endentry
     \entry{Fox2011}{book}{}
       \name{author}{2}{}{%
         {{hash=19b133b9f5cb7faf674cb8cd372897a8}{%
@@ -978,6 +1004,54 @@
       \field{pages}{697\bibrangedash 701}
       \range{pages}{5}
     \endentry
+    \entry{Jeffreys1961}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8ee1b6df972985d58c1190980d9aa387}{%
+           family={Jeffreys},
+           familyi={J\bibinitperiod},
+           given={Harold},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford}%
+      }
+      \strng{namehash}{8ee1b6df972985d58c1190980d9aa387}
+      \strng{fullhash}{8ee1b6df972985d58c1190980d9aa387}
+      \strng{authornamehash}{8ee1b6df972985d58c1190980d9aa387}
+      \strng{authorfullhash}{8ee1b6df972985d58c1190980d9aa387}
+      \field{sortinit}{J}
+      \field{sortinithash}{c86bd6cced82a15683b396c2169909ef}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd}
+      \field{title}{The Theory of Probability}
+      \field{year}{1961}
+    \endentry
+    \entry{Johnson2013}{article}{}
+      \name{author}{1}{}{%
+        {{hash=88d21b6d218e2b9fa529636bab5b08cc}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Valen\bibnamedelima E},
+           giveni={V\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{88d21b6d218e2b9fa529636bab5b08cc}
+      \strng{fullhash}{88d21b6d218e2b9fa529636bab5b08cc}
+      \strng{authornamehash}{88d21b6d218e2b9fa529636bab5b08cc}
+      \strng{authorfullhash}{88d21b6d218e2b9fa529636bab5b08cc}
+      \field{sortinit}{J}
+      \field{sortinithash}{c86bd6cced82a15683b396c2169909ef}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{number}{48}
+      \field{title}{Revised standards for statistical evidence}
+      \field{year}{2013}
+      \field{pages}{19313\bibrangedash 19317}
+      \range{pages}{5}
+    \endentry
     \entry{Kahneman1973}{article}{}
       \name{author}{2}{}{%
         {{hash=c463bca62b05603879f3ee5b71d04ff2}{%
@@ -1007,6 +1081,35 @@
       \field{pages}{237\bibrangedash 251}
       \range{pages}{15}
     \endentry
+    \entry{Kass1995}{article}{}
+      \name{author}{2}{}{%
+        {{hash=bd9ddca666102a2fbf5311433da421a9}{%
+           family={Kass},
+           familyi={K\bibinitperiod},
+           given={Robert\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=53596fce608f49350a0fbe346aeddbe1}{%
+           family={Raftery},
+           familyi={R\bibinitperiod},
+           given={Adrian\bibnamedelima E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{a6bf8c29c1ffcfcbb4aa33fbe96f22fa}
+      \strng{fullhash}{0c19fc030baa79a550cb8991f3b41f19}
+      \strng{authornamehash}{a6bf8c29c1ffcfcbb4aa33fbe96f22fa}
+      \strng{authorfullhash}{0c19fc030baa79a550cb8991f3b41f19}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{title}{Bayes factors}
+      \field{volume}{90}
+      \field{year}{1995}
+      \field{pages}{773\bibrangedash 795}
+      \range{pages}{23}
+    \endentry
     \entry{Keynes1923}{book}{}
       \name{author}{1}{}{%
         {{hash=aa540260b7ac58aa9b89b66bc63a94d1}{%
@@ -1033,6 +1136,32 @@
       \field{labeltitlesource}{title}
       \field{title}{A Tract on Monetary Reform}
       \field{year}{1923}
+    \endentry
+    \entry{Kruschke2011}{book}{}
+      \name{author}{1}{}{%
+        {{hash=aa751effb6564b4c2fc94db8db786ccb}{%
+           family={Kruschke},
+           familyi={K\bibinitperiod},
+           given={J.\bibnamedelimi K.},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Burlington, MA}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{aa751effb6564b4c2fc94db8db786ccb}
+      \strng{fullhash}{aa751effb6564b4c2fc94db8db786ccb}
+      \strng{authornamehash}{aa751effb6564b4c2fc94db8db786ccb}
+      \strng{authorfullhash}{aa751effb6564b4c2fc94db8db786ccb}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Doing {B}ayesian Data Analysis: A Tutorial with {R} and {BUGS}}
+      \field{year}{2011}
     \endentry
     \entry{KruskalWallis1952}{article}{}
       \name{author}{2}{}{%
@@ -1120,6 +1249,34 @@
       \field{year}{1978}
       \field{pages}{253\bibrangedash 263}
       \range{pages}{11}
+    \endentry
+    \entry{Lee2014}{book}{}
+      \name{author}{2}{}{%
+        {{hash=85cc9b31895b6fea7e26c613c2723641}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Michael\bibnamedelima D},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=d0127560e030afe2fdab5e2b35378c37}{%
+           family={Wagenmakers},
+           familyi={W\bibinitperiod},
+           given={Eric-Jan},
+           giveni={E\bibinithyphendelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{c0b2160c72e38639d9b49b36e602ac04}
+      \strng{fullhash}{d388d48a7a145fa1b33230127c2c3ad3}
+      \strng{authornamehash}{c0b2160c72e38639d9b49b36e602ac04}
+      \strng{authorfullhash}{d388d48a7a145fa1b33230127c2c3ad3}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bayesian cognitive modeling: A practical course}
+      \field{year}{2014}
     \endentry
     \entry{Lehmann2011}{book}{}
       \name{author}{1}{}{%

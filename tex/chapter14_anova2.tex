@@ -751,7 +751,7 @@ Ah, that's better. Our $F$-statistic is 26.15, the degrees of freedom are 2 and 
 
 Although we went through all the faff of computing new variables in jamovi for the contrasts \rtext{druganxifree} and \rtext{drugjoyzepam}, just to show that ANOVA and regression are essentially the same, in the jamovi linear regression analysis there is actually a nifty shortcut to get these contrasts, see Figure~\ref{fig:regfactors}. What jamovi is doing here is allowing you to enter the predictor variables that are factors as, wait for it...factors! Smart, eh. You can also specify which group to use as the reference level, via the `Reference Levels' option. We've changed this to `placebo' and `no.therapy', respectively, because this makes most sense. 
 
-\end{comment}
+
 
 \SUBSECTION{Degrees of freedom as parameter counting!}
 
@@ -761,6 +761,7 @@ What about the case when there doesn't seem to {\it be} a null model? For instan
 
 What about the second $df$ value that appears in the $F$-test? This always refers to the degrees of freedom associated with the residuals. It is possible to think of this in terms of parameters too, but in a slightly counter-intuitive way. Think of it like this. Suppose that the total number of observations across the study as a whole is $N$. If you wanted to {\it perfectly} describe each of these $N$ values, you need to do so using, well... $N$ numbers. When you build a regression model, what you're really doing is specifying that some of the numbers need to perfectly describe the data. If your model has $K$ predictors and an intercept, then you've specified $K+1$ numbers. So, without bothering to figure out exactly {\it how} this would be done, how many {\it more} numbers do you think are going to be needed to transform a $K+1$ parameter regression model into a perfect re-description of the raw data? If you found yourself thinking that $(K+1) + (N-K-1) = N$, and so the answer would have to be $N-K-1$, well done! That's exactly right. In principle you can imagine an absurdly complicated regression model that includes a parameter for every single data point, and it would of course provide a perfect description of the data. This model would contain $N$ parameters in total, but we're interested in the difference between the number of parameters required to describe this full model (i.e. $N$) and the number of parameters used by the simpler regression model that you're actually interested in (i.e., $K+1$), and so the second degrees of freedom in the $F$ test is $df_2 = N-K-1$, where $K$ is the number of predictors (in a regression model) or the number of contrasts (in an ANOVA). In the example I gave above, there are $N=18$ observations in the data set and $K+1 = 4$ regression coefficients associated with the ANOVA model, so the degrees of freedom for the residuals is $df_2 = 18-4 = 14$. 
 
+\end{comment}
 
 \section{Different ways to specify contrasts\label{sec:contrasts}}
 
@@ -773,7 +774,7 @@ In the previous section, I showed you a method for converting a factor into a co
 \rtext{"joyzepam"}& 0 & 1 
 \end{tabular}
 \end{center}
-Each row in the table corresponds to one of the factor levels, and each column corresponds to one of the contrasts. This table, which always has one more row than columns, has a special name. It is called a \keyterm{contrast matrix}. However, there are lots of different ways to specify a contrast matrix. In this section I discuss a few of the standard contrast matrices that statisticians use and how you can use them in jamovi. If you're planning to read the section on unbalanced ANOVA later on (Section~\ref{sec:unbalancedanova}), it's worth reading this section carefully. If not, you can get away with skimming it, because the choice of contrasts doesn't matter much for balanced designs.
+Each row in the table corresponds to one of the factor levels, and each column corresponds to one of the contrasts. This table, which always has one more row than columns, has a special name. It is called a \keyterm{contrast matrix}. However, there are lots of different ways to specify a contrast matrix. In this section I discuss a few of the standard contrast matrices that statisticians use and how you can use them in JASP. If you're planning to read the section on unbalanced ANOVA later on (Section~\ref{sec:unbalancedanova}), it's worth reading this section carefully. If not, you can get away with skimming it, because the choice of contrasts doesn't matter much for balanced designs.
 
 \SUBSECTION{Treatment contrasts}
 
@@ -790,11 +791,11 @@ Level   2 3 4 5
   4     0 0 1 0
   5     0 0 0 1
 \end{rblock1}
-In this example, the first contrast is level 2 compared with level 1, the second contrast is level 3 compared with level 1, and so on. Notice that, by default, the {\it first} level of the factor is always treated as the baseline category (i.e., it's the one that has all zeros and doesn't have an explicit contrast associated with it). In jamovi you can change which category is the first level of the factor by manipulating the order of the levels of the variable shown in the `Data Variable' window (double click on the name of the variable in the spreadsheet column to bring up the `Data Variable' view. 
+In this example, the first contrast is level 2 compared with level 1, the second contrast is level 3 compared with level 1, and so on. Notice that, by default, the {\it first} level of the factor is always treated as the baseline category (i.e., it's the one that has all zeros and doesn't have an explicit contrast associated with it). In JASP you can change which category is the first level of the factor by manipulating the order of the levels of the variable shown in the `Data Variable' window (double click on the name of the variable in the spreadsheet column to bring up the `Data Variable' view. 
 
 \SUBSECTION{Helmert contrasts}
 
-Treatment contrasts are useful for a lot of situations. However, they make most sense in the situation when there really is a baseline category, and you want to assess all the other groups in relation to that one. In other situations, however, no such baseline category exists, and it may make more sense to compare each group to the mean of the other groups. This is where we meet \keyterm{Helmert contrasts}, generated by the `helmert' option in the jamovi `ANOVA' - `Contrasts' selection box. The idea behind Helmert contrasts is to compare each group to the mean of the ``previous'' ones. That is, the first contrast represents the difference between group 2 and group 1, the second contrast represents the difference between group 3 and the mean of groups 1 and 2, and so on. This translates to a contrast matrix that looks like this for a factor with five levels:
+Treatment contrasts are useful for a lot of situations. However, they make most sense in the situation when there really is a baseline category, and you want to assess all the other groups in relation to that one. In other situations, however, no such baseline category exists, and it may make more sense to compare each group to the mean of the other groups. This is where we meet \keyterm{Helmert contrasts}, generated by the `helmert' option in the JASP `ANOVA' - `Contrasts' selection box. The idea behind Helmert contrasts is to compare each group to the mean of the ``previous'' ones. That is, the first contrast represents the difference between group 2 and group 1, the second contrast represents the difference between group 3 and the mean of groups 1 and 2, and so on. This translates to a contrast matrix that looks like this for a factor with five levels:
 \begin{rblock1}
 1   -1   -1   -1   -1
 2    1   -1   -1   -1
@@ -806,7 +807,7 @@ One useful thing about Helmert contrasts is that every contrast sums to zero (i.
  
 \SUBSECTION{Sum to zero contrasts}
  
-The third option that I should briefly mention are ``sum to zero'' contrasts, called ``Simple'' contrasts in jamovi, which are used to construct pairwise comparisons between groups. Specifically, each contrast encodes the difference between one of the groups and a baseline category, which in this case corresponds to the first group: 
+The third option that I should briefly mention are ``sum to zero'' contrasts, called ``Simple'' contrasts in JASP, which are used to construct pairwise comparisons between groups. Specifically, each contrast encodes the difference between one of the groups and a baseline category, which in this case corresponds to the first group: 
 \begin{rblock1}
 1   -1   -1   -1   -1
 2    1    0    0    0
@@ -816,9 +817,9 @@ The third option that I should briefly mention are ``sum to zero'' contrasts, ca
 \end{rblock1}  
 Much like Helmert contrasts, we see that each column sums to zero, which means that the intercept term corresponds to the grand mean when ANOVA is treated as a regression model. When interpreting these contrasts, the thing to recognise is that each of these contrasts is a pairwise comparison between group 1 and one of the other four groups. Specifically, contrast 1 corresponds to a ``group 2 minus group 1'' comparison, contrast 2 corresponds to a ``group 3 minus group 1'' comparison, and so on.\FOOTNOTE{What's the difference between treatment and simple contrasts, I hear you ask? Well, as a basic example consider a gender main effect, with m=0 and f=1. The coefficient corresponding to the treatment contrast will measure the difference in mean between females and males, and the intercept would be the mean of the males. However, with a simple contrast, i.e., m=-1 and f=1, the intercept is the average of the means and the main effect is the difference of each group mean from the intercept.} 
 
-\SUBSECTION{Optional contrasts in jamovi}
+\SUBSECTION{Optional contrasts in JASP}
 
-jamovi also comes with a variety of options that can generate different kinds of contrasts in ANOVA. These can be found in the `Contrasts' option in the main ANOVA analysis window, where the following contrast types are listed: 
+JASP also comes with a variety of options that can generate different kinds of contrasts in ANOVA. These can be found in the `Contrasts' option in the main ANOVA analysis window, where the following contrast types are listed: 
 
 \newpage
 \begin{center}
@@ -847,20 +848,20 @@ That being said, there's one tool that I do want to draw your attention to, name
 \end{itemize}
 For any one of these comparisons, we're interested in the true difference between (population) group means. Tukey's HSD constructs \keyterm{simultaneous confidence intervals} for all four of these comparisons. What we mean by 95\% ``simultaneous'' confidence interval is that, if we were to repeat this study many times, then in 95\% of the study results the confidence intervals would contain the relevant true value. Moreover, we can use these confidence intervals to calculate an adjusted $p$ value for any specific comparison. 
 
-The \rtext{TukeyHSD} function in jamovi is pretty easy to use. You simply specify the ANOVA model term that you want to run the post hoc tests for. For example, if we were looking to run post hoc tests for the main effects but not the interaction, we would open up the `Post Hoc Tests' option in the ANOVA analysis screen, move the \rtext{drug} and \rtext{therapy} variables across to the box on the right, and then select the `Tukey' checkbox in the list of possible post hoc corrections that could be applied.  This, along with the corresponding results table, is shown in Figure \ref{fig:factorialanova13}  
+The \rtext{TukeyHSD} function in JASP is pretty easy to use. You simply specify the ANOVA model term that you want to run the post hoc tests for. For example, if we were looking to run post hoc tests for the main effects but not the interaction, we would open up the `Post Hoc Tests' option in the ANOVA analysis screen, move the \rtext{drug} and \rtext{therapy} variables across to the box on the right, and then select the `Tukey' checkbox in the list of possible post hoc corrections that could be applied.  This, along with the corresponding results table, is shown in Figure \ref{fig:factorialanova13}  
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factorialanova/factorialanova13.png,clip=true, width = 14cm} 
-\caption{Tukey HSD post hoc test in jamovi factorial ANOVA, without an interaction term}
+\epsfig{file = ../img/factorialanova/factorialanova13.png,clip=true, width = 12cm} 
+\caption{Tukey HSD post hoc test in JASP}
 \label{fig:factorialanova13}
 \HR
 \end{center}
 \end{figure}
 
-The output shown in the `Post Hoc Tests' results table is (I hope) pretty straightforward. The first comparison, for example, is the Anxifree versus placebo difference, and the first part of the output indicates that the observed difference in group means is $.27$. The next number is the standard error for the difference, from which we could calculate the 95\% confidence interval if we wanted, though jamovi does not currently provide this option. Then there is a column with the degrees of freedom, a column with the $t$-value, and finally a column with the $p$-value. For the first comparison the adjusted $p$-value is $.21$. In contrast, if you look at the next line, we see that the observed difference between joyzepam and the placebo is 1.03, and this result is significant $(p<.001)$.
+The output shown in the `Post Hoc Tests' results table is (I hope) pretty straightforward. The first comparison, for example, is the Anxifree versus placebo difference, and the first part of the output indicates that the observed difference in group means is $.27$. The next number is the standard error for the difference, from which we could calculate the 95\% confidence interval (you can actually display this 95\% CI if you select the `Confidence intervals' box). Then there is a column with the degrees of freedom, a column with the $t$-value, and finally a column with the $p$-value. For the first comparison the adjusted $p$-value is $.21$. In contrast, if you look at the next line, we see that the observed difference between joyzepam and the placebo is 1.03, and this result is significant $(p<.001)$.
 
-So far, so good. What about the situation where your model includes interaction terms? For instance, the default option in jamovi is to allow for the possibility that there is an interaction between drug and therapy. If that's the case, the number of pairwise comparisons that we need to consider starts to increase. As before, we need to consider the three comparisons that are relevant to the main effect of \rtext{drug} and the one comparison that is relevant to the main effect of \rtext{therapy}. But, if we want to consider the possibility of a significant interaction (and try to find the group differences that underpin that significant interaction), we need to include comparisons such as the following:
+So far, so good. What about the situation where your model includes interaction terms? For instance, the default option in JASP is to allow for the possibility that there is an interaction between drug and therapy. If that's the case, the number of pairwise comparisons that we need to consider starts to increase. As before, we need to consider the three comparisons that are relevant to the main effect of \rtext{drug} and the one comparison that is relevant to the main effect of \rtext{therapy}. But, if we want to consider the possibility of a significant interaction (and try to find the group differences that underpin that significant interaction), we need to include comparisons such as the following:
 
 \begin{itemize}
 \item The difference in mood gain for people given Anxifree and treated with CBT, versus people given the placebo and treated with CBT
@@ -872,8 +873,8 @@ There are quite a lot of these comparisons that you need to consider. So, when w
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factorialanova/factorialanova14.pdf,clip=true, width = 14cm} 
-\caption{Tukey HSD post hoc test in jamovi factorial ANOVA with an interaction term}
+\epsfig{file = ../img/factorialanova/factorialanova14.png, clip=true, width = 14cm} 
+\caption{Tukey HSD post hoc test in JASP factorial ANOVA with an interaction term}
 \label{fig:factorialanova14}
 \HR
 \end{center}
@@ -895,19 +896,19 @@ Unbalanced designs need to be treated with a lot more care than balanced designs
 
 \SUBSECTION{The coffee data}
 
-As usual, it will help us to work with some data. The \filename{coffee.csv} file contains a hypothetical data set that produces an unbalanced $3 \times 2$ ANOVA. Suppose we were interested in finding out whether or not the tendency of people to \rtext{babble} when they have too much coffee is purely an effect of the coffee itself, or whether there's some effect of the \rtext{milk} and \rtext{sugar} that people add to the coffee. Suppose we took 18 people and gave them some coffee to drink. The amount of coffee / caffeine was held constant, and we varied whether or not milk was added, so \rtext{milk} is a binary factor with two levels, \rtext{"yes"} and \rtext{"no"}. We also varied the kind of sugar involved. The coffee might contain \rtext{"real"} sugar or it might contain \rtext{"fake"} sugar (i.e., artificial sweetener) or it might contain \rtext{"none"} at all, so the \rtext{sugar} variable is a three level factor. Our outcome variable is a continuous variable that presumably refers to some psychologically sensible measure of the extent to which someone is ``babbling''. The details don't really matter for our purpose. Take a look at the data in the jamovi spreadsheet view, as in Figure \ref{fig:factorialanova15}.
+As usual, it will help us to work with some data. The \filename{coffee.csv} file contains a hypothetical data set that produces an unbalanced $3 \times 2$ ANOVA. Suppose we were interested in finding out whether or not the tendency of people to \rtext{babble} when they have too much coffee is purely an effect of the coffee itself, or whether there's some effect of the \rtext{milk} and \rtext{sugar} that people add to the coffee. Suppose we took 18 people and gave them some coffee to drink. The amount of coffee / caffeine was held constant, and we varied whether or not milk was added, so \rtext{milk} is a binary factor with two levels, \rtext{"yes"} and \rtext{"no"}. We also varied the kind of sugar involved. The coffee might contain \rtext{"real"} sugar or it might contain \rtext{"fake"} sugar (i.e., artificial sweetener) or it might contain \rtext{"none"} at all, so the \rtext{sugar} variable is a three level factor. Our outcome variable is a continuous variable that presumably refers to some psychologically sensible measure of the extent to which someone is ``babbling''. The details don't really matter for our purpose. Take a look at the data in the JASP spreadsheet view, as in Figure \ref{fig:factorialanova15}.
 
 \vspace{0.5cm}
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factorialanova/factorialanova15.png,clip=true, width = 14cm} 
-\caption{The \texttt{coffee.csv} data set in jamovi, with descriptive information aggregated by factor levels}
+\epsfig{file = ../img/factorialanova/factorialanova15.png,clip=true, width = 10cm} 
+\caption{Descriptives for the \texttt{coffee.csv} data set, separately split by \texttt{milk} and \texttt{sugar}, respectively.}
 \label{fig:factorialanova15}
 \HR
 \end{center}
 \end{figure}
 
-Looking at the table of means in Figure \ref{fig:factorialanova15} we get a strong impression that there are differences between the groups. This is especially true when we compare these means to the standard deviations for the \rtext{babble} variable. Across groups, this standard deviation varies from .14 to .71, which is fairly small relative to the differences in group means.\FOOTNOTE{This discrepancy in standard deviations might (and should) make you wonder if we have a violation of the homogeneity of variance assumption. I'll leave it as an exercise for the reader to double check this using the Levene test option.} Whilst this at first may seem like a straightforward factorial ANOVA, a problem arises when we look at how many observations we have in each group. See the different Ns for different groups shown in Figure \ref{fig:factorialanova15}. This violates one of our original assumptions, namely that the number of people in each group is the same. We haven't really discussed how to handle this situation.
+Looking at the table of means in Figure \ref{fig:factorialanova15} we get a strong impression that there are differences between the groups. This is especially true when we look at the standard deviations. Across groups, this standard deviation varies quite a lot.\FOOTNOTE{This discrepancy in standard deviations might (and should) make you wonder if we have a violation of the homogeneity of variance assumption. I'll leave it as an exercise for the reader to double check this using the Levene test option.} Whilst this at first may seem like a straightforward factorial ANOVA, a problem arises when we look at how many observations we have in each group. See the different Ns for different groups shown in Figure \ref{fig:factorialanova15}. This violates one of our original assumptions, namely that the number of people in each group is the same. We haven't really discussed how to handle this situation.
 
 \SUBSECTION{``Standard ANOVA'' does not exist for unbalanced designs}
 
@@ -942,13 +943,13 @@ Null model: & \rtextverb#babble ~ sugar + milk# \\
 Alternative model: & \rtextverb#babble ~ sugar + milk + sugar*milk# 
 \end{tabular}\vspace*{3pt}
 
-Type III sum of squares is the default hypothesis testing method used by jamovi ANOVA, so to run a Type I sum of squares analysis we have to select `Type 1' in the `Sum of squares' selection box in the jamovi `ANOVA' - `Model' options. This gives us the ANOVA table shown in Figure \ref{fig:factorialanova16}.
+Type III sum of squares is the default hypothesis testing method used by JASP ANOVA, so to run a Type I sum of squares analysis we have to select `Type 1' in the `Sum of squares' selection box in the JASP `ANOVA' - `Model' options. This gives us the ANOVA table shown in Figure \ref{fig:factorialanova16}.
 
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factorialanova/factorialanova16.pdf,clip=true, width = 14cm} 
-\caption{ANOVA results table using Type I sum of squares in jamovi}
+\epsfig{file = ../img/factorialanova/factorialanova16.png,clip=true, width = 12cm} 
+\caption{ANOVA results table using Type I sum of squares in JASP}
 \label{fig:factorialanova16}
 \HR
 \end{center}
@@ -958,8 +959,8 @@ The big problem with using Type I sum of squares is the fact that it really does
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factorialanova/factorialanova17.pdf,clip=true, width = 14cm} 
-\caption{ANOVA results table using Type I sum of squares in jamovi, but with factors entered in a different order (\texttt{milk} first)}
+\epsfig{file = ../img/factorialanova/factorialanova17.png,clip=true, width = 14cm} 
+\caption{ANOVA results table using Type I sum of squares in JASP, but with factors entered in a different order (\texttt{milk} first)}
 \label{fig:factorialanova17}
 \HR
 \end{center}
@@ -974,7 +975,7 @@ The consequence of all this is that Type I tests are very rarely of much interes
 
 \SUBSECTION{Type III sum of squares}
 
-Having just finished talking about Type I tests, you might think that the natural thing to do next would be to talk about Type II tests. However, I think it's actually a bit more natural to discuss Type III tests (which are simple and the default in jamovi ANOVA) before talking about Type II tests (which are trickier). The basic idea behind Type III tests is extremely simple. Regardless of which term you're trying to evaluate, run the $F$-test in which the alternative hypothesis corresponds to the full ANOVA model as specified by the user, and the null model just deletes that one term that you're testing. For instance, in the coffee example, in which our full model was \rtextverb#babble ~ sugar + milk + sugar*milk#, the test for a main effect of \rtext{sugar} would correspond to a comparison between the following two models:
+Having just finished talking about Type I tests, you might think that the natural thing to do next would be to talk about Type II tests. However, I think it's actually a bit more natural to discuss Type III tests (which are simple and the default in JASP) before talking about Type II tests (which are trickier). The basic idea behind Type III tests is extremely simple. Regardless of which term you're trying to evaluate, run the $F$-test in which the alternative hypothesis corresponds to the full ANOVA model as specified by the user, and the null model just deletes that one term that you're testing. For instance, in the coffee example, in which our full model was \rtextverb#babble ~ sugar + milk + sugar*milk#, the test for a main effect of \rtext{sugar} would correspond to a comparison between the following two models:
 
 \vspace*{3pt}\hspace*{2cm}\begin{tabular}{ll}
 Null model: & \rtextverb#babble ~ milk + sugar*milk# \\
@@ -1022,16 +1023,16 @@ Later on, we'll see that Type III tests can be redeemed in some contexts, but fi
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factorialanova/factorialanova18.pdf,clip=true, width = 14cm} 
-\caption{ANOVA results table using Type III sum of squares in jamovi}
+\epsfig{file = ../img/factorialanova/factorialanova18.png,clip=true, width = 14cm} 
+\caption{ANOVA results table using Type III sum of squares in JASP}
 \label{fig:factorialanova18}
 \HR
 \end{center}
 \end{figure}
 
-But be aware, one of the perverse features of the Type III testing strategy is that typically the results turn out to depend on the {\it contrasts} that you use to encode your factors (see Section~\ref{sec:contrasts} if you've forgotten what the different types of contrasts are).\FOOTNOTE{However, in jamovi the results for Type III sum of squares ANOVA are the same regardless of the contrast selected, so jamovi is obviously doing something different!}
+But be aware, one of the perverse features of the Type III testing strategy is that typically the results turn out to depend on the {\it contrasts} that you use to encode your factors (see Section~\ref{sec:contrasts} if you've forgotten what the different types of contrasts are).\FOOTNOTE{However, in JASP the results for Type III sum of squares ANOVA are the same regardless of the contrast selected, so JASP is obviously doing something different!}
 
-Okay, so if the $p$-values that typically come out of Type III analyses (but not in jamovi) are so sensitive to the choice of contrasts, does that mean that Type III tests are essentially arbitrary and not to be trusted? To some extent that's true, and when we turn to a discussion of Type II tests we'll see that Type II analyses avoid this arbitrariness entirely, but I think that's too strong a conclusion. Firstly, it's important to recognise that some choices of contrasts will always produce the same answers (ah, so this is what is happening in jamovi). Of particular importance is the fact that if the columns of our contrast matrix are all constrained to sum to zero, then the Type III analysis will always give the same answers. 
+Okay, so if the $p$-values that typically come out of Type III analyses are so sensitive to the choice of contrasts, does that mean that Type III tests are essentially arbitrary and not to be trusted? To some extent that's true, and when we turn to a discussion of Type II tests we'll see that Type II analyses avoid this arbitrariness entirely, but I think that's too strong a conclusion. Firstly, it's important to recognise that some choices of contrasts will always produce the same answers (ah, so this is what is happening in JASP). Of particular importance is the fact that if the columns of our contrast matrix are all constrained to sum to zero, then the Type III analysis will always give the same answers. 
 
 \SUBSECTION{Type II sum of squares}
 
@@ -1092,22 +1093,22 @@ Alternative model: & \rtextverb#babble ~ sugar + milk + sugar*milk#
 \end{tabular}\vspace*{3pt}
 
 \noindent
-Running the tests are again straightforward. Just select `Type 2' in the `Sum of squares' selection box in the jamovi `ANOVA' - `Model' options, This gives us the ANOVA table shown in Figure~\ref{fig:factorialanova19}.
+Running the tests are again straightforward. Just select `Type 2' in the `Sum of squares' selection box in the JASP `ANOVA' - `Model' options, This gives us the ANOVA table shown in Figure~\ref{fig:factorialanova19}.
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factorialanova/factorialanova19.pdf,clip=true, width = 14cm} 
-\caption{ANOVA results table using Type II sum of squares in jamovi}
+\epsfig{file = ../img/factorialanova/factorialanova19.png,clip=true, width = 14cm} 
+\caption{ANOVA results table using Type II sum of squares in JASP}
 \label{fig:factorialanova19}
 \HR
 \end{center}
 \end{figure}
 
-Type II tests have some clear advantages over Type I and Type III tests. They don't depend on the order in which you specify factors (unlike Type I), and they don't depend on the contrasts that you use to specify your factors (unlike Type III). And although opinions may differ on this last point, and it will definitely depend on what you're trying to do with your data, I do think that the hypothesis tests that they specify are more likely to correspond to something that you actually care about. As a consequence, I find that it's usually easier to interpret the results of a Type II test than the results of a Type I or Type III test. For this reason my tentative advice is that, if you can't think of any obvious model comparisons that directly map onto your research questions but you still want to run an ANOVA in an unbalanced design, Type II tests are probably a better choice than Type I or Type III.\FOOTNOTE{I find it amusing to note that the default in \R\ is Type I and the default in SPSS and jamovi is Type III. Neither of these appeals to me all that much. Relatedly, I find it depressing that almost nobody in the psychological literature ever bothers to report which Type of tests they ran, much less the order of variables (for Type I) or the contrasts used (for Type III). Often they don't report what software they used either. The only way I can ever make any sense of what people typically report is to try to guess from auxiliary cues which software they were using, and to assume that they never changed the default settings. Please don't do this! Now that you know about these issues make sure you indicate what software you used, and if you're reporting ANOVA results for unbalanced data, then specify what Type of tests you ran, specify order information if you've done Type I tests and specify contrasts if you've done Type III tests. Or, even better, do hypotheses tests that correspond to things you really care about and then report those!}
+Type II tests have some clear advantages over Type I and Type III tests. They don't depend on the order in which you specify factors (unlike Type I), and they don't depend on the contrasts that you use to specify your factors (unlike Type III). And although opinions may differ on this last point, and it will definitely depend on what you're trying to do with your data, I do think that the hypothesis tests that they specify are more likely to correspond to something that you actually care about. As a consequence, I find that it's usually easier to interpret the results of a Type II test than the results of a Type I or Type III test. For this reason my tentative advice is that, if you can't think of any obvious model comparisons that directly map onto your research questions but you still want to run an ANOVA in an unbalanced design, Type II tests are probably a better choice than Type I or Type III.\FOOTNOTE{I find it amusing to note that the default in \R\ is Type I and the default in SPSS, JASP, and jamovi is Type III. Neither of these appeals to me all that much. Relatedly, I find it depressing that almost nobody in the psychological literature ever bothers to report which Type of tests they ran, much less the order of variables (for Type I) or the contrasts used (for Type III). Often they don't report what software they used either. The only way I can ever make any sense of what people typically report is to try to guess from auxiliary cues which software they were using, and to assume that they never changed the default settings. Please don't do this! Now that you know about these issues make sure you indicate what software you used, and if you're reporting ANOVA results for unbalanced data, then specify what Type of tests you ran, specify order information if you've done Type I tests and specify contrasts if you've done Type III tests. Or, even better, do hypotheses tests that correspond to things you really care about and then report those!}
 
 \SUBSECTION{Effect sizes (and non-additive sums of squares)}
 
-jamovi also provides the effect sizes $\eta^2$ and partial $\eta^2$ when you select these options, as in Figure \ref{fig:factorialanova19}. However, when you've got an unbalanced design there's a bit of extra complexity involved. 
+JASP also provides the effect sizes $\eta^2$ and partial $\eta^2$ when you select these options. However, when you've got an unbalanced design there's a bit of extra complexity involved. 
 
 If you remember back to our very early discussions of ANOVA, one of the key ideas behind the sums of squares calculations is that if we add up all the SS terms associated with the effects in the model, and add that to the residual SS, they're supposed to add up to the total sum of squares. And, on top of that, the whole idea behind $\eta^2$ is that, because you're dividing one of the SS terms by the total SS value, an $\eta^2$ value can be interpreted as the proportion of variance accounted for by a particular term. But this is not so straightforward in unbalanced designs because some of the variance goes ``missing''.
 

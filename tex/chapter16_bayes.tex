@@ -539,38 +539,29 @@ An important type of statistical inference problem discussed in this book is the
 
 \SUBSECTION{Independent samples \texorpdfstring{$t$}{t}-test}
 
-The most common type of $t$-test is the independent samples $t$-test, and it arises when you have data as in the \filename{harpo.csv} data set that we used in the earlier chapter on $t$-tests (Chapter~\ref{ch:ttest}). In this data set, we have two groups of students, those who received lessons from Anastasia and those who took their classes with Bernadette. The question we want to answer is whether there's any difference in the grades received by these two groups of students. Back in Chapter~\ref{ch:ttest} I suggested you could analyse this kind of data using the Independent Samples $t$-test in jamovi, which gave us the results in Figure \ref{fig:bayes1}. As we obtain a $p$-value less than 0.05, we reject the null hypothesis. 
+The most common type of $t$-test is the independent samples $t$-test, and it arises when you have data as in the \filename{harpo.csv} data set that we used in the earlier chapter on $t$-tests (Chapter~\ref{ch:ttest}). In this data set, we have two groups of students, those who received lessons from Anastasia and those who took their classes with Bernadette. The question we want to answer is whether there's any difference in the grades received by these two groups of students. Back in Chapter~\ref{ch:ttest} I suggested you could analyse this kind of data using the Independent Samples $t$-test in JASP, which gave us the results in Figure \ref{fig:bayes1}. As we obtain a $p$-value less than 0.05, we reject the null hypothesis. 
 
 \begin{figure}[ht]
 \begin{center}
-\epsfig{file = ../img/bayes/bayes1.png,clip=true, width = 14cm} 
-\caption{Independent Samples $t$-test result in jamovi}
+\epsfig{file = ../img/bayes/bayes1.png,clip=true, width = 10cm} 
+\caption{Bayesian independent Samples $t$-test result in JASP}
 \label{fig:bayes1}
 \HR
 \end{center}
 \end{figure}
 
-What does the Bayesian version of the $t$-test look like? We can get the Bayes factor analysis by selecting the `Bayes factor' checkbox under the `Tests' option, and accepting the suggested default value for the `Prior'. This gives the results shown in the table in Figure \ref{fig:bayes2}. What we get in this table is a Bayes factor statistic of 1.75, meaning that the evidence provided by these data are about 1.8:1 in favour of the alternative hypothesis. 
-
-\begin{figure}[ht]
-\begin{center}
-\epsfig{file = ../img/bayes/bayes2.png,clip=true, width = 14cm} 
-\caption{Bayes factors analysis alongside Independent Samples $t$-Test}
-\label{fig:bayes2}
-\HR
-\end{center}
-\end{figure}
+What does the Bayesian version of the $t$-test look like? We can get the Bayes factor analysis by selecting the `T-Tests' - `Bayesian Independent Samples T-Test' option.  The dialog is similar to the conventional $t$-test from earlier, so you should already know what to do!  For now, just accept the defaults that JASP provides. This gives the results shown in the table in Figure \ref{fig:bayes1}. What we get in this table is a Bayes factor statistic of 1.755, meaning that the evidence provided by these data are about 1.8:1 in favour of the alternative hypothesis. 
 
 Before moving on, it's worth highlighting the difference between the orthodox test results and the Bayesian one. According to the orthodox test, we obtained a significant result, though only barely. Nevertheless, many people would happily accept $p=.043$ as reasonably strong evidence for an effect. In contrast, notice that the Bayesian test doesn't even reach 2:1 odds in favour of an effect, and would be considered very weak evidence at best. In my experience that's a pretty typical outcome. Bayesian methods usually require more evidence before rejecting the null.
 
 \SUBSECTION{Paired samples \texorpdfstring{$t$}{t}-test}
 
-Back in Section~\ref{sec:pairedsamplesttest} I discussed the \rtext{chico.csv} data set in which student grades were measured on two tests, and we were interested in finding out whether grades went up from test 1 to test 2. Because every student did both tests, the tool we used to analyse the data was a paired samples $t$-test. Figure \ref{fig:bayes3} shows the jamovi results table for the conventional paired $t$-test alongside the Bayes factor analysis. At this point, I hope you can read this output without any difficulty. The data provide evidence of about 6000:1 in favour of the alternative. We could probably reject the null with some confidence!
+Back in Section~\ref{sec:pairedsamplesttest} I discussed the \rtext{chico.csv} data set in which student grades were measured on two tests, and we were interested in finding out whether grades went up from test 1 to test 2. Because every student did both tests, the tool we used to analyse the data was a paired samples $t$-test. Figure \ref{fig:bayes3} shows the JASP results table for the conventional paired $t$-test alongside the Bayes factor analysis. At this point, I hope you can read this output without any difficulty. The data provide evidence of about 6000:1 in favour of the alternative. We could probably reject the null with some confidence!
 
 \begin{figure}[ht]
 \begin{center}
-\epsfig{file = ../img/bayes/bayes3.pdf,clip=true, width = 14cm} 
-\caption{Paired samples T-Test and Bayes Factor result in jamovi}
+\epsfig{file = ../img/bayes/bayes3.png,clip=true, width = 10cm} 
+\caption{Paired samples T-Test and Bayes Factor result in JASP}
 \label{fig:bayes3}
 \HR
 \end{center}

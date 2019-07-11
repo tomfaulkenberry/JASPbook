@@ -28,13 +28,15 @@ In Psychology, latent factors represent psychological phenomena or constructs th
 
 Here’s another example: we may not be able to directly measure statistics anxiety, but we can measure whether statistics anxiety is high or low with a set of questions in a questionnaire. For example, “Q1: Doing the assignment for a statistics course”, “Q2: Trying to understand the statistics described in a journal article”, and “Q3: Asking the lecturer for help in understanding something from the course”, etc., each rated from low anxiety to high anxiety. People with high statistics anxiety will tend to give similarly high responses on these observed variables because of their high statistics anxiety. Likewise, people with low statistics anxiety will give similar low responses to these variables because of their low statistics anxiety. 
 
-In exploratory factor analysis (EFA), we are essentially exploring the correlations between observed variables to uncover any interesting, important underlying (latent) factors that are identified when observed variables co-vary. We can use statistical software to estimate any latent factors and to identify which of our variables have a high loading\FOOTNOTE{Quite helpfully, factor loadings can be interpreted like standardized regression coefficients} (e.g. loading $>0.5$) on each factor, suggesting they are a useful measure, or indicator, of the latent factor. Part of this process includes a step called rotation, which to be honest is a pretty weird idea but luckily we don’t have to worry about understanding it; we just need to know that it is helpful because it makes the pattern of loadings on different factors much clearer. As such, rotation helps with seeing more clearly which variables are linked substantively to each factor. We also need to decide how many factors are reasonable given our data, and helpful in this regard is something called Eigen values. We'll come back to this in a moment, after we have covered some of the main assumptions of EFA.
+In exploratory factor analysis (EFA), we are essentially exploring the correlations between observed variables to uncover any interesting, important underlying (latent) factors that are identified when observed variables co-vary. We can use statistical software to estimate any latent factors and to identify which of our variables have a high loading\FOOTNOTE{Quite helpfully, factor loadings can be interpreted like standardized regression coefficients} (e.g. loading $>0.5$) on each factor, suggesting they are a useful measure, or indicator, of the latent factor. Part of this process includes a step called rotation, which to be honest is a pretty weird idea but luckily we don’t have to worry about understanding it; we just need to know that it is helpful because it makes the pattern of loadings on different factors much clearer. As such, rotation helps with seeing more clearly which variables are linked substantively to each factor. We also need to decide how many factors are reasonable given our data, and helpful in this regard is something called eigenvalues. \begin{comment}We'll come back to this in a moment, after we have covered some of the main assumptions of EFA.
+
 
 \SUBSECTION{Checking assumptions}
 
 There are a couple of assumptions that need to be checked as part of the analysis. The first assumption is \keyterm{sphericity}, which essentially checks that the variables in your dataset are correlated with each other to the extent that they can potentially be summarised with a smaller set of factors. Bartlett’s test for sphericity checks whether the observed correlation matrix diverges significantly from a zero (or null) correlation matrix. So, if Bartlett’s test is significant ($p<.05$), this indicates that the observed correlation matrix is significantly divergent from the null, and is therefore suitable for EFA. 
 
 The second assumption is \keyterm{sampling adequacy} and is checked using the Kaiser-Meyer-Olkin (KMO) Measure of Sampling Adequacy (MSA). The KMO index is a measure of the proportion of variance among observed variables that might be common variance. Using partial correlations, it checks for factors that load just two items. We seldom, if ever, want EFA producing a lot of factors loading just two items each. KMO is about sampling adequacy because partial correlations are typically seen with inadequate samples.  If the KMO index is high ($\approx$1), the EFA is efficient whereas if KMO is low ($\approx$0), the EFA is not relevant. KMO values smaller than 0.5 indicates that EFA is not suitable and a KMO value of 0.6 should be present before EFA is considered suitable. Values between 0.5 and 0.7 are considered adequate, values between 0.7 and 0.9 are good and values between 0.9 and 1.0 are excellent.
+\end{comment}
 
 \SUBSECTION{What is EFA good for?}
 
@@ -49,9 +51,9 @@ In line with this approach, another consequence of EFA is to combine the variabl
 
 In the first option each item’s contribution to the combined score depends on how strongly it relates to the factor. In the second option we typically just average across all the items that contribute substantively to a factor to create the combined scale score variable. Which to choose is a matter of preference, though a disadvantage with the first option is that loadings can vary quite a bit from sample to sample, and in behavioural and health sciences we are often interested in developing and using composite questionnaire scale scores across different studies and different samples. In which case it is reasonable to use a composite measure that is based on the substantive items contributing equally rather than weighting by sample specific loadings from a different sample. In any case, understanding a combined variable measure as an average of items is simpler and more intuitive than using a sample specific optimally-weighted combination.
 
-A more advanced statistical technique, one which is beyond the scope of this book, undertakes regression modelling where latent factors are used in prediction models of other latent factors. This is called "structural equation modelling" and there are specific software programmes and R packages dedicated to this approach. But let's not get ahead of ourselves; what we should really focus on now is how to do an EFA in jamovi.  
+A more advanced statistical technique, one which is beyond the scope of this book, undertakes regression modelling where latent factors are used in prediction models of other latent factors. This is called "structural equation modelling" and there are specific software programmes and R packages dedicated to this approach. But let's not get ahead of ourselves; what we should really focus on now is how to do an EFA in JASP.  
 
-\SUBSECTION{EFA in jamovi}
+\SUBSECTION{EFA in JASP}
 
 First, we need some data. Twenty-five personality self-report items (see Figure \ref{fig:fa2}) taken from the International Personality Item Pool (\url{http://ipip.ori.org}) were included as part of the Synthetic Aperture Personality Assessment (SAPA) web-based personality assessment (SAPA: \url{http://sapa-project.org}) project. The 25 items are organized by five putative factors: Agreeableness, Conscientiousness, Extraversion, Neuroticism, and Openness. 
 
@@ -76,10 +78,10 @@ The item data were collected using a 6-point response scale:
 \end{enumerate}
 
 
-A sample of N=250 responses is contained in the dataset \filename{bfi\_sample.csv}. As researchers, we are interested in exploring the data to see whether there are some underlying latent factors that are measured reasonably well by the 25 observed variables in the \filename{bfi\_sample.csv} data file. Open up the dataset and check that the 25 variables are coded as continuous variables (technically they are ordinal though for EFA in jamovi it mostly doesn't matter, except if you decide to calculate weighted factor scores in which case continuous variables are needed). To perform EFA in jamovi:
+A sample of N=250 responses is contained in the dataset \filename{bfi\_sample.csv}. As researchers, we are interested in exploring the data to see whether there are some underlying latent factors that are measured reasonably well by the 25 observed variables in the \filename{bfi\_sample.csv} data file. Open up the dataset and check that the 25 variables are coded as continuous variables (technically they are ordinal though for EFA in JASP it mostly doesn't matter, except if you decide to calculate weighted factor scores in which case continuous variables are needed). To perform EFA in JASP:
 
 \begin{itemize} \itemsep -2pt
-\item Select \rtext{Factor - Exploratory Factor Analysis} from the main jamovi button bar to open the EFA analysis window (Figure \ref{fig:fa3}).
+\item Select \rtext{Factor - Exploratory Factor Analysis} from the main JASP button bar to open the EFA analysis window (Figure \ref{fig:fa3}).
 \item Select the 25 personality questions and transfer them into the ‘Variables’ box.
 \item Check appropriate options, including ‘Assumption Checks’, but also Rotation ‘Method’, ‘Number of Factors’ to extract, and ‘Additional Output’ options. See Figure \ref{fig:fa3} for suggested options for this illustrative EFA, and please note that the Rotation ‘Method’ and ‘Number of Factors’ extracted is typically adjusted by the researcher during the analysis to find the best result, as described below.
 \end{itemize}
@@ -87,35 +89,24 @@ A sample of N=250 responses is contained in the dataset \filename{bfi\_sample.cs
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factoranalysis/fa3.png, clip=true,width = 12cm} 
-\caption{The jamovi EFA analysis window}
+\caption{The JASP exploratory factor analysis window}
 \label{fig:fa3}
 \HR
 \end{center}
 \end{figure}
 
-\begin{figure}[p]
-\begin{center}
-\epsfig{file = ../img/factoranalysis/fa4.png, clip=true,width = 7cm} 
-\caption{jamovi EFA assumption checks for the personality questionnaire data}
-\label{fig:fa4}
-\HR
-\end{center}
-\end{figure}
-
-First, check the assumptions (Figure \ref{fig:fa4}). You can see that (1) Bartlett’s test of sphericity is significant, so this assumption is satisfied; and (2) the KMO measure of sampling adequacy (MSA) is 0.81 overall, suggesting good sampling adequacy. No problems here then! 
-
-The next thing to check is how many factors to use (or “extract” from the data). Three different approaches are available:
+We can now begin to investigate how many factors to use (or “extract” from the data). Three different approaches are available:
 
 \begin{itemize} \itemsep -2pt
-\item One convention is to choose all components with Eigen values greater than 1\FOOTNOTE{An Eigen value indicates how much of the variance in the observed variables a factor accounts for. A factor with an Eigen value $>1$ accounts for more variance than a single observed variable}. This would give us four factors with our data (try it and see). 
+\item One convention is to choose all components with eigenvalues greater than 1\FOOTNOTE{An eigenvalue indicates how much of the variance in the observed variables a factor accounts for. A factor with an eigenvalue $>1$ accounts for more variance than a single observed variable}. This would give us four factors with our data (try it and see). 
 \item Examination of the scree plot, as in Figure \ref{fig:fa5}, lets you identify the “point of inflection”. This is the point at which the slope of the scree curve clearly levels off, below the “elbow”. This would give us five factors with our data. Interpreting scree plots is a bit of an art: in Figure \ref{fig:fa5} there is a noticeable step from 5 to 6 factors, but in other scree plots you look at it will not be so clear cut.
-\item Using a parallel analysis technique, the obtained Eigen values are compared to those that would be obtained from random data. The number of factors extracted is the number with Eigen values greater than what would be found with random data. 
+\item Using a parallel analysis technique, the obtained eigenvalues are compared to those that would be obtained from random data. The number of factors extracted is the number with eigenvalues greater than what would be found with random data. 
 \end{itemize}
 
 \begin{figure}[!htb]
 \begin{center}
-\epsfig{file = ../img/factoranalysis/fa5.png, clip=true,width = 14cm} 
-\caption{Scree plot of the personality data in jamovi EFA, showing a noticeable inflection and levelling off after point 5 (the “elbow”)}
+\epsfig{file = ../img/factoranalysis/fa5.png, clip=true,width = 10cm} 
+\caption{Scree plot of the personality data in JASP EFA, showing a noticeable inflection and levelling off after point 5 (the “elbow”)}
 \label{fig:fa5}
 \HR
 \end{center}
@@ -194,7 +185,7 @@ Another option is to create an optimally-weighted factor score index. We can use
 \begin{figure}[!htp]
 \begin{center}
 \epsfig{file = ../img/factoranalysis/fa10.png, clip=true,width = 16cm} 
-\caption{\rtext{Rj} editor commands for creating optimally weighted factor scores for the five factor solution}
+\caption{\texttt{Rj} editor commands for creating optimally weighted factor scores for the five factor solution}
 \label{fig:fa10}
 \HR
 \end{center}
@@ -203,7 +194,7 @@ Another option is to create an optimally-weighted factor score index. We can use
 \begin{figure}[!htp]
 \begin{center}
 \epsfig{file = ../img/factoranalysis/fa11.png, clip=true,width = 14cm} 
-\caption{The newly created data file “bfifactscores.csv” created in the \rtext{Rj} editor and containing the five factor score variables. Note that each of the new factor score variables is labelled corresponding to the order that the factors are listed in the factor loadings table}
+\caption{The newly created data file “bfifactscores.csv” created in the \texttt{Rj} editor and containing the five factor score variables. Note that each of the new factor score variables is labelled corresponding to the order that the factors are listed in the factor loadings table}
 \label{fig:fa11}
 \HR
 \end{center}
@@ -328,7 +319,7 @@ You can go on to create component scores in much the same way as in EFA. However
 \begin{figure}[!htb]
 \begin{center}
 \epsfig{file = ../img/factoranalysis/pca6.png, clip=true,width = 16cm} 
-\caption{\rtext{Rj} editor commands for creating optimally weighted component scores for the five component solution}
+\caption{\texttt{Rj} editor commands for creating optimally weighted component scores for the five component solution}
 \label{fig:pca6}
 \HR
 \end{center}
