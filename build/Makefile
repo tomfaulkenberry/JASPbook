@@ -1,14 +1,11 @@
 TEX=pdflatex
 BIB=biber
 
-lsj.pdf:
+lsj.pdf: ../tex/*.tex ../data/*
 	$(TEX) lsj
 	$(BIB) lsj
 	$(TEX) lsj
 	$(TEX) lsj
 
-tidy:
+clean:
 	$(RM) lsj.{aux,bbl,bcf,blg,log,out,run.xml,toc}
-
-clean: tidy
-	$(RM) lsj.pdf
