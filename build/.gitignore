@@ -1,2 +1,10 @@
-lsj.{aux,bbl,bcf,blg,log,out,run.xml,toc}
+lsj.aux
+lsj.bbl
+lsj.bcf
+lsj.blg
+lsj.log
+lsj.out
+lsj.run.xml
+lsj.toc
+
 lsj.pdf
