@@ -20,7 +20,6 @@ However, before going into any of the specifics, it's worth talking a little abo
 \item Doing statistics in a conventional spreadsheet (e.g., Microsoft Excel) is generally a bad idea in the long run. Although many people likely feel more familiar with them, spreadsheets are very limited in terms of what analyses they allow you do. If you get into the habit of trying to do your real life data analysis using spreadsheets then you've dug yourself into a very deep hole.
 \item Avoiding proprietary software is a very good idea. There are a lot of commercial packages out there that you can buy, some of which I like and some of which I don't. They're usually very glossy in their appearance and generally very powerful (much more powerful than spreadsheets). However, they're also very expensive. Usually, the company sells ``student versions'' (crippled versions of the real thing) very cheaply, and then they they sell full powered ``educational versions'' at a price that makes me wince. They will also sell commercial licences with a staggeringly high price tag. The business model here is to suck you in during your student days and then leave you dependent on their tools when you go out into the real world. It's hard to blame them for trying, but personally I'm not in favor of shelling out thousands of dollars if I can avoid it. And you can avoid it. If you make use of packages like JASP that are open source and free you never get trapped having to pay exorbitant licensing fees. 
 \end{itemize}
-Those are the main reasons I use JASP. It's not without its flaws, though. It's relatively new\FOOTNOTE{As of writing this in May 2019.} so there is not a huge set of textbooks and other resources to support it, and it has a few annoying quirks that we're all pretty much stuck with, but on the whole I think the strengths outweigh the weakness; more so than any other option I've encountered so far. 
 
 
 \section{Installing JASP \label{sec:gettingjasp}}
@@ -29,7 +28,7 @@ Okay, enough with the sales pitch. Let's get started. Just as with any piece of 
 \begin{quote}
 \url{https://jasp-stats.org/}
 \end{quote}
-At the top of the page, you'll click on the heading ``Download''. Then, you'll see separate links for Windows users, Mac users, and Linux users. If you follow the relevant link you'll see that the online instructions are pretty self-explanatory. As of this writing, the current version of JASP is 0.9.2.0, but they usually issue updates every few months, so you'll probably have a newer version.\FOOTNOTE{Although JASP is updated frequently it doesn't usually make much of a difference for the sort of work we'll do in this book. In fact, during the writing of the book I upgraded several times and it didn't make much difference at all to what is in this book.}
+At the top of the page, you'll click on the heading ``Download''. Then, you'll see separate links for Windows users, Mac users, and Linux users. If you follow the relevant link you'll see that the online instructions are pretty self-explanatory. As of this writing\footnote{Version 2.0, May 21, 2025}, the current version of JASP is 0.19.3, but they usually issue updates every few months, so you'll probably have a newer version.\FOOTNOTE{Although JASP is updated frequently it doesn't usually make much of a difference for the sort of work we'll do in this book. In fact, during the writing of the book I upgraded several times and it didn't make much difference at all to what is in this book.}
 
 \SUBSECTION{Starting up JASP}
 
@@ -44,7 +43,7 @@ One way or another, regardless of what operating system you're using, it's time 
 \end{center}
 \end{figure}
 
-If you have experience with other statistical software packages, you might be a bit dismayed to see that there is no place to begin typing your data. This is a deliberate decision on the part of the JASP developers; their philosophy is that users should be allowed to use the editor they are most comfortable with \FOOTNOTE{See https://jasp-stats.org/2018/05/15/data-editing-in-jasp/ for a discussion of this very issue.}. Thus, the preferred method for getting data into JASP is to load a CSV file (.csv), which is a text-based data format that can be created by (and opened in) any spreadsheet program. More details about this will be given shortly. 
+Users of earlier versions of JASP were often a bit dismayed to see that there was no place to begin entering data. This was a deliberate decision on the part of the JASP developers; their philosophy was that users should be allowed to use the editor they are most comfortable with \FOOTNOTE{See https://jasp-stats.org/2018/05/15/data-editing-in-jasp/ for a discussion of this very issue.}. However, starting with version 0.18.0, JASP now includes a data editor. Even so, the preferred method for getting data into JASP is still to load a CSV file (.csv), which is a text-based data format that can be created by (and opened in) any spreadsheet program. We'll talk more about this a bit later.
 
 \section{Analyses\label{sec:analyses}}
 
