@@ -11,7 +11,7 @@ The term ``categorical data'' is just another name for ``nominal scale data''. I
 
 \section{The \texorpdfstring{\boldm{$\chi^2$}}{} (chi-square) goodness-of-fit test~\label{sec:goftest}}
 
-The $\chi^2$ goodness-of-fit test is one of the oldest hypothesis tests around. It was invented by Karl Pearson around the turn of the century \parencite{Pearson1900}, with some corrections made later by  Sir Ronald Fisher \parencite{Fisher1922}. It tests whether an observed frequency distribution of a nominal variable matches an expected frequency distribution. For example, suppose a group of patients has been undergoing an experimental treatment and have had their health assessed to see whether their condition has improved, stayed the same or worsened. A goodness-of-fit test could be used to determine whether the numbers in each category - improved, no change, worsened - match the numbers that would be expected given the standard treatment option. Let's think about this some more, with some psychology. 
+The $\chi^2$ goodness-of-fit test is one of the oldest hypothesis tests around. It was invented by Karl Pearson around the turn of the century \parencite{Pearson1900}, with some corrections made later by  Sir Ronald Fisher \parencite{Fisher1922}. It tests whether an observed frequency distribution of a nominal variable matches an expected frequency distribution. For example, suppose a group of patients has been undergoing an experimental treatment and have had their health assessed to see whether their condition has improved, stayed the same or worsened. A goodness-of-fit test could be used to determine whether the numbers in each category - improved, no change, worsened - match the numbers that would be expected given the standard treatment option, or differ significantly from those numbers, lending evidence to the claim that the experimental treatment is more effective than the standard treatment. Let's think about this some more, with some psychology. 
 
 \SUBSECTION{The cards data}
 
@@ -39,7 +39,7 @@ label &  index, $i$  & math. symbol &  the value \\  \hline
 \end{center}
 
 \noindent
-Hopefully that's pretty clear. It's also worth noting that mathematicians prefer to talk about general rather than specific things, so you'll also see the notation $O_i$, which refers to the number of observations that fall within the $i$-th category (where $i$ could be 1, 2, 3 or 4). Finally, if we want to refer to the set of all observed frequencies, statisticians group all observed values into a vector\FOOTNOTE{A vector is a sequence of data elements of the same basic type}, which I'll refer to using boldface type as $\bm{O}$. 
+It's also worth noting that mathematicians prefer to talk about general rather than specific things, so you'll also see the notation $O_i$, which refers to the number of observations that fall within the $i$-th category (where $i$ could be 1, 2, 3 or 4). Finally, if we want to refer to the set of all observed frequencies, statisticians group all observed values into a vector\FOOTNOTE{A vector is a sequence of data elements of the same basic type}, which I'll refer to using boldface type as $\bm{O}$. 
 
 $$
 \bm{O} = (O_1, O_2, O_3, O_4)
@@ -109,7 +109,7 @@ difference score & $O_i - E_i$ & -15 & 1 & 14 & 0 \\
 \end{tabular}
 \end{center}
 
-So, based on our calculations, it's clear that people chose more hearts and fewer clubs than the null hypothesis predicted. However, a moment's thought suggests that these raw differences aren't quite what we're looking for. Intuitively, it feels like it's just as bad when the null hypothesis predicts too few observations (which is what happened with hearts) as it is when it predicts too many (which is what happened with clubs). So it's a bit weird that we have a negative number for clubs and a positive number for hearts. One easy way to fix this is to square everything, so that we now calculate the squared differences, $(O_i - E_i)^2$. As before, we can do this by hand: 
+So, based on our calculations, it's clear that people chose more hearts and fewer clubs than the null hypothesis predicted. However, a moment's thought suggests that these raw differences aren't quite what we're looking for. Intuitively, it feels like it's just as bad when the null hypothesis predicts too few observations (which is what happened with hearts) as it is when it predicts too many (which is what happened with clubs). So it's a bit weird that we have a negative number for clubs and a positive number for hearts. One easy way to fix this is to square everything\footnote{One could also take the absolute value, but there are a lot of reasons \textit{not} to do this...mostly, it comes down to calculus, which we'll not discuss here.}, so that we now calculate the squared differences, $(O_i - E_i)^2$. As before, we can do this by hand: 
 
 \begin{center}
 \begin{tabular}{rc|cccc}
@@ -202,11 +202,11 @@ So, if our calculated $\chi^2$ statistic is bigger than the critical value of 7.
 
 \SUBSECTION{Doing the test in JASP\label{sec:gofTestInJASP}}
 
-Not surprisingly, JASP provides an analysis that will do these calculations for you. From the main `Analyses' toolbar select `Frequencies' - `Multinomial Test'. Then in the analysis window that appears move the variable you want to analyse (\rtext{choice\_1} across into the `Factor' box. Also, click on the `Descriptives' check box so that you see the expected counts in the results table. When you have done all this, you should see the analysis results in JASP as in Figure~\ref{fig:chisquare.analysis1}. No surprise then that JASP provides the same expected counts and statistics that we calculated by hand above, with a $\chi^2$ value of 8.44 with 3 d.f. and $p$=0.038. Note that we don't need to look up a critical p-value threshold value any more, as JASP gives us the actual $p$-value of the calculated $\chi^2$ for 3 d.f.  
+Not surprisingly, JASP provides an analysis that will do these calculations for you. From the main `Analyses' toolbar select `Frequencies' - `Multinomial Test'. Then in the analysis window that appears move the variable you want to analyse (\rtext{choice\_1}) across into the `Factor' box. Also, click on the `Descriptives' check box so that you see the expected counts in the results table. When you have done all this, you should see the analysis results in JASP as in Figure~\ref{fig:chisquare.analysis1}. No surprise then that JASP provides the same expected counts and statistics that we calculated by hand above, with a $\chi^2$ value of 8.44 with 3 d.f. and $p$=0.038. Note that we don't need to look up a critical p-value threshold value any more, as JASP gives us the actual $p$-value of the calculated $\chi^2$ for 3 d.f.  
 
 \begin{figure}
 \begin{center}
-\epsfig{file=../img/chisquare/chisquared_analysis1.png,clip=true,width=14cm}
+\epsfig{file=../img/chisquare/chisquared_analysis1.pdf,clip=true,width=14cm}
 \caption{A $\chi^2$ goodness-of-fit test in JASP, with table showing both observed and expected frequencies.}
 \label{fig:chisquare.analysis1}
 \HR
@@ -215,11 +215,11 @@ Not surprisingly, JASP provides an analysis that will do these calculations for 
 
 \SUBSECTION{Specifying a different null hypothesis}
 
-At this point you might be wondering what to do if you want to run a goodness-of-fit test but your null hypothesis is {\it not} that all categories are equally likely. For instance, let's suppose that someone had made the theoretical prediction that people should choose red cards 60\% of the time, and black cards 40\% of the time (I've no idea why you'd predict that), but had no other preferences. If that were the case, the null hypothesis would be to expect 30\% of the choices to be hearts, 30\% to be diamonds, 20\% to be spades and 20\% to be clubs. In other words we would expect hearts and diamonds to each appear 60 times (30\% of 200 is 60), and spades and clubs to each appear 40 times (20\% of 200 is 40). This seems like a silly theory to me, but nonetheless, it's pretty easy to test this explicitly specified null hypothesis with the data in our JASP analysis. In the analysis window (see Figure~\ref{fig:chisquare.analysis1}) you can click the radio button for `Expected Proportions ($\chi^2$ test)'. When you do this, there are options for entering different expected counts for the variable you have selected, in our case this is \rtext{choice\_1}. Change the counts to reflect the new null hypothesis, as in Figure~ \ref{fig:chisquare.analysis2}, and see how the results change. 
+At this point you might be wondering what to do if you want to run a goodness-of-fit test but your null hypothesis is {\it not} that all categories are equally likely. For instance, let's suppose that someone had made the theoretical prediction that people should choose red cards 60\% of the time, and black cards 40\% of the time (I've no idea why you'd predict that), but had no other preferences. If that were the case, the null hypothesis would be to expect 30\% of the choices to be hearts, 30\% to be diamonds, 20\% to be spades and 20\% to be clubs. In other words we would expect hearts and diamonds to each appear 60 times (30\% of 200 is 60), and spades and clubs to each appear 40 times (20\% of 200 is 40). This seems like a silly theory to me, but nonetheless, it's pretty easy to test this explicitly specified null hypothesis with the data in our JASP analysis. In the analysis window (see Figure~\ref{fig:chisquare.analysis1}) you can click the radio button for `Custom expected proportions ($\chi^2$ test)'. When you do this, there are options for entering different expected counts for the variable you have selected, in our case this is \rtext{choice\_1}. Change the counts to reflect the new null hypothesis, as in Figure~ \ref{fig:chisquare.analysis2}, and see how the results change. 
 
 \begin{figure}[htb]
 \begin{center}
-\epsfig{file=../img/chisquare/chisquared_analysis2.png,clip=true,width=10cm}
+\epsfig{file=../img/chisquare/chisquared_analysis2.pdf,clip=true,width=10cm}
 \caption{Changing the expected proportions in the \texorpdfstring{$\chi^2$}{} goodness-of-fit test in JASP}
 \label{fig:chisquare.analysis2}
 \HR
@@ -238,14 +238,14 @@ and the $\chi^2$ statistic is 4.742, 3 d.f., $p$ = 0.192. Now, the results of ou
 
 \SUBSECTION{How to report the results of the test~\label{sec:chisqreport}}
 
-So now you know how the test works, and you know how to do the test using a wonderful JASP-flavoured magic computing box. The next thing you need to know is how to write up the results. After all, there's no point in designing and running an experiment and then analysing the data if you don't tell anyone about it! So let's now talk about what you need to do when reporting your analysis. Let's stick with our card-suits example. If I wanted to write this result up for a paper or something, then the conventional way to report this would be to write something like this:
+So now you know how the test works, and you know how to do the test using a wonderful JASP-flavoured magic computing box. The next thing you need to know is how to write up the results. After all, there's no point in designing and running an experiment and then analysing the data if you don't tell anyone about it! So let's now talk about what you need to do when reporting your analysis. Let's stick with our card-suits example. If I wanted to write this result up for a paper or other report, then the conventional way to report this would be to write something like this:
 
 \begin{quote}
 Of the 200 participants in the experiment, 64 selected hearts for their first choice, 51 selected diamonds, 50 selected spades, and 35 selected clubs. A chi-square goodness-of-fit test was conducted to test whether the choice probabilities were identical for all four suits. The results were significant ($\chi^2(3) = 8.44, p<.05$), suggesting that people did not select suits purely at random.
 \end{quote}
 
 \noindent
-This is pretty straightforward and hopefully it seems pretty unremarkable. That said, there's a few things that you should note about this description:
+There are a few things that you should note about this description:
 \begin{itemize}
 \item {\it The statistical test is preceded by the descriptive statistics}. That is, I told the reader something about what the data look like before going on to do the test. In general, this is good practice. Always remember that your reader doesn't know your data anywhere near as well as you do. So, unless you describe it to them properly, the statistical tests won't make any sense to them and they'll get frustrated and cry.
 \item {\it The description tells you what the null hypothesis being tested is}. To be honest, writers don't always do this but it's often a good idea in those situations where some ambiguity exists, or when you can't rely on your readership being intimately familiar with the statistical tools that you're using. Quite often the reader might not know (or remember) all the details of the test that your using, so it's a kind of politeness to ``remind'' them! As far as the goodness-of-fit test goes, you can usually rely on a scientific audience knowing how it works (since it's covered in most intro stats classes). However, it's still a good idea to be explicit about stating the null hypothesis (briefly!) because the null hypothesis can be different depending on what you're using the test for. For instance, in the cards example my null hypothesis was that all the four suit probabilities were identical (i.e., $P_1 = P_2 = P_3 = P_4 = 0.25$), but there's nothing special about that hypothesis. I could just as easily have tested the null hypothesis that $P_1 = 0.7$ and $P_2 = P_3 = P_4 = 0.1$ using a goodness-of-fit test. So it's helpful to the reader if you explain to them what your null hypothesis was. Also, notice that I described the null hypothesis in words, not in maths. That's perfectly acceptable. You can describe it in maths if you like, but since most readers find words easier to read than symbols, most writers tend to describe the null using words if they can.

@@ -5,7 +5,7 @@
 %%%%%%%%%%%%%%%%%%%%%%
 \chapter{Comparing two means \label{ch:ttest}}
 
-In Chapter~\ref{ch:chisquare} we covered the situation when your outcome variable is nominal scale and your predictor variable is also nominal scale. Lots of real world situations have that character, and so you'll find that chi-square tests in particular are quite widely used. However, you're much more likely to find yourself in a situation where your outcome variable is interval scale or higher, and what you're interested in is whether the average value of the outcome variable is higher in one group or another. For instance, a psychologist might want to know if anxiety levels are higher among parents than non-parents, or if working memory capacity is reduced by listening to music (relative to not listening to music). In a medical context we might want to know if a new drug increases or decreases blood pressure. An agricultural scientist might want to know whether adding phosphorus to Australian native plants will kill them.\FOOTNOTE{Informal experimentation in my garden suggests that yes, it does. Australian natives are adapted to low phosphorus levels relative to everywhere else on Earth, so if you've bought a house with a bunch of exotics and you want to plant natives, keep them separate; nutrients to European plants are poison to Australian ones.} In all these situations our outcome variable is a fairly continuous, interval or ratio scale variable, and our predictor is a binary ``grouping'' variable. In other words, we want to compare the means of the two groups. 
+In Chapter~\ref{ch:chisquare} we covered the situation when your outcome variable is nominal scale and your predictor variable is also nominal scale. Lots of real world situations have that character, and so you'll find that chi-square tests are quite widely used. However, you're much more likely to find yourself in a situation where your outcome variable is interval scale or higher, and what you're interested in is whether the average value of the outcome variable is higher in one group or another. For instance, a psychologist might want to know if anxiety levels are higher among parents than non-parents, or if working memory capacity is reduced by listening to music (relative to not listening to music). In a medical context we might want to know if a new drug increases or decreases blood pressure. An agricultural scientist might want to know whether adding phosphorus to Australian native plants will kill them.\FOOTNOTE{Informal experimentation in my garden suggests that yes, it does. Australian natives are adapted to low phosphorus levels relative to everywhere else on Earth, so if you've bought a house with a bunch of exotics and you want to plant natives, keep them separate; nutrients to European plants are poison to Australian ones.} In all these situations our outcome variable is a fairly continuous, interval or ratio scale variable, and our predictor is a binary ``grouping'' variable. In other words, we want to compare the means of the two groups. 
 
 The standard answer to the problem of comparing means is to use a $t$-test, of which there are several varieties depending on exactly what question you want to solve. As a consequence, the majority of this chapter focuses on different types of $t$-test: one sample $t$-tests are discussed in Section~\ref{sec:onesamplettest}, independent samples $t$-tests are discussed in Sections~\ref{sec:studentttest} and~\ref{sec:welchttest}, and paired samples $t$-tests are discussed in Section~\ref{sec:pairedsamplesttest}. We'll then talk about one sided tests (Section~\ref{sec:onesidedttest}) and, after that, we'll talk a bit about Cohen's $d$, which is the standard measure of effect size for a $t$-test (Section~\ref{sec:cohensd}). The later sections of the chapter focus on the assumptions of the $t$-tests, and possible remedies if they are violated. However, before discussing any of these useful things, we'll start with a discussion of the $z$-test. 
 
@@ -121,7 +121,7 @@ This, in turn, meant that researchers could calculate their $z$-statistic by han
 
 \SUBSECTION{A worked example, by hand}
 
-Now, as I mentioned earlier, the $z$-test is almost never used in practice. It's so rarely used in real life that JASP doesn't have a built in function for it. However, the test is so incredibly simple that it's really easy to do one manually. Let's go back to the data from Dr Zeppo's class. Having loaded the \rtext{grades} data, the first thing I need to do is calculate the sample mean, which I've already done (72.3). We already have the known population standard deviation ($\sigma = 9.5$), and the value of the population mean that the null hypothesis specifies ($\mu_0 = 67.5$), and we know the sample size (N=20). 
+Now, as I mentioned earlier, the $z$-test is almost never used in practice. It's so rarely used in real life that earlier versions of JASP didn't even have a built in function for it \footnote{The $z$-test was added as an option in the ``One Sample T-Test'' module with release 0.8.6.}. However, the test is so incredibly simple that it's really easy to do one manually. Let's go back to the data from Dr Zeppo's class. Having loaded the \rtext{grades} data, the first thing I need to do is calculate the sample mean, which I've already done (72.3). We already have the known population standard deviation ($\sigma = 9.5$), and the value of the population mean that the null hypothesis specifies ($\mu_0 = 67.5$), and we know the sample size (N=20). 
 
 Next, let's calculate the (true) standard error of the mean (easily done with a calculator):
 
@@ -189,12 +189,12 @@ The only thing that has changed in the equation is that instead of using the kno
 
 \SUBSECTION{Doing the test in JASP}
 
-As you might expect, the mechanics of the $t$-test are almost identical to the mechanics of the $z$-test. So there's not much point in going through the tedious exercise of showing you how to do the calculations using low level commands. It's pretty much identical to the calculations that we did earlier, except that we use the estimated standard deviation and then we test our hypothesis using the $t$ distribution rather than the normal distribution. And so instead of going through the calculations in tedious detail for a second time, I'll jump straight to showing you how $t$-tests are actually done. JASP comes with a dedicated analysis for $t$-tests that is very flexible (it can run lots of different kinds of $t$-tests). It's pretty straightforward to use; all you need to do is specify `T-Tests' - `One Sample T-Test', move the variable you are interested in (\rtext{x}) across into the `Variables' box, and type in the mean value for the null hypothesis (`67.5') in the `Test value' box. Easy enough. See Figure \ref{fig:ttest_one}, which, amongst other things that we will get to in a moment, gives you a $t$-test statistic = 2.25, with 19 degrees of freedom and an associated $p$-value of 0.036. 
+As you might expect, the mechanics of the $t$-test are almost identical to the mechanics of the $z$-test. So there's not much point in going through the tedious exercise of showing you how to do the calculations by hand. It's pretty much identical to the calculations that we did earlier, except that we use the estimated standard deviation and then we test our hypothesis using the $t$ distribution rather than the normal distribution. And so instead of going through the calculations in tedious detail for a second time, I'll jump straight to showing you how $t$-tests are actually done. JASP comes with a dedicated analysis for $t$-tests that is very flexible (it can run lots of different kinds of $t$-tests). It's pretty straightforward to use; all you need to do is specify `T-Tests' - `One Sample T-Test', move the variable you are interested in (\rtext{x}) across into the `Variables' box, and type in the mean value for the null hypothesis (`67.5') in the `Test value' box. Easy enough. See Figure \ref{fig:ttest_one}, which, amongst other things that we will get to in a moment, gives you a $t$-test statistic = 2.25, with 19 degrees of freedom and an associated $p$-value of 0.036. 
 
 \vspace{0.5cm}
 \begin{figure}[ht]
 \begin{center}
-\epsfig{file = ../img/ttest/ttest_one.png, clip=true,width = 14cm}
+\epsfig{file = ../img/ttest/ttest_one.pdf, clip=true,width = 14cm}
 \caption{JASP does the one-sample t-test.}
 \HR
 \label{fig:ttest_one}
@@ -229,7 +229,7 @@ Although the one sample $t$-test has its uses, it's not the most typical example
 
 \SUBSECTION{The data}
 
-Suppose we have 33 students taking Dr Harpo's statistics lectures, and Dr Harpo doesn't grade to a curve. Actually, Dr Harpo's grading is a bit of a mystery, so we don't really know anything about what the average grade is for the class as a whole. There are two tutors for the class, Anastasia and Bernadette. There are $N_1 = 15$ students in Anastasia's tutorials, and $N_2 = 18$ in Bernadette's tutorials. The research question I'm interested in is whether Anastasia or Bernadette is a better tutor, or if it doesn't make much of a difference. Dr Harpo emails me the course grades, in the \filename{harpo.csv} file. As usual, I'll load the file into JASP and have a look at what variables it contains - there are three variables, \rtext{ID}, \rtext{grade} and \rtext{tutor}. Not surprisingly, the \rtext{grade} variable contains each student's grade. The \rtext{tutor} variable is a factor that indicates who each student's tutor was - either Anastasia or Bernadette. 
+Suppose we have 33 students taking Dr Harpo's statistics lectures, and Dr Harpo doesn't grade to a curve. Actually, Dr Harpo's grading is a bit of a mystery, so we don't really know anything about what the average grade is for the class as a whole. There are two tutors for the class, Anastasia and Bernadette. There are $N_1 = 15$ students in Anastasia's tutorials, and $N_2 = 18$ in Bernadette's tutorials. The research question I'm interested in is whether Anastasia or Bernadette is a better tutor, or if it doesn't make much of a difference. Dr Harpo emails me the course grades, in the \filename{harpo.csv} file. As usual, I'll load the file into JASP and have a look at what variables it contains - there are three variables, \rtext{ID}, \rtext{grade} and \rtext{tutor}. Not surprisingly, the \rtext{grade} variable contains each student's grade. The \rtext{tutor} variable indicates who each student's tutor was - either Anastasia or Bernadette. 
 
 We can calculate means and standard deviations, using the `Descriptives' - `Descriptive Statistics' analysis (being sure to split by \rtext{tutor}). Here's a nice little summary table:
 \begin{center}
@@ -353,7 +353,7 @@ Not surprisingly, you can run an independent samples $t$-test easily in JASP. Th
 
 \begin{figure}[htb]
 \begin{center}
-\epsfig{file = ../img/ttest/ttest_ind.png,clip=true, width = 14cm}
+\epsfig{file = ../img/ttest/ttest_ind.pdf,clip=true, width = 14cm}
 \caption{Independent $t$-test in JASP, with options checked for useful results}
 \HR
 \label{fig:ttest_ind}
@@ -362,7 +362,7 @@ Not surprisingly, you can run an independent samples $t$-test easily in JASP. Th
 
 The output has a very familiar form. First, it tells you what test was run, and it tells you the name of the dependent variable that you used. It then reports the test results. Just like last time the test results consist of a $t$-statistic, the degrees of freedom, and the $p$-value. The final section reports two things: it gives you a confidence interval and an effect size. I'll talk about effect sizes later. The confidence interval, however, I should talk about now. 
 
-It's pretty important to be clear on what this confidence interval actually refers to. It is a confidence interval for the {\it difference} between the group means. In our example, Anastasia's students had an average grade of 74.533, and Bernadette's students had an average grade of 69.056, so the difference between the two sample means is 5.478. But of course the difference between population means might be bigger or smaller than this. The confidence interval reported in Figure \ref{fig:ttest_ind} tells you that there's a if we replicated this study again and again, then 95\% of the time the true difference in means would lie between 0.197 and 10.759. Look back at Section~\ref{sec:ci} for a reminder about what confidence intervals mean.  
+It's pretty important to be clear on what this confidence interval actually refers to. It is a confidence interval for the {\it difference} between the group means. In our example, Anastasia's students had an average grade of 74.533, and Bernadette's students had an average grade of 69.056, so the difference between the two sample means is 5.478. But of course the difference between population means might be bigger or smaller than this. The confidence interval reported in Figure \ref{fig:ttest_ind} tells you that if we replicated this study again and again, then 95\% of the time the true difference in means would lie between 0.197 and 10.759. Look back at Section~\ref{sec:ci} for a reminder about what confidence intervals mean.  
 
 In any case, the difference between the two groups is significant (just barely), so we might write up the result using text like this:
 \begin{quote}
@@ -447,7 +447,7 @@ If you tick the check box for the Welch test in the analysis we did above, then 
 
 \begin{figure}[htb]
 \begin{center}
-\epsfig{file = ../img/ttest/ttest_welch.png,clip=true, width = 14cm}
+\epsfig{file = ../img/ttest/ttest_welch.pdf,clip=true, width = 14cm}
 \caption{Results showing the Welch test alongside the default Student's t-test in JASP}
 \HR
 \label{fig:ttest_welch}
@@ -478,7 +478,7 @@ If we look at the JASP spreadsheet it does seem like the class is a hard one (mo
 \vspace{0.5cm}
 \begin{figure}[htb]
 \begin{center}
-\epsfig{file = ../img/ttest/ttest_paired1.png,clip=true, width = 14cm}
+\epsfig{file = ../img/ttest/ttest_paired1.pdf,clip=true, width = 14cm}
 \caption{Descriptives for the two grade\_test variables in the \texttt{chico} data set}
 \HR
 \label{fig:ttest_paired1}
@@ -506,7 +506,7 @@ Nevertheless, this impression is wrong. To see why, take a look at the scatterpl
 \vspace{0.5cm}
 \begin{figure}[htb]
 \begin{center}
-\epsfig{file = ../img/ttest/improvement.png,clip=true, width = 14cm}
+\epsfig{file = ../img/ttest/improvement.pdf,clip=true, width = 14cm}
 \caption{Using R code to compute an \texttt{improvement} score in JASP.}
 \HR
 \label{fig:improvement}
@@ -547,7 +547,7 @@ How do you do a paired samples $t$-test in JASP? One possibility is to follow th
 
 \begin{figure}[htb]
 \begin{center}
-\epsfig{file = ../img/ttest/ttest_paired2.png,clip=true, width = 14cm}
+\epsfig{file = ../img/ttest/ttest_paired2.pdf,clip=true, width = 14cm}
 \caption{Results showing a one sample $t$-test on paired difference scores}
 \label{fig:ttest_paired2}
 \HR
@@ -565,7 +565,7 @@ When introducing the theory of null hypothesis tests, I mentioned that there are
 
 \begin{figure}[htb]
 \begin{center}
-\epsfig{file = ../img/ttest/ttest_onesided1.png,clip=true, width = 14cm}
+\epsfig{file = ../img/ttest/ttest_onesided1.pdf,clip=true, width = 14cm}
 \caption{JASP results showing a `One Sample T-Test' where the actual hypothesis is one sided, i.e. that the true mean is greater than 67.5\%}
 \label{fig:ttest_onesided1}
 \HR
@@ -578,7 +578,7 @@ So that's how to do a one-sided one sample $t$-test. However, all versions of th
 
 \begin{figure}[htb]
 \begin{center}
-\epsfig{file = ../img/ttest/ttest_onesided2.png,clip=true, width = 14cm}
+\epsfig{file = ../img/ttest/ttest_onesided2.pdf,clip=true, width = 14cm}
 \caption{JASP results showing an `Independent Samples T-Test' where the actual hypothesis is one sided, i.e. that Anastasia's students had higher grades than Bernadette's}
 \label{fig:ttest_onesided2}
 \HR
@@ -591,7 +591,7 @@ What about the paired samples $t$-test? Suppose we wanted to test the hypothesis
 
 \begin{figure}[htb]
 \begin{center}
-\epsfig{file = ../img/ttest/ttest_onesided3.png,clip=true, width = 14cm}
+\epsfig{file = ../img/ttest/ttest_onesided3.pdf,clip=true, width = 14cm}
 \caption{JASP results showing a `Paired Samples T-Test' where the actual hypothesis is one sided, i.e. that \texttt{grade\_test2} (`Measure 1') $>$ \texttt{grade\_test1} (`Measure 2')}
 \label{fig:ttest_onesided3}
 \HR
@@ -627,7 +627,7 @@ about 0.8 & ``large'' effect
 
 \SUBSECTION{Cohen's \texorpdfstring{$d$}{d} from one sample}
 
-The simplest situation to consider is the one corresponding to a one-sample $t$-test. In this case, this is the one sample mean $\bar{X}$ and one (hypothesised) population mean $\mu_o$ to compare it to. Not only that, there's really only one sensible way to estimate the population standard deviation. We just use our usual estimate $\hat{\sigma}$. Therefore, we end up with the following as the only way to calculate $d$
+The simplest situation to consider is the one corresponding to a one-sample $t$-test. In this case, there is the one sample mean $\bar{X}$ and one (hypothesised) population mean $\mu_o$ to compare it to. Not only that, there's really only one sensible way to estimate the population standard deviation. We just use our usual estimate $\hat{\sigma}$. Therefore, we end up with the following as the only way to calculate $d$
 $$
 d = \frac{\bar{X} - \mu_0}{\hat{\sigma}}
 $$
@@ -784,7 +784,7 @@ Counting up the tick marks this time we get a test statistic of $W = 7$. As befo
 \vspace{0.5cm}
 \begin{figure}[ht]
 \begin{center}
-\epsfig{file = ../img/ttest/ttest_nonparametric.png, clip=true,width = 14cm}
+\epsfig{file = ../img/ttest/ttest_nonparametric.pdf, clip=true,width = 14cm}
 \caption{JASP screen showing results for one sample and paired sample Wilcoxon non-parametric tests}
 \HR
 \label{fig:ttest_nonparametric}
@@ -800,7 +800,7 @@ Counting up the tick marks this time we get a test statistic of $W = 7$. As befo
 \item An independent samples $t$-test is used to compare the means of two groups, and tests the null hypothesis that they have the same mean. It comes in two forms: the Student test (Section~\ref{sec:studentttest}) assumes that the groups have the same standard deviation, the Welch test (Section~\ref{sec:welchttest}) does not.
 \item A paired samples $t$-test is used when you have two scores from each person, and you want to test the null hypothesis that the two scores have the same mean. It is equivalent to taking the difference between the two scores for each person, and then running a one sample $t$-test on the difference scores. (Section~\ref{sec:pairedsamplesttest})
 \item One sided tests are perfectly legitimate as long as they are pre-planned. (Section~\ref{sec:onesidedttest})
-\item Effect size calculations for the difference between means can be calculated via the Cohen's $d$ statistic. (Section~\ref{sec:cohensd}).
+\item Effect size calculations for the difference between means can be calculated via the Cohen's $d$ statistic (Section~\ref{sec:cohensd})
 \item You can check the normality of a sample using QQ plots (not currently available in JASP) and the Shapiro-Wilk test. (Section~\ref{sec:shapiro})
 \item If your data are non-normal, you can use Mann-Whitney or Wilcoxon tests instead of $t$-tests. (Section~\ref{sec:wilcox})
 \end{itemize}

@@ -131,7 +131,7 @@ The obvious answer is to collect more data. Suppose that we ran a much larger ex
 
 \begin{figure}[p]
 \begin{center}
-\epsfig{file=../img/estimation/IQsim.png,clip=true,width=14cm}
+\epsfig{file=../img/estimation/IQsim.pdf,clip=true,width=14cm}
 \end{center}
 \caption{A random sample drawn from a normal distribution using JASP}
 \label{fig:iqsim}
@@ -161,7 +161,7 @@ With this in mind, let's abandon the idea that our studies will have sample size
 
 \begin{figure}[p]
 \begin{center}
-\epsfig{file=../img/estimation/IQsample.png,clip=true,width=14cm}
+\epsfig{file=../img/estimation/IQsample.pdf,clip=true,width=14cm}
 \end{center}
 \caption{Using JASP to draw a random sample of 5 from a normal distribution with $\mu=100$ and $\sigma=15$.}
 \label{fig:IQsample}
@@ -406,7 +406,7 @@ $\hat{\sigma}^2$ & Estimate of the population  & Yes, but not the same as the  \
 \begin{quote}
 {\it Statistics means never having to say you're certain}
 
-\hspace*{2cm} -- Unknown origin\FOOTNOTE{This quote appears on a great many t-shirts and websites, and even gets a mention in a few academic papers (e.g., \url{http://www.amstat.org/publications/jse/v10n3/friedman.html}, but I've never found the original source.}
+\hspace*{2cm} -- Unknown origin\FOOTNOTE{This quote appears on a great many t-shirts and websites, and even gets a mention in a few academic papers (e.g., \url{http://www.amstat.org/publications/jse/v10n3/friedman.html}), but I've never found the original source.}
 \end{quote}
 
 \noindent
@@ -426,7 +426,7 @@ where the SEM is equal to $\sigma / \sqrt{N}$ and we can be 95\% confident that 
 $$
 \bar{X} -  \left( 1.96 \times \mbox{SEM} \right) \ \leq \ \mu  \ \leq  \ \bar{X} +  \left( 1.96 \times \mbox{SEM}\right)
 $$
-What this is telling is is that the range of values has a 95\% probability of containing the population mean $\mu$. We refer to this range as a \keyterm{95\% confidence interval}, denoted $\mbox{CI}_{95}$. In short, as long as $N$ is sufficiently large (large enough for us to believe that the sampling distribution of the mean is normal), then we can write this as our formula for the 95\% confidence interval:
+What this is telling us is that the range of values has a 95\% probability of containing the population mean $\mu$. We refer to this range as a \keyterm{95\% confidence interval}, denoted $\mbox{CI}_{95}$. In short, as long as $N$ is sufficiently large (large enough for us to believe that the sampling distribution of the mean is normal), then we can write this as our formula for the 95\% confidence interval:
 $$
 \mbox{CI}_{95} = \bar{X} \pm \left( 1.96 \times \frac{\sigma}{\sqrt{N}} \right)
 $$
